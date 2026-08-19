@@ -27,6 +27,7 @@ The `prompt.md` files are designed to be pasted directly into H3. The `README.md
 | [001](./case-studies/2026-08-three-person-orbital-long-take/) | Three-Person Occlusion-Linked Orbital Long Take | 2026-08 | published |
 | [002](./case-studies/2026-08-dual-subject-speed-contrast/) | Asymmetric Speed-Ratio Duo Choreography | 2026-08 | published |
 | [003](./case-studies/2026-08-single-subject-three-pose/) | Micro-Cam Anchor-Flow Flight | 2026-08 | published |
+| [004](./case-studies/2026-08-furina-windsurfing-fashion-mv/) | Layered Reference Architecture with Text-Driven Climax | 2026-08 | published |
 
 ## Companion
 
