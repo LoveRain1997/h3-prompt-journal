@@ -95,6 +95,20 @@ The most important experiment in this project was **removing Picture 3 from the 
 
 And for multi-segment music videos: **generate all video first, then remix the complete audio.** Feeding Suno the full 45-second audio structure produces a coherent musical arc; feeding it three isolated 15-second clips produces three unrelated tracks.
 
+## Media files
+
+This case includes the original reference images and generated result:
+
+| File | Role |
+|---|---|
+| [`picture-1-character-key-visual.png`](./picture-1-character-key-visual.png) | Picture 1 — Character key visual / first frame anchor |
+| [`picture-2-turnaround-equipment.png`](./picture-2-turnaround-equipment.png) | Picture 2 — Character turnaround + windsurfing equipment reference |
+| [`picture-3-segment1-cinematography-guide.png`](./picture-3-segment1-cinematography-guide.png) | Picture 3 — Segment 1 cinematography guide (0–15s) |
+| [`picture-3-segment2-cinematography-guide.png`](./picture-3-segment2-cinematography-guide.png) | Picture 3 — Segment 2 cinematography guide (15–30s) |
+| [`result-video.mp4`](./result-video.mp4) | Generated result video |
+
+Note: Segment 3 (the final hero moment) intentionally has **no Picture 3** — camera control is text-only.
+
 ## The final prompt
 
 See [`prompt.md`](./prompt.md) for the full production document (~1465 lines, Chinese design doc + three English H3 prompts).
