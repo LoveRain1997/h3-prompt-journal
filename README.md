@@ -29,6 +29,7 @@ The `prompt.md` files are designed to be pasted directly into H3. The `README.md
 | [003](./case-studies/2026-08-single-subject-three-pose/) | Micro-Cam Anchor-Flow Flight | 2026-08 | published |
 | [004](./case-studies/2026-08-furina-windsurfing-fashion-mv/) | Layered Reference Architecture with Text-Driven Climax | 2026-08 | published |
 | [005](./case-studies/2026-08-water-obstacle-variety-show/) | Beat-Anchored Improvisation Variety Show | 2026-08 | published |
+| [006](./case-studies/2026-08-sticker-character-kitchen-comedy/) | Mixed-Media Sticker-in-Reality Comedy | 2026-08 | published |
 
 ## Companion
 
