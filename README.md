@@ -28,6 +28,7 @@ The `prompt.md` files are designed to be pasted directly into H3. The `README.md
 | [002](./case-studies/2026-08-dual-subject-speed-contrast/) | Asymmetric Speed-Ratio Duo Choreography | 2026-08 | published |
 | [003](./case-studies/2026-08-single-subject-three-pose/) | Micro-Cam Anchor-Flow Flight | 2026-08 | published |
 | [004](./case-studies/2026-08-furina-windsurfing-fashion-mv/) | Layered Reference Architecture with Text-Driven Climax | 2026-08 | published |
+| [005](./case-studies/2026-08-water-obstacle-variety-show/) | Beat-Anchored Improvisation Variety Show | 2026-08 | published |
 
 ## Companion
 
