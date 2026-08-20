@@ -59,6 +59,8 @@ Also notable: this is the first case in the journal using **structured prompt se
 
 And the dialogue anchors matter more than they appear. The opening line (大家好，我要开始啦！) sets her personality before the first obstacle; the closing punchline (差一点嘛……) recontextualizes the whole run as comedy. Two lines of Mandarin do more for tone than a paragraph of "make it entertaining."
 
+One production workflow note worth keeping: the prompt is written to a **20-second spec**, and resolution is used as the iteration dial. At **0.3 resolution** the model still outputs the full 20 seconds — low cost, fast turnaround — which makes it ideal for debugging scene choreography: do the beats land, is the fall believable, is the strike timed right. Once the staging works, change nothing in the prompt and bump resolution to **1 or 0.8** for the final render. Resolution affects image quality, not duration or blocking — one prompt, two-phase workflow.
+
 ## The final prompt
 
 See [`prompt.md`](./prompt.md) for the full prompt (usage notes in Chinese + structured English prompt).
