@@ -32,6 +32,7 @@ The `prompt.md` files are designed to be pasted directly into H3. The `README.md
 | [006](./case-studies/2026-08-sticker-character-kitchen-comedy/) | Mixed-Media Sticker-in-Reality Comedy | 2026-08 | published |
 | [007](./case-studies/2026-08-cinematic-character-reveal-two-part/) | Two-Part Cinematic Character Reveal with Continuous BGM | 2026-08 | published |
 | [008](./case-studies/2026-08-first-person-finger-controlled-dance/) | Single-Image First-Person Finger-Controlled Dance | 2026-08 | published |
+| [009](./case-studies/2026-09-three-person-prank-freeze-gag-cos-swap/) | Reverse-Engineered Three-Person Prank with Freeze-Frame Gags + Skin-Only Cos Swap | 2026-09 | published |
 
 ## Companion
 
