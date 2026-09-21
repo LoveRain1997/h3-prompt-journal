@@ -1,0 +1,1306 @@
+﻿Create a 15-second high-fashion editorial fashion film driven entirely by a playful, elegant musical timeline.
+
+────────────────────────
+REFERENCE AUTHORITY
+────────────────────────
+
+Use <Picture 1> as the SOLE visual authority for the adult lead character and the complete physical environment.
+
+Preserve exactly:
+
+the character identity,
+face,
+hair,
+body proportions,
+skin tone,
+complete outfit,
+shoes,
+all accessories,
+skirt construction,
+opaque fitted dance safety shorts underneath the skirt,
+existing table lamp,
+lamp position,
+room geometry,
+furniture,
+floor,
+walls,
+surfaces,
+set dressing,
+lighting direction,
+exposure,
+color grade,
+contrast,
+photographic realism.
+
+Do not redesign, reinterpret, restyle, relocate, replace, add or remove any character element or environmental element.
+
+Do not introduce new props.
+
+Do not introduce another lamp.
+
+Do not move the existing table lamp.
+
+Do not redesign the room.
+
+The existing table lamp in <Picture 1> is a recurring visual and rhythmic anchor.
+
+The dance safety shorts are a REQUIRED opaque fitted underlayer underneath the skirt for the entire film.
+
+They remain fully opaque, fitted, secure and unchanged throughout the entire video.
+
+The final jump may reveal the existing opaque fitted dance safety shorts clearly as part of the fashion styling.
+
+The safety shorts must never disappear, become transparent, deform, slide away or be replaced.
+
+The final reveal is a fully clothed fashion reveal, never nudity or underwear exposure.
+
+────────────────────────
+VISUAL CONCEPT
+────────────────────────
+
+This is not a conventional dance video.
+
+This is a cute, elegant, high-fashion editorial attitude film built from clearly differentiated body compositions.
+
+The mood is:
+
+playful,
+charming,
+fresh,
+light,
+confident,
+fashionable,
+precise,
+and slightly mischievous.
+
+The character is an adult professional fashion performer.
+
+The cuteness comes from:
+
+small precise weight shifts,
+clean foot placement,
+slight head tilts,
+quick shoulder accents,
+graphic arm shapes,
+compact crouching,
+light bouncing energy,
+playful eye contact,
+fabric movement,
+and the contrast between controlled fashion posing and sudden energetic movement.
+
+Do not make the character childish.
+
+Do not use exaggerated cartoon acting.
+
+Do not use anime-like expressions.
+
+Do not use exaggerated kawaii gestures.
+
+Keep the performance grounded in realistic adult fashion photography.
+
+The sensuality remains subtle and editorial rather than explicit.
+
+Never directly bend toward the camera with the chest facing the lens.
+
+Never create a frontal downward-bending composition that makes the chest the visual subject.
+
+Whenever the torso lowers, the character must be oriented in profile, rear three-quarter, or strong side three-quarter view.
+
+The face remains recognizable and naturally expressive.
+
+────────────────────────
+MUSICAL DRIVE — NEW CUTE VERSION
+────────────────────────
+
+non_diegetic_music:
+
+Genre — playful luxury high-fashion electro-pop editorial.
+
+Mood — cute, bright, elegant, rhythmic, slightly mischievous, premium.
+
+BPM — 124.
+
+Time signature — 4/4.
+
+Key — A major.
+
+Duration — exactly 15.0 seconds.
+
+One uninterrupted musical line.
+
+1 beat = approximately 0.484 seconds.
+
+1 bar = approximately 1.936 seconds.
+
+Use seven complete bars plus a three-beat final hero tail.
+
+The new track must feel noticeably lighter and cuter than dark luxury electro.
+
+Core musical architecture:
+
+tight but soft kick,
+rounded playful bass pulse,
+crisp light hi-hats,
+bright mallet plucks,
+small bell accents,
+short sparkling synth notes,
+subtle pizzicato-like electronic tones,
+tiny clap accents,
+reverse swells,
+short playful risers,
+clean low-frequency impacts,
+light rhythmic stutters.
+
+Avoid:
+
+dark ominous drones,
+heavy cinematic bass,
+aggressive industrial percussion,
+dramatic horror textures,
+lush pads,
+vocals,
+lyrics,
+singing.
+
+The music should sound like an expensive fashion commercial with a playful personality.
+
+The musical accents should feel like:
+
+step,
+tap,
+turn,
+pause,
+bounce,
+spark,
+lift,
+and final jump.
+
+The rhythm must remain sparse enough that physical movement, shoe contact, fabric motion and lamp switching remain individually readable.
+
+────────────────────────
+FIVE MUSICAL CHAPTERS
+────────────────────────
+
+CHAPTER A — playful body rhythm
+0.000–3.871
+
+CHAPTER B — lamp-off / graphic silhouette
+3.871–7.742
+
+CHAPTER C — lamp-on / brighter playful energy
+7.742–11.613
+
+CHAPTER D — lamp-off / suspended anticipation
+11.613–13.548
+
+CHAPTER E — lamp-on / final jump hero impact
+13.548–15.000
+
+EXACT LIGHT RHYTHM:
+
+0.000 — TABLE LAMP ON
+3.871 — TABLE LAMP OFF
+7.742 — TABLE LAMP ON
+11.613 — TABLE LAMP OFF
+13.548 — TABLE LAMP ON
+
+Every lamp state change occurs exactly on a musical downbeat.
+
+No random switching.
+
+No gradual fade.
+
+No flicker.
+
+No color change.
+
+No extra light source.
+
+────────────────────────
+EDITORIAL CAMERA SYSTEM
+────────────────────────
+
+The camera behaves like a professional fashion photographer responding to the music.
+
+Do not use one continuous camera movement.
+
+Create discrete photographic compositions.
+
+Each camera state must be motivated by a different body action.
+
+Camera language may include:
+
+compressed telephoto,
+medium portrait,
+medium-full,
+short lateral tracking,
+short reverse tracking,
+fast reframe,
+short dolly,
+rack focus,
+shoulder occlusion,
+hair-edge wipe,
+short camera arc,
+controlled ROLL,
+brief Dutch-angle correction,
+vertical rise,
+vertical drop,
+rapid pullback,
+brief static freeze.
+
+ROLL RULE:
+
+Use ROLL selectively.
+
+Do not constantly tilt the camera.
+
+Do not perform continuous spinning.
+
+Do not orbit the room.
+
+Do not use a 360-degree roll.
+
+The roll must be brief, controlled and tied to a specific movement accent.
+
+Use only a few meaningful roll moments:
+
+MOMENT 01 —
+very short clockwise roll during the weight-transfer accent.
+
+MOMENT 03 —
+brief counterclockwise roll during the side-facing squat.
+
+MOMENT 05 —
+brief clockwise roll during the directional foot sweep.
+
+MOMENT 07 —
+very short roll during the final kinetic accent before the stillness.
+
+MOMENT 08 and MOMENT 09 remain level.
+
+The horizon must recover after each roll.
+
+Never allow the camera technique to become more noticeable than the character.
+
+Do not use:
+
+top-down views,
+floor-level wide-angle views,
+extreme fisheye distortion,
+continuous orbiting,
+endless zooming,
+or generic slow camera pushes.
+
+────────────────────────
+BODY / MOVEMENT LANGUAGE
+────────────────────────
+
+Every movement must have a different body architecture.
+
+Use real body mechanics:
+
+support foot →
+weight transfer →
+pelvic response →
+torso counterbalance →
+shoulder articulation →
+arm extension →
+hand finishing point.
+
+Each action contains:
+
+INITIATION →
+TRAVEL →
+ACCENT →
+BRAKE →
+RELEASE.
+
+Never reset into a neutral standing pose between movements.
+
+Do not repeat the same body shape.
+
+Do not repeat contrapposto.
+
+Do not repeat hip sways.
+
+Do not repeat hair tossing.
+
+Do not repeat walking toward camera.
+
+Do not repeat turning in place.
+
+Do not repeat hand-to-hair gestures.
+
+Do not repeat identical leg gestures.
+
+Do not repeat the same arm geometry.
+
+Each movement must look like a different fashion photograph coming to life.
+
+────────────────────────
+[0.000–1.300]
+MOMENT 01 — TOE LIFT / REVERSE WEIGHT SHIFT
+────────────────────────
+
+Start directly from <Picture 1>.
+
+The upper body remains relatively calm.
+
+The supporting foot stays firmly planted.
+
+The opposite heel lifts lightly.
+
+The weight shifts backward through the pelvis.
+
+The ribcage remains controlled.
+
+The shoulders make only a subtle opposing adjustment.
+
+One arm extends diagonally behind the body.
+
+The opposite hand stays close to the existing garment.
+
+The character gives a tiny controlled eye contact accent toward the camera.
+
+The movement should feel light and playful rather than dramatic.
+
+CAMERA:
+
+Begin medium-full from three-quarter side.
+
+Short lateral tracking follows the backward weight transfer.
+
+At the musical accent:
+
+introduce a very brief clockwise ROLL.
+
+Immediately recover to level.
+
+At approximately 1.0 second:
+
+heel returns to the floor.
+
+Weight transfer completes.
+
+Arm reaches its final point.
+
+CAMERA HARD BRAKE.
+
+BODY HARD BRAKE.
+
+Brief fashion stillness.
+
+────────────────────────
+[1.300–2.600]
+MOMENT 02 — HEAD TILT / ELBOW FRAME
+────────────────────────
+
+Create a completely different upper-body composition.
+
+One elbow rises outward.
+
+The forearm creates a clean graphic frame beside the head.
+
+The face remains unobstructed.
+
+The head tilts slightly in the opposite direction from the elbow.
+
+The opposite shoulder drops subtly.
+
+The torso remains upright.
+
+The character gives a small, confident half-smile or soft playful expression.
+
+No exaggerated facial acting.
+
+CAMERA:
+
+Move from side profile toward three-quarter front.
+
+Use a short focal compression change.
+
+Rack focus:
+
+foreground forearm →
+eyes.
+
+At the bright pluck:
+
+elbow reaches the final graphic position.
+
+Head finishes the slight tilt.
+
+HARD BRAKE.
+
+No roll here.
+
+This moment must read like a fashion portrait rather than a dance step.
+
+────────────────────────
+[2.600–3.871]
+MOMENT 03 — SIDE-FACING SQUAT / LONG LEG LINE
+────────────────────────
+
+Introduce the distinct side-facing squat.
+
+The character lowers the center of gravity by bending the supporting knee.
+
+The hips travel downward.
+
+The torso stays lifted.
+
+The character remains in strong SIDE PROFILE relative to camera.
+
+The chest never faces directly toward the lens.
+
+The opposite leg extends diagonally outward.
+
+The extended leg creates a long clean fashion line.
+
+One hand travels beside the outer line of the existing skirt.
+
+The other arm extends backward to counterbalance.
+
+The movement is:
+
+standing →
+lowering →
+deep controlled side squat →
+brief still point.
+
+Do not turn it into a floor pose.
+
+Do not lean the chest toward camera.
+
+Do not spread the legs excessively.
+
+The skirt follows the descent naturally.
+
+CAMERA:
+
+Track downward with the hips.
+
+Remain medium-full.
+
+At the lowest point:
+
+use one brief counterclockwise ROLL.
+
+Immediately recover the horizon.
+
+At the musical sub hit:
+
+the extended leg finishes its diagonal.
+
+The supporting knee stabilizes.
+
+CAMERA HARD BRAKE.
+
+BODY HARD BRAKE.
+
+At exactly 3.871:
+
+TABLE LAMP → OFF.
+
+The lamp switch becomes the first major editorial punctuation.
+
+────────────────────────
+[3.871–5.806]
+MOMENT 04 — RISE / SHOULDER PEEK
+────────────────────────
+
+Begin from the low position of MOMENT 03.
+
+The character rises through the supporting foot.
+
+The hips rise first.
+
+The torso follows.
+
+The extended leg returns underneath the body.
+
+During the rise, the body turns into a rear three-quarter orientation.
+
+The back shoulder moves closer to camera.
+
+The character briefly looks over the shoulder toward the lens.
+
+One arm hangs vertically downward.
+
+The other arm creates a diagonal line across the torso.
+
+This is not a repeated pose from MOMENT 03.
+
+The emphasis is now on:
+
+back silhouette,
+shoulder line,
+neck,
+and eye contact.
+
+CAMERA:
+
+Start behind the shoulder.
+
+Track laterally and upward.
+
+Allow the shoulder to briefly occlude the lens.
+
+As the face reappears:
+
+RACK FOCUS:
+
+shoulder edge →
+eye.
+
+Use a very short counterclockwise camera correction only if needed.
+
+No continuous roll.
+
+At the musical accent:
+
+the shoulder locks into position.
+
+CAMERA HARD BRAKE.
+
+Lamp remains OFF.
+
+────────────────────────
+[5.806–7.742]
+MOMENT 05 — LATERAL STEP / TOE POINT
+────────────────────────
+
+Introduce a completely different movement.
+
+The character performs one small controlled lateral step.
+
+The supporting foot transfers weight sideways.
+
+The opposite leg extends lightly to the side.
+
+The toe touches down with a clean pointed finish.
+
+The pelvis remains mostly stable.
+
+The torso stays upright.
+
+One arm opens diagonally outward.
+
+The opposite arm remains closer to the torso.
+
+This creates a clean, playful fashion silhouette.
+
+The movement is about:
+
+directional travel,
+foot placement,
+and a precise toe point.
+
+Do not turn this into a leg sweep.
+
+Do not turn it into a kick.
+
+Do not spin.
+
+Do not repeat the squat architecture.
+
+The skirt responds with a short side-to-side fabric movement.
+
+CAMERA:
+
+Use medium-full side view.
+
+Track the lateral step.
+
+At the toe-point accent:
+
+apply a short clockwise ROLL.
+
+Immediately recover the horizon.
+
+The camera stops precisely when the toe finishes.
+
+HARD BRAKE.
+
+At 7.742:
+
+TABLE LAMP → ON.
+
+The room returns instantly to the reference lighting.
+
+────────────────────────
+[7.742–9.677]
+MOMENT 06 — DIAGONAL REACH / LIGHT BOUNCE
+────────────────────────
+
+Create a brighter, more playful upper-body moment.
+
+The character makes a small controlled upward bounce through the ankles and knees.
+
+This is NOT a jump.
+
+The feet remain grounded.
+
+One arm reaches diagonally upward.
+
+The opposite arm extends down and outward.
+
+The shoulders form an open diagonal.
+
+The head follows the raised hand briefly.
+
+Then the eyes return toward the lens.
+
+The movement feels lively and cute while remaining sophisticated.
+
+CAMERA:
+
+Begin closer on the raised hand.
+
+Track:
+
+hand →
+forearm →
+shoulder →
+neck →
+face.
+
+Use a controlled vertical rise.
+
+No roll.
+
+At the bright musical accent:
+
+the raised hand reaches the highest point.
+
+The small bounce finishes.
+
+HARD BRAKE.
+
+Direct eye contact.
+
+────────────────────────
+[9.677–11.613]
+MOMENT 07 — QUICK KNEE TAP / SHOULDER ACCENT
+────────────────────────
+
+Create another clearly different movement.
+
+The character makes a quick compact knee lift.
+
+The knee moves slightly forward and inward but does not become a kick.
+
+The movement is short and rhythmic.
+
+The supporting leg absorbs the weight.
+
+At the same instant:
+
+one shoulder gives a sharp accent backward.
+
+The opposite shoulder moves slightly forward.
+
+The arms form a compact asymmetric shape.
+
+The skirt produces a small fabric snap from the body acceleration.
+
+This moment is quick, playful and percussive.
+
+It must not resemble MOMENT 03 squat.
+
+It must not resemble MOMENT 05 lateral step.
+
+It must not resemble the final jump.
+
+CAMERA:
+
+Track the lower body for a brief moment.
+
+Perform a fast upward reframe toward the face.
+
+At the sharpest musical accent:
+
+one very brief controlled clockwise ROLL.
+
+Immediately return to level.
+
+At 10.645:
+
+SUB HIT.
+
+At 11.129:
+
+rapid hi-hat burst.
+
+The knee retracts.
+
+The shoulder returns to its final controlled position.
+
+At exactly 11.613:
+
+TABLE LAMP → OFF.
+
+────────────────────────
+[11.613–12.250]
+MOMENT 08 — TEMPORAL VACUUM / STILL IMAGE
+────────────────────────
+
+The lamp switches OFF.
+
+The music suddenly becomes sparse.
+
+The character becomes almost completely still.
+
+Do not introduce a new pose.
+
+The head remains slightly turned.
+
+One leg is placed forward.
+
+Arms remain separated enough to preserve a clear silhouette.
+
+Only natural micro-motion remains:
+
+subtle breathing,
+tiny hair movement,
+small accessory movement,
+slight fabric settling.
+
+CAMERA:
+
+Almost completely static.
+
+Keep a level horizon.
+
+Very small forward parallax only.
+
+No roll.
+
+No zoom.
+
+No orbit.
+
+No reframing.
+
+The moment feels suspended because the music has temporarily removed rhythmic density.
+
+No literal slow motion.
+
+────────────────────────
+[12.250–13.548]
+MOMENT 09 — JUMP PRELOAD / ARM SWING PREPARATION
+────────────────────────
+
+This is preparation for the FINAL JUMP.
+
+Do not begin the jump early.
+
+The character remains upright in a slight three-quarter side orientation.
+
+Both feet are planted.
+
+The knees compress.
+
+The hips lower slightly.
+
+The arms swing naturally BACKWARD for a brief loading motion.
+
+This creates momentum for the upcoming upward jump.
+
+The torso stays lifted.
+
+The head remains composed.
+
+No forward chest bend.
+
+No skirt opening yet.
+
+The hands do not touch or manipulate the skirt.
+
+The movement is:
+
+settle →
+kneel slightly →
+arms sweep backward →
+body compresses →
+hold the preload.
+
+The skirt remains naturally closed.
+
+The opaque fitted dance safety shorts remain fully covered at this stage.
+
+CAMERA:
+
+Begin medium-full.
+
+Move slightly backward into a full-body-ready composition.
+
+Keep enough vertical space above the head for the jump.
+
+Keep the camera at approximately chest height.
+
+Do not use a floor-level angle.
+
+No roll.
+
+At approximately 13.300:
+
+the musical riser reaches maximum anticipation.
+
+The knees remain compressed.
+
+Both arms are loaded slightly behind the body.
+
+The body pauses for a fraction of a second.
+
+The camera is completely prepared.
+
+At exactly 13.548:
+
+TABLE LAMP → ON.
+
+MOMENT 10 begins immediately.
+
+────────────────────────
+[13.548–15.0]
+MOMENT 10 — TWO-HAND HIGH JUMP / BACK-FOLDED FEET HERO
+────────────────────────
+
+At the EXACT musical impact:
+
+TABLE LAMP → ON.
+
+This is the brightest visual punctuation of the entire film.
+
+At the same exact musical impact:
+
+the character performs the largest energetic movement of the sequence.
+
+The final movement is NOT a skirt-opening gesture.
+
+It is a powerful, joyful FASHION JUMP.
+
+ACTION CHAIN:
+
+KNEE DRIVE →
+ARM SWING →
+UPWARD JUMP →
+BOTH HANDS HIGH ABOVE HEAD →
+BOTH LOWER LEGS FOLD BACK TOGETHER IN THE AIR →
+SKIRT LIFTS NATURALLY FROM THE JUMP →
+OPAQUE SAFETY SHORTS BECOME CLEARLY VISIBLE →
+AIRBORNE HERO POSE →
+LANDING →
+FABRIC SETTLE →
+CAMERA LOCK.
+
+The character drives upward strongly through both legs.
+
+Both arms swing upward.
+
+At the peak of the jump:
+
+BOTH HANDS ARE RAISED HIGH ABOVE THE HEAD.
+
+The arms create a long upward V-shaped silhouette.
+
+At the same time:
+
+both knees bend naturally backward.
+
+Both lower legs travel backward together.
+
+Both feet move backward and remain CLOSE TO EACH OTHER.
+
+The feet should visually read as one compact paired shape behind the body.
+
+The legs do not split apart.
+
+The feet do not kick toward the camera.
+
+No exaggerated acrobatic pose.
+
+The upper body remains upright in the air.
+
+The head stays composed.
+
+The facial expression becomes slightly brighter and more playful.
+
+The skirt reacts naturally to the upward jump.
+
+The rising motion causes the skirt to lift and separate from the legs through physical inertia.
+
+The skirt fabric opens upward enough to reveal the EXISTING OPAQUE FITTED DANCE SAFETY SHORTS clearly.
+
+The reveal happens because of the physical jump and skirt lift.
+
+Do not pull the skirt open with the hands.
+
+Do not manually expose the shorts.
+
+Do not create transparent fabric.
+
+Do not create a wardrobe malfunction.
+
+The safety shorts remain fully opaque, fitted and secure.
+
+This is a fully clothed fashion jump.
+
+The visual idea is:
+
+HIGH ARMS
++
+COMPACT BACK-FOLDED FEET
++
+AIRBORNE BODY
++
+LIFTED SKIRT
++
+OPAQUE SAFETY SHORTS.
+
+CAMERA:
+
+Begin from medium-full immediately before the jump.
+
+As the character launches upward:
+
+rapidly pull backward while slightly rising with the character.
+
+Use a short controlled arc.
+
+The camera must reveal the complete airborne silhouette:
+
+hands,
+head,
+torso,
+entire skirt,
+legs,
+shoes.
+
+Do not crop the hands or feet.
+
+Do not use an extreme low angle.
+
+Do not use a top-down shot.
+
+Do not orbit.
+
+At the apex of the jump:
+
+introduce a brief BULLET-TIME FEEL.
+
+The perceived temporal density momentarily stretches around the airborne peak.
+
+This is not literal slow motion.
+
+Do not freeze the character unnaturally.
+
+Instead, allow the airborne pose to feel momentarily suspended while:
+
+hair,
+skirt,
+and garment edges retain realistic inertia.
+
+The character remains the stable central axis.
+
+The skirt continues rising slightly after the body reaches the apex.
+
+At approximately 13.9:
+
+the airborne body begins its controlled descent.
+
+The hands remain high for a brief instant.
+
+The feet remain together behind the body during the visual peak.
+
+The opaque safety shorts remain clearly visible beneath the lifted skirt.
+
+The feet then return naturally toward the floor.
+
+At approximately 14.1:
+
+the character lands safely and completes the final hero stance.
+
+CAMERA HARD LOCK.
+
+No further zoom.
+
+No orbit.
+
+No reframing.
+
+────────────────────────
+15.0 HERO END
+────────────────────────
+
+Maintain the final full-body hero composition through 15.0 seconds.
+
+The character has completed the jump and landed naturally.
+
+Both feet are grounded.
+
+The arms may remain raised for a brief final fashion pose before settling into the cleanest stable silhouette.
+
+The final composition remains full-body.
+
+The entire outfit remains visible.
+
+The opaque fitted dance safety shorts remain visible only to the degree naturally created by the final jump and lifted skirt position.
+
+Hair and skirt complete their natural settling.
+
+After the first approximately 0.5 seconds:
+
+near-perfect stillness.
+
+The final frame should resemble a premium fashion campaign photograph captured immediately after a playful energetic jump.
+
+The existing table lamp remains ON.
+
+No environmental transformation.
+
+────────────────────────
+LIGHTING SYSTEM
+────────────────────────
+
+The existing table lamp is part of the EDITORIAL EDITING LANGUAGE.
+
+Exact state timeline:
+
+0.000 — ON
+3.871 — OFF
+7.742 — ON
+11.613 — OFF
+13.548 — ON
+
+Every transition occurs exactly on the musical downbeat.
+
+No random switching.
+
+No gradual fade.
+
+No flicker.
+
+No pulsing.
+
+No color changes.
+
+No new lighting source.
+
+The room remains physically identical.
+
+The final ON event at 13.548 is the visual punctuation for the jump.
+
+────────────────────────
+EDITORIAL CUT SYSTEM
+────────────────────────
+
+Use selectively:
+
+shoulder occlusion,
+hair-edge wipe,
+fast lateral whip,
+snap zoom,
+rack focus,
+body-line match,
+brief accent cut,
+short Dutch-angle correction,
+controlled ROLL,
+hard camera brake,
+rapid pullback.
+
+Every cut or transition must correspond to a musical accent or clear body impulse.
+
+Do not create an effect montage.
+
+Do not use every transition type.
+
+Keep the visual language elegant, clean and premium.
+
+────────────────────────
+PERFORMANCE RULES
+────────────────────────
+
+Fully clothed adult fashion performance.
+
+Cute.
+
+Elegant.
+
+Playful.
+
+Confident.
+
+Physically precise.
+
+No childish acting.
+
+No exaggerated anime movement.
+
+No vulgar gestures.
+
+No explicit sexual behavior.
+
+No frontal chest-focused bending.
+
+No cleavage close-up.
+
+No deliberate breast framing.
+
+No chest-first movement toward camera.
+
+When lowering the body, use side, profile or rear three-quarter orientation.
+
+No repeated S-curves.
+
+No repeated hip sways.
+
+No repeated contrapposto.
+
+No repeated walking.
+
+No repeated spins.
+
+No repeated hair tosses.
+
+No repeated hand-to-face gestures.
+
+No repeated leg sweeps.
+
+No generic dance routine.
+
+No idle resets.
+
+No exaggerated acrobatics.
+
+No dangerous landing.
+
+No floor-level upward shot.
+
+No overhead camera.
+
+No extra people.
+
+No extra limbs.
+
+No outfit changes.
+
+No accessory changes.
+
+No new props.
+
+No new furniture.
+
+No new lamp.
+
+No text.
+
+No logos.
+
+No dialogue.
+
+No singing.
+
+No lip-sync.
+
+────────────────────────
+SOUND
+────────────────────────
+
+overall_soundscape:
+
+light natural room tone from the reference environment.
+
+subtle shoe contacts.
+
+small controlled foot taps.
+
+natural clothing friction.
+
+soft fabric movement.
+
+small skirt snaps where appropriate.
+
+natural hair movement.
+
+faint accessory movement where physically applicable.
+
+The final jump should have:
+
+subtle shoe separation sound,
+light clothing acceleration,
+natural skirt fabric lift,
+soft landing contact.
+
+A distinct but understated physical switch click precisely at:
+
+3.871
+7.742
+11.613
+13.548
+
+The final switch click reinforces the final music impact.
+
+No camera shutter sounds.
+
+No audience.
+
+No crowd.
+
+No voiceover.
+
+No dialogue.
+
+────────────────────────
+FINAL PRIORITY ORDER
+────────────────────────
+
+BGM structure
+→ musical accent
+→ body initiation
+→ body mechanics
+→ distinct pose architecture
+→ camera response
+→ selective ROLL
+→ camera brake
+→ lamp state
+→ editorial transition
+→ next musical event.
+
+The music drives the movement.
+
+The lamp is a rhythmic visual anchor.
+
+Every lamp state change has a musical reason.
+
+Every movement must look visibly different from the previous movement.
+
+The performance should become progressively more energetic.
+
+The final event must be clearly larger and more energetic than every earlier movement.
+
+The final 13.548-second impact must combine:
+
+MUSIC HIT
++
+TABLE LAMP ON
++
+POWERFUL UPWARD JUMP
++
+BOTH HANDS RAISED HIGH
++
+BOTH FEET FOLDED BACK TOGETHER IN THE AIR
++
+LIFTED SKIRT FROM JUMP INERTIA
++
+OPAQUE SAFETY SHORTS CLEARLY VISIBLE
++
+FULL-BODY AIRBORNE SILHOUETTE
++
+BRIEF BULLET-TIME FEEL
++
+RAPID CAMERA PULLBACK AND SLIGHT RISE
++
+CAMERA HARD LOCK AFTER LANDING.
+
+The final result should feel like a premium, cute, playful fashion commercial rather than a conventional dance video.

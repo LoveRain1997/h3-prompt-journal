@@ -1,0 +1,1234 @@
+﻿Create a 15-second high-fashion editorial commercial driven entirely by the musical timeline.
+
+REFERENCE AUTHORITY
+
+Use <Picture 1> as the SOLE visual authority for the adult lead character and the complete physical environment.
+
+Preserve exactly:
+
+the character identity,
+face,
+hair,
+body proportions,
+skin tone,
+complete outfit,
+shoes,
+all accessories,
+skirt construction,
+opaque fitted dance safety shorts underneath the skirt,
+existing table lamp,
+lamp position,
+room geometry,
+furniture,
+floor,
+walls,
+surfaces,
+set dressing,
+lighting direction,
+exposure,
+color grade,
+contrast,
+photographic realism.
+
+Do not redesign, reinterpret, restyle, relocate, replace, add or remove any character element or environmental element.
+
+Do not introduce new props.
+
+Do not introduce another lamp.
+
+Do not move the existing table lamp.
+
+Do not redesign the room.
+
+The existing table lamp in <Picture 1> is a recurring visual and rhythmic anchor.
+
+The dance safety shorts are a REQUIRED opaque underlayer underneath the skirt for the entire film.
+
+They remain fully opaque, fitted, secure and unchanged throughout the entire video.
+
+The final skirt throw may reveal the existing dance safety shorts clearly and intentionally as part of the fashion styling.
+
+The safety shorts must never disappear, become transparent, deform, slide away or be replaced.
+
+The final reveal is a fashion reveal of the existing opaque fitted dance safety shorts, never nudity or underwear exposure.
+
+────────────────────────
+VISUAL CONCEPT
+────────────────────────
+
+This is not a conventional dance video.
+
+This is a sensual editorial attitude film constructed from sharply differentiated body compositions.
+
+The performance is controlled, confident, elegant and physically precise.
+
+The sensuality comes from:
+
+long leg geometry,
+hip displacement,
+shoulder isolation,
+back-line silhouettes,
+neck length,
+controlled eye contact,
+asymmetric hand placement,
+fabric tension,
+weight transfer,
+and large skirt movement.
+
+Never use vulgar gestures.
+
+Never directly bend toward the camera with the chest facing the lens.
+
+Never create a frontal downward-bending composition that produces cleavage-focused framing.
+
+Whenever the torso lowers, the character must be oriented in profile, rear three-quarter or strong side three-quarter view so the camera does not frame the chest as the visual subject.
+
+MUSIC IS THE PRIMARY TEMPORAL DRIVER.
+
+The action is designed FROM the BGM.
+
+The camera follows the action.
+
+The lighting responds to the BGM.
+
+The table-lamp state follows the exact musical downbeats.
+
+The sequence must feel edited by music rather than choreographed independently and placed over a soundtrack afterward.
+
+────────────────────────
+MUSICAL DRIVE
+────────────────────────
+
+non_diegetic_music:
+
+Genre — dark luxury high-fashion electro editorial.
+
+BPM — 124.
+
+Time signature — 4/4.
+
+Key — E minor.
+
+Duration — exactly 15.0 seconds.
+
+One uninterrupted musical line.
+
+1 beat = approximately 0.484 seconds.
+
+1 bar = approximately 1.936 seconds.
+
+Use seven complete bars plus a three-beat final hero tail.
+
+Core musical architecture:
+
+tight gated kick,
+rounded sub-bass pulse,
+crisp syncopated hi-hats,
+dry metallic plucks,
+short percussive clicks,
+reverse swells,
+controlled low-frequency impacts,
+filtered rising noise,
+no lush pads,
+no vocals,
+no lyrics.
+
+The music must remain sparse enough for the physical impacts of the character and lamp to feel individually readable.
+
+The musical arrangement must create five major chapters:
+
+CHAPTER A — establish body rhythm
+0.000–3.871
+
+CHAPTER B — lamp-off / darker visual chapter
+3.871–7.742
+
+CHAPTER C — lamp-on / renewed energy
+7.742–11.613
+
+CHAPTER D — lamp-off / temporal suspension
+11.613–13.548
+
+CHAPTER E — final lamp-on / massive hero impact
+13.548–15.000
+
+EXACT LIGHT RHYTHM:
+
+0.000 — TABLE LAMP ON
+3.871 — TABLE LAMP OFF
+7.742 — TABLE LAMP ON
+11.613 — TABLE LAMP OFF
+13.548 — TABLE LAMP ON
+
+The light changes happen exactly on musical downbeats.
+
+No random switching.
+
+No gradual fade.
+
+No fantasy lighting.
+
+No new light source.
+
+The room remains physically identical.
+
+────────────────────────
+EDITORIAL CAMERA SYSTEM
+────────────────────────
+
+The camera behaves like a fashion photographer reacting to musical impacts.
+
+Do not use one continuous camera move.
+
+Create discrete camera states connected by fast editorial transitions.
+
+The camera may use:
+
+compressed telephoto,
+medium portrait framing,
+medium-full,
+short dolly,
+side tracking,
+reverse tracking,
+short parallax movement,
+fast reframing,
+snap zoom,
+rack focus,
+whip transition,
+foreground occlusion,
+short arc,
+controlled ROLL,
+Dutch-angle correction,
+vertical lift,
+rapid pullback,
+brief static freeze.
+
+ROLL CAMERA RULES:
+
+Use ROLL selectively as a short editorial accent.
+
+The roll is rotation of the camera around its optical axis, not a continuous orbit around the character.
+
+The roll must be brief, physically controlled and motivated by a specific body impulse or musical accent.
+
+Use only a few clear roll moments during the film.
+
+Prefer the roll during:
+
+the side-facing squat,
+the rear three-quarter transition,
+the leg sweep,
+and one sharp kinetic accent later in the sequence.
+
+Do not continuously roll the camera.
+
+Do not perform a 360-degree roll.
+
+Do not spin around the room.
+
+Do not maintain a permanently tilted horizon.
+
+After each roll, recover toward a stable horizon.
+
+The ROLL should feel like a deliberate fashion-photography gesture, not an action-movie effect.
+
+Do not continuously orbit the room.
+
+Do not slowly creep toward the character.
+
+Do not endlessly zoom away.
+
+Do not use top-down views.
+
+Do not use floor-level wide-angle views.
+
+Do not constantly show the same frontal composition.
+
+The camera should repeatedly change its relationship to the body:
+
+profile,
+three-quarter rear,
+three-quarter front,
+side detail,
+upper-body compression,
+leg-focused medium-full,
+then finally full-body.
+
+Each new camera state must be motivated by the new physical action.
+
+────────────────────────
+BODY / MOVEMENT LANGUAGE
+────────────────────────
+
+Use real body mechanics:
+
+support foot →
+weight shift →
+pelvic response →
+torso counterbalance →
+shoulder isolation →
+arm extension →
+hand finishing point.
+
+Every action has:
+
+INITIATION →
+TRAVEL →
+ACCENT →
+BRAKE →
+RELEASE.
+
+No idle resetting.
+
+No repeated pose.
+
+No two consecutive moments based on the same body shape.
+
+Avoid repeatedly using contrapposto.
+
+Avoid repeated hip sway.
+
+Avoid repeated hair tossing.
+
+Avoid repeated walking toward camera.
+
+Avoid repeated turning in place.
+
+Avoid repeated hand-to-hair gestures.
+
+Avoid repeated waist gestures.
+
+Avoid generic dance choreography.
+
+The ten movement moments must visibly differ in body architecture.
+
+All motion must remain grounded and physically plausible.
+
+The existing outfit construction must remain unchanged during all movement.
+
+────────────────────────
+[0.0–1.3]
+MOMENT 01 — REVERSE WEIGHT SHIFT
+────────────────────────
+
+Start directly from <Picture 1>.
+
+The character begins with the upper body relatively still.
+
+The supporting foot anchors.
+
+The opposite heel lifts subtly.
+
+Weight travels backward through the pelvis.
+
+The ribcage remains stable while the lower body shifts beneath it.
+
+One arm extends diagonally behind the body's center line.
+
+The opposite hand stays close to the existing garment structure.
+
+This creates a sculptural asymmetry without repeating the previous S-curve pose.
+
+CAMERA:
+
+Begin at medium-full from a three-quarter side position.
+
+A short lateral tracking movement follows the weight transfer.
+
+At the main physical accent, introduce a brief controlled clockwise ROLL.
+
+The camera immediately begins recovering toward a level horizon.
+
+At approximately 1.0 second:
+
+the lifted heel touches down.
+
+The pelvis completes the weight shift.
+
+The arm reaches its finishing point.
+
+CAMERA BRAKE.
+
+BODY BRAKE.
+
+A short editorial stillness.
+
+Immediately release into the next moment.
+
+────────────────────────
+[1.3–2.6]
+MOMENT 02 — ELBOW FRAME
+────────────────────────
+
+On the next musical accent, sharply change the upper-body architecture.
+
+One elbow rises outward.
+
+The forearm creates a graphic frame beside the head without touching or covering the face.
+
+The opposite shoulder rotates backward.
+
+The torso remains upright.
+
+The head turns slightly away from the lens, then returns toward it.
+
+CAMERA:
+
+Move from a side profile toward three-quarter front.
+
+Use a short focal compression change rather than a large physical camera move.
+
+Use a brief Dutch-angle displacement only during the elbow travel.
+
+Immediately restore the horizon when the elbow reaches its final position.
+
+Rack focus:
+
+foreground arm →
+face →
+eyes.
+
+At the metallic pluck accent:
+
+the elbow reaches its final graphic position.
+
+HARD BRAKE.
+
+The pose should look like a fashion still, not a generic dance step.
+
+────────────────────────
+[2.6–3.871]
+MOMENT 03 — SIDE-FACING SQUAT / EXTENDED LEG LINE
+────────────────────────
+
+Create the new side-facing squat movement.
+
+The character descends by bending the supporting knee.
+
+The hips lower clearly and intentionally.
+
+The torso remains lifted and strongly oriented SIDEWAYS relative to the camera.
+
+The chest never turns frontally toward the lens.
+
+One leg becomes the stable support leg.
+
+The opposite leg extends diagonally outward, creating a long graphic leg line.
+
+One hand travels down beside the OUTER line of the existing skirt.
+
+The opposite arm stretches behind the torso to counterbalance the descent.
+
+The movement must clearly travel:
+
+standing height →
+controlled lowering →
+low stable squat →
+brief body brake.
+
+The skirt follows the descent with natural physical fabric movement.
+
+Do not turn the movement into a floor pose.
+
+Do not bend forward toward the camera.
+
+Do not create an explicit leg-spread composition.
+
+CAMERA:
+
+Remain in strong side three-quarter view.
+
+The camera drops slightly with the hips.
+
+As the body reaches the lowest point, introduce a short controlled counterclockwise ROLL.
+
+The roll is small enough to preserve the body silhouette and face readability.
+
+Immediately correct the horizon.
+
+At the musical sub hit:
+
+the extended leg completes its diagonal.
+
+The supporting knee finishes its compression.
+
+The hips stop descending.
+
+CAMERA HARD BRAKE.
+
+BODY HARD BRAKE.
+
+Hold only briefly.
+
+At exactly 3.871:
+
+MUSICAL DOWNBEAT.
+
+TABLE LAMP → OFF.
+
+Use the lamp switch as the first major visual cut.
+
+────────────────────────
+[3.871–5.806]
+MOMENT 04 — RISE INTO REAR THREE-QUARTER SILHOUETTE
+────────────────────────
+
+The lamp has just switched OFF.
+
+Do not create a blackout.
+
+Use the remaining room illumination naturally.
+
+Begin from the low position of MOMENT 03.
+
+The character rises through the supporting foot.
+
+The hips rise first.
+
+The torso follows with controlled counterbalance.
+
+The extended leg retracts underneath the body.
+
+During the rise, the character transitions into a strong rear three-quarter stance.
+
+The back shoulder becomes closer to camera.
+
+The front leg extends.
+
+The head turns enough for the eye line to reconnect with the lens.
+
+One arm drops vertically.
+
+The other arm extends diagonally across the torso.
+
+The resulting silhouette must be clearly different from MOMENT 03.
+
+CAMERA:
+
+Begin behind the shoulder.
+
+Track laterally while slightly rising with the body.
+
+Allow the shoulder to briefly occlude the lens.
+
+When the face reappears:
+
+RACK FOCUS:
+
+shoulder edge →
+eye.
+
+Introduce a brief counterclockwise ROLL during the transition into the rear three-quarter silhouette.
+
+Immediately return to level framing.
+
+At the musical accent:
+
+the body completes the rise.
+
+The extended leg stops.
+
+CAMERA HARD BRAKE.
+
+The lamp remains OFF.
+
+────────────────────────
+[5.806–7.742]
+MOMENT 05 — LEG SWEEP
+────────────────────────
+
+Introduce a completely different lower-body movement.
+
+The supporting foot stays planted.
+
+The opposite leg sweeps backward in a controlled semicircular path.
+
+The movement originates from the hip.
+
+The torso rotates only slightly to counterbalance the leg.
+
+This is not a spin.
+
+The body remains fundamentally in place.
+
+The skirt follows the leg with delayed fabric motion.
+
+The fabric creates a long curved trajectory.
+
+The arms settle into an asymmetric composition different from all previous moments.
+
+CAMERA:
+
+Track the moving leg from side to rear three-quarter.
+
+Use medium-full framing.
+
+The lens remains long enough to compress the garment movement.
+
+During the strongest portion of the leg sweep, introduce a brief controlled clockwise ROLL.
+
+As the sweeping leg returns underneath the body, immediately correct the horizon.
+
+At the final hat burst:
+
+the sweeping leg returns to stable support.
+
+The body catches the remaining momentum.
+
+The skirt completes its delayed movement.
+
+HARD BRAKE.
+
+At exactly 7.742:
+
+TABLE LAMP → ON.
+
+Musical downbeat and light ON occur exactly together.
+
+────────────────────────
+[7.742–9.677]
+MOMENT 06 — ARM / BACK RELEASE
+────────────────────────
+
+The lamp comes back ON.
+
+The entire room instantly regains the visual presence of the original reference lighting.
+
+Do not change the room.
+
+The character now uses a more open body line.
+
+One arm reaches diagonally upward and backward.
+
+The opposite arm extends downward and outward.
+
+The shoulders form a strong opposing axis.
+
+The torso stays in three-quarter orientation.
+
+The chest is never presented as a frontal cleavage close-up.
+
+The pelvis remains stable while the shoulders articulate independently.
+
+CAMERA:
+
+Start close to the hands.
+
+Track:
+
+hand →
+forearm →
+shoulder →
+neck →
+face.
+
+Use a controlled vertical camera rise.
+
+A very subtle clockwise ROLL may occur during the strongest upward arm extension, but it must remain brief.
+
+Recover immediately to a level horizon.
+
+At the bright metallic accent:
+
+the upper arm reaches its highest point.
+
+HARD BRAKE.
+
+Direct eye contact.
+
+────────────────────────
+[9.677–11.613]
+MOMENT 07 — KNEE DRIVE / CLOTHING SNAP
+────────────────────────
+
+Create a completely different kinetic event.
+
+The character drives one knee forward and slightly across the body's center line.
+
+The supporting leg absorbs the movement.
+
+The upper body counters in the opposite direction.
+
+No jump.
+
+No kick toward camera.
+
+No explicit leg spread.
+
+The skirt reacts to the knee drive and produces a short natural fabric snap.
+
+The fabric acceleration is followed by a brief delayed settling response.
+
+CAMERA:
+
+Track diagonally across the lower body.
+
+Use medium-full framing.
+
+Then perform a fast upward reframe to catch the face.
+
+At the strongest knee acceleration, introduce one very brief clockwise ROLL.
+
+Immediately correct the horizon as the knee retracts.
+
+At 10.645:
+
+SUB HIT.
+
+At 11.129:
+
+rapid hi-hat burst.
+
+The knee retracts.
+
+The supporting leg completes the catch.
+
+The skirt finishes the snap.
+
+At 11.613:
+
+MAJOR MUSICAL DOWNBEAT.
+
+TABLE LAMP → OFF.
+
+────────────────────────
+[11.613–12.25]
+MOMENT 08 — TEMPORAL VACUUM / STILL IMAGE
+────────────────────────
+
+The lamp switches OFF.
+
+Music strips down dramatically.
+
+The character becomes almost completely still for a brief controlled interval.
+
+No new pose is introduced yet.
+
+This is intentional negative space.
+
+Retain the body architecture from MOMENT 07.
+
+The head remains slightly turned.
+
+One leg is placed forward.
+
+Both arms remain away from the torso so the silhouette is readable.
+
+CAMERA:
+
+Become almost static.
+
+Keep the horizon level.
+
+Allow only a very small forward parallax.
+
+No roll.
+
+No zoom.
+
+No orbit.
+
+No reframing.
+
+The image should feel as though time has slowed without actually using slow motion.
+
+No slow-motion effect.
+
+No artificial frame interpolation.
+
+The stillness exists because the BGM has temporarily removed most of its rhythmic density.
+
+────────────────────────
+[12.25–13.548]
+MOMENT 09 — SIDE-FACING SKIRT PRELOAD
+────────────────────────
+
+The final physical event begins from the musical riser.
+
+The character turns into a strong side three-quarter orientation relative to the camera.
+
+The torso remains upright.
+
+Do not bend the chest toward the lens.
+
+The knees and hips compress slightly.
+
+The center of gravity lowers through the legs rather than through a forward fold of the upper body.
+
+Both hands descend to the EXISTING LEFT AND RIGHT SIDES of the skirt.
+
+The hands firmly grip the existing skirt fabric.
+
+Do NOT open the skirt yet.
+
+Do NOT reveal the safety shorts early.
+
+The body creates a compact explosive PRELOAD.
+
+The elbows stay slightly compressed.
+
+The shoulders and forearms load inward for a fraction of a second.
+
+The fabric becomes visibly tensioned between the hands and the skirt structure.
+
+The character prepares to THROW the skirt outward on the final downbeat.
+
+CAMERA:
+
+Move from medium toward medium-full.
+
+Move slightly backward to create enough spatial room for the final expansion.
+
+Use a short lateral adjustment.
+
+A very small controlled clockwise ROLL may accompany the preload.
+
+Recover to a level horizon before 13.548.
+
+At approximately 13.300:
+
+the musical riser reaches maximum tension.
+
+The character holds the compact preload.
+
+Both hands maintain a firm grip on the existing skirt sides.
+
+The skirt remains closed.
+
+The camera is completely prepared for the final explosive release.
+
+Do not start the final skirt throw early.
+
+At exactly 13.548 seconds:
+
+MOMENT 10 begins.
+
+────────────────────────
+[13.548–15.0]
+MOMENT 10 — MASSIVE SKIRT THROW / HERO BULLET-TIME
+────────────────────────
+
+At the EXACT musical impact:
+
+TABLE LAMP → ON.
+
+This is the largest lighting event in the entire film.
+
+At the same exact musical impact:
+
+the character makes the largest physical movement of the entire sequence.
+
+The final skirt movement is NOT a slow opening.
+
+It is an explosive THROW.
+
+ACTION CHAIN:
+
+GRIP →
+PRELOAD →
+SHARP OUTWARD THROW →
+FABRIC WHIP →
+FULL SILHOUETTE EXPANSION →
+HARD BODY BRAKE →
+NATURAL FABRIC SETTLE.
+
+Both hands grip the two existing sides of the skirt.
+
+The elbows and shoulders briefly load inward.
+
+The knees and hips create a compact preload.
+
+At the exact musical impact:
+
+BOTH HANDS SNAP OUTWARD with force.
+
+Do not slowly pull the skirt apart.
+
+Do not gently spread the fabric.
+
+The hands perform a decisive outward THROW.
+
+The arms travel rapidly from the compressed preload into a wide open position.
+
+The wrists and hands finish the throw with a natural release.
+
+The skirt receives a strong outward impulse from the hands.
+
+The fabric WHIPS outward with visible inertia.
+
+The skirt edges lag slightly behind the hands for a moment before reaching maximum expansion.
+
+The two sides of the skirt travel outward in broad dynamic arcs.
+
+The central opening expands rapidly.
+
+The opaque fitted DANCE SAFETY SHORTS underneath the skirt become clearly visible at the peak of the throw.
+
+The shorts remain fully opaque, fitted, stable and secure.
+
+This is a fully clothed fashion reveal.
+
+No nudity.
+
+No underwear exposure.
+
+No transparent fabric.
+
+No wardrobe malfunction.
+
+No delicate curtain-like opening.
+
+The reveal must unmistakably read as:
+
+A FORCEFUL SKIRT THROW
++
+A CONTROLLED FASHION REVEAL.
+
+BODY:
+
+The lower body simultaneously extends into a long elegant stance.
+
+The pelvis stabilizes immediately after the throw.
+
+The shoulders open strongly.
+
+The arms reach their widest point.
+
+The head and face remain composed.
+
+The human body becomes the stable central axis while the skirt continues traveling outward through momentum.
+
+Create the contrast:
+
+STABLE BODY
++
+EXPLOSIVE FABRIC MOTION.
+
+CAMERA:
+
+Begin the final movement from medium-full.
+
+As the hands initiate the outward throw:
+
+the camera rapidly pulls backward while slightly rising.
+
+Use a short controlled arc rather than a straight generic zoom-out.
+
+The camera movement and skirt throw occur together.
+
+Do not begin the camera retreat too early.
+
+The camera should visibly react to the same musical impact that launches the skirt.
+
+At the moment of maximum fabric expansion, introduce a BULLET-TIME FEEL.
+
+The perceived temporal density momentarily stretches around the peak of motion.
+
+The character remains the central stable axis.
+
+The hands and arms have completed their primary throwing action.
+
+The skirt, hair and garment edges retain visible physical inertia.
+
+Do not use literal slow motion.
+
+Do not freeze individual frames unnaturally.
+
+Do not freeze the skirt mechanically.
+
+The effect should feel like an editorial time-burst captured at the peak of a powerful movement.
+
+At maximum expansion:
+
+TABLE LAMP IS ON.
+
+ROOM IS FULLY READABLE.
+
+THE ENTIRE BODY + SKIRT SILHOUETTE + OPAQUE SAFETY SHORTS ARE VISIBLE.
+
+At approximately 13.9:
+
+the major body movement stops.
+
+The throwing action is complete.
+
+The arms have reached the final open position.
+
+The skirt continues a brief natural settling motion.
+
+The fabric must demonstrate delayed physical inertia after the hands stop.
+
+The camera completes its final retreat.
+
+At 14.1:
+
+CAMERA HARD LOCK.
+
+The character has reached the campaign hero composition.
+
+────────────────────────
+15.0 HERO END
+────────────────────────
+
+Maintain the final full-body composition through 15.0 seconds.
+
+Camera completely locked.
+
+No further zoom.
+
+No orbit.
+
+No reframing.
+
+No new pose.
+
+The character maintains the large open-skirt fashion silhouette.
+
+The opaque dance safety shorts remain clearly visible beneath the opened skirt.
+
+Hair and fabric finish their natural settling.
+
+After the first approximately 0.5 seconds:
+
+near-perfect stillness.
+
+The final frame must resemble a premium fashion campaign still captured immediately after a massive editorial motion burst.
+
+The existing table lamp remains ON.
+
+No environmental transformation.
+
+────────────────────────
+LIGHTING SYSTEM
+────────────────────────
+
+The existing table lamp is part of the EDITORIAL EDITING LANGUAGE.
+
+Exact state timeline:
+
+0.000 — ON
+3.871 — OFF
+7.742 — ON
+11.613 — OFF
+13.548 — ON
+
+Every transition occurs exactly on a musical downbeat.
+
+The lamp must never flicker randomly.
+
+Do not fade.
+
+Do not pulse.
+
+Do not change color.
+
+Do not change intensity beyond the natural physical difference between ON and OFF.
+
+Do not create additional cinematic lights.
+
+Do not repaint the room with artificial colored illumination.
+
+The lamp exists in the original reference and remains in the same physical location.
+
+The audience should begin to associate the lamp's state with the progression of the music.
+
+The final ON event at 13.548 is the visual punctuation that releases the final hero moment.
+
+────────────────────────
+EDITORIAL CUT SYSTEM
+────────────────────────
+
+Use the following transitions selectively:
+
+shoulder occlusion,
+hair-edge wipe,
+fast lateral whip,
+snap zoom,
+rack focus,
+body-line match,
+brief strobe blink,
+short Dutch-angle correction,
+controlled ROLL accent,
+hard camera brake,
+rapid pullback.
+
+Every transition must be motivated by a specific musical accent or body impulse.
+
+Do not use all transition types mechanically.
+
+Do not create an effect montage.
+
+The camera and editing must remain elegant and premium.
+
+────────────────────────
+PERFORMANCE RULES
+────────────────────────
+
+Fully clothed adult fashion performance.
+
+Confident.
+
+Sensual.
+
+Controlled.
+
+Elegant.
+
+No explicit sexual behavior.
+
+No direct frontal chest-focused bending.
+
+No chest-first movement toward the lens.
+
+No cleavage close-up.
+
+No camera deliberately framing breasts.
+
+When lowering the body, use side, rear three-quarter or profile orientation.
+
+No repeated S-curves.
+
+No repeated hair sweep.
+
+No repeated contrapposto.
+
+No repeated walking pose.
+
+No repeated spin.
+
+No repeated waist gesture.
+
+No repetitive hand-to-face gesture.
+
+No generic dance routine.
+
+No idle resets.
+
+No exaggerated acrobatics.
+
+No floor-level upward shot.
+
+No overhead camera.
+
+No extra people.
+
+No extra limbs.
+
+No outfit changes.
+
+No accessory changes.
+
+No new props.
+
+No new furniture.
+
+No new lamp.
+
+No text.
+
+No logos.
+
+No dialogue.
+
+No singing.
+
+No lip-sync.
+
+────────────────────────
+SOUND
+────────────────────────
+
+overall_soundscape:
+
+Dry natural room tone from the reference environment.
+
+Controlled foot contacts.
+
+Subtle shoe movement.
+
+Natural clothing friction.
+
+Short skirt-fabric snaps.
+
+A stronger but still natural fabric WHIP at the final skirt throw.
+
+Natural hair movement.
+
+Faint accessory movement where physically applicable.
+
+A distinct but understated physical switch click precisely at:
+
+3.871
+7.742
+11.613
+13.548
+
+The switch click should reinforce the musical downbeat without becoming exaggerated.
+
+The room ambience remains continuous.
+
+No camera shutter sounds.
+
+No audience.
+
+No crowd.
+
+No voiceover.
+
+No dialogue.
+
+────────────────────────
+FINAL PRIORITY ORDER
+────────────────────────
+
+BGM structure
+→ musical accent
+→ body initiation
+→ body mechanics
+→ pose architecture
+→ camera response
+→ controlled ROLL when specifically motivated
+→ camera brake
+→ lamp state
+→ editorial transition
+→ next musical event.
+
+The music is never an afterthought.
+
+The table lamp is not decorative background.
+
+It is a rhythmic visual anchor.
+
+Every lamp state change must have a musical reason.
+
+The final skirt action is a FORCEFUL THROW, not a slow opening.
+
+The hands must visibly initiate the movement.
+
+The skirt must visibly lag behind the hands through physical inertia.
+
+The final skirt throw must be significantly larger than all previous movements.
+
+The final reveal of the opaque fitted dance safety shorts must be unmistakably intentional and fully clothed.
+
+The final 13.548-second impact must combine:
+
+MUSIC HIT
++
+TABLE LAMP ON
++
+FORCEFUL TWO-HANDED SKIRT THROW
++
+MAXIMUM SKIRT BLOOM
++
+FULL-BODY SILHOUETTE
++
+OPAQUE SAFETY SHORTS CLEARLY VISIBLE
++
+BULLET-TIME FEEL
++
+CAMERA RAPID PULLBACK
++
+CAMERA HARD LOCK.
+
+The film then resolves into the cleanest and most stable hero frame from 14.1–15.0 seconds.
