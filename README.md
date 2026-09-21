@@ -34,6 +34,7 @@ The `prompt.md` files are designed to be pasted directly into H3. The `README.md
 | [008](./case-studies/2026-08-first-person-finger-controlled-dance/) | Single-Image First-Person Finger-Controlled Dance | 2026-08 | published |
 | [009](./case-studies/2026-09-three-person-prank-freeze-gag-cos-swap/) | Reverse-Engineered Three-Person Prank with Freeze-Frame Gags + Skin-Only Cos Swap | 2026-09 | published |
 | [010](./case-studies/2026-09-snap-lock-editorial-reveal/) | Audio-Synced Snap-Lock Editorial Reveal (Two-State Camera, Zero Appearance Text) | 2026-09 | published |
+| [011](./case-studies/2026-09-song-style-classical-dance-six-segment/) | Six-Segment Song-Style Shen-Yun Water-Sleeve Dance (Hand-Off Hero Ladder, Non-Restarting Music) | 2026-09 | published |
 
 ## Companion
 
