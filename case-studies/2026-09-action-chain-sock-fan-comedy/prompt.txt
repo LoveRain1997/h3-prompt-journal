@@ -1,0 +1,624 @@
+Use IMAGE 1 as the complete permanent visual reference.
+Use AUDIO 1 as the complete timing, rhythm, and musical accent reference.
+Create a realistic live-action cinematic comedic dance performance.
+The character is an elegant ancient-style Chinese female protagonist.
+The performance is one continuous physical action sequence. The choreography is grounded in realistic human movement, smooth hand trajectories, realistic cloth and sock behavior, clear hand-to-object interaction, stable left/right foot identity, and continuous body mechanics.
+
+================================================== CORE VISUAL IDENTITY ==================================================
+
+IMAGE 1 permanently defines the character.
+Preserve:
+same face, same facial structure, same hairstyle, same costume, same costume construction, same body proportions, same apparent height, same skin appearance, same lighting, same environment, same camera perspective, same overall photographic realism.
+The original character remains visually recognizable throughout the entire performance.
+The comedy comes from the choreography and the character's restrained reaction.
+The face remains elegant and visually stable.
+Her emotional performance is expressed primarily through:
+eye direction, eye focus, slight eye narrowing, small changes of gaze, body timing, and restrained hand gestures.
+The costume continues moving naturally with the body.
+
+================================================== IMAGE 1 — PERMANENT LEFT / RIGHT FOOT ANCHOR ==================================================
+
+Use the character's anatomical left and right sides.
+LEFT FOOT and RIGHT FOOT are permanent anatomical identities.
+IMAGE 1 establishes the exact starting foot state.
+LEFT FOOT:
+The character's anatomical LEFT FOOT is the supporting foot in IMAGE 1.
+The LEFT FOOT is touching the floor.
+The LEFT FOOT is completely bare.
+RIGHT FOOT:
+The character's anatomical RIGHT FOOT is the raised foot in IMAGE 1.
+The RIGHT FOOT is lifted from the floor.
+The RIGHT FOOT is wearing the visible white sock shown in IMAGE 1.
+The RIGHT FOOT is not wearing footwear.
+The white sock belongs to the RIGHT FOOT.
+The RIGHT FOOT is the only foot whose sock will be removed.
+The starting visual relationship is permanently:
+LEFT FOOT = GROUND + BARE FOOT
+RIGHT FOOT = RAISED + WHITE SOCK.
+This IMAGE 1 arrangement is the permanent anatomical reference.
+The character's anatomical left and right feet remain the same feet throughout the entire performance.
+The white sock begins associated with the RIGHT FOOT.
+After the sock is removed:
+LEFT FOOT = BARE FOOT
+RIGHT FOOT = BARE FOOT.
+This relationship remains unchanged through landing, weight shifts, stepping, fanning, and dancing.
+
+================================================== CORE ACTION STORY ==================================================
+
+The complete physical story follows this exact sequence:
+IMAGE 1 STARTING POSE → RIGHT FOOT RAISED WITH WHITE SOCK → LEFT FOOT SUPPORTING BARE → BOTH HANDS REMOVE THE WHITE SOCK → RIGHT FOOT BECOMES BARE → SOCK REMAINS IN ONE HAND → LOOK AT SOCK → BRING SOCK TO NOSE → ONE SHORT SNIFF → SOCK MOVES SLIGHTLY AWAY → EYES SHOW DISPLEASURE → OTHER HAND COVERS MOUTH AND LOWER FACE → SOCK-HOLDING HAND PREPARES → DIRECT THROW TOWARD CAMERA → FULL ARM FOLLOW-THROUGH → SOCK FLIES THROUGH FOREGROUND → SOCK LIGHTLY TOUCHES CAMERA LENS → SOCK REBOUNDS → SOCK FALLS → ONLY THEN DOES THE RIGHT FOOT DESCEND → RIGHT BARE FOOT LANDS BESIDE LEFT BARE FOOT → TWO-FOOT BAREFOOT STANCE → THROWING ARM BECOMES STABLE AIR-FAN ARM → PALM WAVES LEFT AND RIGHT → RHYTHMIC LOWER-BODY DANCE → FASTER PALM-WAVE SECTION → FINAL LARGE PALM WAVE → FINAL FREEZE.
+The entire performance follows this physical order.
+
+================================================== STARTING POSE ==================================================
+
+Begin exactly from IMAGE 1.
+The anatomical LEFT FOOT is planted on the floor.
+The LEFT FOOT is completely bare.
+The anatomical RIGHT FOOT is raised.
+The RIGHT FOOT is wearing the visible white sock.
+The RIGHT FOOT has no shoe or other footwear.
+The right knee is bent according to IMAGE 1.
+The right lower leg remains raised.
+The right ankle and white sock remain clearly readable.
+The torso stays upright.
+The pelvis remains naturally balanced above the LEFT FOOT.
+The head stays in the original position.
+The character maintains the elegant body line of IMAGE 1.
+The hands are positioned naturally so they can work together to remove the sock.
+The opening pose is held naturally until the first useful musical accent in AUDIO 1.
+
+================================================== STATE 1 — TWO-HAND SOCK REMOVAL ==================================================
+
+The character removes the white sock from the raised RIGHT FOOT using BOTH HANDS together.
+Both hands naturally participate in the sock-removal action.
+The two hands coordinate as one continuous human action.
+The sock is removed smoothly and naturally from the raised RIGHT FOOT.
+The action is quick, fluid, continuous, and physically believable.
+The RIGHT FOOT remains raised during the removal.
+The LEFT FOOT remains firmly planted on the floor.
+The LEFT FOOT remains completely bare.
+Treat the entire two-hand sock-removal action as one natural continuous behavior.
+At the completion of the action:
+the sock is completely removed from the RIGHT FOOT.
+The RIGHT FOOT is completely bare.
+The LEFT FOOT remains completely bare.
+
+================================================== STATE 2 — SOCK TRANSFERS INTO ONE HAND ==================================================
+
+Immediately after the two-hand removal:
+one hand naturally gathers and holds the removed sock.
+The sock remains visibly present.
+The other hand becomes free.
+The RIGHT FOOT remains raised and completely bare.
+The LEFT FOOT remains planted and completely bare.
+The visual state is:
+RIGHT FOOT = RAISED + BARE
+LEFT FOOT = GROUND + BARE
+SOCK = IN ONE HAND.
+Hold this state briefly and clearly.
+
+================================================== STATE 3 — LOOK AT THE SOCK ==================================================
+
+The character now examines the removed sock.
+The same hand continues holding the sock.
+The head turns slightly toward the sock.
+The eyes focus on the sock.
+The hand raises the sock slightly toward the character.
+The forearm bends naturally.
+The sock stays clearly visible.
+The character gives the sock a short visual inspection.
+The bare RIGHT FOOT remains raised.
+The bare LEFT FOOT remains planted.
+The torso remains upright and balanced.
+
+================================================== STATE 4 — SOCK MOVES TOWARD THE NOSE ==================================================
+
+On the next musical cue:
+the same hand brings the sock closer to the face.
+The forearm bends inward.
+The elbow moves naturally toward the torso.
+The sock travels upward and inward.
+The head leans slightly toward the sock.
+The sock stops close to the nose.
+A small natural gap remains between fabric and face.
+The character holds the sock with one hand.
+The opposite hand remains free.
+The lifted bare RIGHT FOOT remains suspended.
+The bare LEFT FOOT remains planted.
+
+================================================== STATE 5 — ONE SHORT SNIFF ==================================================
+
+The character performs one short deliberate sniff.
+The sock remains close to the nose.
+The head stays near the sock.
+The eyes remain focused on the sock.
+The action is brief:
+SOCK CLOSE TO NOSE → SHORT INHALATION → TINY PAUSE.
+The sniff feels like a quick comedic inspection.
+The facial structure remains unchanged.
+
+================================================== STATE 6 — REACTION ==================================================
+
+Immediately after the sniff:
+the sock moves slightly away from the nose.
+The character pauses for a fraction of a beat.
+The eyes react first.
+The eyes narrow slightly.
+The gaze briefly returns to the sock.
+Then the eyes look toward the camera.
+The visual message is restrained playful displeasure.
+The reaction is carried through:
+eye focus, slight narrowing, gaze direction, and timing.
+The mouth remains visually consistent with the original face.
+The character's elegant appearance remains intact.
+
+================================================== STATE 7 — MOUTH-COVERING HAND ==================================================
+
+The free hand now rises toward the mouth and lower face.
+The arm bends naturally.
+The hand travels upward from below.
+The palm and fingers settle lightly over the mouth and lower face.
+The nose bridge and eyes remain visible.
+The upper face remains expressive.
+The hand stays comfortably near the face.
+The fingers remain naturally grouped.
+The wrist remains relaxed.
+This hand now becomes the mouth-covering hand.
+The sock remains in the opposite hand.
+The sock-hand and mouth-hand have clearly separated roles.
+
+================================================== STATE 8 — THROW PREPARATION ==================================================
+
+After the reaction:
+the sock-holding hand looks at the sock once more.
+The eyes briefly communicate a restrained:
+"Really?"
+The mouth-covering hand remains near the mouth.
+The sock-holding arm begins to move backward.
+The elbow bends.
+The shoulder rotates naturally.
+The torso makes a small preparatory rotation.
+The body weight remains centered over the LEFT FOOT.
+The LEFT FOOT remains firmly planted and completely bare.
+The RIGHT FOOT remains raised and completely bare.
+The sock moves backward with the hand.
+This creates a clear throwing preparation.
+
+================================================== STATE 9 — DIRECT THROW TOWARD CAMERA ==================================================
+
+On a strong audio accent:
+the sock-holding arm drives forward.
+The shoulder initiates the movement.
+The upper arm moves forward.
+The elbow opens.
+The forearm accelerates.
+The wrist follows the forward path.
+The hand travels directly toward the camera.
+The fingers open naturally at the release point.
+The sock leaves the hand.
+The sock becomes a separate physical object.
+The arm continues forward after release.
+The elbow reaches an open extended position.
+The forearm and hand complete a natural throwing follow-through.
+The throwing arm ends in a long forward extension toward the camera.
+The RIGHT FOOT remains raised and bare.
+The LEFT FOOT remains planted and bare.
+
+================================================== STATE 10 — SOCK FLIGHT ==================================================
+
+The sock travels continuously from the hand toward the camera.
+Its distance from the camera decreases smoothly.
+The sock grows larger as it approaches the foreground.
+The fabric rotates naturally through the air.
+The folds and edges respond to the movement.
+The entire sock remains visible as a physical fabric object.
+Its trajectory is direct and readable.
+The character remains behind the flying sock.
+The RIGHT FOOT remains raised and bare.
+The LEFT FOOT remains grounded and bare.
+The mouth-covering hand remains near the face.
+The throwing arm remains extended after release.
+
+================================================== STATE 11 — LENS CONTACT ==================================================
+
+The sock reaches the camera.
+The fabric lightly contacts the lens.
+The sock briefly fills the immediate foreground.
+The fabric compresses softly at the moment of contact.
+The contact is light and comedic.
+The camera viewpoint remains steady.
+The environment, lighting, and perspective continue from IMAGE 1.
+The sock is now the closest object to the lens.
+The RIGHT FOOT remains raised and bare.
+The LEFT FOOT remains bare.
+
+================================================== STATE 12 — REBOUND AND FALL ==================================================
+
+After lens contact:
+the sock gently rebounds away from the lens.
+The rebound naturally angles slightly backward and downward.
+The fabric relaxes after impact.
+The sock rotates as gravity takes over.
+The sock begins falling through the foreground.
+The falling path remains visible.
+The sock continues existing as the same physical object.
+The complete physical trajectory is:
+HAND → FORWARD THROW → CAMERA APPROACH → LENS CONTACT → SMALL REBOUND → DOWNWARD FALL.
+During this entire rebound-and-fall transition:
+the RIGHT FOOT remains raised and bare.
+The LEFT FOOT remains planted and bare.
+
+================================================== STATE 13 — RIGHT FOOT DESCENT ==================================================
+
+Only now does the lower-body state change.
+After the sock has visibly reached the camera and begun its downward fall:
+the RIGHT FOOT begins descending.
+The hip lowers naturally.
+The right knee gradually opens.
+The right lower leg travels downward.
+The right ankle rotates naturally.
+The bare RIGHT FOOT moves toward the floor.
+The LEFT FOOT continues providing balance.
+The LEFT FOOT remains completely bare.
+The pelvis shifts naturally from single-leg support toward two-leg support.
+The torso remains upright.
+The head maintains its normal relationship to the torso.
+The body performs a natural transition from raised-foot balance to a stable two-foot barefoot stance.
+
+================================================== STATE 14 — RIGHT BARE FOOT LANDING ==================================================
+
+The RIGHT FOOT approaches the same floor plane as the LEFT FOOT.
+The right sole rotates toward the ground.
+The right heel approaches first.
+The right forefoot settles naturally.
+The right ankle makes a subtle adjustment.
+The right knee softens slightly.
+The pelvis settles naturally between both legs.
+Weight becomes distributed between:
+BARE RIGHT FOOT and BARE LEFT FOOT.
+The RIGHT FOOT is completely bare.
+The LEFT FOOT is completely bare.
+The final two-foot stance is:
+RIGHT FOOT = BARE
+LEFT FOOT = BARE.
+Both feet are now on the floor.
+The character remains at the same natural body scale.
+The body settles only as much as a real person would settle during a normal landing.
+A brief musical beat establishes the new two-foot stance.
+
+================================================== STATE 15 — TWO-FOOT VISUAL ANCHOR AFTER LANDING ==================================================
+
+At the first stable moment after landing, the lower-body state is clearly established again.
+The anatomical RIGHT FOOT is visibly bare.
+The anatomical LEFT FOOT is visibly bare.
+Both feet are continuous with the barefoot lower-body state established by the current action.
+This is the permanent lower-body configuration for the remainder of the performance:
+LEFT FOOT = BARE RIGHT FOOT = BARE.
+During later skirt movement and dance movement, the lower body continues to read from this established configuration.
+The skirt naturally follows the legs and body, while both bare feet remain part of the same continuous character state.
+
+================================================== STATE 16 — THROWING ARM BECOMES STABLE AIR-FAN ARM ==================================================
+
+The arm that threw the sock remains extended toward the camera.
+The shoulder remains stable.
+The upper arm remains in the established forward position.
+The elbow remains open and stable.
+The forearm remains extended toward the camera.
+The arm forms a stable support for the hand.
+The arm itself remains visually steady.
+The air-fanning action comes from the wrist and hand.
+The hand opens naturally.
+The palm rotates into a vertical flat-palm orientation.
+The fingers remain naturally aligned.
+The wrist becomes the primary moving joint.
+The palm becomes the main moving element.
+The transition is:
+THROW FOLLOW-THROUGH → EXTENDED STABLE ARM → OPEN PALM → WRIST-LED PALM WAVE.
+The shoulder, upper arm, elbow, and forearm remain visually steady.
+Only the wrist, hand, and palm perform the fanning motion.
+The RIGHT FOOT remains bare.
+The LEFT FOOT remains bare.
+
+================================================== STATE 17 — FIRST PALM FAN ==================================================
+
+On the next musical beat:
+the palm makes a short horizontal wave.
+The wrist guides the palm smoothly from one side toward the other.
+The hand moves laterally.
+The forearm remains in the same forward position.
+The elbow remains stable.
+The shoulder remains stable.
+The upper arm remains stable.
+The movement is concentrated in the wrist and hand.
+The palm stays around the same height.
+The fingers remain open and naturally aligned.
+The movement resembles gently waving unpleasant air away with the palm.
+The arm maintains a calm, extended, stable silhouette.
+At the end of the palm wave:
+brief rhythmic settlement of the hand.
+
+================================================== STATE 18 — SECOND PALM FAN ==================================================
+
+On the following beat:
+the wrist reverses direction.
+The palm waves horizontally toward the opposite side.
+The hand changes direction smoothly.
+The forearm maintains the same forward orientation.
+The elbow remains stable.
+The upper arm remains stable.
+The shoulder remains stable.
+The movement is generated primarily by:
+WRIST → HAND → PALM.
+The palm remains open.
+The fingers remain naturally aligned.
+The hand stays approximately at the same height.
+The movement is compact, quick, rhythmic, and controlled.
+
+================================================== STATE 19 — REPEATED PALM-WAVE RHYTHM ==================================================
+
+Continue the established palm-wave pattern:
+PALM LEFT → CENTER → PALM RIGHT → CENTER.
+Each direction change follows the musical accents in AUDIO 1.
+The shoulder remains stable.
+The upper arm remains stable.
+The elbow remains stable.
+The forearm remains generally extended toward the camera.
+The wrist and palm perform the visible lateral movement.
+The movement is concentrated in the hand.
+The palm creates the visual impression of fanning unpleasant air away.
+The arm maintains one consistent extended pose while the palm performs repeated small waves.
+The movement becomes rhythmic through repetition, not through large arm swings.
+Throughout the fanning:
+RIGHT FOOT remains bare.
+LEFT FOOT remains bare.
+
+================================================== STATE 20 — LOWER-BODY DANCE ENTERS ==================================================
+
+Once the palm-wave rhythm is established:
+the lower body begins following AUDIO 1.
+The extended arm maintains its stable forward position.
+The shoulder remains steady.
+The upper arm remains steady.
+The elbow remains steady.
+The forearm remains generally extended.
+Only the wrist, hand, and palm continue their small rhythmic waving motion.
+The hand remains the active fanning element.
+The first lower-body movement is a small tap with the bare RIGHT FOOT.
+The next beat gives a small rhythmic tap to the bare LEFT FOOT.
+Both feet remain bare during every tap.
+Then the character shifts weight gently from one side to the other.
+The movement stays compact and dance-like.
+The body remains centered.
+
+================================================== STATE 21 — SIMPLE COMEDIC FOOTWORK ==================================================
+
+The choreography develops through a simple repeating rhythm:
+BARE RIGHT FOOT TAP → BARE LEFT FOOT TAP → SMALL WEIGHT SHIFT → PALM WAVE → SETTLE.
+Then repeat:
+BARE RIGHT FOOT TAP → BARE LEFT FOOT TAP → OPPOSITE WEIGHT SHIFT → PALM WAVE → SETTLE.
+The lower body provides the larger rhythmic movement.
+The upper arm remains visually calm.
+The palm provides the small repetitive fanning gesture.
+The costume follows the body naturally.
+The RIGHT FOOT remains visibly bare.
+The LEFT FOOT remains visibly bare.
+
+================================================== STATE 22 — FASTER RHYTHM ==================================================
+
+As AUDIO 1 becomes more energetic:
+the taps become slightly quicker.
+The bare RIGHT FOOT performs quick rhythmic taps.
+The bare LEFT FOOT follows.
+Both feet remain bare during the faster footwork.
+The pelvis shifts lightly from side to side.
+The torso follows the rhythm with subtle controlled movement.
+The extended arm maintains its stable forward position.
+The shoulder remains stable.
+The upper arm remains stable.
+The elbow remains stable.
+The forearm remains generally extended.
+The wrist and palm continue:
+LEFT → RIGHT → LEFT → RIGHT.
+The hand provides the visible fan rhythm.
+The arm itself remains visually steady.
+The mouth-covering hand remains near the face.
+The eyes continue showing playful displeasure.
+The overall movement becomes more energetic through the lower body and hand, while the main arm structure remains stable.
+
+================================================== STATE 23 — FINAL BUILD ==================================================
+
+Approaching the strongest musical section:
+the bare RIGHT FOOT makes a slightly larger rhythmic step.
+The bare LEFT FOOT follows.
+The character moves back toward the center.
+The torso performs a small rhythmic accent.
+The extended arm maintains its stable forward position.
+The wrist and palm perform larger, more expressive waves.
+The upper arm remains steady.
+The elbow remains steady.
+The forearm remains generally extended.
+The hand remains open.
+The mouth-covering hand remains near the lower face.
+The character gradually gathers the choreography into a centered final stance.
+Both feet settle firmly onto the floor.
+The final lower-body identity remains:
+RIGHT FOOT = BARE LEFT FOOT = BARE.
+
+================================================== STATE 24 — FINAL PALM WAVE ==================================================
+
+On the strongest final audio accent:
+the extended arm maintains its forward position.
+The wrist performs one decisive lateral movement.
+The palm travels clearly from one side to the other.
+The hand movement is larger than the earlier palm waves.
+The shoulder remains steady.
+The upper arm remains steady.
+The elbow remains steady.
+The forearm remains steady.
+The visible movement is concentrated in the wrist, hand, and palm.
+The hand settles exactly with the musical accent.
+The mouth-covering hand remains near the face.
+The eyes look toward the camera.
+The eyes deliver the final restrained playful-disgust expression.
+Both feet remain clearly differentiated anatomically while both remain barefoot:
+RIGHT FOOT remains bare.
+LEFT FOOT remains bare.
+
+================================================== STATE 25 — FINAL FREEZE ==================================================
+
+Immediately after the final musical accent:
+the complete body settles naturally.
+Both feet remain firmly on the floor.
+The anatomical RIGHT FOOT remains completely bare.
+The anatomical LEFT FOOT remains completely bare.
+The mouth-covering hand remains near the lower face.
+The other arm remains extended toward the camera.
+The upper arm remains steady.
+The forearm remains in the established forward position.
+The wrist and hand settle naturally after the final palm wave.
+The eyes remain expressive.
+The face remains visually consistent with IMAGE 1.
+The costume remains unchanged.
+The character holds the final pose through the end of AUDIO 1.
+
+================================================== PERMANENT HAND ROLES ==================================================
+
+During the sock-removal action:
+BOTH HANDS work together to remove the sock.
+After the sock is completely removed:
+ONE HAND becomes the sock-holding hand.
+The sock-holding hand performs:
+SOCK HOLD → SOCK INSPECTION → SNIFF → THROW.
+The opposite hand becomes the mouth-covering hand.
+The mouth-covering hand performs:
+FREE HAND → MOVE TO MOUTH → COVER MOUTH AND LOWER FACE → HOLD THAT POSITION.
+After the throw:
+the sock-hand becomes the air-fan hand.
+Its continuous role is:
+SOCK-HOLDING HAND → THROWING HAND → EXTENDED STABLE ARM → WRIST-LED PALM WAVE.
+The arm maintains its stable forward structure while the wrist and palm provide the fanning movement.
+
+================================================== PERMANENT FOOT CONTINUITY ==================================================
+
+The IMAGE 1 foot arrangement is permanent.
+LEFT FOOT:
+original supporting foot, completely bare, same anatomical left foot throughout the performance.
+RIGHT FOOT:
+original raised foot, white sock at the beginning, bare after the sock-removal action, same anatomical right foot throughout the performance.
+The permanent foot relationship is:
+LEFT FOOT = BARE RIGHT FOOT = WHITE SOCK → BARE FOOT.
+Only the RIGHT FOOT changes state during the sock-removal action.
+The LEFT FOOT remains bare throughout.
+When the RIGHT FOOT reaches the floor, the RIGHT FOOT lands bare beside the LEFT bare foot.
+The stable two-foot configuration is:
+LEFT BARE FOOT + RIGHT BARE FOOT.
+This remains the established lower-body state during the entire dance.
+
+================================================== PERMANENT BODY CONTINUITY ==================================================
+
+The anatomical LEFT FOOT remains the same leg throughout.
+The anatomical RIGHT FOOT remains the same leg throughout.
+The white sock begins on the RIGHT FOOT.
+The white sock is removed.
+The RIGHT FOOT becomes bare.
+The LEFT FOOT remains bare.
+The body transitions from:
+RIGHT FOOT RAISED + LEFT FOOT SUPPORTING
+to:
+RIGHT FOOT BARE ON FLOOR + LEFT FOOT BARE ON FLOOR.
+The transition happens naturally through the hips, knees, ankles, and pelvis.
+The body remains proportionally consistent.
+The character retains the same apparent height and overall physique.
+
+================================================== PERMANENT LOWER-BODY VISUAL STATE ==================================================
+
+The lower-body identity established by IMAGE 1 remains the reference for every later pose.
+At the beginning:
+LEFT FOOT = BARE RIGHT FOOT = WHITE SOCK.
+After removal:
+LEFT FOOT = BARE RIGHT FOOT = BARE.
+After landing:
+LEFT FOOT = BARE RIGHT FOOT = BARE.
+During dancing:
+LEFT FOOT = BARE RIGHT FOOT = BARE.
+At the final frame:
+LEFT FOOT = BARE RIGHT FOOT = BARE.
+The same anatomical left and right feet remain continuous throughout the complete choreography.
+
+================================================== PERMANENT CAMERA RELATIONSHIP ==================================================
+
+The camera preserves the perspective established by IMAGE 1.
+The character remains within the same environment.
+The lighting remains consistent.
+The overall photographic style remains realistic.
+The lens interaction is created by the physical approach of the sock.
+At lens contact, the sock becomes a foreground object extremely close to the camera.
+The camera perspective remains stable throughout the interaction.
+After the sock rebounds, the original scene becomes visible again.
+The character continues naturally from the same scene.
+
+================================================== PERMANENT FACIAL PERFORMANCE ==================================================
+
+The face remains elegant and recognizable.
+The emotional performance is subtle.
+The sequence is:
+neutral concentration → curiosity toward sock → short sniff → eyes narrow slightly → brief look toward sock → look toward camera → playful displeasure → controlled comedic dance.
+The eyebrows retain their original structure.
+The forehead remains relaxed.
+The mouth remains visually related to IMAGE 1.
+The hand covering the mouth provides the comedy.
+The eyes carry the final emotional performance.
+
+================================================== AUDIO 1 — TIMING SYSTEM ==================================================
+
+AUDIO 1 determines the exact rhythm.
+Use strong musical accents as transitions between the established physical states.
+A useful timing structure is:
+ACCENT 1 → begin two-hand sock removal
+ACCENT 2 → sock fully removed
+ACCENT 3 → look at sock
+ACCENT 4 → sock approaches nose
+ACCENT 5 → sniff
+ACCENT 6 → eye reaction
+ACCENT 7 → mouth-covering hand arrives
+ACCENT 8 → throw preparation
+STRONG ACCENT → sock release
+FOLLOWING BEATS → sock flight
+IMPACT ACCENT → lens contact
+NEXT BEAT → rebound and fall
+FOLLOWING BEAT → bare RIGHT FOOT begins descending
+NEXT BEAT → bare RIGHT FOOT landing beside bare LEFT FOOT
+NEXT BEATS → stable palm wave
+NEXT PHRASE → lower-body dance
+STRONGER PHRASE → faster palm-wave rhythm
+FINAL ACCENT → large final palm wave
+END → freeze.
+The exact duration of each state follows AUDIO 1 naturally.
+
+================================================== FINAL COMPLETE PHYSICAL SEQUENCE ==================================================
+
+IMAGE 1 POSE → LEFT FOOT SUPPORTING AND BARE → RIGHT FOOT RAISED WITH WHITE SOCK → BOTH HANDS REMOVE THE WHITE SOCK → RIGHT FOOT BECOMES BARE → LEFT FOOT REMAINS BARE → SOCK REMAINS IN ONE HAND → LOOK AT SOCK → SOCK RAISED TOWARD FACE → SHORT SNIFF → SOCK MOVES SLIGHTLY AWAY → EYES REACT → OTHER HAND COVERS MOUTH → SOCK-HOLDING ARM PREPARES → DIRECT THROW TOWARD CAMERA → FULL ARM FOLLOW-THROUGH → SOCK FLIES TOWARD LENS → SOCK LIGHTLY CONTACTS LENS → SOCK REBOUNDS → SOCK FALLS → RIGHT BARE FOOT DESCENDS → RIGHT BARE FOOT LANDS → LEFT FOOT REMAINS BARE → TWO-FOOT BAREFOOT STANCE → THROWING ARM BECOMES STABLE EXTENDED ARM → WRIST AND PALM BEGIN SMALL FAN → PALM LEFT → CENTER → PALM RIGHT → CENTER → BARE RIGHT FOOT TAP → BARE LEFT FOOT TAP → WEIGHT SHIFT → PALM WAVE → REPEAT → FASTER LOWER-BODY RHYTHM → FASTER PALM WAVES → LARGER FINAL PALM WAVE → FINAL FREEZE.
+The starting foot arrangement is permanently anchored to IMAGE 1:
+LEFT FOOT = SUPPORTING BARE FOOT.
+RIGHT FOOT = RAISED FOOT WITH WHITE SOCK.
+The sock-removal action is performed naturally by BOTH HANDS as one continuous human behavior.
+The sock-removal process itself remains visually simple.
+After the removal:
+RIGHT FOOT = BARE.
+LEFT FOOT = BARE.
+After the RIGHT FOOT lands:
+RIGHT FOOT = BARE.
+LEFT FOOT = BARE.
+During the complete dance:
+RIGHT FOOT = BARE.
+LEFT FOOT = BARE.
+The two anatomical feet retain their identities permanently.
+After the throw, the extended arm remains structurally stable.
+The shoulder, upper arm, elbow, and forearm maintain their established forward position.
+The visible fanning movement is produced by the wrist, hand, and palm.
+The hand creates the rhythmic lateral wave.
+The entire arm remains steady while the palm waves.
+IMAGE 1 permanently defines the character.
+AUDIO 1 permanently defines the timing and rhythm.
+The physical continuity of the character, hands, left foot, right foot, sock, body, costume, camera, and environment remains coherent from beginning to end.
+

@@ -36,6 +36,7 @@ The `prompt.md` files are designed to be pasted directly into H3. The `README.md
 | [010](./case-studies/2026-09-snap-lock-editorial-reveal/) | Audio-Synced Snap-Lock Editorial Reveal (Two-State Camera, Zero Appearance Text) | 2026-09 | published |
 | [011](./case-studies/2026-09-song-style-classical-dance-six-segment/) | Six-Segment Song-Style Shen-Yun Water-Sleeve Dance (Hand-Off Hero Ladder, Non-Restarting Music) | 2026-09 | published |
 | [012](./case-studies/2026-09-editorial-lamp-rhythm-fashion-ab/) | Editorial Lamp-Rhythm Fashion Film A/B (Dark-Luxury Skirt-Throw vs Cute Back-Folded-Feet Jump, Music-Driven Light Cuts) | 2026-09 | published |
+| [013](./case-studies/2026-09-action-chain-sock-fan-comedy/) | Action-Chain Comedic Dance: Sock Remove-Sniff-Throw-Lens-Rebound-Barefoot-Palm-Fan (25-State Physical State Machine, Permanent Body-Part Identity) | 2026-09 | published |
 
 ## Companion
 
