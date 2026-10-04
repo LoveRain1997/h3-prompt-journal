@@ -39,6 +39,8 @@ The `prompt.md` files are designed to be pasted directly into H3. The `README.md
 | [013](./case-studies/2026-09-action-chain-sock-fan-comedy/) | Action-Chain Comedic Dance: Sock Remove-Sniff-Throw-Lens-Rebound-Barefoot-Palm-Fan (25-State Physical State Machine, Permanent Body-Part Identity) | 2026-09 | published |
 | [014](./case-studies/2026-09-purple-veil-dance-seven-segment/) | Seven-Segment Purple-Veil Pavilion Dance (Driver-Rotation Choreography, Detail-Cut Transition Chain, Purple-Safe Warm-Key Lighting, Permanent Face-Veil Lock) | 2026-09 | published |
 | [015](./case-studies/2026-10-xiashan-veiled-solo-twelve-segment/) | Twelve-Segment Veiled Solo Dance (Split-Authority Dual-Image Refs, Chain-Notation Choreography with Cut-Reason Transitions, Dual-Mode Camera with Drunk-Drift Segments, Rules Spliced Into Every Segment) | 2026-10 | published |
+| [016](./case-studies/2026-10-waterfront-solo-dance-two-segment/) | Two-Segment Waterfront Solo Dance (Low-Threshold Single-Take Verification, Bar-Snapped Split, Chain-Notation Motion Handoff) | 2026-10 | published |
+| [017](./case-studies/2026-10-sock-showcase-right-entry-three-shot/) | Three-Shot Sock Showcase with Right-Entry Costume Reset (Stride-In Shot Openings, Visible Jump Cuts, One State Per Shot, Frame-by-Frame Transition Forensics) | 2026-10 | published |
 
 ## Companion
 
