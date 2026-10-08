@@ -6,7 +6,7 @@
 
 **MiniMax H3 视频/舞蹈提示词案例日记 —— 18 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
 
-[![Cases](https://img.shields.io/badge/case_studies-19-blue)](./case-studies)
+[![Cases](https://img.shields.io/badge/case_studies-22-blue)](./case-studies)
 [![Platform](https://img.shields.io/badge/model-MiniMax_H3-red)](https://github.com/MiniMax-AI/MiniMax-H3)
 [![Results](https://img.shields.io/badge/🎬_成片演示-X_文章页-1DA1F2)](https://x.com/LoveUolanda/articles)
 
@@ -75,6 +75,15 @@ case-studies/YYYY-MM-short-name/
 | <img src="docs/images/018-leg-lift-contact-cut.jpg" width="160"> | [018 · Leg-Lift Contact-Cut Stocking, Six Looks](./case-studies/2026-10-leg-lift-contact-cut-stocking-six-look/) | 抬腿触地即切袜·六形态：永久支撑腿 + 单一活动腿，"脚触地"这一物理事件=剪辑触发器（CONTACT=CUT）。AnimateDiff 渐变升级为利落硬切。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
 | — | [015 · Xiashan Veiled Solo (Twelve Segments)](./case-studies/2026-10-xiashan-veiled-solo-twelve-segment/) | 十二段面纱独舞：双图分权（图1服装/图2脸+背+纱）+ 链记法编舞 + 切点原因转场 + 醉酒式运镜（只有相机醉，人物永不醉）。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
 | <img src="docs/images/019-identity-only-half-body.jpg" width="160"> | [019 · Identity-Only Half-Body Dance (Six Segments)](./case-studies/2026-10-identity-only-half-body-dance-six-segment/) | Identity-only 双图分权：图1只锁脸、图2只锁全身外观+环境，"图1半身像感"降级为纯镜头语言，开场零姿势继承（六段都从舞谱第一拍起跳）。111 BPM 六段连续可爱舞蹈，Motion Cut 全部切在未完成动作中间，Hero Action 专属镜头。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
+
+### 摄影机语言工具箱 · 双系统标准
+
+| 封面 | 标准库 | 简介 |
+|:---:|---|---|
+| <img src="case-studies/2026-10-physical-camera-position-library/cover.png" width="160"> | [System A · Physical Camera Position Library](./case-studies/2026-10-physical-camera-position-library/) | **机位视角系统（摄影机在哪里）**：25 类视角物理定义块全文（贴地仰视/虫眼/正上方90°/荷兰角/贴身广角/防简化锁/8要素结构）。核心原则：不要命名效果（`low angle`），要定义产生效果的现实条件——机位一旦是"场景里的一件实物"，就无法被 H3 平均掉。 |
+| <img src="case-studies/2026-10-camera-movement-discipline-library/cover.png" width="160"> | [System B · Camera Movement Discipline Library](./case-studies/2026-10-camera-movement-discipline-library/) | **动态运镜系统（摄影机怎么动、为什么动）**：E 章十条实测运镜纪律 + 物理运镜十法则（POSITION/NO DEGREE/SUBJECT-TRIGGER…）+ 十三词物理词库 + 运镜块五件套 + 反目录。核心纪律："动作负责舞蹈，摄影机负责观看"——每段一个主运镜行为，镜头只为重大空间变化而动。 |
+| <img src="case-studies/2026-10-advanced-camera-combinations/cover.png" width="160"> | [Advanced Camera Movement Combinations](./case-studies/2026-10-advanced-camera-combinations/) | **物理运镜组合库（NO DEGREE VERSION）**：14 条 SEGMENT RULES + 13 词词库 + 10 组即用运镜组合（前随→侧移→越肩→回正 / 推进→遮镜→暗侧移→揭示 / 贴地滑移→起身 / Hero Lock→微推→触发响应…）。彻底取消度数语言：`ARC 40°` 淘汰，改为 START POSITION → PHYSICAL PATH → SUBJECT TRIGGER → END POSITION → FINAL FRAMING。 |
+
 
 ---
 
