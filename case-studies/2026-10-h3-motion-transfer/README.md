@@ -6,7 +6,7 @@
 - **展示成片:** [result-video.mp4](./result-video.mp4) — 9.4s · 928×1664 竖屏 · 一镜合成
 - **输入:** `<Picture 1>` 人物+世界锚定图 · `<Video 1>` 目标动作视频 · `<Audio 1>` 时序音频
 - **Prompt:** see [prompt.md](./prompt.md) — MULTIMODAL RECONSTRUCTION 全文，可直接粘贴
-- **工作流:** H3动作迁移工作流.json（ComfyUI · MiniMax H3 Ref2VA 双通道）
+- **工作流:** [h3-motion-transfer-workflow.json](./h3-motion-transfer-workflow.json)（ComfyUI · MiniMax H3 Ref2VA 双通道，直接拖入 ComfyUI 使用）
 
 ## 案例对照
 
