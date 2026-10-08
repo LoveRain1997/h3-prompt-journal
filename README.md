@@ -6,7 +6,7 @@
 
 **MiniMax H3 视频/舞蹈提示词案例日记 —— 18 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
 
-[![Cases](https://img.shields.io/badge/case_studies-22-blue)](./case-studies)
+[![Cases](https://img.shields.io/badge/case_studies-23-blue)](./case-studies)
 [![Platform](https://img.shields.io/badge/model-MiniMax_H3-red)](https://github.com/MiniMax-AI/MiniMax-H3)
 [![Results](https://img.shields.io/badge/🎬_成片演示-X_文章页-1DA1F2)](https://x.com/LoveUolanda/articles)
 
@@ -83,6 +83,8 @@ case-studies/YYYY-MM-short-name/
 | <img src="case-studies/2026-10-physical-camera-position-library/cover.png" width="160"> | [System A · Physical Camera Position Library](./case-studies/2026-10-physical-camera-position-library/) | **机位视角系统（摄影机在哪里）**：25 类视角物理定义块全文（贴地仰视/虫眼/正上方90°/荷兰角/贴身广角/防简化锁/8要素结构）。核心原则：不要命名效果（`low angle`），要定义产生效果的现实条件——机位一旦是"场景里的一件实物"，就无法被 H3 平均掉。 |
 | <img src="case-studies/2026-10-camera-movement-discipline-library/cover.png" width="160"> | [System B · Camera Movement Discipline Library](./case-studies/2026-10-camera-movement-discipline-library/) | **动态运镜系统（摄影机怎么动、为什么动）**：E 章十条实测运镜纪律 + 物理运镜十法则（POSITION/NO DEGREE/SUBJECT-TRIGGER…）+ 十三词物理词库 + 运镜块五件套 + 反目录。核心纪律："动作负责舞蹈，摄影机负责观看"——每段一个主运镜行为，镜头只为重大空间变化而动。 |
 | <img src="case-studies/2026-10-advanced-camera-combinations/cover.png" width="160"> | [Advanced Camera Movement Combinations](./case-studies/2026-10-advanced-camera-combinations/) | **物理运镜组合库（NO DEGREE VERSION）**：14 条 SEGMENT RULES + 13 词词库 + 10 组即用运镜组合（前随→侧移→越肩→回正 / 推进→遮镜→暗侧移→揭示 / 贴地滑移→起身 / Hero Lock→微推→触发响应…）。彻底取消度数语言：`ARC 40°` 淘汰，改为 START POSITION → PHYSICAL PATH → SUBJECT TRIGGER → END POSITION → FINAL FRAMING。 |
+| <img src="case-studies/2026-10-dance-motion-chain-library/cover.png" width="160"> | [Dance Motion Chain Library · 舞蹈动链 H3 库](./case-studies/2026-10-dance-motion-chain-library/) | **动作链标准件总库（Rev.1.0 全文镜像）**：A 宅舞 23 链 / B 抖舞 / C 古风 49 链 / D 多人 12 纪律 / E 运镜纪律 / G Hero 库 / H 13 支成品范本 / I 视角库 / J 写真 9 范本 / 拼舞模板——每条链带入态/出态与十要素描述，积木式拼舞；本仓库只读副本，正本在本地 git。 |
+
 
 
 ---
