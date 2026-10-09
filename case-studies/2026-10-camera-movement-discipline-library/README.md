@@ -55,6 +55,7 @@ HERO LOCK         — when the camera stops it stays physically stable through t
 | WHIP PAN | one fast physical pan triggered by her action, then stabilization |
 | RECOIL | operator backs away a short distance from a strong accent |
 | HERO LOCK | operator stops and holds the position physically |
+| TIME-CODE SYNC | dance and camera share one absolute timeline — start/peak/recover together, 1:1 |
 
 Every word is a **path with a start position, a trigger, and an end position** — never a vibe.
 
@@ -71,7 +72,7 @@ No automatic reframing after every body accent
 No digital zoom / digital rotation / artificial parallax
 ```
 
-> The performer generates the movement. The camera observes the movement. The camera moves only for a major spatial reason.
+> The performer generates the movement. The camera observes the movement. The camera moves only for a major spatial reason — and when it moves, it moves **on the same absolute time-code as the choreography**: start with the action, peak with the accent, recover with the release. One timeline, two synchronized motion tracks, one shared set of action peaks.
 
 ## The five-part movement block
 

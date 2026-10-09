@@ -142,6 +142,7 @@ DISTANCE LAW      — 距离变化只能通过真实前后行走
 HEIGHT LAW        — 高度变化只能通过真实上升/下降
 SIDE-CHANGE LAW   — 换侧必须绕人体走可读路径
 SUBJECT-TRIGGER   — 摄影机只因写明的人物动作而动
+TIME-CODE SYNC    — 人物动作和摄影机运动共用同一套精确绝对时间码,1:1 同步:相机启动=动作启动,相机峰值=动作峰值,相机恢复=动作收势;一套时间码、两条同步运动轨迹、同一组动作峰值
 DANCE LAW         — 连续编舞,禁止慢走凑数
 POSITION CHANGE   — 人物 1-2 个目的性舞步位移;空间重构交给摄影机
 HERO LOCK         — 摄影机停止后物理稳定,让人物完成最后 accent
@@ -154,6 +155,16 @@ HERO LOCK         — 摄影机停止后物理稳定,让人物完成最后 accen
 4. 重新稳定。
 
 > 动作负责舞蹈,摄影机负责观看。真实录舞里,摄影师先站稳,让舞者在画面里完成动作;只有舞者真的改变空间关系时,摄影师才移动一次。
+
+**TIME-CODE SYNC(1:1 同步铁律)**: 人物动作和摄影机运动共用同一套精确绝对时间码。六原则:
+1. 同时启动——人物开始动作,摄影机同一时刻开始响应;
+2. 同步运动——人物移动、伸手、转体、跳跃时,摄影机同步跟拍或改变机位;
+3. 峰值同步——手指伸展、旋转到位、脚步落地等动作强调点,与镜头构图强调点同时发生;
+4. 同步恢复——人物收势、回中或反向运动时,摄影机同步减速、回移或改变方向;
+5. 连续衔接——上一动作的恢复直接进入下一动作,不插入无意义的停顿或延迟运镜;
+6. 绝对时间码——每段明确写出人物动作与摄影机运动共享的起止时间。
+
+口诀: 一套时间码、两条同步运动轨迹、同一组动作峰值。运镜不是舞蹈完成后的装饰,而是与舞者在同一真实时间里共同运动的摄影机。落地写法: 每个 onset 的时间戳同时是身体峰值时间戳和相机响应时间戳;相机块的 MOVEMENT TRIGGER 必须引用与本段动作链相同的时间码。
 
 ---
 
@@ -200,6 +211,7 @@ No orbit unless specifically written.
 No whip pan unless specifically written.
 No camera bob synchronized to individual footfalls.
 No automatic reframing after every body accent.
+No camera motion on a different time-code from the choreography — camera peaks and dance peaks must share the same absolute timeline.
 No digital zoom. No digital rotation. No artificial parallax.
 ```
 

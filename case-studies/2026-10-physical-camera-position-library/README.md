@@ -58,4 +58,4 @@ Once the camera is a **thing in the scene with a position**, it cannot be averag
 
 ## Takeaway
 
-Write the camera as **a real object occupying real space**, state what that position physically sees, then forbid the lazy approximations by name. Pairs with the movement library (*System B: Camera Movement Discipline*) — position answers "where is the camera", movement answers "how does it travel".
+Write the camera as **a real object occupying real space**, state what that position physically sees, then forbid the lazy approximations by name. Pairs with the movement library (*System B: Camera Movement Discipline*) — position answers "where is the camera", movement answers "how does it travel". And whichever position you choose, its motion (or stillness) must share the **same absolute time-code as the choreography** — see the TIME-CODE SYNC law in System B.

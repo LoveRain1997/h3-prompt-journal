@@ -15,6 +15,7 @@
 * HEIGHT LAW: camera height changes only through an actual physical rise or descent of the camera.
 * SIDE-CHANGE LAW: when moving from one side of the performer to another, the operator must physically travel around the performer's body in a readable path.
 * SUBJECT-TRIGGER LAW: the camera changes movement only because a written performer action causes the change.
+* TIME-CODE SYNC LAW: the performer's actions and the camera's movements share one precise absolute time-code, synchronized 1:1 — the camera starts when the action starts, peaks when the accent peaks, recovers when the movement recovers; every onset timestamp is simultaneously the body-peak timestamp and the camera-response timestamp.
 * UPPER-BODY PRIORITY: face, shoulders, chest, arms and torso remain the primary visual area; lower body is shown only when the choreography requires it.
 * DANCE LAW: after the first establishing state, the performer continuously performs connected dance actions. Do not replace choreography with slow walking.
 * POSITION CHANGE LAW: the performer uses no more than one or two purposeful steps to relocate within a segment. Camera movement does most of the spatial reframing.
@@ -36,6 +37,7 @@
 * WHIP PAN = one fast physical pan caused by a performer action, immediately followed by stabilization.
 * RECOIL = the operator physically backs away a short distance in response to a strong performer accent.
 * HERO LOCK = the operator stops moving and holds the camera position physically.
+* TIME-CODE SYNC = one absolute timeline shared by dance and camera: simultaneous start, synchronized travel, peak-to-peak alignment, synchronized recovery, continuous hand-off, shared onset timestamps.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

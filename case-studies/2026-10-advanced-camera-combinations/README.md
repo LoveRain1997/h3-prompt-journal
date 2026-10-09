@@ -29,6 +29,8 @@ The rule set encodes the whole physics: real handheld operation in 3D space (PHY
 
 Plus the choreography contract: connected dance actions never replaced by walking; the dancer relocates with one or two purposeful steps while the camera does the spatial reframing; HERO LOCK when stopped; TRANSITION HOOK at the end.
 
+The 15th rule binds it all together — **TIME-CODE SYNC LAW**: the performer's actions and the camera's movements share one precise absolute time-code, synchronized 1:1. The camera starts when the action starts, peaks when the accent peaks, recovers when the movement recovers. Every onset timestamp is simultaneously the body-peak timestamp and the camera-response timestamp. One timeline, two synchronized motion tracks, one shared set of action peaks.
+
 ## The thirteen-word lexicon
 
 PUSH-IN · PULL-BACK · TRACK · PASS · WRAP · RISE · DROP · FLOOR SLIDE · OCCLUSION · REVEAL · WHIP PAN · RECOIL · HERO LOCK
