@@ -82,6 +82,7 @@ case-studies/YYYY-MM-short-name/
 | — | [015 · Xiashan Veiled Solo (Twelve Segments)](./case-studies/2026-10-xiashan-veiled-solo-twelve-segment/) | 十二段面纱独舞：双图分权（图1服装/图2脸+背+纱）+ 链记法编舞 + 切点原因转场 + 醉酒式运镜（只有相机醉，人物永不醉）。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
 | <img src="docs/images/019-identity-only-half-body.jpg" width="160"> | [019 · Identity-Only Half-Body Dance (Six Segments)](./case-studies/2026-10-identity-only-half-body-dance-six-segment/) | Identity-only 双图分权：图1只锁脸、图2只锁全身外观+环境，"图1半身像感"降级为纯镜头语言，开场零姿势继承（六段都从舞谱第一拍起跳）。111 BPM 六段连续可爱舞蹈，Motion Cut 全部切在未完成动作中间，Hero Action 专属镜头。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
 | — | [022 · Classical Wuxia Dance (Thirteen Segments)](./case-studies/2026-10-classical-wuxia-dance-13-segment/) | 十三段真人古典武侠舞：每段 self-contained（同图 + 该段裁剪音频），节拍网格（90.5 BPM · 拍 0.663s / 小节 2.65s / 乐句 5.30s），段内 local 时间从 0 起算 + 音乐连续 hand-off + 参考图/武器状态硬保护（图中无剑则双手空），第 13 段纯器乐尾奏。附 20 条导演级方法论。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
+| — | [023 · Kanzaki Sunny-Beach Sword-Dance MV (Eighteen Segments)](./case-studies/2026-10-kanzaki-beach-sword-dance-18-segment/) | 十八段真人海滩剑舞音乐 MV（230.034s · 139.5 BPM · 9 组 18 段）：图 1 人物+现场双锁（海滩不换景）；道具外观/状态双规则（Seg01–02 拔刀、Seg03–18 持刀+空鞘、全曲一把刀身一个鞘）；每段一镜到底 `[Shot 1]`、组间靠后期匹配剪辑；NO DEGREE LAW 物理机位、每段一个主运镜、景别服从当拍动作；纯表演式无对白无口型。附 11 章真人 MV 导演方法论 + 两次自检。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
 
 ### 摄影机语言工具箱 · 双系统标准
 
