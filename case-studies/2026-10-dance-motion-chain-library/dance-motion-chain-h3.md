@@ -1,6 +1,7 @@
-# 舞蹈动链 H3 库(可重复学习的动作链标准件) · Rev.1.3
+# 舞蹈动链 H3 库(可重复学习的动作链标准件) · Rev.1.4
 
 > **版本记录**
+> Rev.1.4|2026-10-30|新增 K 章「2026-10-30 批量反推动链扩展库」:15 支新片+2 张姿势参考图、74 条动链(K1-K74)经 video-to-h3-prompt 流水线反推并入(双人支撑拉伸/saber 技术下腰/3DCG 舞台变装/情绪撩发写真/吸血鬼写真/腿脚微动作/双人对镜甜舞/K-pop 群舞/卡点换装/AIGC 摆拍等);每片附背景人物档案+节拍判定+镜头形态分流;其余章节与使用规则不变
 > Rev.1.3|2026-10-09|使用规则新增第 9 条「时间窗动作链完整性规范」(强制前置检查:五规则+动作设计五步逻辑+时间窗容量表+失败诊断四情况+逐窗验收十项);第 8 条十条自检不变
 > Rev.1.2|2026-10-09|自检清单替换为用户定稿十条(运镜流程/物理机位/动作库优先/同步时间码/动作峰值/节奏连续/转场钩子/段自包含/视觉一致性/最终排错);第7条同步规则不变
 > Rev.1.1|2026-10-09|使用规则新增第 7 条「舞蹈动作×摄影机运镜实时 1:1 同步」六原则+三条统一口诀,并新增第 8 条「生成前自检清单」(12 项,含同步六查+双系统+段结构);运镜流程(E 章)、拍摄角度设计(I 章)、重要经验(同步规则)列为每次生成前必复习项
@@ -9,6 +10,7 @@
 > 每条动链 = 一个 2-8 拍的完整编舞单元,带**入态/出态**,可像积木一样首尾相接拼成整支舞。
 > 英文描述均可直接粘贴进 H3 提示词;拍位为**相对拍**(链内第几拍),可放到任何 BPM 网格上。
 > H 章 = 13 支单人成品范本(2026-10 并入):整段提示词可直接粘贴套用,H0 为从范本提炼的成品规律。
+> K 章 = 2026-10-30 批量反推动链扩展(15 支新片+2 图,74 条):每片带背景人物档案+节拍判定+镜头形态分流,风格覆盖双人支撑/技术动作/写真微动作/宅舞/K-pop/AIGC 摆拍。
 
 ## 0. 使用规则
 
@@ -2216,6 +2218,541 @@ non_diegetic_music: N/A
 
 ---
 
+## K. 2026-10-30 批量反推动链扩展库(15 支新片+2 图 · 74 条并入)
+
+> 来源:15 支参考视频+2 张姿势参考图,经 video-to-h3-prompt 流水线反推(contact sheet 总览→转折区间密帧→因果重建;单通道证据标"推测";v08/v09 时间码以无 -ss 全解码帧索引锚定)。
+> 拍位为**相对拍**;每片先给「背景人物档案」(场景/人物/节拍/镜头形态)再列动链;英文 H3 描述可直接粘贴。短标题↔原片名对照见章末页脚。
+> 风格覆盖:双人支撑杂技 / 写真跪姿+技术下腰 / 3DCG 舞台变装 / 情绪撩发写真 / 自拍萌系 / 吸血鬼写真 / 氛围写真腿脚 / 双人对镜甜舞 / 学院宅舞 / K-pop 群舞 / 卡点换装 / AIGC 萌系摆拍 / 真人饭拍 / AIGC 旗袍夜景 / 写真姿势图×2。
+
+**片<v01>《绫华的锻炼时间》(双人支撑拉伸·10.4s·竖屏)**
+- 背景人物:室内玄关——深色木门、白色高脚椅、衣柜玻璃门映出衣物、暖白室内光,镜头贴地侧拍。人物两名:基座穿藏青色蓬裙(跪伏,头埋低不可见);飞者白色古风广袖长裙+银白及腰长发+腰侧粉色流苏(俯卧于基座背上)。画外行动者:无。
+- 节拍:有音轨(mean -9.9dB);拉伸动作无卡点,自由散板(推测)。
+- 镜头形态:A 一镜到底(全程同机位贴地侧拍,无切点)。
+
+### K1 双人跪撑驮负静持链(4拍|双人支撑/拉伸)
+- 入态:飞者已全身俯卧横陈基座背上 → 出态:姿态还原、静持
+- 分解:拍1 基座跪伏成"人桥"——双膝着地、上体前折、髋部顶高成稳定台面;飞者胸腹贴其背、双腿并拢向后伸直绷脚、双脚悬空离地;拍2 飞者右臂向斜前方完全伸展、指尖探向椅沿(对侧腿微抬配平力矩——推测);拍3 飞者抬头:下颌离背、颈前侧拉长,银白长发由竖直垂帘摆成斜幕、发梢惯性回摆半拍;拍4 头落回、发帘回垂,重心回中,基座全程纹丝不动(静态,明写)
+- H3:`partner acro-stretch: one performer kneeling folded into a stable human table while the other lies prone across her back with legs extended and toes pointed, reaching one arm far forward for balance, lifting her head once so the long silver hair swings from a vertical curtain into a diagonal fall before settling back, static floor-level side view`
+- 来源:《绫华的锻炼时间》0.5-10s
+
+### K2 俯卧天鹅垂帘链(2拍|微动作插件)
+- 入态:俯卧姿态、面部朝下 → 出态:头落回、发帘回垂
+- 分解:拍1 下颌缓慢离背抬起、颈前侧拉长,垂发整体向后摆成斜幕(发梢滞后半拍);拍2 头缓慢落回、发帘竖直回垂、发梢轻晃衰减
+- H3:`lying prone with her face down, slowly lifting the chin so the long hair swings back into a diagonal curtain with the ends lagging half a beat, then lowering the head and letting the hair fall straight again`
+- 来源:《绫华的锻炼时间》5.5-8.5s
+
+**片<v02>《saber白礼服》(写真跪姿·9.6s·竖屏)**
+- 背景人物:暗调室内两景——景1(0-3.5s)白垫木地板、中性偏冷光;景2(4-9.6s)深色走廊镜面地板、强蓝色逆光轮廓光+镜面倒影。人物:Saber cos(阿尔托莉雅):金色齐刘海短发+低马尾、脑后大蓝缎蝴蝶结、白色抹胸礼服短裙、白色长手套(腕部系红色细绳)、白色过膝袜、红色高跟鞋。画外行动者:无。
+- 节拍:有音轨(mean -9.1dB);写真自由散板(推测)。
+- 镜头形态:B 编辑快照(判据:光线与场景在 3.5-4s 间硬切,共 2-3 个切段)。
+
+### K3 跪伏垂首启颜链(4拍|写真/虔诚)
+- 入态:深跪伏地、上体前折、发帘盖脸 → 出态:跪直、指尖收于锁骨、目视镜头
+- 分解:拍1 深跪伏、额头近地、双手收于胸前领口、发帘全遮脸;拍2 卷腹式节节直起、头最后抬、发帘从脸滑落肩侧;拍3 右手指尖抵下颌/锁骨、下颌微收;拍4 目视镜头定住(静态,明写)
+- H3:`kneeling deeply folded forward with her hair curtaining her face, curling up vertebra by vertebra until the head rises last, hair sliding off her face, one fingertip coming to her collarbone as her eyes lift to the lens and hold`
+- 来源:《saber白礼服》0-3.5s
+
+### K4 腕系红绳过顶交叉链(4拍|写真/束缚感)
+- 入态:跪坐、双臂垂 → 出态:双臂过顶手腕交叉、红绳绷直、仰视镜头
+- 分解:拍1 双臂沿体前上举;拍2 双腕在头顶上方交叉、腕间红绳绷紧(手套褶皱随腕部受力聚拢);拍3 手臂完全伸直、上体微后仰、肋骨上提;拍4 目光自腕下仰视镜头定住
+- H3:`raising both arms overhead and crossing the wrists so the thin red string between them pulls taut, back arching slightly as she looks up at the lens from under her crossed arms, blue rim light tracing the white gloves`
+- 来源:《saber白礼服》4-5.5s
+
+### K5 侧坐举拳宣誓链(4拍|写真/英气)
+- 入态:背身 → 出态:侧坐面向镜头、举拳于脸侧、腰背反弓定住
+- 分解:拍1 转身落座、双腿侧收叠于体侧(红高跟交叠入镜);拍2 上体转向镜头、右臂屈肘举拳至脸侧(宣誓位);拍3 腰背反弓、胸口上提、下颌微收;拍4 目视镜头、拳不落(静态,明写),蓝轮廓光勾边、镜面地板映红鞋
+- H3:`sitting sideways on the mirror floor with red heels crossed, turning to camera and raising one gloved fist beside her face in a pledged pose, spine arching with the chest lifted under hard blue rim light, holding still`
+- 来源:《saber白礼服》6-9.6s
+
+**片<v03>《saber下腰挑战》(技术动作/原作复刻·8.2s·4K竖屏)**
+- 背景人物:室内走廊两景——景1(0-2s)米色瓷砖地面、暖光;景2(2.5-8.2s)白墙深色踢脚线走廊、顶光+左侧粉紫补光。人物:同 v02 Saber cos。画外行动者:无。右上角画中画为原作对照图(后期层,非现场元素)。
+- 节拍:有音轨(mean -12.8dB);挑战类实拍自由节拍(推测)。
+- 镜头形态:C 快剪(2 个场景切段)。
+
+### K6 蹲伏触地蓄势链(2拍|Hero Action/原作复刻)
+- 入态:深蹲伏地 → 出态:单掌撑地蓄势定住
+- 分解:拍1 双膝深蹲下沉、双掌触地、上体前倾、发帘垂落盖脸(复刻原作蹲姿);拍2 一手离地前伸触地滑动半步、重心压低定住(静态,明写)
+- H3:`dropping into a deep crouch with both palms on the floor and the head bowed so the hair hangs forward, sliding one hand half a step ahead and freezing in the low predatory crouch`
+- 来源:《saber下腰挑战》0-2.2s
+
+### K7 贴墙下腰满弓链(8拍|Hero Action/技术峰值)
+- 入态:站立背对墙 → 出态:满弓后弯、双手扶墙低位、目视镜头定住(回收路径未入镜,推测为扶墙卷腹回直)
+- 分解:拍1-2 背对墙站立、双臂上举后仰、双掌先后贴墙(进入路径:髋前顶+胸腰节节后弯);拍3-5 双掌交替沿墙面向下走、重心随之节节下沉,腰背弧度逐拍加深、长发全数后垂;拍6-7 技术峰值:满弓——胸腰完全打开、头全仰、面部朝上转向镜头、张嘴发力,双腿垂直承重、足跟压实;拍8 定住亮相(静态,明写)
+- H3:`standing backbend against the wall: palms pressing on the wall overhead then walking them down rung by rung as the spine arches deeper, long hair falling all the way back, until the chest faces up in a full arch with the head released back and eyes finding the camera, heels loaded, holding the pose`
+- 来源:《saber下腰挑战》2.5-8.2s
+
+**片<v04>《奥黛塔变装》(3DCG/MMD风·变装歌舞·153.4s·横屏)**
+- 背景人物:全黑影棚舞台,一束顶部聚光锥+地面椭圆光斑,抛光地面带倒影,远景少量星点粒子;背景在纯黑与深灰渐变间切换。无道具、无画外行动者。横置已核查:光锥垂直、人物立轴垂直,非相机 Roll。人物:年轻女性(16-20 岁感),薰衣草银紫发——短发 BOB 与盘发髻(编发冠+大呆毛)两种发型交替,黑羽/黑钩发饰,红紫瞳。服装六套轮换:蓝白羽毛芭蕾裙(星纹抹胸+白羽肩饰+蓝缎垂尾+银白系带高跟靴+黑蕾丝手套)/酒红开衫+水手领内搭+黑打底裤或白百褶裙/粉天鹅印花 T(下摆侧打结)+黑运动短裤/灰格法兰绒衬衫+黑内搭+格裙+红色细高跟/白色水手服+藏青领巾+藏青百褶裙+白筒袜+"MARINE"白水手帽/粉一字肩毛衣。
+- 节拍:完整 BGM(mean -10.5dB/max 0dB);动作卡点清晰,约 100-120BPM 流行曲(推测)。
+- 镜头形态:C 多镜头快剪(特写/中景/大远景间跳切,多套服装交叉剪辑;每个动作窗口内先切镜再动作)。
+
+### K8 蓝裙开场臂浪·三段抬臂+掩口偷笑链(5拍|优雅/舞台)
+- 入态:侧脸近景低头垂目、双臂垂于体侧 → 出态:右手掌掩口、左手护颌,闭眼含笑定格
+- 分解:拍1 (00:20-20.7) 近景:右腕屈肘抬至脸旁、手腕放松指尖下垂,切大远景;拍2 (21.3-22.7) 双小臂胸前交叉再向两侧弹开成 X 展臂、肩线上提、重心移左脚;拍3 (23.3-24.3) 双臂过顶手腕交叉、踮脚立半足尖,裙摆蓝缎垂尾滞后半拍回摆;拍4 (24.3-25.3) 双手落至脑后抱头、肘外张、髋向左顶;拍5 (25.3-27) 切胸上近景:右手掌心掩口、左手屈肘收在颌下护位,眨两次眼、眼尾下弯,holds one beat of stillness;镜头每次在动作起点前 0.3s 切入
+- H3:`opening in a single overhead spotlight on black stage, crossing forearms then flinging both arms wide into an X, rising onto tiptoe with wrists crossed overhead as the blue sash tails lag behind the spin, hands settling behind her head with elbows flared, then a cut to chest-up closeup where one palm covers her mouth in a held giggle with two slow blinks`
+- 来源:《奥黛塔变装》00:20-27s
+
+### K9 背面指天迪斯科+扭胯走远链(6拍|复古/背影杀)
+- 入态:背对镜头站光斑中央、双臂垂 → 出态:双手背到腰后整理衣摆、远离镜头半身位
+- 分解:拍1 (34-35) 右臂斜上 45° 指天、左手叉腰、双脚小交叉站位,定 1 拍;拍2-3 (35-36) 保持指天、胯向左顶两次、脚跟小幅度离地弹跳;拍4-6 (36-38) 背对镜头向光锥深处走,步幅小、胯随每步左右送、开衫下摆与裙摆左右甩动延迟半步;拍7-8 (38-40) 双手背到腰后拢衣摆、肩胛收拢、站定;全程只给背影,靠胯线与肩线讲故事
+- H3:`seen from behind in a tight spotlight, one arm pointing diagonally to the rafters while the hip pops twice on the beat, then walking away with small steps and rolling hip sway, jacket hem and pleated skirt swinging a half-step late, finishing with both hands gathering the jacket at her lower back`
+- 来源:《奥黛塔变装》00:34-40s
+
+### K10 鞠躬→心形手→低位爵士手→V字吐舌链(6拍|元气/收尾组合)
+- 入态:侧身走位中 → 出态:脸侧 V+挤眼吐舌定格,cut 大远景
+- 分解:拍1 (41-42) 侧身急停、上体前屈约 45° 鞠躬、双臂自然垂向地面、短发整片前甩盖脸;拍2 (42-42.7) 卷腹式直起、手顺势带到颌前、发丝回落肩后;拍3 (43-43.5) 双手于胸口拼心形(指尖对指尖+拇指对拇指)、头右歪;拍4 (43.5-44.5) 双臂体侧低位打开、掌心朝前五指大张、手腕快速抖两下(jazz hands);拍5 (44.5-45.5) 右拳收至胸前小幅度上冲两下(加油拳);拍6 (45.5-47) 切近景:右手举至脸侧成 V、挤左眼 wink、吐舌尖,holds one beat of stillness 后硬切大远景
+- H3:`snapping from a walking stop into a deep waist bow with hair flopping forward, curling back up into a finger-heart at her chest, flinging both arms low with spread palms doing quick jazz-hand wrist shakes, two small chest-level victory punches, then a closeup finishing freeze with a V-sign beside her face, winking with tongue out, held one full beat before the wide shot`
+- 来源:《奥黛塔变装》00:41-47s
+
+### K11 遮面 peek-a-boo→惊吓爪→掌风 wave 链(4拍|萌/近景)
+- 入态:胸上近景正面,双掌掩口鼻 → 出态:右手停在脸侧翻掌 wave、左手回胯、T 恤滑落露右肩
+- 分解:拍1 (01:00-01:01) 双掌心捂住口鼻、指缝闭合、眼睛闭;拍2 (61-61.5) 十指缓缓张开成栅栏、双眼从指缝里瞟镜头(眼神先动、手后动);拍3 (61.5-62.5) 双手向两侧弹开至脸旁、五指大张成"惊吓爪"、瞪眼+嘴笑开、肩膀耸起;拍4 (62.5-63.5) 右手停在脸侧翻掌向外 wave 两次、左手落回胯边、胯随拍左右顶、宽 T 恤布料在露肩处迟半拍滑落
+- H3:`chest-up to camera, hiding her mouth behind both palms then spreading the fingers into a fence to peek through with her eyes first, flinging hands apart into spread-claw scare pose beside her face with a shoulder shrug, waving one open palm while the loose tee slides off her shoulder a half-beat late, hip swaying on the beat`
+- 来源:《奥黛塔变装》01:00-01:03.5s
+
+### K12 聚光灯原地平转+背身收臂定格链(4拍|旋转/大远景)
+- 入态:大远景正对镜头 → 出态:背对镜头、右臂直臂上举、头从左肩回眸
+- 分解:拍1-2 (01:04-65.5) 以左脚为轴原地平转约两周:双臂先水平张开借角动量、再收拢贴身加速(角动量收缩明显),裙摆与蓝缎带被离心力甩成水平环、地面倒影同步旋转;拍3 (66-66.8) 转毕背对镜头急停、右臂直臂高举、发梢与呆毛惯性回甩过肩;拍4 (67-68) 手臂缓落、头从左肩上回眸镜头,cut 正面近景接发丝落定;旋转轴线始终垂直、无倾倒
+- H3:`wide shot in a cone of light, spinning two full flat turns on her left foot with arms opening to gather momentum then pulling in to accelerate, skirt and sash flaring into a horizontal ring, stopping hard with her back to camera and one arm shot straight up, hair whip-lashing over the shoulder, head peeking back from the left shoulder as the arm lowers`
+- 来源:《奥黛塔变装》01:04-01:08s
+
+### K13 红高跟螺旋下沉→抱膝蹲→跪姿后弯链(5拍|技术/地面)
+- 入态:站立(红色细高跟) → 出态:跪姿胸腰后弯成弓、右手插发扶头
+- 分解:拍1 (01:45.9-46.5) 足部近景:右足跟碾转半步、左足前交叉点地、双膝开始屈、重心沉向右跟(高跟落地先跟后掌);拍2 (46.7-47.5) 大远景:边顺时针小旋转边下蹲——螺旋式下沉、格裙与衬衫下摆绕腿水平甩;拍3 (47.7-48.5) 蹲底:双膝并拢、双臂环抱小腿、下颌内收、足跟承重,holds one beat of stillness;拍4 (49-50) 放开手臂、右膝落地成跪、左膝立起足踩地、上身开始后展;拍5 (50-51.5) 技术峰值:跪姿下腰——右手扶头后插入发中、胸腰向后打开成弓、头后仰、左脚背压地吃住平衡;回收路径被剪辑隐藏(推测为左手扶左膝卷腹回直,53s 后已见立姿背影)
+- H3:`in red stilettos, crossing one foot in front and spiraling down into a deep squat while turning clockwise, skirt hem swirling around her shins, hugging her knees for one held beat, then releasing onto one knee into a kneeling backbend with chest arched open, one hand braced in her hair behind the head, instep pressed to the floor for balance`
+- 来源:《奥黛塔变装》01:45.5-01:51.5s
+
+### K14 过顶交叉转身→背身 T 展→定妆头滚链(4拍|收尾/定格)
+- 入态:正面水手服站姿 → 出态:右臂折搭头顶、左手叉腰、眼瞟侧、笑意定格约 3 拍
+- 分解:拍1 (02:24-25) 双臂过顶手腕交叉、原地转半圈(正面转至背面);拍2 (25.5-27) 背面双臂水平展开成 T、掌心向后,随即右臂屈肘搭上头顶、胯向右送(sassy back pose);拍3 (27.5-29) 转回正面、双臂落下、右手带至脸侧;拍4 (29.5-33) 定妆:右臂折过头顶、手腕搭在头顶指尖垂向右侧、左手叉腰、下颌内收,眼球先看镜头再瞟向右、嘴角挑起,holds three beats of stillness;镜头腰部以上中近景、微仰、人物居画面左 1/3
+- H3:`crossing wrists overhead while turning half around, opening into a back-view T-pose with palms out, hooking one forearm over her head with hip cocked, rotating back to front and freezing in the over-head-arm wrist-drape pose with the other hand on her hip, chin tucked, eyes drifting from lens to side with a smirk, holding three beats in a slight low-angle medium shot`
+- 来源:《奥黛塔变装》02:24-02:33s
+
+**片<v05>《夏天结束了》(真人cos·海滨情绪·16.1s·竖屏)**
+- 背景人物:三个户外海滨点位——日落海面(低角度橙光、逆光金边)/沙滩彩色小屋(午后暖阳)/白墙绿树(正午顶光)。画外行动者:海风(发丝的主要发力者)+持机者(镜头呼吸感晃动)。人物:真人 coser(20 上下),银白渐雾蓝 BOB 假发+深蓝印花三角头巾(脑后蝴蝶结),重腮红、水光唇;藏青领白水手服→白色宽松 T(右肩滑落)→浅蓝短裤。
+- 节拍:有 BGM(mean -11.4dB);表演自由散板,动作不严格卡点(推测)。
+- 镜头形态:B 编辑快照(3-4 个场景块,块内 2-5s 长镜头,块间硬切)。
+
+### K15 指背拂额·初醒式撩发链(3拍|温柔/风合作)
+- 入态:闭眼迎风、发丝横糊双眼 → 出态:发别耳后、睁眼看镜头、嘴角小笑
+- 分解:拍1 阵风把发丝压过眼睑、眉微蹙、眼闭忍;拍2 右手食指与中指指背从眉心向太阳穴扫、把发丝推离眼周;拍3 顺势将一绺发别到耳后、指尖擦过耳廓、眼睁开;发丝物理:被推开的发约 0.3s 后又有少量回弹遮额(风持续做功);眼神落点:睁眼直视镜头;镜头面部大特写占画面上 2/3、顶光偏橙、头巾边入画
+- H3:`eyes closed as wind presses hair strands across her eyelids, brushing them away with the backs of two fingers from brow to temple, tucking one lock behind her ear with a fingertip grazing the ear, then opening her eyes straight into the lens in a tight face closeup, strands fluttering back across her forehead a beat later`
+- 来源:《夏天结束了》00:00-2.5s
+
+### K16 海风横甩·剪影怅望链(2拍|怅惘/逆光)
+- 入态:侧脸望海、长发全拢于背后 → 出态:发贴颊落定、视线仍钉在海平线
+- 分解:拍1 阵风从背后掀起长发、发梢先翻过肩头、头巾尾带同向抽动;拍2 技术峰值:整片头发横甩过脸、运动模糊横贯画面——她不闭眼、不抬手、不侧头,视线钉在海平线;拍3 发从脸前滑落贴颊、眼神未动;核心反差:头随动角度<5°,全部做功交给头发;回弹方向:顺风向前→贴颊静止;镜头侧脸大特写、日落逆光金边、海面虚化底
+- H3:`in profile against a sunset sea, a gust lifting her long hair and whipping the whole mass horizontally across her face with motion blur while she does not flinch, eyes locked on the horizon, head turning less than five degrees, strands sliding off her cheek as the wind releases, backlit rim-light on every flyaway`
+- 来源:《夏天结束了》00:07.2-8.5s
+
+### K17 慢拢发离颈·忧郁提拉链(4拍|慢镜/怅惘)
+- 入态:侧脸、手抬向额角 → 出态:低头松手、发落回原位
+- 分解:拍1 右手入画、指尖从额角插入发间向后梳;拍2 慢速把颈侧全部头发拢向脑后、肘节节抬高(进入路径:额角→耳后→颈后三段);拍3 手在颈后握住发束向上提离后颈、露出后颈与下颌线、下颌微抬、眼睑半合,holds one beat of stillness;拍4 低头、松指、发束垂落回肩;整链速度约为正常一半(推测拍摄升格);镜头侧脸特写、日落逆光、海面底
+- H3:`slow-motion profile as fingertips slide into her hair at the temple and gather every strand toward the nape in three segments, elbow rising, lifting the gathered hair off her neck to expose the nape and jawline with heavy-lidded eyes, holding one beat before dropping her chin and letting the hair fall back`
+- 来源:《夏天结束了》00:08.6-12.2s
+
+### K18 顽皮摇头弹发+抓发藏脸链(4拍|开心→含羞)
+- 入态:正面大特写、抿嘴笑 → 出态:头倾右肩、脸颊贴手背、闭眼含羞
+- 分解:拍1 头先向左倾、抿嘴憋笑、眼神左右瞟;拍2 头快速左右小摆两次(幅度小频率高)、两侧发梢水平抽打面颊、刘海弹跳、张嘴笑出声(技术峰值=甩发与笑声同拍);拍3 摆动衰减、发回落、笑收成抿嘴;拍4 右手五指插进右侧发里抓住一绺、头向右肩倾、眼闭、脸颊贴向手背(回收=用头发藏半张脸);镜头正面大特写、头顶绿树叶入画、正午顶光
+- H3:`front closeup tilting her head then shaking it quickly side to side so the bob ends slap her cheeks and bangs bounce while she bursts out laughing, the swing decaying into a pressed-lip smile, then fingers diving into the hair on one side to grab a fistful and hiding half her face against the back of her hand, eyes closed, shy`
+- 来源:《夏天结束了》00:13.9-16.1s
+
+**片<v06>《橘福福》(真人cos·自拍快剪·27.6s·竖屏)**
+- 背景人物:三个晴天户外点——城市广场(蓝天+高楼)/金色稻田/白色雏菊花田;硬光直射,自拍者的影子清晰投在人物自己脸上(11s 起);18.6s 附近插入两帧黑底"备选"字卡(剪辑余料)。无画外行动者(自拍臂长机位)。人物:真人 coser(20 上下),金色长假发+白色挑染束、棕白双色毛绒虎/熊耳、绿色美瞳;白色金饰吊带裙(藏青缎带蝴蝶结+金珀挂坠)、白花耳环、裸肩;手持道具:雏菊、草叶/稻穗。
+- 节拍:有 BGM(mean -11.2dB,轻快流行推测);手势卡点松散(推测)。
+- 镜头形态:B 编辑快照(0.5-2s 碎片硬切,全部自拍近景特写,10s 处一次摇离面部再摇回)。
+
+### K19 猫爪拳贴颊·wink 发言链(3拍|萌/自拍)
+- 入态:自拍大特写、手在画外 → 出态:拳贴右颊+头歪+笑定格
+- 分解:拍1 右手松拳提到右颊旁、腕内扣拳眼朝脸、肘下沉;拍2 挤左眼 wink、嘴张开发言/唱、拳随语速小幅捶颊两下(发力来源=前臂小幅屈伸);拍3 头向右歪贴向拳、左眼睁开、嘴角翘起,拳不落,holds one beat of stillness;耳饰与发束随头歪延迟摆;镜头前置自拍、微俯、面部占画面 3/4
+- H3:`front-camera closeup raising a loose fist beside her cheek with the wrist curled inward, winkling one eye while the fist knocks lightly against her cheek twice on her words, then tilting her head to lean into the fist with one eye open and a smirk, holding the pose as ear fluff and hair sway late`
+- 来源:《橘福福》00:11-14s
+
+### K20 草叶叼唇·deadpan 到破功链(3拍|反差萌/道具)
+- 入态:面无表情直视镜头、草叶横叼唇间 → 出态:头摇草晃、眼弯笑破
+- 分解:拍1 一根草叶横叼在唇间、叶尖朝右、面无表情 deadpan 直视、下颌完全静止;拍2 右手两指捏住草茎、把草从唇间抽出一半再推回(腕指做功、唇不追);拍3 头小幅度左右摇、草叶跟着晃、嘴角绷不住上弯、眼弯成缝(回收=笑破但草不落);细节:自拍者影子投在自己脸上;镜头面部特写、正午顶光
+- H3:`closeup holding a grass blade sideways between her lips with a deadpan stare, pinching the stem to slide it halfway out and back, then shaking her head slightly so the blade wobbles until she breaks into crescent eyes and a grin without dropping the grass, her own shadow falling across her face in harsh noon sun`
+- 来源:《橘福福》00:14.5-19s
+
+### K21 摇镜拾雏菊·花瓣贴脸链(3拍|道具/镜头几何)
+- 入态:面部特写居中 → 出态:雏菊贴右颧骨、头向花倾、wink
+- 分解:拍1 手持镜头从脸快速右摇、白雏菊花海占满画面约 0.5s(转场由摇镜完成);拍2 摇回时她已把一朵白雏菊举到右脸旁、花瓣贴颧骨(进入路径:摇镜遮蔽内完成举花,动作被剪辑藏起);拍3 头向花倾、挤眼 wink、嘴角小笑;镜头几何:自拍臂长、摇镜前后构图一致(人物右侧留花位);吊带蝴蝶结随肩转微晃
+- H3:`selfie camera whipping off her face to sweep across a field of white daisies and snapping back as she raises a single daisy against her cheekbone, tilting her head into the flower with a wink, the gesture completed hidden inside the pan so the pose appears fully formed`
+- 来源:《橘福福》00:10-11s
+
+### K22 "哇"声张爪迎镜·指 wiggle 链(3拍|元气/打招呼)
+- 入态:自拍特写、平静看镜头 → 出态:眼笑成月牙露齿、手落回画外
+- 分解:拍1 头微后仰、嘴大张成"哇"、右手五指大张举到脸侧(肩驱动整臂上抬);拍2 五指朝镜头 wiggle 两下(像小爪抓空气)、嘴从 O 形收成笑(技术峰值=张嘴与张爪同帧爆发);拍3 眼笑成月牙、露齿、手落出画、头回正;白花耳环与熊耳随仰头后倾;镜头自拍特写、城市广场蓝天硬光
+- H3:`front-camera closeup snapping her head back with mouth wide in a happy gasp as one hand flies up beside her face with all five fingers spread, wiggling the fingers at the lens like little grabs, mouth folding from an O into a grin with crescent eyes before the hand drops out of frame`
+- 来源:《橘福福》00:21-22.5s
+
+**图<img02>《狐耳白发六宫格》(AIGC 写真·2x3 拼图姿势参考)**
+- 背景人物:和风酒廊/居酒屋木格酒架前,木地板+深色圆垫,暖光;人物:白发狐耳角色(白狐耳+巨大蓬白狐尾),白色短上衣+金色镶边胸襟、金色高领环、纱质肩袖、金臂环腕环、腰侧红绶带长垂、赤足金脚链;道具:绿釉小酒瓶。A/B/C 三格共享同一坐姿基座(盘腿交叉坐)、D/E/F 三格共享侧坐-抱膝基座,判定为"同基座微变体",适合做"大姿势锁死+微活性"模板(J 章纪律)。
+- 节拍:静态图片,无节拍;时序为重构(推测)。
+
+### K23 狐耳写真链·盘坐 V 字手三连(4拍|AIGC/写真·大姿势锁死)
+- 入态:盘腿交叉坐于深色圆垫 → 出态:一膝立起、狐爪手举至耳侧、眼神斜上
+- 分解(大姿势锁死,只有手指/头角/眼神/眨眼在动,手永远在做事):拍1 基座锁定——盘腿脚踝交叠、赤足金脚链、白狐尾在身后铺开、双手各比 V(一上护颊一下护膝)、眼闭头微右歪;拍2 微活性:头转正、下颌收 1cm、双眼睁开直视镜头、V 字手不动;拍3 微活性:下 V 手收回叠放大腿、上 V 手五指松开成狐爪上提至耳侧;拍4 一膝立起、上身微前倾、眼神从直视滑向斜上方、眨一次慢眼;红绶带与广袖全程垂坠方向不变
+- H3:`sitting cross-ankled on a floor cushion in a sake-bar alcove with the white fox tail fanned behind, double V-signs beside her face and knee, opening her eyes to camera, melting the lower hand into her lap while the upper blooms into a relaxed fox-paw at her ear, one knee rising as her gaze drifts upward, silk sleeves and red sashes dead still`
+- 来源:《狐耳白发六宫格》上排 A→B→C(单图三变体,时序为重构·推测)
+
+### K24 狐耳写真链·绿酒瓶三连(3拍|AIGC/写真·道具链)
+- 入态:侧坐木地板、一膝立、手抵唇边沉思、绿釉酒瓶立在脚边 → 出态:抱膝坐、双手合抱酒瓶抵胫前、下颌搁膝抬眼
+- 分解(大姿势锁死):拍1 侧坐基座:尾绕至身侧、右手两指抵唇边、绿瓶在脚边入画;拍2 转正面向镜头、右手拾瓶(腕内旋 90° 执瓶颈)向前递出半臂、左手扶膝、直视镜头——递瓶的手臂全程有"请"的弧线;拍3 收瓶抱膝:双腿屈起、双手合抱瓶身抵在胫前、下颌搁上膝头、眼从瓶口上方抬起来看镜头;手指永远在做事:抵唇指→执瓶指→抱瓶指逐拍更换任务
+- H3:`in a wood-floored sake room, seated with one knee up and fingertips at her lips beside a green ceramic flask, lifting it with a wrist turn to offer it forward half an arm's length while looking dead into camera, then hugging the flask with both hands against her shins, chin resting on her knees, eyes lifting over the bottle mouth`
+- 来源:《狐耳白发六宫格》下排 D→E→F(单图三变体,时序为重构·推测)
+
+**图<img01>《蓝水手服走廊截图》(单帧姿势参考)**
+- 背景人物:室内清水混凝土走廊,灰色大板墙+方柱、绿色安全出口指示灯、反光水泥地坪、冷白顶光。人物:18-22 岁感少女,黑长直+空气刘海+白色花形发饰与蓝色发带;浅蓝紫短款学院西装外套(藏青袖口)、白衬衫、藏青领带、蓝格纹百褶短裙(白色蕾丝衬裙层)、白色过膝袜(膝侧黑丝带蝴蝶结)、黑色厚底乐福鞋。
+
+### K25 走廊应援交叉跳步定格链(3拍|元气/单帧反推)
+- 入态(推测):立正、双臂垂 → 出态(=帧内定格):双拳收胸、左足尖前点小腿交叉、右手拎挂饰至脸侧、张嘴喊
+- 分解:拍1(推测) 双拳收到胸口、肘内夹成应援预备、膝微屈蓄力(弹簧下沉半拍);拍2(推测) 左足尖前点地、双小腿前后交叉、重心压在右足、格裙摆向右扬;拍3(=帧证据) 右手拎钥匙扣挂饰甩至脸侧高度、腕外翻让挂饰垂落、嘴张开喊(应援口令或跟唱)、下巴微抬;蓝外套下摆与领带随交叉步左摆;来源为单帧截图,拍 1-2 为动作反推
+- H3:`in a bare concrete corridor, pulling both fists to her chest with elbows tucked, crossing one shin behind the other onto pointed toes while swinging a keychain charm up beside her face, mouth open mid-chant, pleated plaid skirt swinging with the cross-step, full body in a slight low angle`
+- 来源:《蓝水手服走廊截图》(单帧截图+推测)
+
+**片<v07>《好女孩——薇薇安(测试)》(吸血鬼写真快剪·60.6s·竖屏)**
+- 背景人物:约 10 处场景轮换——灰色布艺沙发+木地板(暗调窗光)/白色床品卧室(自然窗光)/暗调木墙/烛光桌(暖光)/蓝调时刻窗前。人物:吸血鬼贵族风少女 cos("薇薇安"):银白偏紫长卷发(结尾段变蓝紫)、红瞳、精灵尖耳+额侧白色小弯角、黑紫缎面女仆风连衣裙(白泡泡袖+黑紫马甲裙+褶边领+黑缎蝴蝶结中央嵌蓝宝石胸针)、黑色细项圈;黑丝/黑色过膝袜+黑色厚底高跟鞋(银色踝扣+紫色缎带);手持道具:白瓷拿铁杯、红玫瑰。画外行动者:无。
+- 节拍:有 BGM(mean -14.3dB);写真自由散板(推测)。
+- 镜头形态:B 编辑快照(判据:10+ 次场景硬切,段内自拍式固定机位微晃)。
+
+### K26 沙发高跟腿链(两景)(4拍|慵懒/腿线)
+- 入态:立于沙发旁 → 出态:双踝交叠搭在沙发扶手上静止
+- 分解:拍1 立姿入画、黑丝+厚底高跟鞋(银踝扣+紫缎带)在窗光下高光;拍2-3 抬腿翻身把双腿搭上沙发扶手、双踝交叠、足尖悬空——小腿以踝为轴慢摆约±15°(惯性来自小腿自重,鞋面缎带随摆轻颤);拍4 坐姿变体:双膝并拢交叠、指尖沿黑丝膝头轻抚一遍(28-30s/45.6-47s 两景复用)
+- H3:`in black platform heels with violet ribbon ankle straps she lifts her stockinged legs onto the sofa armrest, ankles crossed with the calves swaying slowly from the ankle, then sits with knees together as fingertips glide once over the sheer knee, dim window light`
+- 来源:《薇薇安》00:00-4.5s;00:28-30s;00:45.6-47s
+
+### K27 白床交叠蹭脚链(2拍|慵懒)
+- 入态:仰卧床上、双腿屈膝 → 出态:双脚交叠静止
+- 分解:拍1 屈膝并拢向侧倾倒、双腿交叠横陈床面(黑丝脚背绷直);拍2 上位脚脚背贴下位脚小腿来回轻蹭两次、脚趾同步蜷缩伸展,静止收住
+- H3:`lying on white sheets with knees drawn and legs folded sideways, the top foot rubbing slowly along the other calf with toes curling and flexing, natural window light`
+- 来源:《薇薇安》00:05-9s
+
+### K28 枕上转醒链(4拍|柔焦叙事)
+- 入态:侧卧枕上、双眼闭合 → 出态:侧身抱枕、目视镜头浅笑
+- 分解:拍1 侧卧、银紫长发铺满白枕、双眼闭合;拍2 眼睑缓缓睁开、目光先落在镜头前虚处再聚焦;拍3 头自枕上微抬转向镜头、下颌收半分;拍4 上身卷向枕头环抱、面颊贴枕、浅笑定住(静态,明写)
+- H3:`waking on a white pillow with long lavender hair spread wide, eyelids opening slowly as the gaze drifts then focuses, lifting the head to find the lens before curling around the pillow with a cheek pressed down and a soft smile, holding still`
+- 来源:《薇薇安》00:15-24s
+
+### K29 领结宝石微调链(4拍|细节微动作)
+- 入态:面部特写正视 → 出态:指尖仍搭在蝴蝶结上、目视镜头微笑
+- 分解:拍1 指尖从画外入画、轻捏黑缎蝴蝶结翼部左右各正一次;拍2 指腹推正中央蓝宝石胸针半毫米、宝石反光闪一下;拍3 指尖顺缎带下滑半寸停住;拍4 目光从手上抬回镜头、眨眼一次浅笑
+- H3:`close-up as her fingertips straighten the black satin bow at her collar and nudge the sapphire brooch a hair, sliding down the ribbon half an inch before the eyes lift back to the lens with a slow blink and a smile`
+- 来源:《薇薇安》00:21-26s;00:46-52s
+
+### K30 烛光捧杯链(4拍|暖调)
+- 入态:坐于烛光桌前、白瓷杯在胸前 → 出态:杯仍捧在胸前、目视镜头
+- 分解:拍1 双手捧白瓷拿铁杯于胸前、烛光在脸上跳动(杯中液面微晃);拍2 目光从杯上抬起直视镜头、头微歪;拍3 杯沿抬至唇下轻碰半秒(浅啜或欲啜);拍4 杯回胸前、下颌微收定住
+- H3:`holding a white latte cup with both hands at her chest in candlelight, lifting her gaze from the cup to the lens with a head tilt, touching the rim to her lower lip for a half second, then settling it back down`
+- 来源:《薇薇安》00:36-40s(时间码为推测)
+
+### K31 玫瑰贴唇链(4拍|浪漫/道具)
+- 入态:持玫瑰于画面下方 → 出态:玫瑰贴颊、目视镜头浅笑定住
+- 分解:拍1 红玫瑰举至唇鼻前、完全挡住下半张脸、双眼缓闭;拍2 花沿脸颊缓缓下滑贴住颧骨、眼睑睁开;拍3 唇角自花瓣后弯起浅笑、头向花倾;拍4 定住(静态,明写)
+- H3:`pressing a red rose fully over her mouth and nose with eyes closing, sliding the bloom slowly down her cheek as the eyes open and a smile curves from behind the petals, head tilting into the flower and holding`
+- 来源:《薇薇安》00:40-43.5s
+
+### K32 "十年后"时间跳跃链(2拍|剪辑结构/梗)
+- 入态:窗前面部特写(银紫发) → 出态:同机位同姿态、发色转蓝紫、浅笑定格
+- 分解:拍1 硬切黑底白字卡"十年后"约 2s(后期层);拍2 切回同一窗前机位——姿态与构图与切前一致,仅发色由银紫转蓝紫,对镜头缓慢眨眼一次、浅笑定住(梗:吸血鬼不老,只有发色随时间漂移)
+- H3:`hard cut to a black title card reading "TEN YEARS LATER", then back to the same window framing and pose with the hair shifted from silver-lavender to blue-violet, one slow blink into the lens and a held gentle smile`
+- 来源:《薇薇安》00:55-60.6s
+
+**片<v08>《维琳娜》(鸣潮维里奈 cos·氛围写真·75.0s·竖屏)**
+- 背景人物:单人女性 coser,角色判读为《鸣潮》维里奈(判据:银白长发+头顶呆毛+精灵尖耳+白金藏蓝制服+紫瞳)。两套造型:A(室内特写)白色立领短外套、金色圆筒扣、金色多层荷叶领结、藏蓝露肩裙配白色绒球珍珠肩带、白色过膝袜、灰白色玛丽珍鞋、白色手套、金色长耳坠;B(户外街拍)白色露肩水手上衣+藏蓝水手领(肩带白色绒球)、藏蓝高腰裙、白色荷叶袖套、白色侧马尾扎大号白色印花蝴蝶结、白色厚底珍珠踝带玛丽珍。道具:白瓷咖啡杯(拿铁/黑咖啡)、米色曲奇、户外木质圆桌+菜单本、米色布艺沙发+木茶几白瓷茶具、白床品。场景共约 10 处:暗调木墙窗边→沙发茶几区→户外街角咖啡馆(蓝天树影)→白纱帘沙发窗边→暗背景室内→自然光卧室白床→灰调室内→逆光绿植户外。画外行动者:仅画外持机者(POV 腿部镜头),无第二入画者。
+- 节拍:有 BGM(mean -15.5dB,抒情慢板类推测);动作无固定周期卡点,摆脚/眨眼均为自由速度→自由散板。
+- 镜头形态:C 快剪(判据:≥10 次场景硬切,单镜 1.5-11.5s,多为手持自拍式微晃;9.0-9.9s、35.4-38.1s、56.2-59.3s 为三处静态微动长镜,已在链内明写)。
+
+### K33 分帘拨呆毛链(3拍|软萌)
+- 入态:正面大特写静止,刘海垂帘遮右眼 → 出态:手撤出画,呆毛竖立,歪头微笑看镜
+- 分解:拍1 右手自画外右上入画,指背贴颊把遮眼刘海向右拨成斜分帘(发力=腕指小肌群,头不动、视线跟手动);拍2 手沿发帘滑至头顶,两指轻捏呆毛根部上提半厘米松开,呆毛弹性回摆、周边发丝延迟颤动;拍3 手撤出画,头右倾约 5°,嘴角上提、眨眼一次收势
+- H3:`extreme close-up selfie, her hand slides into frame brushing the bangs away from one eye, then two fingers pinch the single ahoge strand on her crown and flick it upright, she tilts her head with a soft smile and one slow blink`
+- 来源:《维琳娜》00:00-3.2s
+
+### K34 沙发慵懒腿链(两段)(6拍|慵懒)
+- 入态:仰躺沙发、双腿伸向低机位镜头 → 出态:双踝交叠静止、脚尖轻点
+- 分解:段1 低机位交踝摆脚(3.5-8.9s):拍1 双腿沿沙发面伸直,右踝搭上左踝,脚尖放松;拍2-3 上位脚以踝为轴左右慢摆约±15°(周期约 2s,大腿不动,白袜随摆起细褶);拍4 摆动衰减停住,膝微屈一弹;拍5 下位脚抽出换到上位,交叠方向反转;拍6 新上位脚继续慢摆,藏蓝裙摆随躯干呼吸微起伏。段2 俯视提膝交叠(10.0-14.9s):拍1 机位翻至脸侧俯视,靠镜头腿屈膝上提至画面中央;拍2 该腿外旋下落、横搭对侧膝上成二郎腿;拍3 上位脚踝带动小腿前后点动两次;拍4 交叠双腿整体小幅弹跳(沙发反弹性);拍5-6 保持交叠,脚尖随乐轻点,镜头手持呼吸感微晃
+- H3:`reclining on the sofa shot from a low angle, she crosses her ankles and the top foot sways lazily side to side, then the camera looks down as she lifts one knee, drapes that leg over the other and taps her toes gently while the crossed legs bounce softly`
+- 来源:《维琳娜》00:03.5-8.9s;00:10-14.9s
+
+### K35 饼干轻咬眨眼链(4拍|甜)
+- 入态:面部特写,戴白手套的手持曲奇入画 → 出态:饼干停在锁骨前,对镜微笑
+- 分解:拍1 手把曲奇送至唇前,张口轻咬掉一角(只动下颌,视线全程不离镜头);拍2 咀嚼两下,饼干停在唇边,头微左歪;拍3 手把饼干下移到锁骨前,缓慢眨眼一次(闭眼约 0.4s,睫毛颤动);拍4 饼干再次抬回唇边补咬一小口,嘴角带笑上扬
+- H3:`close-up as her gloved hand brings a cookie to her lips, she takes a small bite without breaking eye contact, chews twice, lowers the cookie to her collarbone with one slow blink, then lifts it back for another tiny bite`
+- 来源:《维琳娜》00:15-21.9s
+
+### K36 风拢发托腮链(4拍|氛围)
+- 入态:街边桌旁侧坐,侧马尾被阵风吹起 → 出态:手滑至颈侧衣领,头转向镜头浅笑
+- 分解:拍1 阵风把侧马尾整体横吹过肩(发丝位移约 30cm,飘动明显滞后于头部);拍2 抬右手拢住飞发别到耳后(指尖贴鬓角滑行);拍3 顺势掌根托住下颌脸颊、肘撑桌面,头随手势压低约 10°;拍4 手沿下颌线下滑到颈侧领口,头回转向镜头,抿唇浅笑
+- H3:`wind lifts her long side ponytail across her shoulder, she tucks the flying strands behind her ear, cups her cheek on her palm with elbow on the table, then slides the hand down to her collar and turns to the camera with a small smile`
+- 来源:《维琳娜》00:22-26s
+
+### K37 拂面遮眼挥手链(两景)(4拍|魅)
+- 入态:正视镜头特写 → 出态:手撤出画,眨眼微笑
+- 分解:段A 天幕拂面(26.4-30.9s,蓝天仰角、藏青袖):拍1 手从画右上入画,掌心朝脸横扫过双眼前,发丝被带起;拍2 手背贴额前滑向右侧太阳穴;拍3 双眼随手之遮挡闭合,头微仰;拍4 手离开,眼缓睁成月牙、笑意加深。段B 遮额横挥(47.0-50.8s,灰调室内、白外套):拍1 五指张开的手掌自右上入画盖住额头与右眼;拍2 掌心贴脸向左横移过半张脸(指缝间露眼);拍3 原路挥回右下,带动刘海飘起;拍4 手撤出画,眨眼对镜微笑
+- H3:`her open palm enters the frame and slowly sweeps across her face covering her eyes with hair strands dragged along, then the hand waves back out of frame as she blinks into the lens with a deepening smile`
+- 来源:《维琳娜》00:26.4-30.9s;00:47-50.8s
+
+### K38 慵懒腿脚三景链(6拍|慵懒)
+- 入态:坐姿小腿悬垂 → 出态:仰躺伸腿向镜、双脚尖交替点动
+- 分解:段A 悬垂晃鞋(31.2-35.1s,白纱帘沙发沿):拍1 双小腿自然垂下悬空;拍2 一脚绷脚下压(厚底鞋跟离地)、另一脚勾起;拍3 双脚交替前后打水状小摆(幅度约 20cm,珍珠踝带反光闪动);拍4 双膝并拢内扣、脚尖相碰停住。段B 跪卧绷脚互剪(38.4-42.3s,白床):拍1 趴跪床面、小腿竖起;拍2 双小腿交剪一次上下互换;拍3 绷直脚尖、双脚同步左右轻摆;拍4 脚跟互磕一下。段C 交踝摇晃+点脚(52.0-59.3s,白床):拍1 仰躺、双腿伸向镜头双踝交叠;拍2 上位脚左右晃三次;拍3 双腿屈膝收向胸口再蹬直(脚尖绷直指向天空);拍4 双脚尖交替点动至近静止(56.2-59.3s 基本静态,仅脚尖微动)
+- H3:`lazy footwork montage: sitting with calves dangling she seesaws her platform mary-janes, kneeling prone she crosses her raised shins and rocks her pointed toes, then lying back she extends her legs toward the camera with crossed ankles, wiggling her feet and flexing her toes`
+- 来源:《维琳娜》00:31.2-35.1s;00:38.4-42.3s;00:52-59.3s
+
+### K39 咖啡舔唇-wink 收尾链(4拍|微魅)
+- 入态:暗背景特写、白瓷杯举至唇边 → 出态:逆光下发帘遮面,对镜单眼 wink 定格到片尾
+- 分解:拍1 手捧白瓷杯啜饮一口(杯沿贴下唇约 1s,杯内黑咖啡液面晃动);拍2 杯下移至胸前,舌尖快速舔过上唇左右各一次,眼半阖;拍3 (切逆光)夕照亮发丝垂帘遮住双眼,抬手把发帘向侧拨开一缝;拍4 对镜单眼闭合 wink 约 1.5s、嘴角上扬,姿势保持至 75.0s 片尾
+- H3:`she sips black coffee from a white cup close to the lens, lowers it and licks her lips with the tongue tip, then backlit by sunset her hair curtains over her eyes, she parts the strands and holds a one-eye wink at the camera until the shot ends`
+- 来源:《维琳娜》01:00.1-07s;01:07.7-15s
+
+**片<v09>《两个御姐合拍》(双人对镜甜舞·14.9s·竖屏)**
+- 背景人物:酒店/公寓室内,米色木饰墙板与房门、门上金色长条牌、黑色电子锁挂绳,暖黄室内灯,全程单一固定机位。两名年轻女生并排穿同款浅蓝绞花针织开衫(麻花纹、木色扣、毛球拉头):左=黑色双马尾、素灰百褶裙、稍矮;右=黑长直披发、灰黑格纹百褶裙、稍高。均光腿,画面裁至小腿、鞋未见。无画外行动者。
+- 节拍:有 BGM(mean -13.4dB);屈膝弹跳周期全程恒定约 0.4-0.5s、手势切换均落在弹跳谷值→固定节拍,约 120-130BPM(推测)。
+- 镜头形态:A 一镜到底固定机位(判据:15s 内门框与门牌位置像素级不动,无变焦无平移无剪辑)。
+- 双人总则:站位并排、间距约 0.5 个肩宽(40-50cm)、正对镜头、全程无肢体接触、无对视(都看镜头);配合方式="同向齐舞为底+三处错位加花"(1.6-2.4s 分工手势、10.0-10.8s 推掌/撩发、13.0s 镜像 OK 环眼);起手 0.0s 右生手掌已立在脸侧(右先半拍、左以大摆臂跟进);对靠与转身均由左生先启动、右生半拍内对齐。
+
+### K40 开场双掌弹跳+错位指天拳托链(4拍|甜·双人)
+- 入态:二人自然站立、左臂垂 → 出态:左指天/右拳托下巴,同步屈膝定格
+- 分解:拍1 [0.0-0.4] 右生手掌立于右颊旁小挥,左生右臂自体侧大弧线上甩至脸旁(裙摆随重心偏移);拍2 [0.4-1.0] 双人同步双掌立颊侧、肘外撑,屈膝下沉半拍再弹起;拍3 [1.0-1.6] 双掌向外腕部开合两次,髋随弹跳左右各顶一次;拍4 [1.6-2.4] 分工错位:左生收掌换食指指天上摆两次,右生握拳收在下巴下轻颤,膝弹保持同频
+- H3:`two girls side by side facing the camera, the right one waves a palm beside her face a half-beat early while the left swings her arm up in a big arc, they bounce on bent knees with palms at their cheeks, then the left points her index finger skyward twice as the right holds a fist under her chin`
+- 来源:《两个御姐合拍》00:00-2.4s
+
+### K41 对靠转身回眸链(3拍|甜·双人)
+- 入态:双掌颊侧 → 出态:转回正面、拳托下巴轻弹站直
+- 分解:拍1 [2.4-3.2] 双人相向内倾、头几乎贴鬓,双拳收下巴,同步屈膝(内侧肩几近相碰,唯一的"接近"互动);拍2 [3.2-4.2] 左先右随同步向外转身约 90° 背对镜头,双马尾与长发甩出弧线,越肩回眸看镜头;拍3 [4.2-5.0] 转回正面,拳托下巴轻弹两下、身体拉直
+- H3:`the duo leans their heads toward each other with fists at their chins, then spins outward in sync turning their backs with an over-the-shoulder glance as twin-tails and long hair whip around, before returning to face front bouncing lightly with fists under their chins`
+- 来源:《两个御姐合拍》00:02.4-5s
+
+### K42 指天摇摆+胸前比心链(3拍|甜·双人)
+- 入态:拳托下巴直立 → 出态:胸前比心收、屈膝小弹
+- 分解:拍1 [5.0-5.8] 双人食指指天,腕部向外画小圈摇摆、身体拉高;拍2 [6.0-6.8] 收指换拇指食指捏合胸前比心,两人心位一高一低错开,屈膝小弹;拍3 [7.0-8.8] 再指天摇摆两轮,手臂下落预备大摆臂
+- H3:`both girls point their index fingers skyward waggling in small outward circles, pinch matching finger hearts at chest level offset one higher one lower on a bouncy dip, then repeat the sky-point twice before dropping their arms to prepare a big swing`
+- 来源:《两个御姐合拍》00:05-8.8s
+
+### K43 摆臂推掌-脸侧摆掌-镜像 OK 环眼链(6拍|甜·双人)
+- 入态:双臂张开放松 → 出态:双人 OK 圈扣眼、歪头弹跳定格至片尾
+- 分解:拍1 [8.8-9.8] 双臂从上向下大摆劈过体前(掌心朝下),同步屈膝下沉;拍2 [10.0-10.8] 错位加花:左生掌心朝前推出两次(欢迎式),右生单手拎起披发发尾向外一甩;拍3 [11.0-11.8] 双臂向后下摆再回摆,右生长发回落肩头;拍4 [12.0-12.8] 双掌立脸侧左右快摆(停止式),头反向小摆;拍5 [13.0-13.8] 镜像 OK 手势:左生 OK 圈扣右眼、右生扣左眼(圈口朝镜头);拍6 [13.8-14.9] 保持 OK 圈,头随节拍左右轻摆+膝弹,定格收尾
+- H3:`both girls swing their arms down through the front in sync with a knee dip, the left pushes her palm forward twice as the right flips her long hair over her shoulder, they wave open palms beside their faces with heads tilting, and finish mirrored making OK circles around their inner eyes, wobbling their heads on the beat into the ending freeze`
+- 来源:《两个御姐合拍》00:08.8-14.9s
+
+**片<v10>《请pick西施吧～》(现代学院风单人宅舞·32.7s·4K竖屏)**
+- 背景人物:地下通道/展馆廊道——抛光灰石大板块墙面与方柱、绿色安全出口指示灯、反光水泥地坪、冷白顶光,纵深可见金属伸缩缝线条;无他人入画(标题"西施"与画面无关,帧证据为准,全程为现代制服街舞)。人物:18-22 岁感少女;黑长直+空气刘海+白色花形发饰与蓝色发带;浅蓝紫(periwinkle)短款学院西装外套(藏青袖口)、白衬衫、藏青领带、藏青腰封,蓝格纹百褶短裙(下摆缀白蕾丝衬裙层、内着黑色安全裤);白色过膝袜(膝侧黑丝带蝴蝶结)、黑色厚底乐福鞋;无手持道具。
+- 节拍:有 BGM(mean -11.1dB/max 0.0dB,明显响度限制);动作约每 0.5-1.0s 一换(50fps 密帧判读),推测约 120-128BPM 固定节拍(推测)。
+- 镜头形态:A 一镜到底(判据:全程同机位竖拍、立柱与出口灯相对位置连续无跳切,景别变化全靠人物走位)。
+
+### K44 合手弹腕开场链(4拍|萌)
+- 入态:静立低头,双手交叠合于胸前 → 出态:双手收回胸前,屈膝微弹
+- 分解:拍1 双手交叠合胸、低头蓄势,随重拍抬头提沉一次呼吸;拍2 双手在胸前一握一松轻晃,头左右各歪一次,受力全来自腕部小幅屈伸;拍3 右手抬至耳侧、指尖向外弹开一次(半拍 accent);拍4 手腕回勾收回胸前,膝部小弹吸收
+- H3:`standing still then lifting her folded hands at her chest with a small nod on the downbeat, one wrist flick popping her fingertips open beside her ear on the half-beat, knees softly bouncing, static frontal locked-off vertical camera`
+- 来源:《请pick西施吧～》00:00-2.2s
+
+### K45 对角举臂后踢小跳链(4拍|元气)
+- 入态:双手胸前持位 → 出态:双掌立于脸侧,屈膝弹动
+- 分解:拍1 左手挥至头顶斜上方、右拳收胸;拍2-3 换右臂直臂斜上举,同时左小腿后勾、脚跟踢向臀部,身体向左侧倾——发力来自髋前侧提拉+对侧臂反向配重;拍3-4 换边再做一次,重心经小跳上提;拍4 落地屈膝,双手上抬至脸侧掌心朝前,借落地惯性弹两下收住
+- H3:`alternating straight arms punching diagonally overhead while the opposite heel kicks back toward her hip in small skips, body tilting into the line of the arm, pleated tartan skirt bouncing with each landing, ending with both palms framed beside her face and knees absorbing into a bounce`
+- 来源:《请pick西施吧～》00:02.4-4.6s
+
+### K46 顶胯侧身框脸展示链(6拍|萌)
+- 入态:掌立脸侧弹动 → 出态:双掌摊开于体侧、耸肩
+- 分解:拍1 双腕交叉于胸前成 X,随拍向下拨开;拍2 右臂伸直指向右方、掌心向上做"请"式展示,左手叉腰,双腿开立;拍3-4 双臂展开、胯向右顶出,顺势侧身转 3/4 背对镜头——格纹裙摆随转身离心甩起、白蕾丝衬裙边外翻;拍5 转回正面,双手抬至脸颊两侧比"取景框"手势,屈膝下蹲一拍;拍6 双手向两侧摊开掌心向上、耸肩定格(受力顺序:胯驱动→臂跟随→肩回收)
+- H3:`crossing her wrists into an X then sweeping them open into a palm-up presenting gesture, popping the hip and rotating three-quarters away so the plaid skirt flares off its lace petticoat, spinning back to frame her face with both hands in a viewfinder shape before opening the palms wide with a shrug`
+- 来源:《请pick西施吧～》00:05.5-9.5s
+
+### K47 背身平转甩发链(6拍|全片唯一大转·放 1/3 进度处)
+- 入态:双手抬至领口、右臂屈肘上冲蓄力 → 出态:面向镜头、拳收胸前、屈膝微弹
+- 分解:拍1 双手提至领口,右臂屈肘向上冲拳(起转预备);拍2 以左脚前掌为轴蹬地起转,双臂张开扩角动量,重心轴心垂直;拍3-4 平转 360°——技术峰值:转至背对镜头时长发完全水平甩出、格纹裙摆展平露出白色蕾丝衬裙与黑安全裤(黑发与裙摆双延迟层);拍5 转回面向镜头,发梢扫过面部借惯性继续飘,左拳上举急停亮相;拍6 拳收回胸前,屈膝下弹一次吸收角动量残量
+- H3:`spot pivot turn on the left foot with arms opening wide for angular momentum, waist-length black hair whipping fully horizontal through the back of the spin while the layered skirt lifts off its lace hem, stopping hard facing camera with one fist punched up, hair settling across her face before she recovers into a knee bounce`
+- 来源:《请pick西施吧～》00:10.4-12.6s
+
+### K48 行进冲拳托腮接侧踢展臂链(8拍|元气)
+- 入态:拳收胸前弹动 → 出态:并步站立、单手举于头侧
+- 分解:拍1-4 原地提膝踏步,对侧拳随每步向上冲(4 次),发力来自支撑腿蹬地+髋上提,裙摆随提膝摆动;拍5-6 双拳收至下颌下方做"托腮"状、头歪向一侧(萌点 accent);拍7 双臂由体侧向外划开成 T,接双臂上举成 V 开腕、屈膝下弹两次;拍8 右腿向右直腿踢出点地、双臂做左低右高反向平衡,收腿并步、单手回落至头侧
+- H3:`marching in place with opposite fists punching up on each knee lift, tucking both fists under her chin with a head tilt, sweeping the arms out to a T and up into an open-wrist V with two deep knee bounces, then kicking one leg straight out to the side with counter-tilted arms before stepping together`
+- 来源:《请pick西施吧～》00:14.4-20.4s
+
+### K49 收尾双横杠比心谢幕链(6拍|萌·放结尾)
+- 入态:开立屈膝、双臂前平举 → 出态:双脚交叉站定、低头谢幕定格
+- 分解:拍1 双臂前平举向下甩、开立步屈膝下沉;拍2-3 右小臂横于额前、左小臂横于胸前叠成"双横杠",同时右脚交叉落于左脚侧;拍4 双手沿中线上提至头顶合拢比心、随即开腕向外打开;拍5 双手落至肩侧握拳上举两次(半拍 accent);拍6 双臂自然下垂微张、低头谢幕,全部动量静止收零
+- H3:`stacking one forearm across her brow and the other across her chest into a double-bar pose with feet crossed, lifting both hands overhead to close into a heart then popping it open, two small fist pumps by the shoulders, finishing with a soft bow and crossed feet, static full-body vertical framing`
+- 来源:《请pick西施吧～》00:29.8-33s
+
+**片<v11>《I Got Your Back》(K-pop 日综初舞台群舞·154.3s·横屏)**
+- 背景人物:日本电视演播厅(CDTV Live! Live! 标识+HARUKA AUDITION/セーラー服姿で初パフォーマンス 字幕),多套 LED 舞美轮换:粉色 CDTV 墙、绿菱格、蓝白条纹、橙黄卡通收音机音符墙、红蓝棋盘格、品红格、白钻石灯阵、"I Got Your Back"横幅;镜面地板反射人影;画外有主持人旁白与节目字幕(推测)。人物:5 名女团成员,统一白色水手短袖(藏青海员领)+超大缎面蝴蝶结(薄荷绿/红/粉/浅蓝区分成员),黑藏青百褶裙(midi 与短裙混排),白过膝袜+乐福鞋或黑色长靴;两名成员戴细金丝眼镜;发型黑长直/齐刘海波波头/低马尾;全程手持银色/粉色麦克风。
+- 节拍:有 BGM(现场音轨 mean -25.2dB/max -9.0dB,含观众混响);K-pop 中快板,推测约 124-128BPM(推测),编舞含大量半拍 accent 与膝弹律动层。
+- 镜头形态:C 多镜头快剪(判据:同一乐句内宽/中/特写/摇臂高频切换,33-44s 内可见 5 个以上机位;成员走位与队形变换配合剪辑)。
+
+### K50 进场高踢接抱臂横移链(6拍|清凉)
+- 入态:分组走位进场 → 出态:双指点自己脸颊、半蹲弹
+- 分解:拍1 中央成员右腿前踢过腰——发力来自支撑腿提踵+髋屈肌急收,短裙翻起露出裙内层,双臂自然张开配平;拍2 落地前掌缓冲屈膝接小跳;拍3-4 三人一组双臂交叉抱于胸前成 X,双脚交替侧点横移,头随步位方向转(律动层:膝部保持半拍弹);拍5-6 金丝眼镜成员松开抱臂,双食指指向自己脸颊做"羞"点,配合眨眼,半蹲吸震收住
+- H3:`one center member snapping a high front kick past her waist with the pleated skirt flipping, landing into a bounce, the trio crossing their arms over their chests and side-stepping with the heads turning on each step, closing on a bespectacled member poking both index fingers at her cheeks in a half-squat, wide TV variety lens with mirrored floor reflections`
+- 来源:《I Got Your Back》00:05.5-9.2s
+
+### K51 屋顶手比划链(4拍|萌)
+- 入态:直立持麦对唱位 → 出态:摊掌耸肩
+- 分解:拍1 双臂在头顶搭成三角"屋顶",肘外张、手腕相触;拍2 屋顶手沿身体中线整体下压至脸前翻腕(连续弧线,肩胛带动);拍3 右手食指回点自己脸颊、头歪;拍4 双手向外摊开耸肩一次(半拍 accent),重心回正
+- H3:`forming a triangle rooftop overhead with both arms, sliding the whole shape down the centerline to her face and flipping the wrists, pointing one finger at her own cheek with a head tilt, then opening the hands wide with a shrug on the half-beat, medium close-up TV framing`
+- 来源:《I Got Your Back》00:34.3-36.7s(同族动作 00:08.4-9.2s 复现)
+
+### K52 收音机跳步展臂链(8拍|复古活力)
+- 入态:宽站姿高重心 → 出态:半蹲双臂下压
+- 分解:拍1-2 宽站屈膝半蹲,双臂由上向下大力甩压——发力来自躯干前屈+肩带下压,裙摆下摆翻飞;拍3-4 双臂屈肘上举成 V、拳心朝前,重心左右各弹跳换一次;拍5-6 双臂收回胸前屈肘,胯部左右顶摆两拍(律动层:膝弹持续);拍7-8 侧步两点横移、双臂配合下压推掌,队形整体横移,镜面地板倒影同步
+- H3:`wide-stance deep knee dips swinging both arms from overhead down past the thighs, popping the arms up into a flexed V with side-to-side weight bounces, hips ticking left and right with hands coiled at the chest, finishing on travelling side-steps pushing the palms down as the line shuffles across the reflective stage`
+- 来源:《I Got Your Back》00:40.5-44s
+
+### K53 背身甩发转身冲拳链(4拍|转体 accent)
+- 入态:长发成员正面对镜头 → 出态:拳落于体侧、屈膝弹
+- 分解:拍1 长发成员向右后快速转身背对镜头——头先走、长发横向甩出(延迟层明显),短发成员同时向镜头顶胯;拍2 蹬地转回面向镜头,发梢扫过脸颊借惯性继续飘;拍3 绿蝴蝶结波波头成员右臂向上冲拳;拍4 同臂向下劈落收至体侧,屈膝下弹,"hey"口型对半拍
+- H3:`the long-haired member whipping a fast full turn away from camera with her hair fanning horizontal then spinning back so the ends sweep her face, the bob-haired member beside her punching one fist up and chopping it down on the half-beat with a shouted accent, quick TV cut between wide and medium`
+- 来源:《I Got Your Back》01:05.3-01:07.4s
+
+### K54 深蹲横摆大扫臂链(8拍|律动·第二段主歌记忆点)
+- 入态:开立直立 → 出态:直立双臂打开回弹
+- 分解:拍1-2 双膝深屈、上体右倾,右臂上伸左臂下伸成对角线拉长(侧腰发力);拍3-4 换左侧做镜像对角拉长,两拍一次大幅钟摆;拍5-6 上体前屈近 90°,双臂贴地向下向内大扫——技术峰值:躯干折叠+发丝全部前垂,重心压至脚跟;拍7-8 直起,双臂经胸前交叉上提再打开,直立回弹收住
+- H3:`deep side leans stretching one arm up and the other down into a long diagonal like a pendulum, folding fully forward at the waist sweeping both arms low toward the floor with hair falling forward, then rising through a chest-level arm cross into an open recovery with a knee bounce, red and blue LED checkerboard wall behind a staggered formation`
+- 来源:《I Got Your Back》01:14-01:18.5s
+
+### K55 交替甩臂下压步链(8拍|副歌主链·两段副歌复用)
+- 入态:横移中、双臂低位 → 出态:双臂 V 举、继续横移
+- 分解:拍1-2 右臂屈肘上举后向下甩拍向大腿,同时右膝由弯弹直(半拍 accent);拍3-4 左臂镜像甩下、左膝弹直,重心左右横移(律动层:胯随重心微坐);拍5-6 双臂同时下压+屈膝下沉一次(重拍 double accent);拍7-8 双臂上举成 V 开腕,脚下两点横移,百褶裙随步幅翻飞,队形保持斜线
+- H3:`alternating arms snapping from a bent raised position down to slap the thigh while the same-side knee pops straight, weight rocking side to side, a double-arm push-down with a deep knee drop on the accent, then both arms up in an open-wrist V travelling with two-step side touches, pleated skirts flaring, magenta LED grid wide shot`
+- 来源:《I Got Your Back》01:32.5-01:36.5s;01:40.7-01:43s(第二遍副歌复用)
+
+### K56 肩拍推掌原地转回眸链(8拍|末段高潮)
+- 入态:两排站位 → 出态:单手叉腰、后仰回眸定格
+- 分解:拍1-2 双手交替拍对侧肩后向前下方推掌(像拍灰-送出);拍3-4 右手指点左腕作"看表"状、随即向外一甩;拍5-6 侧点步双臂下压,前后排交错换位;拍7-8 原地平转一圈——黑裙完全展开、轴心稳定,落定瞬间单手叉腰、上体后仰 15° 回眸镜头,镜面地板倒影延长旋转残像
+- H3:`patting the opposite shoulders then pushing both palms forward and down, pointing at the wrist like checking a watch and flicking it away, cross-stepping with arms pressing down through a formation switch, one member doing a clean full pivot with the black pleated skirt flaring out and landing into a hand-on-hip lean-back glance over her shoulder at the camera`
+- 来源:《I Got Your Back》02:00-02:06.5s
+
+**片<v12>《依赖姐姐》(多场景换装手势舞+氛围卡点·72.0s·竖屏)**
+- 背景人物:8 组场景硬切轮换——(1)暖光卧室窗帘前(银灰缎吊带+藏青纱裙→白缎抹胸→白衬衫粉结粉裙→粉蕾丝连体裙,棕红盘发+白花发饰+珍珠耳坠);(2)绿藤墙(奶油纱吊带裙+珍珠 choker,手持小相机,黑发);(3)庭院池塘(白蝴蝶结+白蕾丝边吊带裙,双手捧白纸包花束);(4)竹林(学院制服白衬衫粉领结粉格裙);(5)池塘白一字肩荷叶裙;(6)小路背影(白上衣+墨绿格裙+黑色单肩包);(7)夕阳草坪(薄荷荷叶吊带+牛仔短裤,前景树叶遮挡);(8)海崖矮墙(白色针织开衫+灰连帽+白荷叶长裙,阴天海景,风大)。全程单人,无画外行动者。人物:同一女生,前段棕红盘发戴花、后段黑长直/半扎;鞋袜基本不入画(中近景构图);手持道具:小相机、花束、黑包。
+- 节拍:有音轨(mean -10.0dB/max 0.0dB),手势换点与转场点不成等差(转场实测约 10.3/25.6/37.2/50.0/55.5/57.7/59.5/61.7s)→判定按歌词/重音卡点而非固定 BPM(推测)。
+- 镜头形态:B 编辑快照(判据:8 组以上场景硬切,组内为单机位手持自拍式固定机位,无运镜)。
+
+### K57 猫爪翻腕摆掌链(8拍|软萌)
+- 入态:侧身转正、双手低位 → 出态:双爪收至胸前
+- 分解:拍1-2 双手提至胸前、五指蜷成猫爪向内各绕腕一圈(腕关节主导);拍3 双腕相靠、掌心向下同时下压翻腕一次;拍4-5 双掌心朝外于胸高处左右摆动(摆手拒绝感),头随手反方向歪;拍6 右掌外摆、左拳收腰对比;拍7-8 双爪上提至肩侧屈肘、指尖向下连卷两次(猫爪颤,半拍 accent),收至胸前站定
+- H3:`curling both hands into cat paws circling the wrists at chest height, flopping the palms downward together, then waving both palms outward at shoulder level with the head tilting opposite, finishing with two downward paw curls by the shoulders on the half-beats, intimate handheld selfie framing with warm lamp light`
+- 来源:《依赖姐姐》00:00.8-7.5s;00:20-25.5s(白缎裙段同族双掌摆复用)
+
+### K58 比心托掌转指链(8拍|甜美)
+- 入态:双手收于胸前 → 出态:双手交叠收于锁骨前
+- 分解:拍1-2 双手拇指食指于胸前相捏成小心心、轻抖两下;拍3-4 右臂前伸翻掌心向上做"托举奉上",头随之微倾、视线落掌心;拍5 左手平掌自内向外抹过(擦掌收势);拍6-7 右手食指向外侧连点两下后绕腕收回;拍8 双手交叠按于锁骨前、耸肩一次,肩线全程放松下沉
+- H3:`pinching a tiny heart with both thumbs and index fingers at her chest with a little shake, extending one arm to offer an upturned palm with the gaze dropping to it, wiping the flat hand across and pointing twice to the outside with a wrist roll, closing both hands stacked at the collarbone with a shrug`
+- 来源:《依赖姐姐》00:13.3-20s
+
+### K59 指脸颊握拳托腮链(8拍|邻家甜)
+- 入态:叉腰站位 → 出态:双拳并拢抵下颌
+- 分解:拍1-2 右食指点自己太阳穴画小圈、头歪(思考感);拍3-4 双食指同时点两侧酒窝位两次(半拍节奏);拍5-6 双拳提至肩前、前臂内旋拳心向上翻出;拍7-8 双拳并拢抵住下颌、头左右轻摆两次;粉蕾丝段同族收尾:双手比 V 置头两侧、手腕弹动两下
+- H3:`circling one fingertip at her temple with a tilted head, double-tapping both dimples with index fingers, rolling both fists up from the shoulders palms-up, then tucking the fists together under her chin swaying the head side to side, ending in double peace-Vs at her head with flicking wrists, warm bedroom bokeh background`
+- 来源:《依赖姐姐》00:26.7-33.3s;00:45-46.5s(V 手段)
+
+### K60 卡点换装扫臂链(2拍x8组|剪辑结构·全片骨架)
+- 入态:当前场景定姿尾拍 → 出态:新场景首帧"姿势已就位"
+- 分解:拍1(切前半拍)单臂或双臂向斜下方大力扫出/原地半转,身体侧倾蓄力并压暗构图重心;拍2(重拍帧)服装与场景硬切——新造型在切后第一帧已完成姿态(手插发间/持花/叉腰/回眸),无过渡动作;切后 1-2 拍只动头与眼(歪头/回眸/垂眸),让裙摆与发丝物理自然沉降完成"呼吸感";结构点位:10.3s 银缎→白缎(扫臂+转身模糊帧)、25.6s→衬衫粉结、37.2s→粉蕾丝、50.0s→持花白裙、55.5-57.9s 连三切(制服→白裙→背包背影)、59.5-61.9s 连两切(薄荷吊带→海崖白衫)
+- H3:`each outfit change lands on the beat drop: a hard diagonal arm sweep or half turn blurs the frame, the cut reveals the new outfit already holding its pose with hands in hair or bouquet in hand, then one or two beats of only head tilts and glances while the skirt and hair physics settle, vertical selfie-camera framing with jump cuts`
+- 来源:《依赖姐姐》00:10.3-10.9;00:25.6-26.3;00:37.2-37.8;00:50-50.6;00:55.5-57.9;00:59.5-61.9s
+
+### K61 海崖回眸甩发链(8拍|氛围感·放结尾)
+- 入态:侧身倚矮墙、背对海面 → 出态:3/4 背身回望定格
+- 分解:拍1-2 侧身倚白色矮墙、上身后仰约 15°,长发垂落过肩,缓缓回眸看向镜头(海风为持续外力,发丝全程微飘);拍3 手背于发间拢发一次,头随抬手倾斜;拍4-5 快速向右甩头转脸——长发横扫过面部(64.7s 帧呈运动模糊,技术峰值:头部角速度+发丝延迟形成扇面),随即回正再次回眸;拍6-7 转为 3/4 背对镜头,一手举至肩侧比"OK",从肩上方回望;拍8 头轻靠向肩、身体重量交给矮墙,定格收尾
+- H3:`leaning back against a white seaside parapet with the wind lifting her long black hair, turning into a slow over-the-shoulder glance, snapping her head quickly so the hair whips in a blurred fan across her face before settling back to camera, then posing three-quarters away showing an OK sign above her shoulder with one last look back, overcast coastal light, static vertical framing`
+- 来源:《依赖姐姐》01:01.7-12s
+
+**片<v13>《我是银月呀❤》(AIGC 萌系摆拍·18.1s·竖屏)**
+- 背景人物:日式居酒屋内景——木格酒架满陈清酒瓶(可见"濁り"等标签)、木质矮桌与蒲团、墙面电视(前段播黑白影像、7s 后播足球赛绿茵画面)、暖黄灯光、矮桌上散置食物与红色饮料杯;0-0.6s 为无人空镜定场。人物:年轻成年女性(20 岁上下感),银白超直长发垂腰、额侧碎发、颅侧编发盘绕;白色狐耳(缀银色钉饰);身后巨大蓬松白狐尾;白色短上衣+金色镶边胸襟、金色高领环嵌红宝石、纱质肩袖带金饰、金色臂环与腕环、腰间金封红绸带长垂及地、赤足、双踝金脚链带垂坠与趾环;1-3s 胸前叠加 Q 版狐娘贴纸动画;带"ZonerR念头通达/bilibili""AIGC-ZONER"水印,AI 生成/重绘质感。画外行动者:无。
+- 节拍:有 BGM(mean -13dB/max 0dB,饱满);动作以"造型-保持"为主、无严格卡点,属自由节拍萌系摆拍(BPM 无法锁定,推测)。
+- 镜头形态:C 多镜头快剪——共 5 段,硬切点 0.6s(甩镜模糊转场)/7.0s/12.2s/14.5s;各镜头内机位固定;全片无相机 Roll,酒架线均水平。
+
+### K62 盘腿双 V 喵语链(4拍|萌)
+- 入态:盘腿坐于蒲团、右手起于脸侧 → 出态:双手保持双 V 手势、张嘴"喵"表情定格
+- 分解:拍1 右手举至脸侧五指张开、左手搭膝、目视镜头(0.8s);拍2 右手变 V 字上举、左手于脚踝前向下指 V、张嘴发声口型、狐耳随头势立起(1.4-1.8);拍3 右手换 OK 指、左手 V 字下指、双肩微耸——双手异型手势+喵口型为技术峰值(2.0-2.6);拍4 头向右歪、长发顺势垂滑、V 字保持、Q 版贴纸在胸前同步跳动(2.8-3.2);发力来源均为腕指小肌群,肩颈放松;白裙下摆铺地展开成扇形随坐姿静止;机位眼高固定,人物占画面中下 2/3
+- H3:`sitting cross-legged on a floor cushion, waving alternating V-sign and OK gestures with both hands beside her face while mouthing a cute meow, fox ears perked, long silver hair sliding over still shoulders, eye-level static shot`
+- 来源:《我是银月呀❤》00:00.6-3.2s
+
+### K63 伸腿双猫爪链(3拍|萌)
+- 入态:盘腿坐、双手收于脚踝 → 出态:双膝弯朝镜头伸出、双爪定格脸侧
+- 分解:拍1 双手自脚踝处沿身前划弧上举至脸侧、五指张开、嘴张大(起手路径:腕带臂、臂带肘,全程坐骨不动)(4.5-5.9);拍2 双腿向前蹬伸、膝弯朝向镜头、小腿交叠悬起——重心后坐由尾椎与蒲团共同承接(6.1-6.5);拍3 双手屈腕收指成猫爪、掌心朝镜头、噘嘴,头部微左倾——造型峰值为"双爪+伸腿怼镜"透视(6.5-7.0);赤足金脚链随腿伸出而轻晃;裙摆滑落大腿根部露金饰;袖口红绸垂落静止;机位低于脸、腿在前景放大形成透视压迫
+- H3:`reclining back on a cushion and stretching both bent knees toward the camera, she raises curled cat-paw hands beside her pouting face, gold anklets swaying on lifted feet, low-angle shot with legs foreshortened in the foreground`
+- 来源:《我是银月呀❤》00:04.5-7s
+
+### K64 桌沿托腮递葫芦链(4拍|俏)
+- 入态(切镜后):侧坐桌沿、双腿并拢斜垂 → 出态:绿葫芦举至镜头前
+- 分解:拍1 硬切入画——侧坐木质桌沿、右拳托下巴、双腿斜伸脚尖轻点、目光直视镜头(7.0-7.6);拍2 静止亮相:巨大白狐尾平铺身后桌面、仅尾巴尖端与耳廓偶发微颤(静态,明写)(7.6-9.5);拍3 右手离下巴、左手捞起搁在膝上的绿玉葫芦、躯干前倾启动(9.5-11.0);拍4 手臂前伸将葫芦递向镜头、头微歪眨眼,机位同时下摇让出腿部——道具怼镜为峰值(11.0-12.2);尾巴因躯干前倾被轻微牵拉移位;红绸带从腰间滑落桌面;葫芦入画时轻微虚焦引导视线
+- H3:`perching sideways on a wooden table edge with her fist tucked under her chin, huge fox tail spread flat behind her, she lifts a small green gourd off her knee and reaches it straight toward the lens with a tilted head, static shot pulling focus to the offering hand`
+- 来源:《我是银月呀❤》00:07-12.2s
+
+### K65 赤足悬摆链(4拍|细节)
+- 入态:腿部特写入画、双脚悬垂 → 出态:双脚交叠静止
+- 分解:拍1 双脚悬空一前一后交替摆动、摆幅小而匀(惯性来自小腿自重)(12.3-13.0);拍2 右脚抬起搭上左脚踝、完成交叉(13.0-13.6);拍3 脚尖绷直下压、金脚链垂坠与趾环同步摇晃——足部细节峰值(13.6-14.0);拍4 缓慢解除交叉恢复悬垂(14.0-14.4);全程无面部入画;裙摆垂纹与红绸构成背景;低机位近距特写,景深极浅
+- H3:`extreme close-up on bare feet with ornate gold anklets dangling and crossing at the ankles, toes pointing and curling as the chains sway, shallow depth of field over flowing white silk, low static camera`
+- 来源:《我是银月呀❤》00:12.2-14.4s
+
+### K66 抱膝低头抱葫芦链(3拍|治愈)
+- 入态(切镜后):地垫全景观、双膝并拢立起 → 出态:低头抱葫芦静止保持至片尾
+- 分解:拍1 硬切入全景——屈膝坐抱、双膝并拢立起、双手合抱绿葫芦抵于膝前(14.5-15.2);拍2 头缓缓低下、视线落向葫芦、狐耳向后压平半拍(耳动滞后头动)(15.2-16.0);拍3 静止保持:仅呼吸起伏与尾尖轻颤(静态,明写,推测微动)(16.0-18.1);全身蜷缩姿态受力闭环:膝承双肘、肘托葫芦、头重量垂落颈椎放松;尾巴绕至体侧垫地;机位正面眼高全景,人物居中,左右酒架对称收拢视线
+- H3:`sitting curled up on the floor with knees drawn together, hugging a small green gourd against her knees and bowing her head to look at it, fox ears folding back a half-beat late, fluffy tail curled at her side, static symmetrical full shot`
+- 来源:《我是银月呀❤》00:14.5-18.1s
+
+**片<v14>《活动饭拍》(真人活动现场·11.6s·竖屏)**
+- 背景人物:室外见面会/活动场景,午后暖侧光——米黄色墙面覆满树影光斑、右上暗色窗框;人物立于高台/台阶上,台下簇拥摄影师后脑勺与长焦相机(白炮黑身),画面中央一只举手机稳定器的手正对她。人物:年轻成年女性(20 岁上下),深棕发低盘发+粉白花环头饰;白色垂坠深 V 无袖连衣裙(披肩领、裙料轻薄飘逸);红唇、右腕银手链;无手持道具。画外行动者:台下摄影师群(持续举机),稳定器持机者一只手常驻画面中下部。
+- 节拍:无固定节拍——自由散板;音量大(mean -7.4dB)但为现场环境声与人群响动(推测),动作随互动随意发生。
+- 镜头形态:A 一镜到底(手持饭拍机位,全程连续无硬切,7.7-8.5s 机位平滑后退由中景转全景,画面带手持呼吸感微晃);无相机 Roll。
+
+### K67 举脸比心链(4拍|甜)
+- 入态:双手垂于身前 → 出态:双手桃心框住面部保持
+- 分解:拍1 双手自身前抬起、肘部外张上提(复现段 6.9s 处可见以右手拇指食指先捻合起手)(0-0.2/6.9-7.1);拍2 双手拇指与食指相抵拼成桃心、举至脸前正对镜头(0.2-0.6);拍3 桃心整体随头部左右轻摆向两侧摄影师展示——峰值点:桃心稳定成形且面带笑容(0.6-1.2);拍4 桃心降至下巴高度、手指微调形状(1.2-1.5);发力源为三角肌前束与拇指食指对捏;手链与袖口随抬臂轻晃;手持机位带微晃、轻微仰拍、台下后脑勺作前景框
+- H3:`raising both hands from her waist to form a heart with thumbs and index fingers framing her smiling face, tilting the heart side to side for the crowd of photographers below, handheld low-angle fancam with camera heads in the foreground`
+- 来源:《活动饭拍》00:00-1.5s(复现:00:02.8-4.4s、00:06.9-8.9s)
+
+### K68 收心垂手羞立链(3拍|甜)
+- 入态:桃心散开 → 出态:直立站定、手交叠身前、侧头羞笑(静止)
+- 分解:拍1 桃心双手分开、沿身前弧线下落至腰腹前交叠(1.6-2.0);拍2 头低下羞笑、双肩微收内扣(2.0-2.4/4.8-5.4);拍3 头转向一侧看别处再回正、身体直立静止亮相(静态,明写)(2.4-2.7/5.4-6.7);重心全程压在双脚无位移,靠头颈与手部小动作完成"撒娇-害羞-站定"节奏;白裙垂坠面料随下落手臂轻微贴身;机位保持手持仰角不变
+- H3:`lowering her hands from the heart gesture to rest folded in front of her waist, dropping her head with a shy smile before glancing away and standing still in the white draped dress, steady handheld shot through dappled tree shadows`
+- 来源:《活动饭拍》00:01.6-2.7s(复现:00:04.6-6.7s)
+
+### K69 持心缓降收势链(3拍|甜)
+- 入态:桃心贴脸保持 → 出态:桃心停于胸前、低头浅笑收尾(静态)
+- 分解:拍1 保持桃心形状不变、整体从脸前匀速下降(8.9-9.6);拍2 降至下巴与锁骨之间、目光从桃心上缘越出看镜头(9.6-10.4);拍3 桃心停在胸前、头微低浅笑定格至片尾(静态收束,明写)(10.4-11.5);拍间无松手无变形是技术要点;下降匀速来自肘部缓慢屈曲;腕间银手链随缓降轻晃;机位同期已退为全景,人群与相机阵在前景形成"被围观"框架
+- H3:`holding a perfect finger heart shape while slowly lowering it from her face down to her chest, eyes peeking over the heart at the camera before resting with a soft smile, wide handheld fancam surrounded by photographers`
+- 来源:《活动饭拍》00:08.9-11.5s
+
+**片<v15>《旗袍夜景》(AIGC 旗袍夜舞·16.8s·竖屏)**
+- 背景人物:夜晚庭院式餐厅/酒馆——暖黄串灯虚化光斑、绿植、木质梁架、桌椅剪影,暗调暖光。人物:年轻成年女性(20 岁上下),黑长发半扎、八字刘海垂肩;左眼角旁红色梅花瓣妆贴;长款垂坠耳环;黑丝绒短袖旗袍:立领黑色盘扣、红色梅花亮片绣自下摆攀至胸前、侧开衩及膝;无手持道具。皮肤与光斑过度平滑,疑 AIGC 生成/重绘(推测)。画外行动者:无。
+- 节拍:有固定节拍 BGM(mean -9dB/max 0dB);动作约每 0.8-1.2s 换招、与重拍基本吻合,约 90-105BPM 中速舞曲(推测)。
+- 镜头形态:C 仅 2 镜——主体 0-15.6s 一镜到底(胸上高度固定中景、微幅漂移),15.7s 硬切面部特写至结尾;无相机 Roll。
+
+### K70 掌花掩口飞扑链(4拍|媚)
+- 入态:正面微侧站立、双掌合于面部前 → 出态:手臂回落体侧、身体转回正面
+- 分解:拍1 双掌于脸前相互摩挲滑开、笑眼弯弯(0-0.4);拍2 右掌掩口、左掌自下向前伸拍向镜头方向——掌风扫过产生大面积动态模糊,为峰值(0.6-1.2);拍3 左臂横扫越过镜头前、身体随之右转回旋、头右倾长发甩出弧线(1.4-2.0);拍4 手臂借惯性回落体侧、胯部回正、脚步微调站稳(2.2-2.8);发力源为腰胯旋转带动大臂;旗袍下摆在转体处贴腿后又荡开;耳环随头部回旋横摆半拍;机位胸上固定,掌掠过镜头时占满画幅
+- H3:`covering her mouth with one palm while flicking the other hand out toward the lens in a flirty wave, sweeping the arm across the frame with heavy motion blur as her hips twist and long black hair whips in an arc, static medium shot in a lantern-lit garden bar`
+- 来源:《旗袍夜景》00:00-2.8s
+
+### K71 下扫交叉滚腕链(4拍|舞)
+- 入态:正面站立、右手起于脸侧 → 出态:双掌在胸前完成波浪下滑
+- 分解:拍1 右手食指上指于脸侧、随即整臂下扫过腹前、胯向右顶出(3.0-4.0);拍2 双臂于胸前交叉——右臂横抱、左手举至头侧比 V(4.2-4.4);拍3 以手腕为轴双臂交叉滚开、双掌外翻同时推出——开合爆发为峰值(4.6-5.0);拍4 双掌在胸前交替波浪、掌根引掌尖依次下压滑落(5.2-5.6);拍1 发力自腰侧腹斜肌,拍3 为前臂旋前+腕屈同步;旗袍胸襟盘扣区随开胸动作展平;垂坠耳环在滚腕时小幅摆动;机位固定中景,交叉-展开的横向幅度占满画面宽度
+- H3:`sweeping one arm down across her body with a hip pop, crossing both forearms in front of her chest and rolling the wrists open to flash both palms outward, then rippling the palms downward in a wave, medium shot with hip-hop style upper-body isolation in a qipao`
+- 来源:《旗袍夜景》00:03-5.6s
+
+### K72 举肘翘胯健身操链(4拍|飒)
+- 入态:双手于胸前交替滚腕 → 出态:双手交叉落回胸前
+- 分解:拍1 双掌上下相叠滚腕一周、右臂顺势上扬(6.5-7.1);拍2 右臂屈肘举过头顶、手落于脑后、躯干左倒胯向左顶(7.3-7.9);拍3 双肘同时外展高举、松拳收于耳侧、胯部左右连顶两下——双肘开合+胯部对侧顶胯为全片峰值造型(8.1-8.7);拍4 双臂沿体前下落、手腕交叉收于胸口(8.9-9.5);发力链:胯为主动源经腰传至背阔肌带动臂位;旗袍侧开衩随顶胯一开一合;长发随躯干侧倒甩向受力反侧半拍;脚下微屈膝弹动配合重拍(画面未含足部,推测);固定中景,肘部高举突破上边框
+- H3:`rolling the wrists then lifting both elbows high and wide with loose fists beside her ears, popping her hips side to side under a slit velvet qipao as her long hair lags behind each lean, static medium shot framing the elbows at the top edge`
+- 来源:《旗袍夜景》00:06.5-9.5s
+
+### K73 猫爪击掌回眸链(4拍|媚)
+- 入态:右手抚于腹部 → 出态:双掌合十于胸前、身体侧倾定格
+- 分解:拍1 右掌自腹部沿躯干正中上滑至脸旁、翻掌向外立起(12.0-12.6);拍2 双手收指成猫爪举于两颊旁、胯部右顶配合(12.8-13.4);拍3 双爪在胸前合拢完成一次干脆的击掌、头顺势后仰笑出声——击掌与仰头同步为峰值(13.6-14.2);拍4 双掌合十贴胸、身体向左右交替侧倾摇摆、长发与裙衩随之荡开、耳环画弧(14.4-15.6);拍1 发力为手掌贴身滑行的自我抚触式动线;拍3 击掌冲击力经双臂传至肩带瞬收;拍4 惯性摆动逐拍衰减;机位固定,合十摇摆时身体斜出画框对角线
+- H3:`sliding a palm up her torso to her cheek, flashing cat-paw hands beside her face with a hip pop, clapping once in front of her chest as she tips her head back laughing, then swaying side to side with pressed palms, static medium shot, hair and drop earrings swinging`
+- 来源:《旗袍夜景》00:12-15.6s
+
+### K74 特写眨眼收束链(2拍|甜)
+- 入态(切镜后):面部大特写入画 → 出态:露齿大笑定格至片尾
+- 分解:拍1 硬切入面部特写——对镜头单眼眨眼(wink)、嘴角上扬、梅花瓣妆贴入画(15.8-16.0);拍2 露齿大笑定格、头微侧、发丝垂肩、背景光斑全虚(静态,明写)(16.0-16.8);视线直锁镜头构成第四面墙互动;机位升至眼高、浅景深只留双眼与笑意清晰
+- H3:`cutting to an extreme close-up as she winks one eye at the camera and breaks into a wide toothy smile, red plum-petal makeup beside her eye, bokeh lantern lights melting behind her, static face-level close-up holding to the end`
+- 来源:《旗袍夜景》00:15.7-16.8s
+
+---
+
 ## 拼舞模板(把链串成一支舞)
 
 1. **选弧线**:建立(A1/C1 待机)→ 发展(手部组合链)→ 扩展(A7/C5)→ 高光(A9/C35/B5,全片唯一高潮放 70% 进度)→ 呼吸(C1/A12)→ 收束(A23/C30/C14)。
@@ -2227,4 +2764,4 @@ non_diegetic_music: N/A
 7. **检查**:旋转≤2、静止已明写、头部鼓在反拍、手势半径合规、切点在乐句收点、人数/机位 token 齐全。
 
 ---
-*来源视频:《双倍可爱❤️甜蜜暴击》(47.4s)、宅舞vs抖舞分屏(238.6s)、《与你提酒》(118.4s)、《皇上》(77.5s)、录舞运镜权威(61.5s)、《うみたがり》4人(222.5s)、《BLESSING》4人(96.8s)、向阳 BDF2021 队形版(144.9s);由八份逐拍反推报告提炼,动链合计 70+ 条;另并入 13 支 I2VA 单人成品范本(H 章,2026-10);《绝世舞姬》混剪(82.9s/44镜,E6 转场章+C36-C47+G 补充,2026-10-02);双人弧形运镜 16.8s(E7)+醉酒式镜头母规则(E8,2026-10-03);《三种袜子》右入换装 5.9s(E9)+三姿态原位换装系列 18.4s(E10:站姿侧身/深蹲抱膝抖腿/提裙站姿,onset 卡点实测,2026-10-05)。*
+*来源视频:《双倍可爱❤️甜蜜暴击》(47.4s)、宅舞vs抖舞分屏(238.6s)、《与你提酒》(118.4s)、《皇上》(77.5s)、录舞运镜权威(61.5s)、《うみたがり》4人(222.5s)、《BLESSING》4人(96.8s)、向阳 BDF2021 队形版(144.9s);由八份逐拍反推报告提炼,动链合计 70+ 条;另并入 13 支 I2VA 单人成品范本(H 章,2026-10);《绝世舞姬》混剪(82.9s/44镜,E6 转场章+C36-C47+G 补充,2026-10-02);双人弧形运镜 16.8s(E7)+醉酒式镜头母规则(E8,2026-10-03);《三种袜子》右入换装 5.9s(E9)+三姿态原位换装系列 18.4s(E10:站姿侧身/深蹲抱膝抖腿/提裙站姿,onset 卡点实测,2026-10-05);2026-10-30 并入 K 章 74 条(15 支新片+2 图,短标题↔原片名:《绫华的锻炼时间》10.4s、《saber白礼服》9.6s(原片含书名号前缀"成为士郎的剑")、《saber下腰挑战》8.2s(原片《saber下腰动作挑战》)、《奥黛塔变装》153.4s(原片《花3000为奥黛塔制作视频后，最终决定放弃她.......》)、《夏天结束了》16.1s(原片《夏天结束了——做了四次不同情绪的撩头发》)、《橘福福》27.6s(原片《如此绝美的 橘福福 之后再也没见到》)、《薇薇安》60.6s(原片《好女孩——薇薇安（测试）》)、《维琳娜》75.0s(原片《这维琳娜对....对吗？》,鸣潮维里奈 cos)、《两个御姐合拍》14.9s(原片《两个御姐~格格巫和月月的合拍合集~_P1_好想谈恋爱》)、《请pick西施吧～》32.7s、《I Got Your Back》154.3s(原片【ILLIT】金丝眼镜水手服)、《依赖姐姐》72.0s(原片《依赖姐姐一辈子也不是什么坏事吧》)、《我是银月呀❤》18.1s、《活动饭拍》11.6s(原文件 ANbHNypfOZ8EhWqP)、《旗袍夜景》16.8s(原文件 AWsiPVCcHGVFeJGL)、《狐耳白发六宫格》写真图、《蓝水手服走廊截图》单帧)。*
