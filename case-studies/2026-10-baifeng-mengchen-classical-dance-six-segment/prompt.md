@@ -19,8 +19,7 @@
 |---|---|---:|---|
 | SEG01 白凤凌霜 | 00:00.000–13.166 | 13.166 s | 穿掌背转前 → 背身腰圈扫弧 → 半脚尖平衡 → 遮面露眼 → 碎步后踢 |
 | SEG02 暗网坠谷 | 13.166–26.958 | 13.792 s | 拧倾出胯 → 圆场碎步 → 低位扫弧腰圈 → 沉跪即起（转失败被截） |
-| SEG03-A 仙姿蒙尘·进入 | 26.958–33.916 | 6.958 s | 交叠前臂螺旋下沉 → 掌心承重低位跪坐 → 甩发露眼 → 坐姿扭转 |
-| SEG03-B 仙姿蒙尘·恢复 | 33.916–39.413 | 5.497 s | 撑脚起身 → 紧凑半转 → 交叉脚落地制动 → 半跪起身受阻 |
+| SEG03 仙姿蒙尘 | 26.958–39.413 | 12.455 s | 交叠前臂螺旋下沉 → 掌心承重低位跪坐 → 甩发露眼 → 坐姿扭转 → 紧凑半转 → 交叉脚制动 → 半跪起身受阻（实际双生成手动剪辑，见下） |
 | SEG04 强撑仙姿 | 39.413–52.166 | 12.753 s | 横向八字臂线 → 半转甩发 → 半脚尖平衡 → 拧倾出胯（仪态重建） |
 | SEG05 被迫校正 | 52.166–65.750 | 13.584 s | 跪位撩臂起身 → 沉跪即起 → 关节链反向截断 → 起到一半被打断 |
 | SEG06 傲骨未折 | 65.750–79.882 | 14.132 s | 呼吸提沉 → 背身双臂渐升 → 立圆胸腰展开 → 空手致意 → 冷静终止 |
@@ -183,9 +182,9 @@ non_diegetic_music:
 
 ---
 
-# SEG03-A｜仙姿蒙尘·低位进入与视觉揭示｜6.958 s（全曲 26.958–33.916）
+# SEG03｜仙姿蒙尘｜12.455 s（全曲 26.958–39.413）
 
-> 双提示词之 **A**。喂 `<Picture 1>` + 全曲 26.958–33.916 音频。强调身体从站姿进入地面的完整路径，建立局部特写、头发遮挡与镜头揭示；结尾停在 hand-led wipe（手扫向镜头完全遮挡），作为与 B 段的剪辑接缝。
+> 第三段**完整原文提示词**（一条 12.455 s，6 个 Shot），原样奉上、直接复制即可。喂 `<Picture 1>` + 全曲 26.958–39.413 音频。这段的独特质感是贴地螺旋、支撑旋转、一次甩发揭示、坐姿横向扭转与未完成的恢复。
 
 ```text
 For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
@@ -194,98 +193,68 @@ subject_definitions:
 <Subject 1> is Song Yu, the same adult woman shown in <Picture 1>. The picture is the sole authority for identity, face, hair, existing ornaments, costume, proportions, palette, lighting, and complete environment. She is the only dancer. Keep the supplied scene and clothing unchanged; no damage, extra prop, captor, or second person appears.
 
 integrated_multimodal_description:
-Create a vertical 9:16 live-action Chinese classical dance MV, 6.958 seconds long (the first half of a 12.455-second floor-level segment), using only <Picture 1> and this cut of <Audio 1>. <Picture 1> locks identity and the existing visual world; it does not reset the pose. CONTINUITY IN: open on the same tight close-up of the crossed forearms at sternum height that ended SEG02, with the near wrist diagonal over the far forearm. At 0.000s the fingers release first, the wrists uncross in the same plane, and the camera widens as the elbows separate; this continuing release leads directly into the floor-level descent. No new opening pose. This half's texture is floor-level spiralling, supported rotation, a single hair-driven reveal, and lateral seated torsion. The low work has clear support points and controlled weight transfer; it is not random rolling. Song Yu does not speak, sing, or synchronize mouth movement. No text appears on screen.
+Create a vertical 9:16 live-action Chinese classical dance MV, exactly 12.455 seconds long, using only <Picture 1> and this cut of <Audio 1>. Begin with the visible stance in the image and immediately transfer weight into a connected descending pathway. This segment's unique texture is floor-level spiralling, supported rotation, a single hair-driven reveal, lateral seated torsion, and an incomplete recovery. The low work has clear support points and controlled weight transfer; it is not random rolling. The soundtrack retains its original voice, but the dancer does not speak, sing, or synchronize mouth movement. No text appears on screen.
 
-Continuous layer: even at floor level, one support point is always loaded before the next body part moves. The spine unfolds in sections; the head and hair arrive after the torso; the costume follows gravity and momentum.
+Continuous layer: even at floor level, one support point is always loaded before the next body part moves. The spine unfolds in sections; the head and hair arrive after the torso; the costume follows gravity and momentum naturally.
 
-[Shot 1 | 0.000–2.333s | crossed-forearm close-up opening into floor-level spiral]
-0.000–0.285s: continue the identical crossed-forearm close-up from SEG02. The top wrist rolls inward; the fingers release in sequence, and the two forearms separate without changing the torso's low kneeling twist.
-0.285–0.570s: pull back to reveal the elbows opening at different heights as the pelvis shifts toward the support side.
-0.570–1.140s: slide one foot outward and fold the nearer knee; the ribs spiral down against the pelvis, carrying the body toward the floor rather than repeating a standing cross-step.
-1.140–1.710s: plant one palm to accept weight while the free leg extends along a diagonal. Insert a short close-up of the palm spreading and loading against the floor, fingers accepting weight one after another; track from the hand toward the extended toe, then return to the low full-body line before the descent completes.
+[Shot 1 | 0.000–2.333s | front three-quarter, camera lowers with body]
+0.000–0.570s: cross the feet tightly and let both forearms hook diagonally over the chest, the upper elbow leading.
+0.570–1.140s: the rear foot slides back, the front knee folds, and the torso spirals downward from ribs to pelvis.
+1.140–1.710s: reach one palm to the floor to accept weight; the free leg extends along a diagonal while the shoulders remain turned against the pelvis.
 1.710–2.333s: use the planted palm and bent knee to guide the body into a compact low seated-kneel. The camera descends in parallel with the body's center and keeps the planted hand and extended leg visible.
 
 [Shot 2 | 2.333–4.625s | low close-to-medium, hair reveal]
 2.333–2.903s: from the low seat, press both palms into the floor and spiral the sternum upward; the head remains bowed.
 2.903–3.473s: long hair falls naturally across part of the face as the chest turns toward the side; the nearer hand passes across the face-line without touching the hair.
 3.473–4.043s: the head sweeps once from left to right; hair follows with delayed horizontal inertia and clears the eyes.
-4.043–4.625s: she fixes a sharp side glance, pushes through the supporting palm, and rotates the ribs toward the lens. Use a tight eye close-up exactly as the hair clears; rack focus from a loose strand crossing the near foreground to the iris, then cut on the first clear eye contact. The camera moves from over-shoulder to low frontal, with the hair itself providing the wipe.
+4.043–4.625s: she fixes a sharp side glance, pushes through the supporting palm, and rotates the ribs toward the lens. Cut on the instant the eyes become visible. The camera moves from an over-shoulder position to a low frontal view, using the hair as the only natural wipe.
 
 [Shot 3 | 4.625–6.958s | seated torsion, sideways frame]
 4.625–5.195s: remain at the low level and rotate the pelvis toward the supporting side while the sternum twists the opposite way.
 5.195–5.765s: both arms swing laterally across different planes, the near hand sweeping low and the far elbow carving behind the ribs.
 5.765–6.335s: extend the free leg along the floor, point the toes, and reach one hand diagonally forward; let the torso lean over the grounded hip rather than lifting the leg high.
-6.335–6.958s: recoil through wrist, elbow, shoulder, and ribs, then draw the extended leg inward along a curved path. Insert a brief close-up of the pointed toe dragging inward along the floor; rack focus from toe to the reaching hand as it retreats. The camera tracks sideways across the seated waist twist and ends with the near hand and sleeve edge passing close across the lens until they fully occlude the frame — a hand-led wipe that hands the cut to the half-turn in SEG03-B. Hold the fully occluded frame to the end; do not reveal the body again before the cut.
+6.335–6.958s: recoil through wrist, elbow, shoulder, and ribs, then draw the extended leg inward along a curved path. The camera tracks sideways across the seated waist twist, finishing on the hand that reaches away from the body.
 
-Micro-expression layer: the eyes reappear after the hair sweep, then settle into a hard inward focus. Mouth relaxed and silent.
+[Shot 4 | 6.958–9.208s | one compact half-turn]
+6.958–7.528s: plant the supporting foot and press through its ball to lift the body from the floor into a low crouch.
+7.528–8.098s: make one compact traveling half-turn; pelvis and shoulders rotate first, head spots the return direction, and hair snaps across a fraction later.
+8.098–8.668s: land with feet crossed and knees soft, immediately slide the rear toe out to stop the turn's remaining momentum.
+8.668–9.208s: the arms cut in opposite diagonals, one elbow forward and the opposite wrist trailing behind, then reverse levels during the landing. The camera follows a fraction late and catches up with a lateral move; preserve rotational direction if a cut occurs mid-turn.
+
+[Shot 5 | 9.208–11.875s | supported low rise]
+9.208–9.778s: place one palm on the floor and fold the nearer knee under the torso while the other leg lengthens backward.
+9.778–10.348s: shift the pelvis above the planted palm, twist the ribs away, and draw the extended leg back in a curved line.
+10.348–10.918s: push through the palm and sole to lift into a half-kneel, one arm unfolding from near the floor to above shoulder height.
+10.918–11.488s: the other hand stays close to the ribs; the spine rises only halfway and then catches, as if the body cannot yet complete its recovery.
+11.488–11.875s: settle the supporting knee and keep the reaching arm suspended for a short fraction. The camera tilts up from the support hand to her eyes exactly as the rise stops.
+
+[Shot 6 | 11.875–12.455s | near-static held beat]
+Hold one exact beat at the current low level. The supporting palm and knee stay planted, shoulders quiet; only the fingertips ease their tension and the eyes shift toward the camera. Hair and fabric complete their natural residual movement. The camera holds still for the same beat, making this pause feel deliberate and heavy.
+
+Micro-expression layer: the eyes reappear after the hair sweep, tighten during the stalled rise, then settle into a hard inward focus. Mouth relaxed and silent.
 
 overall_soundscape:
-<Audio 1> as the only soundtrack, with original voice and instruments unchanged. No speech, singing, mouth-sync, visible text, or generated sound effects.
+Use <Audio 1> as the only soundtrack, with original voice and instruments unchanged. No speech, singing, mouth-sync, visible text, or generated sound effects.
 
 non_diegetic_music:
-<Audio 1> only. Timing reference: 105.25 BPM, beat 0.5701s, half-beat 0.285s, bar 2.2803s, phrase 4.5606s. A-half local anchors: 2.333s, 4.625s, 6.958s. This A-half covers full-song 26.958–33.916; the hand-led wipe lands at full-song 33.916.
+<Audio 1> only. Timing reference: 105.25 BPM, beat 0.5701s, half-beat 0.285s, bar 2.2803s, phrase 4.5606s. Main local anchors: 2.333s, 4.625s, 6.958s, 9.208s, 11.875s. The final 0.580s is one deliberate held beat.
 ```
 
 ---
 
-# SEG03-B｜仙姿蒙尘·低位反转与恢复受阻｜5.497 s（全曲 33.916–39.413）
+## 提示：实际落地用「双生成 + 手动剪辑」完成这段
 
-> 双提示词之 **B**。喂 `<Picture 1>` + 全曲 33.916–39.413 音频。**B 段 local 时间从 0 起算（B local 0.000 = 全曲 33.916 = SEG03 时间轴 6.958）**。开场从 A 段手部遮挡之后继续，身体撑脚起身、半转、交叉脚制动，再半跪起身却在最后停住。
+> 提示词本体就是上面这一条**完整 12.455 s 原文**，不要把它改写成两条提示词。实际制作时，因平台单次生成时长受限、且这段含五种身体运动机制，更稳的做法是：以这条原文为唯一导演依据，分两次生成源片，再在剪辑软件里选动作最匹配的画格完成衔接。
 
-```text
-For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+| 步骤 | 全曲时间 | 操作 |
+|---|---|---|
+| 1. 生成前半源片 | 26.958–33.916（6.958 s，对应 Shot 1–3） | 对应前半动作：交叉脚前臂交叠 → 螺旋下沉掌心承重 → 低位跪坐 → 甩发露眼 → 坐姿扭转；可生成更长源片，最终只取前 6.958 s |
+| 2. 生成后半源片 | 33.916–39.413（5.497 s，对应 Shot 4–6） | 对应后半动作：撑脚起身 → 紧凑半转 → 交叉脚落地制动 → 半跪起身受阻；只取需要的动作区间 |
+| 3. 定位剪辑点 | **全曲 33.916（SEG03 时间轴 6.958）** | 即原文 Shot 3 结束 / Shot 4 开始：前半坐姿扭转收尾（收手收腿），后半撑脚、掌心承重起身进入半转 |
+| 4. 匹配接缝 | 33.916 前后 1–3 帧 | 在两源片该点找身体姿态、运动方向、手部轨迹、摄影机运动的共同相位；优先用手/袖/发丝掠过镜头短暂遮挡接缝 |
+| 5. 音画核对 | 全曲 33.916 | 该点音乐不重启、不跳帧；两源片用同一条连续音乐的对应窗口，接缝落在音乐气口 |
 
-subject_definitions:
-<Subject 1> is Song Yu, the same adult woman shown in <Picture 1>. The picture is the sole authority for identity, face, hair, existing ornaments, costume, proportions, palette, lighting, and complete environment. She is the only dancer. Keep the supplied scene and clothing unchanged; no damage, extra prop, captor, or second person appears.
-
-integrated_multimodal_description:
-Create a vertical 9:16 live-action Chinese classical dance MV, 5.497 seconds long (the second half of a 12.455-second floor-level segment; B-local 0.000 = full-song 33.916), using only <Picture 1> and this cut of <Audio 1>. <Picture 1> locks identity and the visual world; it does not reset the pose. CONTINUITY IN: open a fraction after the hand-led wipe — the near hand and sleeve edge still cross the lens as partial occlusion while Song Yu remains at the low seated level; the hand clears the lens as the body rises, revealing the half-turn already underway. No new opening pose. This half's texture is a compact half-turn, crossed-foot landing and toe braking, then a supported low rise that catches halfway and cannot complete its recovery. Rotational inertia and the stalled recovery are the visual contrast; it is choreographic, not random. Song Yu does not speak, sing, or synchronize mouth movement. No text appears on screen.
-
-Continuous layer: one support point is always loaded before the next part moves; the head spots the return and hair follows a fraction late; the costume settles after the body stops.
-
-[Shot 1 | 0.000–2.250s | one compact half-turn]
-0.000–0.285s: from the residual wipe, the near hand and sleeve clear the lens as Song Yu plants the supporting foot and presses through its ball to lift from the floor into a low crouch.
-0.285–0.570s: begin one compact traveling half-turn; pelvis and shoulders rotate first, head spots the return direction, and hair snaps across a fraction later.
-0.570–1.140s: continue the half-turn at one consistent height; the free arm trails the rotation and the ribs follow the pelvis.
-1.140–1.710s: land with feet crossed and knees soft, immediately slide the rear toe out to stop the turn's remaining momentum.
-1.710–2.250s: the arms cut in opposite diagonals, one elbow forward and the opposite wrist trailing, then reverse levels during the landing. The camera follows a fraction late and catches up with a lateral move; preserve rotational direction across the landing.
-
-[Shot 2 | 2.250–4.917s | supported low rise]
-2.250–2.820s: place one palm on the floor and fold the nearer knee under the torso while the other leg lengthens backward.
-2.820–3.390s: shift the pelvis above the planted palm, twist the ribs away, and draw the extended leg back in a curved line.
-3.390–3.960s: push through the palm and sole to lift into a half-kneel, one arm unfolding from near the floor to above shoulder height.
-3.960–4.530s: the other hand stays close to the ribs; the spine rises only halfway and then catches, as if the body cannot yet complete its recovery. Start this beat on a tight detail of the planted palm tightening, then tilt up the forearm into the arrested shoulder and eyes; let the arm occupy the near foreground.
-4.530–4.917s: settle the supporting knee and keep the reaching arm suspended for a short fraction. The camera tilts up from the support hand to her eyes exactly as the rise stops.
-
-[Shot 3 | 4.917–5.497s | near-static held beat]
-4.917–5.202s: hold the low level with the supporting palm and knee still planted; only the fingertips ease their tension as the torso breathes through the arrested rise.
-5.202–5.497s: the eyes tighten during the stalled rise, then settle into a hard inward focus toward the camera. Hair and fabric complete their natural residual movement. The camera holds still for the same beat, making the pause deliberate and heavy. End on the arrested half-kneel with the reaching arm suspended; this is the bridge into SEG04, where the same weight-bearing palm continues pressing to carry her upward.
-
-Micro-expression layer: eyes tighten during the stalled rise, then settle into a hard inward focus. Mouth relaxed and silent.
-
-overall_soundscape:
-<Audio 1> as the only soundtrack, with original voice and instruments unchanged. No speech, singing, mouth-sync, visible text, or generated sound effects.
-
-non_diegetic_music:
-<Audio 1> only. Timing reference: 105.25 BPM, beat 0.5701s, half-beat 0.285s, bar 2.2803s, phrase 4.5606s. B-half local anchors: 2.250s, 4.917s. This B-half covers full-song 33.916–39.413; the final 0.580s is one deliberate held beat.
-```
-
----
-
-# SEG03 第三段·双提示词手动剪辑时间点流程
-
-> 复杂动作不交给一条长提示词一次完成：A、B 两条提示词分别生成源片，再在剪辑软件里选动作最匹配的画格完成衔接。
-
-| 步骤 | 全曲时间 | 对应素材 | 操作 |
-|---|---|---|---|
-| 1. 生成 A 源片 | 26.958–33.916（6.958 s） | SEG03-A | 若平台单次时长受限，可生成更长源片，最终只取前 6.958 s |
-| 2. 生成 B 源片 | 33.916–39.413（5.497 s） | SEG03-B | 同上，B-local 0 = 全曲 33.916；只取需要的动作区间 |
-| 3. 定位剪辑点 | **全曲 33.916（SEG03 时间轴 6.958）** | A 结尾 / B 开头 | A 结尾是 hand-led wipe：近手与袖缘扫向镜头直到**完全遮挡**；B 开头从遮挡后手袖离开、撑脚起身 |
-| 4. 遮挡接缝 | 33.916 前后 1–3 帧 | 两源片 | 在 A「完全遮挡帧」与 B「仍被遮挡帧」之间硬切；接缝被手/袖盖住，观众看不到跳变 |
-| 5. 匹配核对 | 剪辑点 ±0.1 s | 两源片 | 手的运动方向（扫向镜头→向侧离开）、身体低位、摄影机运动（A 横移收尾 / B 跟随起身）趋势一致；不一致则换一帧或重抽 B |
-| 6. 音画核对 | 全曲 33.916 | 拼接结果 | 该点音乐不重启、不跳帧；A、B 都用同一条连续音乐的对应窗口，接缝落在音乐气口 |
-
-关键：不是把两段视频简单拼起来，而是在**身体姿态、运动方向、手部轨迹、摄影机运动**上找共同相位；优先用 hand-led wipe 的完全遮挡帧隐藏接缝。若 B 段开头与 A 段遮挡对不齐，可让 B 源片多生成 1–2 s，从中挑出手部离开镜头、身体开始撑脚起身的那一帧作为 B 的入点。
+关键：不是把两段视频简单拼起来，而是在**身体姿态、运动方向、手部轨迹、摄影机运动**上找共同相位。若后半开头与前半结尾对不齐，可让后半源片多生成 1–2 s，从中挑出撑脚起身、身体开始半转的那一帧作为入点。
 
 ---
 
@@ -300,7 +269,7 @@ subject_definitions:
 <Subject 1> is Song Yu, the same adult woman from <Picture 1>. The image exclusively controls her identity, face, hair, existing ornaments, clothes, proportions, colors, lighting, and entire scene. Preserve all existing visual information. She is the only dancer; add no captor, prop, or new setting.
 
 integrated_multimodal_description:
-Create a vertical 9:16 live-action Chinese classical dance MV, exactly 12.753 seconds long, using only <Picture 1> and this cut of <Audio 1>. <Picture 1> remains the identity and environment authority, not a pose reset. CONTINUITY IN: start on the exact close-up of the weight-bearing palm that ended SEG03-B; the same finger pads remain pressed and the wrist keeps the same diagonal. Let the palm press further into the floor, transfer force through wrist, elbow and shoulder, draw one knee beneath the pelvis, plant the foot, and rise through a compact low crouch into standing during the opening second. The camera tilts up and pulls back along the same arm so the rise is one continuous action, not a cut to an already-standing pose. The choreographic signature is a formal upright line that repeatedly bends sideways and must be rebuilt through ankle, knee, pelvis, ribs, and head — not by returning to the same symmetrical pose. Song Yu is silent, with relaxed lips and no synchronization to the recording; do not display any text.
+Create a vertical 9:16 live-action Chinese classical dance MV, exactly 12.753 seconds long, using only <Picture 1> and this cut of <Audio 1>. <Picture 1> remains the identity and environment authority, not a pose reset. CONTINUITY IN: start on the exact close-up of the weight-bearing palm that ended SEG03; the same finger pads remain pressed and the wrist keeps the same diagonal. Let the palm press further into the floor, transfer force through wrist, elbow and shoulder, draw one knee beneath the pelvis, plant the foot, and rise through a compact low crouch into standing during the opening second. The camera tilts up and pulls back along the same arm so the rise is one continuous action, not a cut to an already-standing pose. The choreographic signature is a formal upright line that repeatedly bends sideways and must be rebuilt through ankle, knee, pelvis, ribs, and head — not by returning to the same symmetrical pose. Song Yu is silent, with relaxed lips and no synchronization to the recording; do not display any text.
 
 Continuous layer: a subtle breath-led rise and sink continues, with active weight transfers beneath the upper-body lines. Arms do not mirror each other; the head arrives after the shoulders, and fabric settles after each change in direction.
 
@@ -498,9 +467,8 @@ non_diegetic_music:
 | 边界 | 上一段最后画面 | 下一段第一画面 | 连贯动作 |
 |---|---|---|---|
 | SEG01 → SEG02 | 高举手腕与微卷指尖特写，手仍沿上前方曲线运动 | 同一只手腕、同一画面位置与焦距，接着向下前方运行，再拉开到身体 | 手臂曲线连续，脚步与骨盆扭转随后显露 |
-| SEG02 → SEG03-A | 胸前交叠前臂特写，低位扭身状态不变 | 同一交叠角度与前后关系，手指先松、手腕再解开 | 交叠释放直接带动身体下降和手掌承重 |
-| SEG03-A → SEG03-B | 全曲 33.916：hand-led wipe 手/袖完全遮挡镜头 | 遮挡后手袖离开，撑脚起身进入半转 | 遮挡接缝，身体低位与手的方向连续 |
-| SEG03-B → SEG04 | 压地承重手掌特写（半跪受阻） | 同一手掌、同一腕部斜线与焦点，继续推地 | 手掌→前臂→肩→骨盆受力链把低位带到站立 |
+| SEG02 → SEG03 | 胸前交叠前臂特写，低位扭身状态不变 | 同一交叠角度与前后关系，交叠释放直接带动身体下降和手掌承重 | 交叠释放 → 螺旋下沉 → 掌心承重，无中性复位 |
+| SEG03 → SEG04 | 压地承重手掌特写（半跪受阻） | 同一手掌、同一腕部斜线与焦点，继续推地 | 手掌→前臂→肩→骨盆受力链把低位带到站立（SEG03 内部双生成剪辑点 33.916 见上方「提示」） |
 | SEG04 → SEG05 | 胸侧低手腕部特写，手腕开始外旋 | 同一腕部继续外旋、向外伸展，然后在腕部被截断 | 手臂伸展与回收连成受阻动作链 |
 | SEG05 → SEG06 | 直视镜头的双眼特写，视线稳定 | 同一眼线和脸部角度，先转动视线，再拉焦到指尖并拉开 | 眼神由受制凝视转向手部，带动恢复自主 |
 
