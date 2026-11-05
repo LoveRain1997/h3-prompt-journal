@@ -4,7 +4,7 @@
 
 # 🎬 H3 Prompt Journal
 
-**MiniMax H3 视频/舞蹈提示词案例日记 —— 22 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
+**MiniMax H3 视频/舞蹈提示词案例日记 —— 26 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
 
 [![Cases](https://img.shields.io/badge/case_studies-26-blue)](./case-studies)
 [![Platform](https://img.shields.io/badge/model-MiniMax_H3-red)](https://github.com/MiniMax-AI/MiniMax-H3)
@@ -86,6 +86,12 @@ case-studies/YYYY-MM-short-name/
 | <img src="case-studies/2026-10-summer-pool-beach-waterline-mv-4-segment/cover.png" width="160"> | [024 · Summer Pool/Beach/Waterline MV (Four Segments)](./case-studies/2026-10-summer-pool-beach-waterline-mv-4-segment/) | 四段真人夏日 MV（55s · 9:16 竖屏 · 音频窗口 00:00-10/10-25/25-40/40-55）：图 1 只锁人物身份、不复制姿势/背景/机位，四段都重传同一张图；倾斜构图=高位斜俯+画面滚转+海岸线对角（非简单歪相机）；Fixed Floor-Level POV 贴地垂直仰拍；第三段唯一硬切精确 00:03.000、00:08 为连续后退跟拍不切；第四段 split-level waterline 半水上半水下 + 泡沫前景逐步揭示、一镜到底。硬切与镜头内连续运动分开写。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
 | <img src="case-studies/2026-10-baifeng-mengchen-classical-dance-six-segment/cover.png" width="160"> | [025 · BaiFeng MengChen Classical Dance (Six Segments, Dual-Generation Cut)](./case-studies/2026-10-baifeng-mengchen-classical-dance-six-segment/) | 六段真人古风舞蹈 MV（79.882s · 105.25 BPM）：图 1 锁人物+完整环境、不重写外貌；从《舞蹈动链 H3 库》调用 C16/C17/C24/C28 等标准件重新编舞（进入路径/受力/峰值/惯性/回收）；第三段奉上完整 12.455s 原文提示词一条（不拆），实际以该原文双生成源片、手动剪辑，剪辑点全曲 33.916（local 6.958，Shot3结束/Shot4开始）；段内局部特写引导 vs 段间动作匹配分开；Dolly Zoom 只放关键失控点；人物称呼统一 Song Yu。附通用模板+五步手动剪辑流程。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
 
+### 2026-11 · 商业 MV 篇：多来源合并与制作方法论
+
+| 预览 | 案例 | 简介 |
+|:---:|---|---|
+| — | [026 · Index Morning Trouble Commercial MV (Eighteen Segments)](./case-studies/2026-11-index-morning-trouble-commercial-mv-18-segment/) | 十八段真人商业 Idol MV（224.888s · 178 BPM · 16:9）：四张参考图分权（人物／运镜 A／运镜 B 路径／居住环境）；多来源合并 18 段（Rev.8.2–8.6 + 独立重写稿）；SEG06 从早餐桌静物重构为 178 BPM 舞蹈优先段落并加裙内同色系打底层；魔法书脑内化（删除现实实体书）；Spoken 结构化 `<Subject 1>` + `<d>[Japanese]</d>`；17 处转场动作匹配。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
+
 ### 摄影机语言工具箱 · 双系统标准
 
 | 封面 | 标准库 | 简介 |
@@ -96,6 +102,7 @@ case-studies/YYYY-MM-short-name/
 | <img src="case-studies/2026-10-dance-motion-chain-library/cover.png" width="160"> | [Dance Motion Chain Library · 舞蹈动链 H3 库](./case-studies/2026-10-dance-motion-chain-library/) | **动作链标准件总库（Rev.1.0 全文镜像）**：A 宅舞 23 链 / B 抖舞 / C 古风 49 链 / D 多人 12 纪律 / E 运镜纪律 / G Hero 库 / H 13 支成品范本 / I 视角库 / J 写真 9 范本 / 拼舞模板——每条链带入态/出态与十要素描述，积木式拼舞；本仓库只读副本，正本在本地 git。 |
 | <img src="docs/images/020-motion-transfer.jpg" width="160"> | [020 · H3 Motion Transfer — Subject-First Reconstruction](./case-studies/2026-10-h3-motion-transfer/) | **动作迁移（图1人物×目标视频动作×音频时序）**：三参考严格分权（图1=人+世界，视频1首帧=镜头几何，视频1正文=动作机制，音频1=时序权威），SUBJECT-FIRST 不可逆初始化顺序 + 八项 FINAL VALIDATION 自检。⚠️ 硬约束：**单次迁移最长 8–9 秒**，长舞按乐句拆段。附案例成片与 ComfyUI 工作流要点。🎬 [成片](./case-studies/2026-10-h3-motion-transfer/result-video.mp4) |
 | <img src="docs/images/021-formation-lock.jpg" width="160"> | [021 · Four-Subject Formation Choreography (Fourteen Segments)](./case-studies/2026-10-four-subject-formation-choreography/) | 十四段四人群舞：逐字锚定块（Universal Visual Anchor）×14 次粘贴 + 动作态接力（OUTGOING HOOK→INCOMING STATE）+ 舞蹈化队形转换（脚先转/限象限/切镜代替拉远）。第 10 段完整英文提示词 + 14 段终版整合表。🎬 [SEG 10 成片](./case-studies/2026-10-four-subject-formation-choreography/assets/demo_segment10.mp4) |
+| — | [Dance MV Production Skill Rev.1.0](./case-studies/2026-11-dance-mv-production-skill/) | **舞蹈 MV 通用制作方法论**：制作总公式（音乐结构→MV 概念→视觉母题→舞种语法→动作链→摄影机→Shot 切分→段间钩子→提示词→检查修订）+ 十条最高优先级 + 动作描述三档密度；覆盖参考图锁定、12 类舞种语法、动作链十要素、物理机位、剪辑连续性、提示词工程与交付标准，16 章可反复执行的商业工作流。 |
 
 
 
