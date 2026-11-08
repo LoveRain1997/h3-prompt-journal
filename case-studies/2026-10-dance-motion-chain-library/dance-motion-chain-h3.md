@@ -1,6 +1,7 @@
-# 舞蹈动链 H3 库(可重复学习的动作链标准件) · Rev.1.4
+# 舞蹈动链 H3 库(可重复学习的动作链标准件) · Rev.1.5
 
 > **版本记录**
+> Rev.1.5|2026-11-08|K 章追加 K75-K84:《潛行吧！奈亞子！W》宅舞翻跳 97.8s 密集抽帧(4fps×8 窗)反推 10 条——交替高踢/转体前伸/横移交叉开/背身甩发回转/变身双马尾/双马尾甩转(全片签名×7)/宽蹲摆胯/大弓步展臂高潮/力竭躺倒收尾/猫爪马尾横甩；一镜到底固定机位,变身点 24s,躺倒彩蛋收尾
 > Rev.1.4|2026-10-30|新增 K 章「2026-10-30 批量反推动链扩展库」:15 支新片+2 张姿势参考图、74 条动链(K1-K74)经 video-to-h3-prompt 流水线反推并入(双人支撑拉伸/saber 技术下腰/3DCG 舞台变装/情绪撩发写真/吸血鬼写真/腿脚微动作/双人对镜甜舞/K-pop 群舞/卡点换装/AIGC 摆拍等);每片附背景人物档案+节拍判定+镜头形态分流;其余章节与使用规则不变
 > Rev.1.3|2026-10-09|使用规则新增第 9 条「时间窗动作链完整性规范」(强制前置检查:五规则+动作设计五步逻辑+时间窗容量表+失败诊断四情况+逐窗验收十项);第 8 条十条自检不变
 > Rev.1.2|2026-10-09|自检清单替换为用户定稿十条(运镜流程/物理机位/动作库优先/同步时间码/动作峰值/节奏连续/转场钩子/段自包含/视觉一致性/最终排错);第7条同步规则不变
@@ -2751,6 +2752,71 @@ non_diegetic_music: N/A
 - H3:`cutting to an extreme close-up as she winks one eye at the camera and breaks into a wide toothy smile, red plum-petal makeup beside her eye, bokeh lantern lights melting behind her, static face-level close-up holding to the end`
 - 来源:《旗袍夜景》00:15.7-16.8s
 
+**片<v16>《潛行吧！奈亞子！W》(宅舞翻跳·97.8s·4:3)**
+- 背景人物:居家卧室——大床(浅蓝床品+粉色玩偶)、碎花墙纸、立式饮水机、"招财进宝"红金挂画、左墙镜子。人物:女宅舞者,白色水手服短袖(红领巾)+黑色蓬蓬裙+黑色高跟短靴;黑长发,0-24s 披发无饰、24s 变身点后双马尾+白发饰(变身与段落切换对齐,借转体甩发遮蔽完成)。画外行动者:无。
+- 节拍:满电平 BGM(mean -10.3dB);快板宅舞,约 170-180BPM(推测,未核听)。
+- 镜头形态:A 一镜到底固定机位(全程无切镜);结尾力竭躺倒彩蛋(93-97.8s 鞠躬折叠→坐倒床沿→仰躺腿搭床沿)。
+
+### K75 交替高踢开场链(4拍|宅舞)
+- 入态:站立双臂胸前交叉 → 出态:屈膝弹动中
+- 分解:拍1 右腿高踢过腰、双臂同时打开成 V、头随踢后仰;拍2 落地屈膝吸收、双臂落体侧;拍3 左腿高踢同构;拍4 落地接半转预备,重心压前掌
+- H3:`kicking her right leg high while both arms open into a V, her head tipping back with the kick, absorbing into a knee bounce, then the same phrase mirrored left`
+- 来源:《潛行吧！奈亞子！W》0-4s
+
+### K76 转体前伸链(2拍|宅舞)
+- 入态:踢后落地 → 出态:正面双臂上举
+- 分解:拍1 左转 90° 侧对、双臂向前平伸(引导转体);拍2 蹬地转回正面、双臂顺势举过头顶定住
+- H3:`turning sideways with both arms reaching forward, then pivoting back to face the camera as her arms sweep up overhead`
+- 来源:《潛行吧！奈亞子！W》4-6s
+
+### K77 横移交叉开链(4拍|可位移)
+- 入态:正面弹动 → 出态:回中弹动
+- 分解:拍1-2 向左横移两步、双臂先胸前交叉再向体侧平打开;拍3 右腿侧踢、右臂同步上指;拍4 收回并步,交叉重复预备反向
+- H3:`side-stepping left as her arms cross at the chest then sweep open, one side-kick with the opposite arm pointing up, snapping back to a bounce`
+- 来源:《潛行吧！奈亞子！W》6-9s(18-19s 同构复用)
+
+### K78 背身甩发回转链(4拍|甩发)
+- 入态:正面 → 出态:正面手在脸侧
+- 分解:拍1 左转背对镜头、双臂向两侧展开;拍2 背对甩头、长发/马尾横飞(延迟层);拍3 蹬地转回正面;拍4 双手落至脸侧猫爪框脸定住
+- H3:`turning her back with arms spread, whipping her head so the hair fans out, spinning back to camera and landing cat-paw hands beside her face`
+- 来源:《潛行吧！奈亞子！W》9-11s、19-22s(两处复用)
+
+### K79 变身双马尾链(2拍|变身梗)
+- 入态:披发 → 出态:双马尾+白发饰(借转体甩发瞬间完成更换)
+- 分解:拍1 转体背对、发丝横甩遮住换发动作(动作遮蔽);拍2 转回正面时已是双马尾、双臂向体侧大开亮相——动作不断、变身"凭空发生"
+- H3:`spinning through a hair-whip turn and facing camera again with twin-tails that were not there a beat ago, arms flaring wide on the reveal`
+- 来源:《潛行吧！奈亞子！W》24s(变身点)
+
+### K80 双马尾甩转链(2拍|双马尾·签名)
+- 入态:正面或侧对 → 出态:回正面弹动
+- 分解:拍1 头部主导横向甩动、双马尾滞后半拍水平横扫(最高点过肩);拍2 以甩发的角动量带转体 90-180°、马尾继续画弧回摆
+- H3:`snapping her head sideways so the twin-tails whip through a horizontal arc half a beat late, the follow-through spinning her body around`
+- 来源:《潛行吧！奈亞子！W》26-28s、34-36s、38-40s、58-60s、68-70s、78-80s、82-84s(签名复用×7)
+
+### K81 宽蹲摆胯链(4拍|level change)
+- 入态:并步弹动 → 出态:起身并步
+- 分解:拍1 宽站下沉半蹲、双膝外开;拍2-3 保持低位的左右摆胯、双手随体前小幅平摆;拍4 蹬地起身收回,裙摆回弹
+- H3:`sinking into a wide stance and swaying her hips side to side low, hands swinging small in front, then pushing back up to a bounce`
+- 来源:《潛行吧！奈亞子！W》50-56s
+
+### K82 大弓步展臂高潮链(6拍|副歌·全片最大幅度)
+- 入态:弹动 → 出态:回中弹跳
+- 分解:拍1 右大弓步沉低、右臂斜上全开左臂斜下后展(对角线拉满);拍2 保持推远;拍3 换左弓步镜像对角;拍4-5 再换右(或回中);拍6 双臂上举收 V 弹跳
+- H3:`lunging deep side to side with one arm shooting up on the diagonal and the other sweeping low, trading the line left and right at full extension, closing with both arms up in a V hop`
+- 来源:《潛行吧！奈亞子！W》88-93s
+
+### K83 力竭躺倒收尾链(8拍|彩蛋收尾)
+- 入态:V 跳落地 → 出态:仰躺床上静止(settled)
+- 分解:拍1-2 深深鞠躬、上半身完全折叠、双马尾垂直垂落向地面;拍3-4 保持折叠两拍("没电了"暗示);拍5 直不起来的半起身、向后坐倒床沿;拍6-7 向后躺平、双腿搭在床沿垂下;拍8 完全静止躺平收束(全片终)
+- H3:`bowing so deep her twin-tails hang straight down, staying folded like the power ran out, then dropping backward to sit on the bed edge and flopping flat with her legs hanging off the foot of the bed, holding still`
+- 来源:《潛行吧！奈亞子！W》93-97.8s
+
+### K84 猫爪马尾横甩链(2拍|萌)
+- 入态:弹动 → 出态:弹动
+- 分解:拍1 双手举至脸侧五指张开成猫爪、掌心朝前,同时头部左右快甩带动双马尾横扫面颊两次;拍2 爪保持、头回正眨眼
+- H3:`flashing cat-paw hands beside her face while snapping her head side to side so the twin-tails sweep her cheeks, settling with a blink`
+- 来源:《潛行吧！奈亞子！W》20.5-22s、66-68s
+
 ---
 
 ## 拼舞模板(把链串成一支舞)
@@ -2764,4 +2830,4 @@ non_diegetic_music: N/A
 7. **检查**:旋转≤2、静止已明写、头部鼓在反拍、手势半径合规、切点在乐句收点、人数/机位 token 齐全。
 
 ---
-*来源视频:《双倍可爱❤️甜蜜暴击》(47.4s)、宅舞vs抖舞分屏(238.6s)、《与你提酒》(118.4s)、《皇上》(77.5s)、录舞运镜权威(61.5s)、《うみたがり》4人(222.5s)、《BLESSING》4人(96.8s)、向阳 BDF2021 队形版(144.9s);由八份逐拍反推报告提炼,动链合计 70+ 条;另并入 13 支 I2VA 单人成品范本(H 章,2026-10);《绝世舞姬》混剪(82.9s/44镜,E6 转场章+C36-C47+G 补充,2026-10-02);双人弧形运镜 16.8s(E7)+醉酒式镜头母规则(E8,2026-10-03);《三种袜子》右入换装 5.9s(E9)+三姿态原位换装系列 18.4s(E10:站姿侧身/深蹲抱膝抖腿/提裙站姿,onset 卡点实测,2026-10-05);2026-10-30 并入 K 章 74 条(15 支新片+2 图,短标题↔原片名:《绫华的锻炼时间》10.4s、《saber白礼服》9.6s(原片含书名号前缀"成为士郎的剑")、《saber下腰挑战》8.2s(原片《saber下腰动作挑战》)、《奥黛塔变装》153.4s(原片《花3000为奥黛塔制作视频后，最终决定放弃她.......》)、《夏天结束了》16.1s(原片《夏天结束了——做了四次不同情绪的撩头发》)、《橘福福》27.6s(原片《如此绝美的 橘福福 之后再也没见到》)、《薇薇安》60.6s(原片《好女孩——薇薇安（测试）》)、《维琳娜》75.0s(原片《这维琳娜对....对吗？》,鸣潮维里奈 cos)、《两个御姐合拍》14.9s(原片《两个御姐~格格巫和月月的合拍合集~_P1_好想谈恋爱》)、《请pick西施吧～》32.7s、《I Got Your Back》154.3s(原片【ILLIT】金丝眼镜水手服)、《依赖姐姐》72.0s(原片《依赖姐姐一辈子也不是什么坏事吧》)、《我是银月呀❤》18.1s、《活动饭拍》11.6s(原文件 ANbHNypfOZ8EhWqP)、《旗袍夜景》16.8s(原文件 AWsiPVCcHGVFeJGL)、《狐耳白发六宫格》写真图、《蓝水手服走廊截图》单帧)。*
+*来源视频:《双倍可爱❤️甜蜜暴击》(47.4s)、宅舞vs抖舞分屏(238.6s)、《与你提酒》(118.4s)、《皇上》(77.5s)、录舞运镜权威(61.5s)、《うみたがり》4人(222.5s)、《BLESSING》4人(96.8s)、向阳 BDF2021 队形版(144.9s);由八份逐拍反推报告提炼,动链合计 70+ 条;另并入 13 支 I2VA 单人成品范本(H 章,2026-10);《绝世舞姬》混剪(82.9s/44镜,E6 转场章+C36-C47+G 补充,2026-10-02);双人弧形运镜 16.8s(E7)+醉酒式镜头母规则(E8,2026-10-03);《三种袜子》右入换装 5.9s(E9)+三姿态原位换装系列 18.4s(E10:站姿侧身/深蹲抱膝抖腿/提裙站姿,onset 卡点实测,2026-10-05);2026-10-30 并入 K 章 74 条(15 支新片+2 图,短标题↔原片名:《绫华的锻炼时间》10.4s、《saber白礼服》9.6s(原片含书名号前缀"成为士郎的剑")、《saber下腰挑战》8.2s(原片《saber下腰动作挑战》)、《奥黛塔变装》153.4s(原片《花3000为奥黛塔制作视频后，最终决定放弃她.......》)、《夏天结束了》16.1s(原片《夏天结束了——做了四次不同情绪的撩头发》)、《橘福福》27.6s(原片《如此绝美的 橘福福 之后再也没见到》)、《薇薇安》60.6s(原片《好女孩——薇薇安（测试）》)、《维琳娜》75.0s(原片《这维琳娜对....对吗？》,鸣潮维里奈 cos)、《两个御姐合拍》14.9s(原片《两个御姐~格格巫和月月的合拍合集~_P1_好想谈恋爱》)、《请pick西施吧～》32.7s、《I Got Your Back》154.3s(原片【ILLIT】金丝眼镜水手服)、《依赖姐姐》72.0s(原片《依赖姐姐一辈子也不是什么坏事吧》)、《我是银月呀❤》18.1s、《活动饭拍》11.6s(原文件 ANbHNypfOZ8EhWqP)、《旗袍夜景》16.8s(原文件 AWsiPVCcHGVFeJGL)、《狐耳白发六宫格》写真图、《蓝水手服走廊截图》单帧);2026-11-08 追加 K75-K84:《潛行吧！奈亞子！W》宅舞翻跳(97.8s,一镜到底固定机位,变身点 24s,双马尾甩转签名×7,力竭躺倒彩蛋收尾)。*
