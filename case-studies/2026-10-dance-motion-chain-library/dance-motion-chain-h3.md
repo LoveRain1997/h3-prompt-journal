@@ -1,6 +1,7 @@
-# 舞蹈动链 H3 库(可重复学习的动作链标准件) · Rev.1.5
+# 舞蹈动链 H3 库(可重复学习的动作链标准件) · Rev.1.6
 
 > **版本记录**
+> Rev.1.6|2026-11-09|①K 章追加片 v17 K85-K88:AnimateDiff 补帧 8s AI 宅舞反推(横摆送胯/抓马尾摆胯/过顶钻石/胯波浪收势,BPM132 onset 实测网格);②新增 L 章「成品 T2VA 范本与续写提示词收录」:L1/L2 = Miniskirt(AOA)7 人办公室翻跳 12 Jobs 全文两版(基础版+密帧深化版,道具窗修正为大厅两侧白色方块),L3 = 8s 性感宅舞卡点续写提示词(BPM132,链位 K70/K45/K72/K73/B1/K74,音频 8.06s 实测 onset)
 > Rev.1.5|2026-11-08|K 章追加 K75-K84:《潛行吧！奈亞子！W》宅舞翻跳 97.8s 密集抽帧(4fps×8 窗)反推 10 条——交替高踢/转体前伸/横移交叉开/背身甩发回转/变身双马尾/双马尾甩转(全片签名×7)/宽蹲摆胯/大弓步展臂高潮/力竭躺倒收尾/猫爪马尾横甩；一镜到底固定机位,变身点 24s,躺倒彩蛋收尾
 > Rev.1.4|2026-10-30|新增 K 章「2026-10-30 批量反推动链扩展库」:15 支新片+2 张姿势参考图、74 条动链(K1-K74)经 video-to-h3-prompt 流水线反推并入(双人支撑拉伸/saber 技术下腰/3DCG 舞台变装/情绪撩发写真/吸血鬼写真/腿脚微动作/双人对镜甜舞/K-pop 群舞/卡点换装/AIGC 摆拍等);每片附背景人物档案+节拍判定+镜头形态分流;其余章节与使用规则不变
 > Rev.1.3|2026-10-09|使用规则新增第 9 条「时间窗动作链完整性规范」(强制前置检查:五规则+动作设计五步逻辑+时间窗容量表+失败诊断四情况+逐窗验收十项);第 8 条十条自检不变
@@ -11,7 +12,7 @@
 > 每条动链 = 一个 2-8 拍的完整编舞单元,带**入态/出态**,可像积木一样首尾相接拼成整支舞。
 > 英文描述均可直接粘贴进 H3 提示词;拍位为**相对拍**(链内第几拍),可放到任何 BPM 网格上。
 > H 章 = 13 支单人成品范本(2026-10 并入):整段提示词可直接粘贴套用,H0 为从范本提炼的成品规律。
-> K 章 = 2026-10-30 批量反推动链扩展(15 支新片+2 图,74 条):每片带背景人物档案+节拍判定+镜头形态分流,风格覆盖双人支撑/技术动作/写真微动作/宅舞/K-pop/AIGC 摆拍。
+> K 章 = 批量反推动链扩展(17 支片+2 图,88 条):每片带背景人物档案+节拍判定+镜头形态分流;L 章 = 成品 T2VA 范本与续写提示词收录(Miniskirt 12 Jobs 两版+8s 卡点续写)。
 
 ## 0. 使用规则
 
@@ -2817,6 +2818,760 @@ non_diegetic_music: N/A
 - H3:`flashing cat-paw hands beside her face while snapping her head side to side so the twin-tails sweep her cheeks, settling with a blink`
 - 来源:《潛行吧！奈亞子！W》20.5-22s、66-68s
 
+**片<v17>《AnimateDiff-补帧》(AI 宅舞·8.0s·9:16·24fps)**
+- 背景人物:夜间城市街头——霓虹招牌虚化、柏油路面、暗色树影。人物:AI 生成(AnimateDiff+补帧)金发双马尾少女、白花发饰、粉色长袖上衣、黑色短裤;动作流畅无硬停顿(AI 特征)。画外行动者:无。
+- 节拍:自带音轨(即所附 mp3,8.06s);onset 实测 BPM≈132,强拍 0.91s 间距:1.03/1.95/2.86/3.77/4.68/5.60/6.50/7.42s,0.81s 弱拍起手;能量密度全程均匀。
+- 镜头形态:A 一镜到底(锁定髋高机位)。
+
+### K85 横摆送胯开手链(2拍|AI宅舞)
+- 入态:双臂前平伸 → 出态:体侧落下
+- 分解:拍1 双臂胸前横扫打开、胯向反侧顶出送力;拍2 双臂沿体前大弧线下摆、重心左右交换,全程无硬停顿(AI 流动感)
+- H3:`sweeping both arms open across the chest while the hip pops to the opposite side, then letting the arms fall along a wide arc as the weight shifts`
+- 来源:《AnimateDiff 补帧》0-2s
+
+### K86 抓马尾摆胯链(4拍|双马尾·Signature)
+- 入态:双手升至颈侧 → 出态:松手双臂外放
+- 分解:拍1-2 双手向上抓握双马尾根、肘外举定型;拍3-4 保持抓举、胯部左右大幅摆动两个来回(马尾随胯反相摆);末拍松手借势外放
+- H3:`gripping both twin-tails up at the roots with elbows raised, holding the pose while the hips swing side to side twice, then releasing the hair into an outward arm throw`
+- 来源:《AnimateDiff 补帧》2.9-4.7s
+
+### K87 过顶钻石链(2拍|Signature)
+- 入态:双手胸前合拢 → 出态:双臂下落
+- 分解:拍1 双手指尖相抵成钻石/心形、沿中线直臂上举过顶,上身后仰、单腿后点;拍2 峰值定住半拍后双臂经体侧下落
+- H3:`pressing the fingertips together into a diamond and raising it straight overhead with the back arching and one toe pointed back, holding the peak then lowering the arms`
+- 来源:《AnimateDiff 补帧》5.6-7.4s
+
+### K88 胯波浪收势链(2拍|收尾)
+- 入态:双臂下落 → 出态:抬腿交叉定格
+- 分解:拍1 上体波浪下传至胯、左右摆两次衰减;拍2 单腿抬起膝上提交叉、同侧手扶膝、另一手侧展定格
+- H3:`rolling a body wave down into two decaying hip sways, then lifting one knee across with one hand on it and the other arm extended, freezing on the pose`
+- 来源:《AnimateDiff 补帧》7.4-8.0s
+
+---
+
+## L. 成品 T2VA 范本与续写提示词收录(外部项目全文并入 · 2026-11-09)
+
+> 收录原则:外部反推/续写项目的完整可粘贴提示词**全文并入**,原文不改。L2 为 L1 的密帧深化修订版(道具窗修正:大厅两侧白色方块,非黑椅;以 L2 为准)。各 Job 时长 ≤15s,块自带共享 DNA 段;`<Audio 1>` 未挂接(声音走块外 postproduction_copy 交接,见各文档 PART C)。忠实度 L1(director's plan),非帧级复刻。
+
+### L1 Miniskirt(AOA)7 人办公室翻跳 — H3 T2VA 详细反推(12 Jobs)·基础版
+
+```text
+FIDELITY TIER: L1 (director's plan). Based on ~78 source frames (global + two dense
+batches at ~2.5s spacing); NO per-frame skeleton tracking and NO audio onset detection.
+Timings approximate (0.1s precision); a directorial plan, not a frame-accurate
+reproduction. Visual evidence: source-video frames only, no stock images.
+SCOPE: main dance program only, 0.00–150.53s; the ending credits/blooper reel
+(~150.5–254s) is excluded per user. FILM TYPE: C — multi-shot MV montage with hard-cut
+named setups; audio unverified, cut-to-downbeat claims inferred from picture rhythm.
+```
+
+源文件 SHA-256：`f0aeed79425db69b8788c926c8027ef833234fbe4d92c5e10f9a9b9344b29097`
+画幅：854×384（宽幅，约 2.22:1，画面内为宽银幕构图），30fps。声音：音轨存在、内容未核听（`N/A`，原声交接见文末）。
+
+---
+
+# PART A — 共享视觉 DNA（全片适用，各 Job 引用）
+
+## A1. subject_definitions（七名舞者，按造型与当前位置区分，不固定个人编号）
+
+```text
+Seven female dancers, tracked by current position and look rather than a fixed name,
+since they exchange places. One BLONDE dancer (short chin-length blonde bob, straight
+bangs) is the visual anchor and frequently takes center; the other six have long dark
+hair (black or brown, straight or wavy, some half-tied up, some worn down), fair skin,
+defined eye makeup, small earrings and delicate necklaces.
+OFFICE LOOK (the dominant program): white or fine-striped fitted shirts, some with
+black suspenders, a short black mini-skirt, sheer black stockings, black stiletto
+heels, and a lanyard ID badge on a black strap; hair mostly down.
+HALL LOOK: tight black mini-dresses with cut-out / open-back / halter details, black
+stockings with garter belts, black stilettos; some sequences use black chairs.
+All seven keep the same costume within each scene; the blonde stays blonde throughout.
+```
+
+## A2. environment_definition
+
+```text
+OFFICE: a bright modern open-plan office with a pale blue-grey floor, large floor-to-
+ceiling windows in soft daylight, glass-block walls, a curved archway and a round
+ceiling light; desks, office chairs, computers and a cylindrical column fill the
+background; clean, cool and airy.
+HALL: a grand warm-lit hall with a black-and-white checkerboard floor, tall white
+columns, a white paneled double door, a chandelier, wall sconces and curtains; a warm
+amber glow from the sides; black chairs are used for the chair-dance section.
+The wide frame is letterboxed; no on-screen text is required to be generated.
+```
+
+## A3. lighting_definition
+
+```text
+OFFICE: soft cool daylight from the large windows, even and diffuse with gentle fill,
+pale neutral-to-cyan color temperature, soft shadows and clean specular highlights on
+the smooth floor and the sheen of stockings.
+HALL: warm amber key from side wall lights, harder and more directional, deep warm
+shadows on the checkerboard floor, a chandelier overhead; strong rim light separates
+the black outfits and bare skin.
+Lighting stays constant within each scene and switches only on the hard scene cuts;
+subtle film grain, no random flicker.
+```
+
+## A4. named camera setups
+
+```text
+WIDE FRONTAL (WF): eye-level full-body wide, whole ensemble and floor visible —
+  dominant, establishes formation.
+LOW ANGLE (LA): camera near the floor looking up, legs and stilettos emphasized,
+  figures read long; glossy floor in the foreground.
+HIGH ANGLE (HA): elevated (not fully vertical) framing of layered or bent formations.
+MEDIUM CLOSE (MC): chest-up framing for facial and hand gestures, shallow depth.
+INSERT (INS): tight detail — legs, heels, hem, hands at the lips, hair.
+WHIP / WIPE (WB): fast motion-blur move or a body/hair occlusion used as a motivated
+  bridge between setups.
+Use only the assigned setup per beat; no unmotivated camera moves.
+```
+
+## A5. body_mechanics（K-pop 性感舞蹈力学）
+
+```text
+GROUNDING & FORCE: in stilettos the weight stays over the balls of the feet; every
+move initiates from the floor and travels hip -> lumbar -> chest -> shoulder -> arm.
+A small breath or counter-wind-up precedes each release.
+HIP & WAVE: pelvic sways and body rolls are driven by the hips with the knees soft;
+the wave passes sequentially through belly, chest and shoulders, never as one rigid
+tilt. SQUATS: the center of mass drops over the heels, knees tracking over the toes,
+back elongated, then the hips drive the rise.
+FLOOR WORK: in the lying pose the body lowers with controlled support, the spine
+arcing on the floor; hands frame the head, legs extended, no collapsed weight.
+CHAIR DANCE: the chair is a stable prop; weight sits into the hips, legs extend and
+cross, hands trace the thighs and back while the torso stays lifted.
+HEAD & EYES: gaze follows the leading hand; on turns the head arrives last; faces stay
+composed and confident, expressions controlled, no constant smile.
+```
+
+## A6. costume_hair_physics
+
+```text
+Nothing animates independently. Long hair, the loose shirt hems and the short skirt
+lag slightly behind each hip or body acceleration and settle with a soft secondary
+motion; on turns hair flares and on squats the skirt and stocking lines follow the
+thighs. The ID lanyard swings with a small lag. Fabrics keep a natural body-to-cloth
+gap and fold at the waist and knees; no plastic stiffness, no clipping through the
+body, chairs, heels or other dancers; garter straps and stocking seams stay aligned.
+```
+
+## A7. CONTINUITY GUARD（七人，全片适用）
+
+```text
+- exactly SEVEN dancers at all times: no duplicated or extra bodies, no half-formed or
+  fused limbs;
+- each dancer keeps her own identity and look: NO face swap, NO costume or accessory
+  transfer, the blonde stays the only blonde, including during crossings, occlusion,
+  back views and floor work;
+- position changes occur ONLY via the described continuous paths — NO teleportation,
+  NO instant side-swaps, NO two dancers occupying one point or merging;
+- when hair or a body occludes the lens, identities and costumes remain unchanged
+  behind it; identity continuity takes priority over completing a move;
+- office vs hall changes are SCENE/COSTUME cuts only at the stated boundaries; inside
+  one scene the outfits never change.
+```
+
+---
+
+# PART B — 12 个 Job 详细时间线（本地时钟从 00:00 重置）
+
+## Job 01 — 源 00:00.00 → 00:13.07（13.07s）｜黑场 → 冷开场大厅预告
+
+```text
+integrated_multimodal_description: [Shot 1] A pure black frame holds with only the small fixed platform watermark in the upper corner, no subject and no motion. [Shot 2] At 00:02.300, a hard cut reveals the grand warm hall as a cold-open teaser: the seven dancers in black mini-dresses and stockings on the checkerboard floor, three seated low on the floor with hands planted while four stand behind them, the blonde among the standing group; warm amber light and columns frame the confident pose. [Shot 3] At 00:05.500, the picture begins rapid montage cuts between the hall group and brief cool office flashes, each hard cut landing on a new pose — a hand at the lips, a hip turned, a back-view turn — building anticipation without a continuous camera move.
+
+camera_direction: Shot 1 locked off on black. Shot 2 wide frontal held steady to establish the seven. Shots 3 onward are discrete hard-cut setups (WF/MC), each near-locked, with only small motivated framing; the fast changes come from editing, not a drifting or orbiting camera.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 02 — 源 00:13.07 → 00:24.13（11.06s）｜办公室开场 → 地面躺卧
+
+```text
+integrated_multimodal_description: [Shot 1] A hard cut into the bright cool office; the dancers begin to move into position among the desks and windows. [Shot 2] At 00:03.100, the program settles and a long-haired dancer lowers into a floor pose: she lies on the smooth floor in a white sleeveless knit top and black skirt, spine arcing, long hair spread around her, both hands framing her head while one leg extends; another dancer's legs in heels stand on a desk softly behind her. She holds the reclined pose with controlled support, gaze toward the camera.
+
+camera_direction: Shot 1 wide frontal with a small slow move as they take position. Shot 2 low angle close to the floor, held near-locked on the lying dancer with a tiny slow push, motivated by her lowering to the ground; the background legs stay in frame. No tilt drift, no orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 03 — 源 00:24.13 → 00:35.70（11.57s）｜办公室队形 → 近景
+
+```text
+integrated_multimodal_description: [Shot 1] Back in standing formation, the seven move through synchronized hip sways and soft arm gestures in the office, knees relaxed, weight over the balls of the feet. [Shot 2] At 00:06.500, the framing tightens toward a few dancers as one hand sweeps the hair and the torso rolls through a body wave. [Shot 3] At 00:08.000, a closer chest-up framing catches the confident expression and a hand gesture, the bright windows and desks soft behind.
+
+camera_direction: Shot 1 wide frontal with a small lateral follow of the hip movement, motivated by their sway. Shot 2 medium close with a small slow push as the hand sweeps the hair. Shot 3 near-locked chest-up; every move is motivated by the named body action, no autonomous push or orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 04 — 源 00:35.70 → 00:50.00（14.30s）｜七人全景 → 金发特写
+
+```text
+integrated_multimodal_description: [Shot 1] A wide office shot shows all seven in a clean line, executing a synchronized pelvic sway with hands traveling from the waist outward, the blonde at one side. [Shot 2] At 00:08.100, the camera cuts into a closer formation as the dancers turn and let long hair flare. [Shot 3] At 00:12.500, a medium close frames the blonde dancer turning over her shoulder, fingers drawing to her lips in a confident hush gesture, the office windows glowing behind her while another dancer moves in the foreground.
+
+camera_direction: Shot 1 wide frontal held steady on the line. Shot 2 medium framing with a small follow of the turn and hair flare. Shot 3 medium close with a small slow push toward the blonde, motivated by her hand moving to her lips; no zoom beyond the face, no orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 05 — 源 00:50.00 → 01:04.63（14.63s）｜办公室队形快切
+
+```text
+integrated_multimodal_description: [Shot 1] The office formation continues with the seven stepping through a hip-driven sequence, arms crossing and opening. [Shot 2] At 00:02.100, a quick cut to a tighter angle catches a body wave and a hand tracing the waist. [Shot 3] At 00:03.500, another hard cut shows the group turning, hair and skirt hems flaring. [Shot 4] At 00:04.300, a closer framing holds the confident face. [Shot 5] At 00:12.000, the view returns to a wide office line as they drop into a bent-knee move and rise on the hip.
+
+camera_direction: Shot 1 wide frontal. Shots 2-4 are discrete medium/insert hard cuts, each near-locked, motivated by the wave, turn and facial gesture; Shot 5 wide frontal with a small follow of the drop and rise. The density comes from editing, not a continuous rush or orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 06 — 源 01:04.63 → 01:19.00（14.37s）｜办公室 → 内部机位快切
+
+```text
+integrated_multimodal_description: [Shot 1] A wide office shot carries the seven through synchronized sways and arm arcs. [Shot 2] At 00:03.600, a medium framing follows a turn with hair flare. [Shot 3] At 00:10.400, a rapid burst of internal cuts: hard cut to a back-view, then a side profile, then a hand at the hip, each landing on a distinct pose while the location stays the same office. [Shot 4] At 00:13.100, the group settles into a line facing the camera.
+
+camera_direction: Shot 1 wide frontal with a small lateral follow. Shot 2 medium follow of the turn. Shot 3 three near-locked hard-cut setups (WF/MC/INS) with no motion blur between them, motivated by the back turn, profile and hand gesture; Shot 4 wide frontal held. No LOCK/BURST effect, no orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 07 — 源 01:19.00 → 01:27.67（8.67s）｜办公室双人 → 全景
+
+```text
+integrated_multimodal_description: [Shot 1] A medium two-shot in the office shows two dancers standing back to back, one dark-haired and one brown-haired, each tracing a hand to the neck and rolling the shoulder. [Shot 2] At 00:02.100, a small cut widens as they turn away. [Shot 3] At 00:05.000, the view opens toward the full ensemble beginning the next formation.
+
+camera_direction: Shot 1 medium two-shot near-locked with a tiny push on the shoulder roll. Shot 2 small framing change as they turn. Shot 3 a gentle pull-out to wide frontal, motivated by the group opening up; no orbit, no handheld drift.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 08 — 源 01:27.67 → 01:42.67（15.00s，内部 15s 拆分点）｜办公室全景
+
+```text
+integrated_multimodal_description: [Shot 1] A wide office shot shows all seven in mixed orientations, some facing the camera and some turned, moving through a layered hip sequence with arms extending outward. [Shot 2] At 00:07.000, they bend forward in unison, hands traveling down the thighs, long hair falling forward, then drive the hips back up through a body wave. [Shot 3] At 00:13.300, they settle into a front-facing line, the blonde at one side, holding the closing pose.
+
+camera_direction: Shot 1 wide frontal held with a small follow of the layered moves. Shot 2 the camera dips slightly with the forward bend and rises with the wave, motivated by the body. Shot 3 near-locked wide frontal. No unmotivated push, no orbit; the 15-second boundary is an internal split, so the next Job continues from the same pose.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 09 — 源 01:42.67 → 01:55.63（12.96s）｜办公室末段 → 大厅切换
+
+```text
+integrated_multimodal_description: [Shot 1] The office program continues with the seven in formation, bending forward in unison as hands travel down the thighs and hair falls, then rising through a hip wave. [Shot 2] At 00:07.700, a small cut holds the office line. [Shot 3] At 00:09.500, a hard scene cut reveals the grand warm hall: the seven now in black mini-dresses with cut-out backs and garter belts, the blonde centered, standing in a confident line on the checkerboard floor under warm amber light. [Shot 4] At 00:13.000, they begin the first hall hip sequence.
+
+camera_direction: Shot 1 wide office with a small dip and rise following the bend. Shot 2 near-locked office line. Shot 3 wide frontal hall held steady on the new costume and formation, the hard cut carrying the change. Shot 4 small lateral follow of the hip move. No orbit, no dissolve across the scene change.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 10 — 源 01:55.63 → 02:09.87（14.24s）｜大厅椅子舞
+
+```text
+integrated_multimodal_description: [Shot 1] In the hall, the seven move around black chairs in mixed orientations, some seated and some standing, the blonde at the center. [Shot 2] At 00:02.200, a hard cut shows them seated on the chairs, legs extending and crossing while hands trace the thighs and the back of the chair, torsos lifted. [Shot 3] At 00:08.200, the view opens to a wide hall line as they rise and turn, hair flaring, moving into a standing hip sequence.
+
+camera_direction: Shot 1 wide frontal with a small follow around the chairs. Shot 2 medium framing near-locked on the chair poses, motivated by the leg and hand lines. Shot 3 a gentle pull-out to wide frontal as they rise, then a small follow of the turn; no orbit, no handheld drift.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 11 — 源 02:09.87 → 02:24.53（14.66s）｜大厅椅子舞 → 斜排
+
+```text
+integrated_multimodal_description: [Shot 1] The hall chair sequence continues with the seven in varied seated poses, one dancer turning her back to the camera while others extend a leg. [Shot 2] At 00:08.900, they rise and spread into a diagonal line, the blonde at one end, arms extending. [Shot 3] At 00:10.800, a closer framing catches the blonde and a neighbor facing the camera. [Shot 4] At 00:14.700, the wide hall line drops into a synchronized squat and rises on the hip.
+
+camera_direction: Shot 1 medium/wide near-locked on the chair poses. Shot 2 wide frontal with a small follow as the diagonal forms. Shot 3 medium close with a tiny push. Shot 4 wide frontal dipping and rising with the squat, motivated by the body; no orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 12 — 源 02:24.53 → 02:30.53（6.00s）｜大厅末 → 回办公室收束
+
+```text
+integrated_multimodal_description: [Shot 1] A final wide hall line holds the seven in the black dresses on the checkerboard floor. [Shot 2] At 00:01.500, a hard cut returns briefly to the cool office, the dancers in white shirts and black skirts moving through a closing hip gesture. [Shot 3] At 00:03.700, they settle into a front-facing line and hold the final confident pose as the main dance program ends.
+
+camera_direction: Shot 1 wide hall held steady. Shot 2 hard cut to wide office with a small follow of the closing gesture. Shot 3 near-locked wide frontal on the final pose; the ending credits are excluded and begin immediately after this boundary. No orbit, no drift.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+---
+
+# PART C — 原声交接（audio_handoff，块外，不进入 H3 三字段）
+
+```yaml
+method: postproduction_copy
+source:
+  path: d:\Users\Administrator\Downloads\女人的身体为什么这么美妙 _  Miniskirt-AOA｜短裙的权威我后知后觉_P1_Miniskirt.mp4
+  sha256: f0aeed79425db69b8788c926c8027ef833234fbe4d92c5e10f9a9b9344b29097
+  audio_stream_index: 1
+  audio_start_s: 0.0
+audio_status: unavailable   # 音轨存在但未核听，未写歌词/曲风
+retained_range_s: [0.0, 150.53]   # 仅正片，片尾 150.53–254 不沿用
+route_maps:
+  - {source_range: [0.0, 150.53], assembly_range: [0.0, 150.53], copies: 1}
+postproduction_copy:
+  - 生成全部 12 个视觉 Job 后，移除各 Job 自带的生成音轨；
+  - 从源文件按同一时间戳只铺回一次原始音频 0.0–150.53，跨 Job 硬切处不重启、不重复；
+  - 保留源开头到首个画面之间的原始状态，不另加静音或淡入。
+sync_risks:
+  - 未做音频 onset 检测，"切点挂重拍"仅据画面节奏推断，需后期核对；
+  - 独立生成的嘴型不会自动对齐原曲，口型/节拍未测，若要贴合需改用 Ref2VA 音频驱动；
+  - 若后续重排或改时长，本一比一映射失效，需重新设计声音方案。
+```
+
+# PART D — 装配说明（assembly）
+
+```text
+1. 12 个 Job 按序硬切拼接，总时长 150.53s；Job 之间不做叠化，仅 Job 08→09 为内部 15s 拆分的同姿态延续。
+2. 场景/造型切换只发生在：Job01 冷开场（大厅）、Job02 起办公室、Job09 切大厅、Job12 短暂回办公室。
+3. 椅子舞集中在 Job10–11（约 115–138s），黑椅作为稳定道具，不生成多余椅子。
+4. 冷开场（Job01）先给大厅高潮再回办公室，保留预告式结构，不调整为正序。
+5. 字幕、成员名、credits 与平台水印均为后期叠加层，不要求模型渲染任何中文/文字，避免乱码；本次范围本就不含片尾。
+6. 保持宽幅（约 2.22:1）与 letterbox，不裁切、不改画幅。
+```
+
+# PART E — 局限与诚实声明
+
+```text
+- L1 忠实度：仅基于媒资参数与约 78 个稀疏真实帧（~2.5s 间隔），未做逐帧骨骼追踪，
+  段落时间为近似值（0.1s 精度），不构成帧级复刻。
+- 抽帧信息缺失：关键帧之间的迈步、旋转、换重心无法仅靠联系表精确还原，已按连续运动
+  描述并标注，未把关键帧当独立姿势拼贴。
+- 声音未核听：未跑 onset/BPM，未写歌词、曲风、配器；三字段声音为 N/A，原声以块外
+  postproduction_copy 交接，口型/节拍未测。
+- 提示词 ≠ 生成结果：模型仍可能出现人数漂移、换脸、服装转移、穿模或场景回退，需按
+  七人连续性保护逐段验收。
+- 本片为文件名带 _P1_ 的分段，是否存在 P2 未知；本次仅覆盖该文件正片。
+```
+
+## 12 Job 时长校验
+
+| Job | 源范围 | 时长 | 场景/造型 |
+|---|---|---|---|
+| 01 | 0.00–13.07 | 13.07 | 黑场+大厅冷开场 |
+| 02 | 13.07–24.13 | 11.06 | 办公室（躺地） |
+| 03 | 24.13–35.70 | 11.57 | 办公室 |
+| 04 | 35.70–50.00 | 14.30 | 办公室（金发特写） |
+| 05 | 50.00–64.63 | 14.63 | 办公室 |
+| 06 | 64.63–79.00 | 14.37 | 办公室 |
+| 07 | 79.00–87.67 | 8.67 | 办公室 |
+| 08 | 87.67–102.67 | 15.00 | 办公室（内部拆分） |
+| 09 | 102.67–115.63 | 12.96 | 办公室→大厅 |
+| 10 | 115.63–129.87 | 14.24 | 大厅椅子舞 |
+| 11 | 129.87–144.53 | 14.66 | 大厅椅子舞 |
+| 12 | 144.53–150.53 | 6.00 | 大厅→办公室 |
+| 合计 | | **150.53** | |
+
+### L2 Miniskirt(AOA)7 人办公室翻跳 — H3 T2VA 深化反推(12 Jobs,密帧版)·修订版
+
+```text
+FIDELITY TIER: L1 (director's plan, dense-frame pass). Now based on ~206 source frames:
+the original ~78 plus two new dense batches at ~1.2s spacing (128 frames). Still NO
+per-frame skeleton tracking and NO audio onset detection; timings approximate (0.1s).
+A directorial plan, not a frame-accurate reproduction. Visual evidence: source frames
+only, no stock images. SCOPE: main dance program 0.00–150.53s; ending credits excluded.
+FILM TYPE: C — multi-shot MV montage, hard-cut named setups; cut-to-downbeat claims
+inferred from picture rhythm. This revision refines movement paths, formation order and
+camera setups, and corrects the prop window: the only props are white cube blocks at the
+hall sides, used in selected setups and cross-cut with standing/squatting formations,
+not a continuous seated routine and no black chairs.
+```
+
+源文件 SHA-256：`f0aeed79425db69b8788c926c8027ef833234fbe4d92c5e10f9a9b9344b29097`
+画幅：854×384（宽幅，约 2.22:1，letterbox），30fps。声音：音轨存在、未核听（`N/A`，交接见文末）。
+
+---
+
+# PART A — 共享视觉 DNA（全片适用）
+
+## A1. subject_definitions
+
+```text
+Seven female dancers, tracked by current position and look rather than a fixed name,
+because they exchange places. One BLONDE dancer (short chin-length blonde bob, straight
+bangs) is the visual anchor and frequently takes center; the other six have long dark
+hair (black or brown, straight or wavy, some half-tied or ponytailed, some worn down),
+fair skin, defined eye makeup, small earrings and delicate necklaces.
+OFFICE LOOK (dominant): white or fine-striped fitted shirts, some with black suspenders,
+a short black mini-skirt, sheer black stockings, black stiletto heels, and a lanyard ID
+badge on a black strap; hair mostly down.
+HALL LOOK: tight black mini-dresses with cut-out / open-back / halter / chain details,
+black stockings with garter belts, black stilettos; white cube blocks at the sides are
+used in selected setups only. All seven keep the same costume within a scene; the blonde stays blonde.
+```
+
+## A2. environment_definition
+
+```text
+OFFICE: bright modern open-plan office, pale blue-grey smooth floor, large floor-to-
+ceiling windows in soft daylight, glass-block walls, a curved archway and a round
+ceiling light; desks, office chairs, computers and a cylindrical column in the
+background; clean, cool, airy.
+HALL: grand warm-lit hall, black-and-white checkerboard floor, tall white columns, a
+white paneled double door, a chandelier, wall sconces and curtains; warm amber side
+glow; fixed white cube blocks beside the column bases are used in selected setups.
+Wide letterboxed frame; no on-screen text is to be generated.
+```
+
+## A3. lighting_definition
+
+```text
+OFFICE: soft cool daylight from the windows, even and diffuse with gentle fill, pale
+neutral-to-cyan color temperature, soft shadows, clean specular highlights on the smooth
+floor and the sheen of stockings.
+HALL: warm amber key from side wall lights, harder and more directional, deep warm
+shadows on the checkerboard floor, chandelier overhead; strong rim light separates the
+black outfits and bare skin.
+Constant within each scene, switching only on hard cuts; subtle film grain, no flicker.
+```
+
+## A4. named camera setups
+
+```text
+WF  WIDE FRONTAL : eye-level full-body, whole ensemble and floor — dominant.
+LA  LOW ANGLE    : near the floor looking up, legs and stilettos emphasized, glossy
+                   foreground floor.
+HA  HIGH ANGLE   : elevated (not fully vertical) framing of layered or bent formations.
+MC  MEDIUM CLOSE : chest-up facial and hand gestures, shallow depth.
+INS INSERT       : tight detail — legs, heels, hem, hands at the lips, hair.
+WB  WHIP/WIPE    : fast motion-blur move or body/hair occlusion as a motivated bridge.
+Use only the assigned setup per beat; no unmotivated camera moves.
+```
+
+## A5. body_mechanics
+
+```text
+GROUNDING & FORCE: in stilettos the weight stays over the balls of the feet; every move
+initiates from the floor and travels hip -> lumbar -> chest -> shoulder -> arm. A small
+breath or counter-wind-up precedes each release.
+HIP & WAVE: pelvic sways and body rolls are driven by the hips with soft knees; the wave
+passes sequentially through belly, chest and shoulders, never as one rigid tilt.
+SQUATS: center of mass drops over the heels, knees tracking over the toes, back
+elongated, then the hips drive the rise.
+FLOOR WORK: in the lying pose the body lowers with controlled support, spine arcing on
+the floor; hands frame the head, legs extended, no collapsed weight.
+CUBE BLOCK (selected setups): the white cube is a fixed stable prop beside the column;
+dancers perch on it with weight in the hips, legs extending, hands tracing the thighs
+while the torso stays lifted, then leave it for standing or floor-squat moves.
+HEAD & EYES: gaze follows the leading hand; on turns the head arrives last; faces stay
+composed and confident, no constant smile.
+```
+
+## A6. costume_hair_physics
+
+```text
+Nothing animates independently. Long hair, loose shirt hems and the short skirt lag
+slightly behind each hip or body acceleration and settle with a soft secondary motion;
+on turns hair flares and on squats the skirt and stocking lines follow the thighs. The ID
+lanyard swings with a small lag. Fabrics keep a natural body-to-cloth gap and fold at the
+waist and knees; no plastic stiffness, no clipping through the body, cube blocks, heels or
+other dancers; garter straps and stocking seams stay aligned.
+```
+
+## A7. CONTINUITY GUARD
+
+```text
+- exactly SEVEN dancers at all times: no duplicated or extra bodies, no half-formed or
+  fused limbs;
+- each dancer keeps her own identity and look: NO face swap, NO costume or accessory
+  transfer, the blonde stays the only blonde, including during crossings, occlusion,
+  back views and floor work;
+- position changes occur ONLY via the described continuous paths — NO teleportation,
+  NO instant side-swaps, NO two dancers occupying one point or merging;
+- when hair or a body occludes the lens, identities and costumes remain unchanged;
+  identity continuity takes priority over completing a move;
+- office vs hall changes are SCENE/COSTUME cuts only at the stated boundaries; inside
+  one scene the outfits never change.
+```
+
+---
+
+# PART B — 12 个 Job 深化时间线（本地时钟从 00:00 重置）
+
+## Job 01 — 源 00:00.00 → 00:13.07（13.07s）｜黑场 → 大厅冷开场
+
+```text
+integrated_multimodal_description: [Shot 1] A pure black frame holds with only the small fixed platform watermark in the upper corner, no subject, no motion. [Shot 2] At 00:02.300, a hard cut reveals the grand warm hall as a cold-open teaser: all seven in black mini-dresses and stockings on the checkerboard floor, three seated low with hands planted and legs extended while four stand behind them, the blonde among the standing group turned partly away; warm amber light and columns frame the confident pose. [Shot 3] At 00:05.500, a hard cut to a tighter hall angle catches a hand on the hip and a turned shoulder. [Shot 4] At 00:06.500, another cut shows a back-view turn with hair flaring. [Shot 5] At 00:09.700, a brief cool office flash appears. [Shot 6] At 00:11.500, the hall group returns in a layered pose, building anticipation.
+
+camera_direction: Shot 1 locked off on black. Shot 2 wide frontal held steady to establish the seven. Shots 3-6 are discrete near-locked hard-cut setups (WF/MC/INS), each with only small motivated framing; the fast changes come from editing, not a drifting or orbiting camera, and no dissolve links them.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 02 — 源 00:13.07 → 00:24.13（11.06s）｜办公室开场 → 地面躺卧
+
+```text
+integrated_multimodal_description: [Shot 1] A hard cut into the bright cool office; the dancers move into position among the desks and windows. [Shot 2] At 00:03.100, the program settles and a long-haired dancer lowers into the floor pose: she lies on the smooth floor in a white sleeveless knit top and black skirt, spine arcing, long hair spread around her, both hands framing her head while one leg extends; another dancer's legs in heels stand on a desk softly behind. She holds the reclined pose with controlled support, gaze toward the camera, then begins to gather for the rise.
+
+camera_direction: Shot 1 wide frontal with a small slow move as they take position. Shot 2 low angle close to the floor, held near-locked on the lying dancer with a tiny slow push, motivated by her lowering; the background legs stay in frame. No tilt drift, no orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 03 — 源 00:24.13 → 00:35.70（11.57s）｜办公室队形 → 近景
+
+```text
+integrated_multimodal_description: [Shot 1] Back in standing formation, the seven move through synchronized hip sways and soft arm gestures, knees relaxed, weight over the balls of the feet. [Shot 2] At 00:06.500, the framing tightens as a hand sweeps the hair and the torso rolls through a body wave. [Shot 3] At 00:08.000, a chest-up framing catches the confident expression and a hand gesture, the bright windows and desks soft behind.
+
+camera_direction: Shot 1 wide frontal with a small lateral follow of the sway, motivated by the hip movement. Shot 2 medium close with a small slow push as the hand sweeps the hair. Shot 3 near-locked chest-up; every move is motivated by the named body action, no autonomous push or orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 04 — 源 00:35.70 → 00:50.00（14.30s）｜七人全景 → 单人近景
+
+```text
+integrated_multimodal_description: [Shot 1] A wide office shot shows all seven in a clean line, executing a synchronized pelvic sway with hands traveling from the waist outward. [Shot 2] At 00:08.100, the camera cuts closer as the dancers turn and let long hair flare. [Shot 3] At 00:12.500, a medium framing holds the brown-haired dancer wearing thin-frame glasses as she sways her hips, one hand traveling down the thigh and settling near the hem while the long hair sweeps across her shoulder; a dark-haired dancer moves in the same line and the bright windows glow behind, no hand raised to the lips.
+
+camera_direction: Shot 1 wide frontal held steady on the line. Shot 2 medium framing with a small follow of the turn and hair flare. Shot 3 medium framing held near steady with a tiny follow of the hip sway, motivated by the hand traveling down the thigh; no push toward the face, no orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 05 — 源 00:50.00 → 01:04.63（14.63s）｜办公室队形快切
+
+```text
+integrated_multimodal_description: [Shot 1] The office formation continues with the seven stepping through a hip-driven sequence, arms crossing and opening. [Shot 2] At 00:02.100, a tighter angle catches a body wave and a hand tracing the waist. [Shot 3] At 00:03.500, a hard cut shows the group turning, hair and skirt hems flaring. [Shot 4] At 00:04.300, a closer framing holds the confident face. [Shot 5] At 00:12.000, a tight close-up centers on the blonde dancer: she turns over her shoulder, draws one index finger to her lips and winks, a dark-haired dancer soft behind her, holding the confident hush pose through the end of the Job.
+
+camera_direction: Shot 1 wide frontal. Shots 2-4 are discrete near-locked medium/insert hard cuts, motivated by the wave, turn and facial gesture; Shot 5 tight close-up near-locked on the blonde with only a tiny push toward the face, motivated by the finger moving to the lips and the wink. The density comes from editing, not a continuous rush or orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 06 — 源 01:04.63 → 01:19.00（14.37s）｜办公室内部机位快切
+
+```text
+integrated_multimodal_description: [Shot 1] A wide office shot carries the seven through synchronized sways and arm arcs. [Shot 2] At 00:03.600, a medium framing follows a turn with hair flare. [Shot 3] At 00:10.400, a rapid burst of internal cuts: hard cut to a back-view, then a side profile, then a hand at the hip, each landing on a distinct pose while the location stays the same office. [Shot 4] At 00:13.100, the group settles into a line facing the camera.
+
+camera_direction: Shot 1 wide frontal with a small lateral follow. Shot 2 medium follow of the turn. Shot 3 three near-locked hard-cut setups (WF/MC/INS) with no motion blur between them, motivated by the back turn, profile and hand gesture; Shot 4 wide frontal held. No LOCK/BURST effect, no orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 07 — 源 01:19.00 → 01:27.67（8.67s）｜办公室近景 → 全景
+
+```text
+integrated_multimodal_description: [Shot 1] A medium close framing holds three dancers in the office, hands traveling to the hip and neck as they roll through a hip sway. [Shot 2] At 00:02.100, the view widens to a multi-orientation full-ensemble shot with a leg-lift insert. [Shot 3] At 00:05.000, a two-dancer close-up shows them offset front-to-back rather than back-to-back, one drawing a hand behind her neck, before the framing pulls out toward the full ensemble.
+
+camera_direction: Shot 1 medium close near-locked with a tiny follow of the hip sway. Shot 2 wide framing with a small follow of the leg lift. Shot 3 a gentle pull-out to wide frontal, motivated by the group opening; no orbit, no handheld drift.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 08 — 源 01:27.67 → 01:42.67（15.00s，内部 15s 拆分点）｜办公室全景
+
+```text
+integrated_multimodal_description: [Shot 1] A wide office shot shows all seven in mixed orientations, some facing the camera and some turned, moving through a layered hip sequence with arms extending outward. [Shot 2] At 00:07.000, they bend forward in unison, hands traveling down the thighs, long hair falling forward, then drive the hips back up through a body wave. [Shot 3] At 00:13.300, they settle into a front-facing line holding the closing pose.
+
+camera_direction: Shot 1 wide frontal held with a small follow of the layered moves. Shot 2 the camera dips slightly with the forward bend and rises with the wave, motivated by the body. Shot 3 near-locked wide frontal. No unmotivated push, no orbit; the 15-second boundary is an internal split, so the next Job continues from the same pose.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 09 — 源 01:42.67 → 01:55.63（12.96s）｜办公室末段 → 大厅切换
+
+```text
+integrated_multimodal_description: [Shot 1] The office program continues with the seven in formation, bending forward in unison as hands travel down the thighs and hair falls, then rising through a hip wave. [Shot 2] At 00:01.600, a small cut holds the office line. [Shot 3] At 00:07.700, another office framing carries the closing gesture. [Shot 4] At 00:09.500, a hard scene cut reveals the grand warm hall: the seven in black mini-dresses with cut-out backs and garter belts, the blonde standing in the center of a front-facing line on the checkerboard floor under warm amber light, and they begin the first hall hip sequence within this same shot.
+
+camera_direction: Shots 1-3 wide office near-locked with a small dip and rise following the bend. Shot 4 wide frontal hall held steady on the new costume and formation, the hard cut carrying the change, then a small lateral follow of the hip move. No orbit, no dissolve across the scene change.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 10 — 源 01:55.63 → 02:09.87（14.24s）｜大厅横排
+
+```text
+integrated_multimodal_description: [Shot 1] In the hall the seven form a clean line, all turned sideways with hands reaching forward to connect, the blonde among them, open-back dresses and garter belts visible. [Shot 2] At 00:02.200, a hard cut to a centered framing shows the blonde facing the camera with arms extended while neighbors turn away or back. [Shot 3] At 00:08.200, the wide hall line moves through a synchronized hip sequence with hair flaring.
+
+camera_direction: Shot 1 wide frontal held steady on the connected line. Shot 2 medium framing with a small slow push toward the center, motivated by the arm extension. Shot 3 wide frontal with a small lateral follow of the hip move; no orbit, no handheld drift.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 11 — 源 02:09.87 → 02:24.53（14.66s）｜大厅分层（白色方块）→ 斜排
+
+```text
+integrated_multimodal_description: [Shot 1] A layered hall formation: one dancer stands centered in the foreground, two crouch low directly on the checkerboard floor, and two more perch on the fixed white cube blocks at the sides, hands tracing the thighs and cube tops, torsos lifted. [Shot 2] At 00:08.900, they rise and spread into a diagonal standing line, arms extending, while the cube blocks stay fixed at the edges. [Shot 3] At 00:10.800, a closer framing catches the group turning, long hair flaring.
+
+camera_direction: Shot 1 wide/high angle near-locked on the layered floor-and-cube poses. Shot 2 wide frontal with a small follow as the diagonal forms. Shot 3 medium close with a tiny push on the turn; the white cube blocks are used only in these selected setups, cross-cut with standing and floor-squat formations, not a continuous seated routine. No orbit.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+## Job 12 — 源 02:24.53 → 02:30.53（6.00s）｜大厅末 → 回办公室收束
+
+```text
+integrated_multimodal_description: [Shot 1] A final wide hall line holds the seven in the black dresses on the checkerboard floor. [Shot 2] At 00:01.500, a hard cut returns briefly to the cool office, the dancers in white shirts and black skirts moving through a closing hip gesture. [Shot 3] At 00:03.700, they settle into a front-facing line and hold the final confident pose as the main dance program ends.
+
+camera_direction: Shot 1 wide hall held steady. Shot 2 hard cut to wide office with a small follow of the closing gesture. Shot 3 near-locked wide frontal on the final pose; the ending credits are excluded and begin immediately after this boundary. No orbit, no drift.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+```
+
+---
+
+# PART C — 原声交接（audio_handoff，块外）
+
+```yaml
+method: postproduction_copy
+source:
+  path: d:\Users\Administrator\Downloads\女人的身体为什么这么美妙 _  Miniskirt-AOA｜短裙的权威我后知后觉_P1_Miniskirt.mp4
+  sha256: f0aeed79425db69b8788c926c8027ef833234fbe4d92c5e10f9a9b9344b29097
+  audio_stream_index: 1
+  audio_start_s: 0.0
+audio_status: unavailable
+retained_range_s: [0.0, 150.53]
+route_maps:
+  - {source_range: [0.0, 150.53], assembly_range: [0.0, 150.53], copies: 1}
+postproduction_copy:
+  - 生成全部 12 个视觉 Job 后，移除各 Job 自带的生成音轨；
+  - 从源文件按同一时间戳只铺回一次原始音频 0.0–150.53，跨 Job 硬切处不重启、不重复；
+  - 保留源开头到首个画面之间的原始状态，不另加静音或淡入。
+sync_risks:
+  - 未做音频 onset 检测，"切点挂重拍"仅据画面节奏推断，需后期核对；
+  - 独立生成的嘴型不会自动对齐原曲，口型/节拍未测，若要贴合需改用 Ref2VA 音频驱动；
+  - 若后续重排或改时长，本一比一映射失效，需重新设计声音方案。
+```
+
+# PART D — 装配说明
+
+```text
+1. 12 个 Job 按序硬切拼接，总时长 150.53s；Job 08→09 为内部 15s 拆分的同姿态延续。
+2. 场景/造型切换只在：Job01 冷开场（大厅）、Job02 起办公室、Job09 切大厅、Job12 回办公室。
+3. 道具仅为大厅两侧的固定白色方块，只在 Job11 等部分机位（约 130–138s）被舞者靠坐，
+   与站立、蹲地队形交叉剪辑；不生成黑色椅子，不生成多余方块。
+4. 冷开场保留预告式结构，先给大厅高潮再回办公室，不调整为正序。
+5. 字幕、成员名、credits 与水印均为后期叠加层，不要求模型渲染任何中文/文字。
+6. 保持宽幅（约 2.22:1）与 letterbox，不裁切、不改画幅。
+```
+
+# PART E — 局限与诚实声明
+
+```text
+- L1 忠实度：基于约 206 个真实帧（含 1.2s 密帧），仍未做逐帧骨骼追踪，段落时间为
+  近似值（0.1s 精度），不构成帧级复刻。
+- 抽帧信息缺失：帧之间的迈步、旋转、换重心无法仅靠联系表精确还原，已按连续运动
+  描述，未把关键帧当独立姿势拼贴。
+- 声音未核听：未跑 onset/BPM，未写歌词、曲风、配器；三字段声音为 N/A，原声以块外
+  postproduction_copy 交接，口型/节拍未测。
+- 提示词 ≠ 生成结果：模型仍可能出现人数漂移、换脸、服装转移、穿模或场景回退，需按
+  七人连续性保护逐段验收。
+- 本片为文件名带 _P1_ 的分段，是否存在 P2 未知；本次仅覆盖该文件正片。
+```
+
+## 12 Job 时长校验
+
+| Job | 源范围 | 时长 | 场景/造型 |
+|---|---|---|---|
+| 01 | 0.00–13.07 | 13.07 | 黑场+大厅冷开场 |
+| 02 | 13.07–24.13 | 11.06 | 办公室（躺地） |
+| 03 | 24.13–35.70 | 11.57 | 办公室 |
+| 04 | 35.70–50.00 | 14.30 | 办公室（近景） |
+| 05 | 50.00–64.63 | 14.63 | 办公室 |
+| 06 | 64.63–79.00 | 14.37 | 办公室 |
+| 07 | 79.00–87.67 | 8.67 | 办公室 |
+| 08 | 87.67–102.67 | 15.00 | 办公室（内部拆分） |
+| 09 | 102.67–115.63 | 12.96 | 办公室→大厅 |
+| 10 | 115.63–129.87 | 14.24 | 大厅横排 |
+| 11 | 129.87–144.53 | 14.66 | 大厅分层（白色方块） |
+| 12 | 144.53–150.53 | 6.00 | 大厅→办公室 |
+| 合计 | | **150.53** | |
+
+### L3 8s 性感宅舞卡点提示词(BPM 132·主动续写·配 8.06s mp3)
+
+> 依据 AnimateDiff 片(片 v17) onset 实测网格(BPM132,强拍 1.03/1.95/2.86/3.77/4.68/5.60/6.50/7.42,弱拍 7.86,音频止于 8.06s);链位全部取自本库性感系:K70/K45/K72/K73 + B1 持续层 + K74 收束;`<Picture 1>` 锁人物,零外貌文字。
+
+```text
+H3 ALL-PURPOSE REFERENCE PROMPT — 8s SEXY-GENKI DANCE — MODE: all-purpose reference (NOT T2VA, NOT a first-frame anchor). Vertical 9:16. Target duration 8.0s, exactly matching <Audio 1> (8.06s).
+
+subject_definitions: <Subject 1> is the exact girl in <Picture 1>; sole all-purpose authority for face, hairstyle, makeup, proportions, costume, accessories and shoes; zero appearance description here. She performs a confident, flirtatious street-idol dance. Exactly one performer; no second person anywhere.
+
+environment_definition: A night city street with warm neon signage melting into bokeh behind her, asphalt under her feet, a few trees as dark silhouettes; the background stays soft and out of focus the whole time.
+
+lighting_definition: Cool streetlight base with warm neon rim-light on her hair edges and shoulders; consistent for all 8 seconds; no light change.
+
+audio: <Audio 1> is the sole authority; fully_copy with original pitch, tempo, dynamics and exact length. BPM 132.0; beat 0.4545s; strong downbeats every 0.91s at 1.03 / 1.95 / 2.86 / 3.77 / 4.68 / 5.60 / 6.50 / 7.42, one syncopated accent at 7.86; audio ends at 8.06. Add no new music or sound effects.
+
+integrated_multimodal_description: One locked hip-height camera, tiny sway always present. A continuous hip figure-eight engine (B1) runs under every phrase on the offbeats, never stopping.
+[Pickup · 0.00-1.03] static prep: weight sunk on her right hip, one hand at her neck, eyes into the lens, holding still for a full beat.
+[Downbeat 1.03] K70: one palm covers her mouth while the other hand flicks out toward the lens, hip twisting right on the hit.
+[Downbeat 1.95] the flicking arm sweeps a wide arc across the frame with heavy motion blur as the torso follows it around.
+[Downbeat 2.86] K45: an open palm sweeps slowly across her eyes dragging the hair with it, then slides out of frame — the reveal lands with a smirk.
+[Downbeat 3.77] K72: both elbows rise high and wide, fists loose beside her ears, hips popping right-left twice under the beat.
+[Downbeat 4.68] the hands slide down from her ears to her collar, one knee bending deeper on the accent while the hips keep popping.
+[Downbeat 5.60] K73a: one palm slides up her torso along the centerline to her cheek, a slow self-touch line, eyes holding the lens.
+[Downbeat 6.50] K73b: cat-paw hands flash beside her face, one crisp clap in front of her chest as the head tips back laughing — clap and chin land on the same frame, the peak of the take.
+[Downbeat 7.42] K73c: pressed palms sway side to side, hips leading and arms following, the swing already decaying.
+[Syncopation 7.86] one knee lifts and crosses with one hand on it, the other arm extending out, settling into the final pose.
+[8.06] END — the pose holds as the audio stops.
+
+camera_direction: Locked hip-height framing, full body in frame the whole take; no push, no orbit, no cuts; tiny handheld sway only.
+
+editing: No cuts; one continuous take; final state: settled knee-cross pose at 8.06s when the audio ends.
+
+performance: Flirtatious but precise — every downbeat lands a shape, offbeats carry the hip engine; the 7.86 accent is the last flourish, nothing after it; no lip-sync.
+
+costume_hair_physics: Hair and hem lag the hits by half a beat; the ponytails whip on every head move and settle into the final pose; fabric never floats independently.
+
+negative_constraints: Exactly one performer as in <Picture 1>, zero redesign; no second person, no crowd, no hands entering frame; no camera cuts, no digital zoom, no slow motion; no lip-sync; every downbeat shape lands exactly once as written; no motion after 7.86 beyond the settling pose.
+
+overall_soundscape: Audio 1 only; add no traffic, wind, crowd or voiceover unless already present.
+
+non_diegetic_music: fully_copy <Audio 1>; the palette is a guide, not permission to layer a replacement.
+```
+
 ---
 
 ## 拼舞模板(把链串成一支舞)
@@ -2830,4 +3585,4 @@ non_diegetic_music: N/A
 7. **检查**:旋转≤2、静止已明写、头部鼓在反拍、手势半径合规、切点在乐句收点、人数/机位 token 齐全。
 
 ---
-*来源视频:《双倍可爱❤️甜蜜暴击》(47.4s)、宅舞vs抖舞分屏(238.6s)、《与你提酒》(118.4s)、《皇上》(77.5s)、录舞运镜权威(61.5s)、《うみたがり》4人(222.5s)、《BLESSING》4人(96.8s)、向阳 BDF2021 队形版(144.9s);由八份逐拍反推报告提炼,动链合计 70+ 条;另并入 13 支 I2VA 单人成品范本(H 章,2026-10);《绝世舞姬》混剪(82.9s/44镜,E6 转场章+C36-C47+G 补充,2026-10-02);双人弧形运镜 16.8s(E7)+醉酒式镜头母规则(E8,2026-10-03);《三种袜子》右入换装 5.9s(E9)+三姿态原位换装系列 18.4s(E10:站姿侧身/深蹲抱膝抖腿/提裙站姿,onset 卡点实测,2026-10-05);2026-10-30 并入 K 章 74 条(15 支新片+2 图,短标题↔原片名:《绫华的锻炼时间》10.4s、《saber白礼服》9.6s(原片含书名号前缀"成为士郎的剑")、《saber下腰挑战》8.2s(原片《saber下腰动作挑战》)、《奥黛塔变装》153.4s(原片《花3000为奥黛塔制作视频后，最终决定放弃她.......》)、《夏天结束了》16.1s(原片《夏天结束了——做了四次不同情绪的撩头发》)、《橘福福》27.6s(原片《如此绝美的 橘福福 之后再也没见到》)、《薇薇安》60.6s(原片《好女孩——薇薇安（测试）》)、《维琳娜》75.0s(原片《这维琳娜对....对吗？》,鸣潮维里奈 cos)、《两个御姐合拍》14.9s(原片《两个御姐~格格巫和月月的合拍合集~_P1_好想谈恋爱》)、《请pick西施吧～》32.7s、《I Got Your Back》154.3s(原片【ILLIT】金丝眼镜水手服)、《依赖姐姐》72.0s(原片《依赖姐姐一辈子也不是什么坏事吧》)、《我是银月呀❤》18.1s、《活动饭拍》11.6s(原文件 ANbHNypfOZ8EhWqP)、《旗袍夜景》16.8s(原文件 AWsiPVCcHGVFeJGL)、《狐耳白发六宫格》写真图、《蓝水手服走廊截图》单帧);2026-11-08 追加 K75-K84:《潛行吧！奈亞子！W》宅舞翻跳(97.8s,一镜到底固定机位,变身点 24s,双马尾甩转签名×7,力竭躺倒彩蛋收尾)。*
+*来源视频:《双倍可爱❤️甜蜜暴击》(47.4s)、宅舞vs抖舞分屏(238.6s)、《与你提酒》(118.4s)、《皇上》(77.5s)、录舞运镜权威(61.5s)、《うみたがり》4人(222.5s)、《BLESSING》4人(96.8s)、向阳 BDF2021 队形版(144.9s);由八份逐拍反推报告提炼,动链合计 70+ 条;另并入 13 支 I2VA 单人成品范本(H 章,2026-10);《绝世舞姬》混剪(82.9s/44镜,E6 转场章+C36-C47+G 补充,2026-10-02);双人弧形运镜 16.8s(E7)+醉酒式镜头母规则(E8,2026-10-03);《三种袜子》右入换装 5.9s(E9)+三姿态原位换装系列 18.4s(E10:站姿侧身/深蹲抱膝抖腿/提裙站姿,onset 卡点实测,2026-10-05);2026-10-30 并入 K 章 74 条(15 支新片+2 图,短标题↔原片名:《绫华的锻炼时间》10.4s、《saber白礼服》9.6s(原片含书名号前缀"成为士郎的剑")、《saber下腰挑战》8.2s(原片《saber下腰动作挑战》)、《奥黛塔变装》153.4s(原片《花3000为奥黛塔制作视频后，最终决定放弃她.......》)、《夏天结束了》16.1s(原片《夏天结束了——做了四次不同情绪的撩头发》)、《橘福福》27.6s(原片《如此绝美的 橘福福 之后再也没见到》)、《薇薇安》60.6s(原片《好女孩——薇薇安（测试）》)、《维琳娜》75.0s(原片《这维琳娜对....对吗？》,鸣潮维里奈 cos)、《两个御姐合拍》14.9s(原片《两个御姐~格格巫和月月的合拍合集~_P1_好想谈恋爱》)、《请pick西施吧～》32.7s、《I Got Your Back》154.3s(原片【ILLIT】金丝眼镜水手服)、《依赖姐姐》72.0s(原片《依赖姐姐一辈子也不是什么坏事吧》)、《我是银月呀❤》18.1s、《活动饭拍》11.6s(原文件 ANbHNypfOZ8EhWqP)、《旗袍夜景》16.8s(原文件 AWsiPVCcHGVFeJGL)、《狐耳白发六宫格》写真图、《蓝水手服走廊截图》单帧);2026-11-08 追加 K75-K84:《潛行吧！奈亞子！W》宅舞翻跳(97.8s,一镜到底固定机位,变身点 24s,双马尾甩转签名×7,力竭躺倒彩蛋收尾);2026-11-09 并入:《AnimateDiff-补帧》8s AI 宅舞(K85-K88,BPM132 onset 实测)+Miniskirt(AOA)12 Jobs T2VA 两版(L1/L2,外部项目全文)+8s 性感宅舞卡点续写(L3)。*
