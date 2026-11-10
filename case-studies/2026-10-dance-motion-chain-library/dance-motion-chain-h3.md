@@ -1,6 +1,7 @@
-# 舞蹈动链 H3 库(可重复学习的动作链标准件) · Rev.1.9
+# 舞蹈动链 H3 库(可重复学习的动作链标准件) · Rev.1.10
 
 > **版本记录**
+> Rev.1.10|2026-11-11|K 章追加片 v53-v106 共 54 支、K197-K322 共 126 条(王羽杉御姐变装/OOTD 批 49 支+唐安琪薄荷绿系列 4 支,密集抽帧 3fps 全覆盖+变装转折 8fps;3fps 总览存在 ±6.7s 漂移,链时间码以密帧帧序锚定):**变装机制五型归纳入库**——①真跳切手位/肢体掩剪(踢腿糊帧切、提膝顶点切、撸衫蒙面)②AI 渐变形(袜体渐长、衬衫纱化、领带浮现、凭空补现)③甩镜/撞镜模糊缝合④出画换装空镜交接⑤跷腿/足尖/交叉腿锚点卡点连切;**AIGC 判定全帧证据化**(高置信 AI:春诗/生日粉纱/书架露背/蓝裙/嘉桐摇/莫多莫多四格/jumpstyle/紧身连衣裙/拿下你 AI 渐变实锤/猎人猎物 AI 合成;混合:韩立/从不批腿/腿精;其余纠偏为实拍+重滤镜);新语汇:并膝纪律件(拍照从不批腿)、贴地机位件、影子上摇转场、X 交叉臂(EXID)、jumpstyle 跳步、四格级联变装、Office 椅袜鞋轮替
 > Rev.1.9|2026-11-11|K 章追加片 v36-v52 共 17 片、K157-K196 共 40 条(短视频密集抽帧批,2-3fps 全覆盖+6fps 密帧):国风写真(团扇/双人折扇/收扇指弄)、卧室手势舞(骊山)、AI 写真批(少女真心疑似 AI/春诗 AI 高置信/春日列车 JK 重美颜/Heli 婚纱实拍/东京夜舞实拍)、**器乐动作首录**(Rather Be 小提琴:持琴回旋/举琴架弦/全弓快弓摆体)、啦啦队批(李珠珢:坐姿回眸甩发/抚腿起身/躬身甩发环绕背靠背)、新疆舞语汇首录(绕腕托帽移颈/连环转身)、宫斗演绎件(抚泪哭诉/拾狐抱胸贴脸,银月角色第二支)、Lolita 漫展件、口播道具件(转身递板/快剪卡点翻图)、饭拍群舞(KDC 路演按服装代号记录)、小恶魔 cos 蝙蝠翼件;**交叉比对**:两份《骊山四顾》SHA-256 一致(8125f39a…)系重复下载,反推一次;AIGC 判定全部帧证据化(b04 疑似 AI 中高/b05 AI 高置信/b12 混合/b02·b09·b14 纠偏为实拍)
 > Rev.1.8|2026-11-10|T2VA 模式音频修复(minimax-h3-video-reverse 方法论,修复 video-to-h3-prompt 批量的音频缺口):18 片全部跑 onset 实测(onset_probe,22.05kHz 单声道转 WAV);拍速二分判别+格拟合分层——高置信实测:彩虹的微笑 126.3(v25/v26 双源互证)/姜杉 120/Liz 130.4/颜沁 127.7/秋装 122.4/白虎团锣鼓 127.7;低置信或倍频不定:Hwiseo≈89.6(autocorr 89.1 互证)/黄诗予≈100/第一次爱的人 92 vs 76/青花瓷 107 vs 原曲~60/上元 126 vs 63/李真率 85.7 vs 171/EXID 81 vs 动作周期 118/珠光 114/咲良 109;对账:51 链锚点 36 踩 onset±0.35s(70.6%),未踩多为证据覆盖缺口(前奏/黑场/安静段无 S 级 onset:v07 前 24s、白虎团 81-97s 等)或边缘 0.36-0.46s,《坏女孩营业》K131/K133/K134 确认为不卡点互动营业件(内容属性);各片「节拍」行已从(推测)升级为实测数据并注明置信层级
 > Rev.1.7|2026-11-10|K 章追加片 v18-v35 共 18 片、K89-K156 共 68 条:K-pop 直拍批(Hwiseo《To My First Love》/tripleS《ANDLESS》双机位对比/IVE Liz《Looks Can Kill》/李真率《LALALILALA》/咲良饭拍/黄诗予生日SP/王心凌《彩虹的微笑》深圳+长春双场/《第一次爱的人》宁波/姜杉《Genie》九机位/EXID《I Love You》)+饭拍营业件(递麦双接/掩面捧脸/双指比心微活性/牵手旋回)+古风戏腔手势舞(上元)+京剧样板戏武戏首录(1972《奇袭白虎团》:斗篷物理/群像翻扑/过顶举摔)+婚纱换装微活性件;v14 编译合集与 v15 全场直拍按用户指示剔除;编号校正:C/D 两 agent 撞号,D 组重编 K131-K148
@@ -15,7 +16,7 @@
 > 每条动链 = 一个 2-8 拍的完整编舞单元,带**入态/出态**,可像积木一样首尾相接拼成整支舞。
 > 英文描述均可直接粘贴进 H3 提示词;拍位为**相对拍**(链内第几拍),可放到任何 BPM 网格上。
 > H 章 = 13 支单人成品范本(2026-10 并入):整段提示词可直接粘贴套用,H0 为从范本提炼的成品规律。
-> K 章 = 批量反推动链扩展(52 支片+2 图,196 条):每片带背景人物档案+节拍判定+镜头形态分流;L 章 = 成品 T2VA 范本与续写提示词收录(Miniskirt 12 Jobs 两版+8s 卡点续写)。
+> K 章 = 批量反推动链扩展(106 支片+2 图,322 条):每片带背景人物档案+节拍判定+镜头形态分流;L 章 = 成品 T2VA 范本与续写提示词收录(Miniskirt 12 Jobs 两版+8s 卡点续写)。
 
 ## 0. 使用规则
 
@@ -3687,6 +3688,1032 @@ non_diegetic_music: N/A
 - 分解:拍1 右手掌心朝镜头五指张开,手腕左右摆两下(摆幅小、频率快),肘部保持固定;拍2 左掌抬起与右掌并排,双掌同时朝镜头轻晃,指尖自然分开微颤,上身微前倾配合;拍3 双掌向内收半寸再向前推出做"推拒"收尾,头歪向左肩,惯性余晃半拍内静止
 - H3:`raising one spread palm to the camera and waving it side to side, lifting the other palm to join it in a double wave, then pressing both hands forward in a soft push-and-hold while tilting the head onto the shoulder`
 - 来源:《乱码 B·沙发》2.7-4.5s
+
+**片<v53> 《躺踢变装》(氛围感变装·6.3s·竖屏)**
+- 背景人物:暗灰沙发+条纹吸音墙。人物:黑棕大波浪+齐刘海,香槟金丝绸睡衣→黑吊带短裙+黑过膝袜带+红底高跟鞋+黑 choker。AIGC:真人实拍+重度 AI 美化,鞋部疑似 AI 重绘(鞋形帧间不稳)。
+- 节拍:(推测)慢板 85-100,跳切点 1.8s。
+- 镜头形态:A 一镜到底(高位俯拍 POV,1 处跳切变装)。
+
+### K197 后仰踢腿遮帧跳切变装链(4拍|变装转场·POV 俯拍)
+- 入态:沙发边缘坐姿、丝绸睡衣、右手撩发垂眸 → 出态:黑裙红底鞋、屈膝拱腿定格、鞋底朝镜
+- 分解:拍1 双手交叠穿发向上撩,下巴垂 15°,肩胯沉进沙发,进入路径=从拨发的松弛态直接接重心后倒;拍2 右手滑到领口压住衣襟,躯干后倒 20°,右大腿启动踢腿(髂腰+股四头),裸脚掌迎镜头放大,运动模糊从踝部向小腿蔓延;拍3 技术峰值=脚掌糊满画面下 1/3 遮住躯干中段的瞬间(1.75s),跳切发生在此糊帧内:丝绸睡衣→黑吊带裙+过膝袜+红底鞋,腿部姿势角度精确延续(踢腿顶点=切点);拍4 落回屈膝拱腿姿,红鞋底正对镜头轻晃 2 次,回收顺序=腿定→手收至下巴→眼神最后入镜
+- H3:`slouching on a dark fabric sofa in cream silk pajamas threading fingers through her hair, kicking one bare foot up at the lens so the sole blurs across the frame, jump-cutting mid-kick into a black slip dress and red-sole stiletto whose sole now faces the camera, settling into a knee-up recline with fingertips at her chin`
+- 来源:《躺踢变装》00.0-02.0s(切点 1.75-1.875s)
+
+### K198 膝拱红鞋底朝镜微活性链(3拍|定格摆拍·微活性)
+- 入态:变装后屈膝拱腿姿 → 出态:同一构图收尾(眼神锁定镜头)
+- 分解:拍1 大姿势锁死:后仰靠枕、右膝拱起、鞋底朝镜、左手托颌;微活性=鞋底以踝为轴左右倾旋 5-10°,两次露出鞋跟红底;拍2 托颌手指单次屈伸,下巴随眨眼微点,眼球先动头后动;拍3 发丝从肩头滑落一根、吊带肩带轻微回弹(过膝袜口随大腿转动轻微位移);02.0-06.3s 全程同构
+- H3:`holding a knee-up recline on the sofa with the red sole of her stiletto facing the lens, rocking the shoe slowly at the ankle, one fingertip flexing at her chin while the eyes hold the camera and a loose hair strand slides off her shoulder`
+- 来源:《躺踢变装》02.0-06.3s
+
+**片<v54> 《选择题御姐》(卡点变装舞·6.1s·竖屏)**
+- 背景人物:素灰墙+浅灰石板地,顶部柔光。人物:黑棕大波浪、细框眼镜、金圈耳环;装 A=黑高领+古铜金属光泽包臀迷你裙+灰褐红绑带纹丝袜+黑细带高跟;装 B=同上衣+黑皮质迷你裙+深渔网袜(吊袜带);装 C=裸腿。AIGC:真人实拍+重度 AI 美化(瓷化皮肤、腿部拉长、金属裙涂抹感);跳-落地-前踢重心连贯真实,跳切为剪辑而非 AI 形变。
+- 节拍:(推测)86-128 区间,两处跳切间隔 1.4s 卡点。
+- 镜头形态:A 一镜到底(2 处卡点跳切)。
+
+### K199 提膝跳切双装接力链(4拍|变装转场·卡点跳切·舞蹈)
+- 入态:正面走来、装 A(铜裙红纹袜) → 出态:单腿提膝悬空、装 B(黑裙渔网袜)
+- 分解:拍1 0-1.9s 模特步进镜,铜裙随胯摆出高光流动;拍2 2.0-2.25s 右腿提起屈膝、身体 3/4 背转,裙摆离心飞起,手臂张开平衡——遮挡物=抬腿横过裙区+转身+裙摆飞展;拍3 技术峰值=2.25-2.375s 提膝顶点处跳切:铜裙→黑皮裙、红纹袜→渔网+吊袜带,腿部悬空角度连续(切在动作上);拍4 2.375-2.7s 单脚承重落地小跳 2 次,双臂上举画弧平衡,渔网袜随小腿晃出弹性形变,裙摆滞后半拍回落
+- H3:`strutting in with a bronze metallic mini skirt, lifting one knee and spinning so the hem flies, jump-cutting at the apex of the raised knee into a black leather mini with garter fishnet stockings, landing hops on the standing leg with arms carving overhead arcs`
+- 来源:《选择题御姐》00.0-02.7s(切点 2.25-2.375s)
+
+### K200 单腿跳旋前踢收腿切袜链(4拍|舞蹈动作·变装转场)
+- 入态:单腿站立提膝、装 B → 出态:双腿交叉站定、装 C(裸腿)
+- 分解:拍1 2.7-3.25s 单腿小跳中右腿屈膝前后点摆,髋部画小圈,手臂一上一下护平衡;拍2 3.375-3.5s 技术峰值=右腿向前踢直(脚背绷直过腰),躯干后仰 10° 对抗,渔网袜网眼拉紧;拍3 3.625s 腿下落交叉收回,双臂胸前合拢(遮挡物=收腿+合臂+运动模糊),3.625-3.75s 跳切:渔网袜→裸腿;拍4 交叉腿站定,重量沉右胯,裙摆与发梢摆动 2 帧后停
+- H3:`hopping on one leg with the other knee pumping, snapping into a high pointed front kick that stretches the fishnet taut, then folding the leg down and crossing the arms so the tights vanish into bare glossy legs on the cut, settling into a crossed-leg stand with weight sunk into one hip`
+- 来源:《选择题御姐》02.7-04.0s(切点 3.625-3.75s)
+
+### K201 抱臂推镜框微活性链(3拍|定格摆拍·微活性)
+- 入态:交叉腿站定、裸腿 → 出态:同构收尾(指尖点颊)
+- 分解:拍1 大姿势锁死:双腿踝交叉、左臂横抱腰前、右手抬起;微活性=右手上行推眼镜框上梁一次(4.333s);拍2 指尖滑到颊侧轻点两下,头右倾 10° 再回正,眼球咬镜头;拍3 胯部小幅左右顶 2 次(5.0-5.667s),裙摆随胯微摆
+- H3:`standing with ankles crossed and one arm folded at the waist, pushing her glasses up with a fingertip that trails down to tap her cheek, tilting the head while the hips pulse twice and the eyes never leave the lens`
+- 来源:《选择题御姐》04.0-06.1s
+
+**片<v55> 《御姐蹲》(高跟鞋蹲拍·8.9s·竖屏)**
+- 背景人物:高端楼宇大堂走廊,米色木饰墙、"VIP ENTRANCE"发光字牌、灰大理石地。人物:黑棕长卷发+金圈耳环,黑高领修身短袖+古铜液态金属皮革迷你裙+黑色前中缝线丝袜+黑色 YSL 金跟凉鞋。AIGC:真人实拍+重度 AI 美化/局部重绘(瓷肤、腿比夸张、字牌边缘波动);蹲姿重心物理合理。
+- 节拍:(推测)非严格卡点摆拍,切点 2.9/4.4/7.3s,慢板 80-90。
+- 镜头形态:C 快剪(3 处姿态跳切,平机位→低机位渐压)。
+
+### K202 交叉步走秀进镜链(4拍|走路链·服装物理)
+- 入态:远端正面走起 → 出态:近身收步手搭裙侧
+- 分解:拍1 模特交叉步(每步落脚压过中线),胯为发动机左右顶送,前缝线丝袜随步把缝线保持腿正中,手臂低位对摆;拍2 步频加快,头发随步频弹跳,镜头微退跟拍;拍3 收步并腿,右手背擦过裙臀抚平皮革褶皱,下巴微收眼神入镜;拍4 微活性:腰侧手轻拎裙口 1cm 再放下,肩线回正
+- H3:`runway-walking in with cross-stepping hips driving a bronze liquid-leather mini, the front seam of her sheer tights staying centered, brushing the skirt hem flat at the hips before locking the gaze to the lens and giving the hem a one-centimeter tug`
+- 来源:《御姐蹲》00.0-02.9s
+
+### K203 侧身后坐深蹲凝镜链(5拍|技术动作·重心控制)
+- 入态:正面站姿 → 出态:深蹲后坐、双手搭膝、垂睫抬眼凝镜
+- 分解:拍1 2.875s 右手离裙,头先转向左(视线领路);拍2 3.0s 身体转正侧 profile,胯向后下推送(髋屈+臀肌离心),双膝前折,双手伸向膝;拍3 3.125-3.375s 技术峰值=连续下蹲至全蹲:脚掌全平贴地(细高跟稳定承重),裙摆沿大腿上滑至髋褶,双手滑过膝盖扣在膝上,发垂两颊;拍4 3.5-4.0s 底点停驻:下巴垂 20°,眼球自下向上先入镜头(下看上瞟),手指在膝上轻叩;拍5 4.0-4.375s 上身再前倾左臂探地,回收=手撑地→膝微展→切出;同款蹲姿 7.3-8.9s(正面版,右膝高顶)
+- H3:`turning to full profile and pushing the hips back to fold into a deep squat on stiletto heels, hands sliding over the knees as the leather mini rides up, chin dropping before the eyes cut up to the lens from under the brows, one arm reaching for the floor`
+- 来源:《御姐蹲》02.9-04.4s(同族 07.3-08.9s)
+
+### K204 起立甩发切低蹲定格链(4拍|变装转场·姿态跳切·定格摆拍)
+- 入态:深蹲底点 → 出态:低蹲单膝高顶定格(手搭膝)
+- 分解:拍1 4.5s 切至正面全身:双手深插入后脑发根,双肘外张,胯左顶,头右倾,发从指缝垂落;拍2 4.875-5.667s 指根向前耙发→单侧甩发(发梢划 1/4 圆弧)→手顺发滑到锁骨;拍3 6.0-7.25s 3/4 近身定点:指尖抵下颌-领口缓慢摩挲,眼神锁镜(微活性);拍4 技术峰值=7.25-7.375s 姿态跳切:正面站→正面低蹲(右膝高顶、YSL 金跟踏地、右手搭膝),切点前后构图重心下移半格
+- H3:`rising into a full-front stand with both hands buried in her hair, raking it forward into a quarter-arc toss before sliding a fingertip at her collar, then pose-cutting straight down into a low squat with one knee driven high and gold-heel sandal planted, hand riding the knee`
+- 来源:《御姐蹲》04.4-08.9s(切点 4.4-4.5s、7.25-7.375s)
+
+**片<v56> 《猎人猎物》(西装跪·黑丝·5.3s·竖屏·高度疑似 AI 合成)**
+- 背景人物:深灰竖肋板墙+木地板,椭圆追光;双主体:①前景站立者=黑丝袜长腿+黑漆皮红底细高跟(仅腿入画);②光斑中跪坐者=白短袖衬衫+黑领带+黑百褶短裙+浅口过膝袜,长卷发,左手持矮杯。AIGC:高度疑似 AI 生成合成——0.875s 前景腿落定时光斑内空,1.0s 跪姿人物凭空出现(连续实拍不可能);光源方向/色温不完全一致;膝盖关节形变。
+- 节拍:(推测)氛围电子慢板。
+- 镜头形态:A 一镜到底,地面超低机位锁定 POV(贴地仰角)。
+
+### K205 黑丝长腿跨立入场合成链(4拍|变装转场·AI 合成·地面 POV)
+- 入态:空光斑+鞋尖入画 → 出态:双腿跨立成"权力门框"、跪姿人物现身光斑
+- 分解:拍1 0-0.625s 空镜:地面光斑、黑鞋尖缓缓滑入;拍2 0.75s 技术峰值=一条黑丝小腿裹运动模糊横扫过镜头上方(遮挡物=扫镜的腿+糊帧);拍3 0.875-1.0s 该腿落定画面中右,光斑内跪姿人物在 1.0s 凭空补现(合成节点);拍4 1.125-1.5s 第二条腿从画左摆入跨落,双脚分开比肩宽站定,构图完成=前景双腿作画框、跪者居光斑中心
+- H3:`from a floor-level POV an empty spotlight waits as a black-stockinged calf sweeps across the lens in motion blur, the leg plants itself framing the right side while a kneeling figure in shirt and tie materializes in the spotlight, the second leg striding in to complete a power-stance gateway`
+- 来源:《猎人猎物》00.0-01.5s
+
+### K206 光斑跪仰猎物凝视链(3拍|定格构图·微活性)
+- 入态:跨立构图完成、跪者垂头 → 出态:仰首凝视上方站立者,双唇微启
+- 分解:拍1 大姿势锁死:跪坐于脚跟、膝头微分、裙摆铺地、左手持杯垂于裙侧;前景双腿微调重心(右踵外旋→左脚尖内扣);拍2 技术峰值=抬头:下颌沿 45° 线抬起,发向后滑,眼睛最后锁定镜头方向(仰视角);拍3 微活性:肩胛后张挺胸 1 次,持杯手指轻收,前景膝盖小幅内扣一次,光斑内发丝受"隐形风"轻摆
+- H3:`kneeling back on her heels inside the spotlight with a glass resting at her skirt, lifting her chin along a 45-degree line until the eyes lock upward past the towering stockinged legs, shoulders rolling back once as the foreground feet shift their weight`
+- 来源:《猎人猎物》01.5-05.3s
+
+**片<v57> 《钓你上钩》(钓系制服变装舞·10.0s·竖屏·AI 渐变形)**
+- 背景人物:深灰摄影幕布。人物:黑棕超长卷发;装序:①oversized 白长衬衫+白泡泡裙摆(裸腿白运动鞋)→②+黑过膝袜→③+黑领带→④修身白短袖衬衫+黑百褶裙+黑漆皮尖头泵。AIGC:高度疑似 AI 视频生成(图生视频类)——三处服装"渐变形"均无剪辑痕迹:袜子在抬腿遮挡下裸→白短袜→黑过膝渐长;领带在挥臂遮挡后一帧浮现;背身转身时宽松衬衫呈半透明纱化中间态收成修身衬衫+百褶裙;白鞋在提腿遮挡下变黑漆皮泵;瓷化皮肤、幕布纹理过度均匀。
+- 节拍:(推测)约 100 BPM,变形点 0.9/2.1/3.2/4.3s 间隔约 1.1-1.2s 卡拍。
+- 镜头形态:A 一镜到底(AI 形变换装,无剪辑),固定中景平机位。
+
+### K207 旋身渐变形四连变装链(7拍|变装转场·AI 形变)
+- 入态:白 oversized 衬衫裙摆臂起舞、裸腿 → 出态:完整制服(修身衬衫+领带+百褶裙+黑过膝袜+黑漆皮泵)
+- 分解:拍1 0-0.875s 双臂交替上摆+提膝小跳,衬衫罩裙随胯摆出鼓形;拍2 技术峰值1=0.875-1.125s 右腿抬起交叉,遮挡物=抬腿横过身前+运动模糊,小腿处袜体渐长变形:裸→白短袜→黑过膝(形变中间态可见);拍3 1.125-2.0s 落地继续摆胯,双臂向上画大弧;拍4 技术峰值2=2.0-2.125s 右臂横扫过胸前遮挡瞬间黑领带浮现并甩出离心摆;拍5 2.125-3.0s 带领带续舞,3.0s 起以右肩为轴背身转身(遮挡物=转身+衬衫旋出);拍6 技术峰值3=3.125-3.375s 背身时宽松长衬衫呈半透明纱化中间态,随即收拢变形为修身短袖衬衫+黑色百褶裙,转回正面;拍7 技术峰值4=4.25-4.375s 后勾提腿时白鞋渐变为黑漆皮尖头泵(内里闪红一帧)
+- H3:`dancing in an oversized white shirtdress as one lifted leg morphs bare skin into black thigh-highs mid-cross, a black necktie materializing behind a chest-sweeping arm, the loose shirt turning sheer and reshaping into a fitted short-sleeve shirt with a black pleated skirt during a back turn, white sneakers morphing into black patent pumps behind a hooked-up leg`
+- 来源:《钓你上钩》00.0-04.4s(形变点 0.875-1.125 / 2.0-2.125 / 3.0-3.375 / 4.25-4.375s)
+
+### K208 制服御姐摇摆舞链(4拍|舞蹈动作·服装物理)
+- 入态:完整制服、后勾腿点地 → 出态:双臂低展定格收尾
+- 分解:拍1 4.4-5.667s 后勾腿(黑漆皮泵朝天)+胯左右连续顶送,百褶裙摆与胯反相摆动,手臂一手托颌一手平摆波浪;拍2 5.667-7.0s 双臂在体侧交替画"S"波浪,肩部耸落 2 次,头随肩滚 1/2 圈;拍3 7.0-9.0s 胯画小圈,领带随上身扭转甩出弧线,发梢与裙摆滞后半拍;拍4 9.0-10.0s 技术峰值收势=双臂向两侧低位展开,下巴微扬眼神下压镜头,重心沉定定格
+- H3:`pumping one hooked leg behind while the hips drive the pleated skirt into counter-swing, arms rolling in alternating S-waves with shoulder pops, the loose tie whipping arcs across each torso twist, closing with arms spread low and the chin lifting over a down-pressing gaze`
+- 来源:《钓你上钩》04.4-10.0s
+
+**片<v58> 《地铁 OOTD》(松弛感日常穿搭·8.5s·竖屏)**
+- 背景人物:地铁站台(青绿导视、广告灯箱、全高站台门、列车、绿色"候车"地贴)。人物:黑棕长卷发;白色低胸吊带+牛仔短裤+灰色长款开衫(常滑落单肩)+白堆堆袜+白色厚底运动鞋+链条包。AIGC:真人实拍+重度美颜(场景细节真实,皮肤瓷化、腿部拉长)。
+- 节拍:(推测)中速流行 ~90-100,快照切点不规律。
+- 镜头形态:C 快剪(8 个快照机位),跟拍段手持逆行跟移。
+
+### K209 扶梯垂立下行转站台甩发走链(4拍|走路链·日常感)
+- 入态:扶梯上垂眸站立 → 出态:站台小跳步收势
+- 分解:拍1 0-1.0s 扶梯下行:双脚并拢站稳一级,左手搭扶带、右手垂持手机,垂眸,身体随梯级自然起伏;拍2 1.333-1.75s 切站台手持跟拍(机位逆行后退):大步走,髋部送步,头发大幅甩摆,开衫滑落右肩一半,链条包随步幅前后荡;拍3 1.75-2.0s 眼神先入镜、下巴内收、嘴角单侧挑起(微活性),步幅不减;拍4 2.0-2.25s 技术峰值=双脚小跳步收势(俏皮双落步),身体前倾向镜定格;同族 5.333-5.667s 近景回眸甩发、6.0-6.667s 屏门前侧身看包回眸
+- H3:`riding the escalator with feet together and eyes downcast, then striding toward a retreating handheld camera as her hair swings wide and the cardigan slips off one shoulder, eyes reaching the lens first before finishing with a playful two-foot hop lean`
+- 来源:《地铁 OOTD》00.0-02.25s(同族 05.3-06.7s)
+
+### K210 蹲姿系鞋带与托脸深蹲微活性链(4拍|定格摆拍·微活性)
+- 入态:小跳步收势 → 出态:托脸深蹲定格
+- 分解:拍1 2.375-3.125s 蹲坐系鞋带:右膝高顶、双手指尖系白鞋鞋带,先垂眸盯手,中段抬眼咬镜头,头右倾;拍2 3.333-4.0s 柱前靠站:双腿踝交叉、双手交叠垂于裙前、眼神锁镜(手指交叠摩挲 1 次);拍3 4.333-5.0s 坐上台面:长腿斜伸交叉、一手托颌一手扶台沿、小腿悬空轻晃;拍4 技术峰值=7.0-8.5s 深蹲托脸:全脚掌深蹲贴柜,双掌包住双颊、肘架膝上,头左右缓倾(各 10°),收尾凝镜
+- H3:`squatting to tie her sneaker lace before glancing up into the lens, leaning crossed-ankled against a pillar with folded hands, stretching long crossed legs from a display block, then dropping into a full squat cupping both cheeks in her palms with elbows braced on knees, head swaying side to side`
+- 来源:《地铁 OOTD》02.3-08.5s(多机位多时间码)
+
+**片<v59> 《薄荷绿》(御姐户外摆拍·7.8s·竖屏)**
+- 背景人物:户外广场白瓷砖台面/旱池,白砖墙+涂鸦字母、高层住宅楼、阴天柔光。人物:黑棕长卷发+薄荷绿圆圈耳环+十字项链;黑色抹胸短裙+oversized 黑西装(滑落双肩)+薄荷绿过膝袜+黑漆皮尖头细高跟(内里闪红)。AIGC:真人实拍+重度 AI 美化,局部疑似 AI 补绘(4.5-5.33s 前屈帧发丝与西装边缘"融化"、5.667s 鞋内里异常变红;姿态物理与地面阴影真实)。
+- 节拍:(推测)中速流行,切点间隔不规律,摆拍快剪。
+- 镜头形态:C 快剪(7-8 个摆拍机位),低机位仰拍与平拍交替。
+
+### K211 坐台伸腿卷袜口链(3拍|服装物理·手部细节)
+- 入态:坐台伸腿低角仰拍 → 出态:袜口整平、腿绷直收尾
+- 分解:拍1 0.0-1.0s 坐台低机位:双腿向镜头右下伸展占满对角线,一膝屈立、黑尖头泵点台面,眼神俯压镜头;拍2 技术峰值=3.6-4.125s 卷袜口:右腿抬伸悬空,双手钩住薄荷绿袜口向外拉整、指尖逐段卷边,垂眸盯手(遮挡物=抬起的腿+双手全在袜口区),余光两度扫回镜头;拍3 4.125-4.375s 袜口整平贴紧大腿,腿绷直绷脚背,袜面弹性回缩微颤;同族 5.667s 高抬腿亮红鞋里、6.0-6.333s 交叉腿搭膝抚袜
+- H3:`seated on a tiled ledge with her stockinged legs driving the low-angle frame, hooking both fingers into the mint over-knee top to tug and roll it snug up her raised thigh, eyes down on the hands before flicking back to the lens, then pointing the toe long`
+- 来源:《薄荷绿》00.0-01.0s、03.6-04.4s(同族 05.6-06.3s)
+
+### K212 深蹲托肘凝镜微活性链(3拍|定格摆拍·微活性)
+- 入态:矮蹲环膝、发垂遮面 → 出态:深蹲双膝朝镜、肘架膝定格
+- 分解:拍1 2.333-3.0s 矮蹲:双膝并拢蹲踞在台面上,西装滑落双肩,双臂环膝,长发前垂遮半面,下颌找膝;拍2 技术峰值=6.75-7.0s 切至地面深蹲:双膝外展正对镜头(薄荷袜膝部为画面最亮反光点),双肘架膝、双手垂悬膝间交握,抬头凝镜;拍3 7.0-7.7s 微活性:头左右缓倾各 10°、指节在膝间微屈、重心以踝为轴微摇 2 次,凝镜定格
+- H3:`holding a tight crouch with arms wrapped over her knees and hair curtaining the face, cutting low and wide so both mint-stocking knees face the lens with elbows braced between them, tilting the head slowly side to side while fingers flex and the eyes hold the camera`
+- 来源:《薄荷绿》02.3-03.0s、06.7-7.7s
+
+**片<v60> 《尾巴加载》(节奏天国变装·7.4s·竖屏)**
+- 背景人物:室内练习角(灰绿墙+木地板),固定全身机位。人物:王羽杉——前段奶白波点睡衣套装+白色厚底玛丽珍,后段红白格纹女仆装(HelloKitty 蝴蝶结胸饰+白围裙短裙+红格臂环)+白蕾丝过膝袜+红漆皮高跟鞋+白蝴蝶结发箍,棕栗大波浪;特效道具:像素橘猫贴纸、白色星光遮挡贴、腰后白毛绒尾巴(合成)。AIGC:真人+重度美颜瘦腿(透视/门框阴影一致;变装为单帧硬切无过渡帧,非 AI 生成)。
+- 节拍:约 150 BPM(推测;三处变装间隔 1.65s≈4 拍)。
+- 镜头形态:C 快剪(节拍跳切×3:衣 3.2s/鞋 4.85s/尾 6.6s)。
+
+### K213 睡衣节拍猫耳手势链(5拍|节奏舞·像素贴纸)
+- 入态:开位直立,右拳抬至胸口 → 出态:双臂下甩、右脚尖侧点,指尖朝上蓄势待变装
+- 分解:拍1(0.0-0.4s)双脚开立,右拳胸前抬起,重心坐左胯(基座锁定);拍2(0.4-1.0s)双臂两侧打开至平举后下收,膝微弹两次吃音乐 tick;拍3(1.3-1.7s)技术峰值:双手举至头侧食指上指做猫耳手势,腕外翻两次,肩胛收紧带起上胸,与拍点严丝合缝;拍4(2.0-2.4s)双手合掌胸前、右膝提 90°,落步重心右移;拍5(2.5-3.1s)掌心胸前打开→右手指点颊侧→双臂向下甩出惯性回弹,右脚尖右侧点地,末态指尖朝上为变装拍让位
+- H3:`dancing in a cream pajama set and chunky mary janes in front of a grey wall, pumping both fists chest-high, opening the arms wide on the beat, pointing both index fingers up beside the head like cat ears, pressing palms together while lifting one knee, then flicking both arms down as one toe taps out to the side`
+- 来源:《尾巴加载》00.0-03.2s
+
+### K214 变装三级跳链(6拍|变装·跳切三连)
+- 入态:睡衣指尖上举 → 出态:女仆装+红跟+尾巴齐备的猫爪胯摆
+- 分解:拍1(3.125s)变装前末帧定格;拍2(3.2s 跳切)红格女仆装瞬现:双手收至胸前理围裙肩带,右腿正迈步中、白袜未变——服装切换一帧完成、零过渡帧;拍3(4.3-4.8s)双臂两侧摊开掌心向上,展示红格臂环与白蕾丝过膝袜;拍4(4.85s 跳切)红色漆皮高跟鞋瞬现:白袜→红跟仅鞋部变化,胯位步态跨切点保持(匹配剪辑);拍5(6.2-6.5s)猫爪手势:双腕屈指下垂抖动,胯左右摆每拍一次;拍6(6.6s)白色毛绒尾巴贴纸合成入画,根部随胯摆反向荡出弧线,7.3s 收尾——三级变装(衣→鞋→配件)逐级递进全部踩拍
+- H3:`beat-synced outfit change dance: pointing both fingertips upward in cream pajamas, cutting instantly into a red gingham maid dress with hands snapping to the apron straps, spreading the arms palms-up to show gingham arm garters and white lace thigh-highs, popping red patent heels on the next cut with the stride unchanged, ending in cat-paw hands while a fluffy white tail overlay swings counter to each hip sway`
+- 来源:《尾巴加载》00:3.1-7.4s
+
+**片<v61> 《腿精百褶裙》(通勤学院 OOTD·10.4s·竖屏)**
+- 背景人物:黄昏城市天台(玻璃栏杆+浅灰砖地+水景+楼群天际线),固定全身机位。人物:王羽杉——白色收腰短袖衬衫+黑领带+黑色百褶超短裙+黑透肉丝袜+黑色尖头细跟+黑色小手提包;棕栗大波浪;全程肩以下构图、不给正脸。AIGC:疑似 AI 生成/深度 AI 美体嫌疑高(存疑)——腿身比失真、步态平滑略漂浮、玻璃反光无人影;栏杆与建筑透视物理一致。
+- 节拍:约 80 BPM(推测;整步周期 0.75s)。
+- 镜头形态:C 快剪(步频匹配跳剪:2.0s 手包换手藏于交叉步)。
+
+### K215 直行逼近步频跳剪链(5拍|OOTD·步频跳剪)
+- 入态:起步交叉步 → 出态:逼近镜头的直行步态
+- 分解:拍1(0.0-0.5s)左脚交叉迈过右脚,黑手包垂左腕随步后荡(顶格裁头构图);拍2(0.5-2.0s)直行三步:每步 0.375s,鞋跟先落、胯随重心微旋,百褶裙摆随步频开合;拍3(2.0s 跳剪)手包从左手换至右手——切点藏于交叉步换脚瞬间,步频节奏完全延续(节拍遮蔽跳剪);拍4(2.0-3.7s)第二段直行:步幅加大,包随右臂前后荡;拍5(3.7-5.0s)逼近镜头:步速不变、透视放大,丝袜网点随腿拉伸;音乐触发:每步一拍
+- H3:`walking straight toward a locked camera on a dusk rooftop in a white shirt, black tie and pleated mini skirt with sheer tights, crossing one leg over the other each step while a small black handbag swings at the wrist, the bag switching hands across an invisible stride-matched cut, hips rolling slightly with every heel strike`
+- 来源:《腿精百褶裙》00.0-05.0s
+
+### K216 停步摆包定格解锁链(6拍|道具包·摆弧)
+- 入态:行进中收拳 → 出态:交叉步站定收尾
+- 分解:拍1(5.3-5.8s)行进中左拳收至领口,右臂带包前荡(步态减速上肢加速);拍2(5.8-6.05s)定格点:右臂横伸包甩至体侧、左手撩发别耳,双腿前后交叉锁位静 0.25s(技术峰值前导);拍3(6.05-6.9s)解锁续走:包回落身侧,步频回 0.375s;拍4(8.9-9.5s)包由肩前向身后绕弧;拍5(9.5-9.75s)技术峰值:右臂全展、包荡至体侧最远点,身体左倾对抗配重,双腿剪式交错(腕部圆周甩动的离心力);拍6(9.75-10.37s)包回收至大腿侧,最后一步交叉站定——音乐触发:摆弧顶点落重拍
+- H3:`pausing the rooftop walk to flick the handbag out to the side and tuck hair behind the ear in a crossed-leg stance, resuming the 0.375-second step rhythm, then swinging the bag into its widest arc with the arm fully extended and the torso leaning away as counterweight before stepping into a final cross-legged stop`
+- 来源:《腿精百褶裙》00:5.3-10.4s
+
+**片<v62> 《白裙慢摇》(金顶天台慢摇·15.5s·竖屏)**
+- 背景人物:金色黄昏天台(玻璃栏杆+浅色铺装+楼群天际线),固定全身机位。人物:唐安琪@Angel(创作归属存疑:文件名为王羽杉,G2 组判读为唐安琪)——白色竹节纱一字肩不对称迷你裙+黑丝绒迷你包(黑长飘带)+黑点透肉丝袜;祖母绿耳环;棕栗长发帘式刘海。AIGC:疑似全 AI 生成嫌疑最高(远景楼群无逻辑马赛克重复纹理、腰胯曲线失真、点袜网点不均;裙摆物理与长阴影又一致)。
+- 节拍:约 80 BPM(推测;胯摆换边周期 0.75s)。
+- 镜头形态:A 一镜到底(15.5s 无切点,J 章微活性示范片)。
+
+### K217 慢摇胯画横 8 链(6拍|慢摇·微活性)
+- 入态:右胯外顶开位 → 出态:肩胯反向拧转蓄势
+- 分解:拍1(0.0-0.8s)右胯向外顶出,右臂松垂随惯性摆,肩轴反向水平(骨盆-肩对抗);拍2(0.8-1.6s)胯横移左、重心跟移,裙摆下缘荡出斜弧;拍3(1.3-2.0s)右手抬至锁骨勾住领口;拍4(2.3-3.0s)左手指背触下巴,头右倾 15°,胯顶右(微活性:腕颈胯三点活);拍5(3.3-4.0s)胯左顶双臂松垂荡回,裙摆甩向右(轻纱滞后骨盆半拍);拍6(4.3-5.0s)肩-胯反向拧转一次回正;音乐触发:每换边一拍
+- H3:`slow-swaying on a golden-hour rooftop in a white off-shoulder mini dress, pushing the hips side to side in a flat figure-eight while the arms hang loose and swing on inertia, hooking one hand into the neckline, tapping a knuckle under the chin with the head tilted, and letting the asymmetric hem swing against each hip shift`
+- 来源:《白裙慢摇》00.0-05.0s
+
+### K218 指唇抚颊撩发闭环链(5拍|微活性·手势链)
+- 入态:手勾袖口 → 出态:手滑回胸口、胯回中
+- 分解:拍1(5.0-5.25s)右手勾袖口上提至胸口,肘先动腕随;拍2(5.375-5.625s)指尖到唇轻点两下,肩胛上提含胸;拍3(5.75-6.0s)指腹滑至右颊,胯同步顶左,裙摆掀起(对侧联动);拍4(6.125-6.375s)手指插入鬓发向后梳,肘外展、胸廓展开(技术峰值:五指入发的发丝位移);拍5(6.5-6.625s)手顺锁骨下滑收、胯回中——微活性完整闭环,全程双脚不动
+- H3:`micro-activity gesture chain in a slouchy white mini dress: drawing one hand up from the hem to the collarbone, tapping fingertips on the lips twice, sliding them down the cheek while the hip pops opposite, combing fingers back through the temple hair with the chest lifting, then gliding the hand down the sternum as the hips return to center`
+- 来源:《白裙慢摇》00.5.0-06.7s(应为 00:05.0-6.7s)
+
+### K219 肩滚背转回眸链(5拍|肩滚·背转回眸)
+- 入态:右手滑向胯侧 → 出态:重心落定、发尾惯性收
+- 分解:拍1(8.3-8.675s)右手从胸口滑到胯侧,躯干右拧启动;拍2(8.8-9.05s)双肩向后滚一圈,背 3/4 露出,包带斜跨背心;拍3(9.175-9.3s)下巴越过左肩回望镜头(背转峰值,头部最后回位);拍4(9.425-9.675s)转回正面,手先回胸口、胯跟进,裙摆拖带惯性;拍5(9.8-10.0s)重心落定,发尾摆收;同型复现 11.67-12.33s 侧步版本
+- H3:`rolling both shoulders backward while the torso twists into a three-quarter back view with a tiny bag slung across, looking back over the left shoulder with chin leading, then unwinding to face front as the hand lands on the collarbone first and the hips follow, the ruffled hem trailing the turn on inertia`
+- 来源:《白裙慢摇》00.8.3-10.0s(同型 00:11.7-12.3s)
+
+**片<v63> 《薄荷绿斜角》(POV 斜角构图·5.7s·竖屏)**
+- 背景人物:阴天户外白瓷砖台地,现代住宅楼群,"SHANG ZONE"字样立牌。人物:唐安琪@Angel(同 v62 归属存疑注记)——黑色西装外套(滑肩露锁骨)+黑色抹胸+铆钉腰带黑超短裙+薄荷绿过膝袜+黑尖头细高跟(鞋头薄荷拼色)+祖母绿耳环;红棕长发。道具:POV 前景手持手机。
+- 节拍:约 100 BPM(推测;切点间隔 0.6s)。
+- 镜头形态:C 快剪(POV/全景闪切交替+白闪 whip+黑帧,三拍位循环两轮)。
+
+### K220 POV 取景斜角让位链(4拍|POV·取景构图)
+- 入态:手机入画取景 → 出态:白闪 whip 入下一镜
+- 分解:拍1(0.0-0.7s)前景持机手从左下入画,屏幕内她坐倚台阶斜角构图(腿向右上延伸占满对角线,双层构图);拍2(0.7-1.4s)手机沿斜角下移,屏幕画面与实景同构互证;拍3(1.4-2.2s)手机右移让位,露出全身斜角实景:左肘撑台、右手抚领、薄荷过膝袜双腿叠伸(地平线倾斜 10-15°);拍4(2.3-2.45s)白闪 whip 转场糊帧入切(曝光拉白+运动模糊)
+- H3:`filming a friend who loves diagonal composition: holding a phone low so the screen frames her seated pose on white tiled steps, sliding the phone down and aside until it reveals the real scene — black blazer, mini skirt and mint thigh-high socks with legs stretched along the frame diagonal — then whipping into a white blur transition`
+- 来源:《薄荷绿斜角》00.0-02.45s
+
+### K221 三连拍位闪切循环链(5拍|拍位闪切·三连)
+- 入态:坐倚拍位 → 出态:跪坐拍位循环两轮收
+- 分解:拍1(2.45-3.2s)坐倚拍位:左掌撑台面、右手抚西装领、双腿向右伸直叠放,头左转看远(拍位静、微活性:指尖捻领、头微沉);拍2(3.2-3.3s)白/黑闪帧切换(1-2 帧 blink);拍3(3.3-3.55s)站立拍位:双臂垂、右胯顶、歪头向右,西装滑肩;拍4(3.575-3.7s)闪切;拍5(3.8-5.1s)跪坐拍位:双膝落地小腿外分、右手抚胸锁骨、左手撑地、仰头 45°——三拍位循环两轮(第二轮 4.0/4.33/4.67s 复现),末帧 5.33s 回坐倚收;音乐触发:每切点一拍
+- H3:`rapid pose-cycle montage for a photo dump: holding a seated lean with one palm on the ledge and the other at the blazer lapel, blinking through a white flash into a full-body stand with hips cocked and head tilted, blinking again into a wide-kneel with one hand on the chest and the chin lifted, repeating the three-hero-pose loop twice on the beat`
+- 来源:《薄荷绿斜角》00.2.4-05.7s
+
+**片<v64> 《汗流浃背》(坐地变装·7.6s·横屏 60fps)**
+- 背景人物:室内墙角(深色木地板+白墙+棕门框),固定机位。人物:王羽杉——前段奶黄睡衣套装+白袜;后段黑色亮片吊带迷你裙(侧腰镂空系带)+珍珠项链+黑色 YSL 凉鞋;黑长卷发。AIGC:疑似深度 AI 美体(小腿非物理褶皱伪影、腿身比失真);变装用甩模糊转场,非 AI 生成。
+- 节拍:约 72 BPM(推测;滑腿周期 1.4s,R&B 慢速)。
+- 镜头形态:C 快剪(2.9-3.2s 水平甩模糊转场一次)。
+
+### K222 坐地滑腿甩模糊变装链(5拍|坐姿·甩模糊变装)
+- 入态:屈膝坐地 → 出态:黑亮片裙贴墙坐定位
+- 分解:拍1(0.0-1.0s)坐地右倾,双腿屈膝抬起,左手撑地板,黄睡衣白袜(骨盆+左手两点支撑);拍2(1.0-2.4s)双腿沿墙面向右下伸直滑落,脚跟蹭墙下行,身体后仰至 30°(核心控腿+墙面摩擦);拍3(2.4-2.9s)双腿完全伸直贴墙、脚尖绷直,肩胛触墙定位;拍4(2.9-3.2s)整幅水平甩动模糊转场(遮挡窗口);拍5(3.3-3.8s)黑亮片吊带裙+YSL 跟现:同机位同坐姿,双腿仍贴墙——腿位跨切点完全复刻
+- H3:`sitting on a wooden floor in a pale yellow pajama set, sliding both legs down along the wall until they are fully extended with pointed toes, then whipping into a horizontal motion blur that lands in a black sequin mini dress and strappy heels in the identical wall-leaning seat, legs matched across the transition`
+- 来源:《汗流浃背》00.0-03.8s
+
+### K223 贴墙足尖磕墙微动链(4拍|贴墙·微活性)
+- 入态:亮片裙坐姿定位 → 出态:膝交叠静拍
+- 分解:拍1(3.8-5.0s)定位拍:左手撑地后倾,右手食指抵胸,右脚外缘贴墙、左踝搭右踝(基座锁定,踝/颈/腕活);拍2(5.0-5.7s)足尖交替点墙:右踝屈伸两次,鞋跟磕墙与音乐触点对齐(磕墙声=打击点);拍3(5.7-6.7s)右手撩耳后发,头右倾,肩线压低半寸;拍4(6.7-7.6s)换边:左腿屈膝收、右腿伸直压上,膝交叠循环一轮收于静拍——技术峰值在拍 2 踝拍节奏
+- H3:`holding a floor pose against the wall in a black sequin dress: propping on one hand behind, pressing a fingertip to the chest, alternating ankle flexes that tap the heels against the wall on the beat, brushing hair behind one ear with the head tilted, then re-crossing the knees into a quiet final hold`
+- 来源:《汗流浃背》00.3.8-07.6s
+
+**片<v65> 《理想型》(走廊遮挡变装·8.9s·竖屏)**
+- 背景人物:酒店走廊(木饰面墙+黑色条形灯槽+反光石材地面,一点透视),固定机位。人物:王羽杉——前段白色一字肩针织衫+粉色阔腿裤;后段香槟色亮片挂脖吊带长裙+项链+耳环+手链;棕栗大波浪。AIGC:真人+重度 AI 美体(走廊透视与地面反射一致;皮肤零毛孔、腰臀比极端;变装窗口内宽裤 0.4s 内消失物理不可能——衣物遮挡下隐藏跳切)。
+- 节拍:约 88 BPM(推测;胯顶换边 0.7s)。
+- 镜头形态:C 快剪(1.8-1.9s 遮挡窗口藏切点)。
+
+### K224 背身拢手回眸链(4拍|背身·胯拍)
+- 入态:背对镜头站立 → 出态:转身启动、双手抓稳下摆
+- 分解:拍1(0.0-0.6s)背对镜头站定,双手于腰后交叠拢住毛衣下摆,胯随拍左右顶;拍2(0.6-1.0s)胯顶左同时头左后转,回眸 3/4 侧脸,长发甩过右肩;拍3(1.0-1.4s)头转回背位,双手把下摆抓得更紧(变装蓄力);拍4(1.4-1.7s)左肩内旋启动转身,双手沿后腰上移
+- H3:`standing with the back to the camera in a white off-shoulder sweater and pink wide pants, clasping both hands behind at the hem, pumping the hips side to side on the beat, glancing back over the shoulder in a three-quarter smile with hair whipping across, then gripping the hem tighter as the turn begins`
+- 来源:《理想型》00.0-01.7s
+
+### K225 撸衫蒙面旋转变装链(3拍|遮挡变装·旋转)
+- 入态:双手抓下摆 → 出态:亮片裙全身现、指尖到位下巴
+- 分解:拍1(1.7-1.8s)双手将毛衣下摆向上撸过腰、过胸,衣身罩到领口蒙脸(遮挡物=衣物本体);拍2(1.8-1.9s)衣物蒙面瞬间=换装窗口:毛衣内已穿香槟亮片吊带裙,粉宽裤在遮挡中消失(隐藏跳切/遮挡变装机制);拍3(1.9-2.05s)发鞭横扫落下,亮片裙全身亮相,右手指尖已就位下巴
+- H3:`pulling the sweater hem up and over the torso until the fabric covers the face, spinning inside the occlusion so the white top and pink pants swap for a champagne sequin slip dress, letting the hair whip down across the frame as the cloth clears to reveal the full look with one fingertip already at the chin`
+- 来源:《理想型》00.1.7-02.1s
+
+### K226 走廊慢摇甩发峰值链(6拍|慢摇·甩发峰值)
+- 入态:指唇小腕花 → 出态:单肩胯顶定格
+- 分解:拍1(2.05-2.7s)指腹点唇、腕外翻小腕花,胯画横 8;拍2(2.7-4.0s)慢摇循环:骨盆每 0.7s 换边,亮片随胯闪光流动;拍3(5.3-5.55s)右手插入发顶向后拢,肘架高;拍4(5.675-5.8s)技术峰值:头从右后向左前猛抡,整头发横弧扫过镜头、糊帧但无切点(颈旋转+发鞭惯性);拍5(5.9-6.2s)发落定肩前,手指顺发梳下,胯顶回右;拍6(7.0-8.9s)双腕交替外翻腕花两次→8.33-8.67s 单肩胯顶收尾定格——甩发落重拍
+- H3:`slow-swaying down a hotel corridor in a champagne sequin midi dress, tapping fingertips on the lips with a little wrist roll, pumping the hips in a flat figure-eight on every beat, raking one hand back through the crown hair and whipping the whole head forward so the hair fans across the frame in a motion-blurred arc, then settling the hair and closing with double wrist rolls into a final hip pop`
+- 来源:《理想型》00.2.1-08.9s
+
+**片<v66> 《猜你喜欢》(唐安琪·椅子卡点换装·5.1s·竖屏)**
+- 背景人物:暗调室内(黑色木饰面墙+顶部聚光锥+大理石纹地面),黑色现代单椅,固定机位。人物:唐安琪@Angel——五套连换:黑蕾丝吊带+蓝喇叭牛仔裤+银钻凉鞋→白衬衫+黑透肉丝袜+黑绊带跟→红色吊带裙+红点丝袜+黑尖跟→祖母绿缎面抹胸裙+黑丝+绿宝石项链→银色亮面抹胸裙;黑长发中分。AIGC:真人+重度美颜(椅子形变、墙面木纹真实连续;换装为跷腿锚点跳切非 AI 生成)。
+- 节拍:约 80 BPM(推测;换装间隔 0.75s=1 拍)。
+- 镜头形态:C 快剪(固定机位卡点连切×4,跷腿姿势跨切复刻)。
+
+### K227 跷腿甩鞋遮挡换装链(3拍|跷腿·甩鞋变装)
+- 入态:坐椅开位双臂平展 → 出态:跷腿几何不变、服装换为白衬衫黑丝
+- 分解:拍1(1.9-2.15s)黑蕾丝吊带+蓝喇叭牛仔裤+银钻凉鞋:双臂向两侧平展打开(翅式),左腿抬离地面(髋屈肌提腿);拍2(2.15-2.3s)左腿跨压右腿成跷腿,右踝同时外翻,银色凉鞋脱脚甩出、鞋在趾尖飞离(变装前导=遮挡物:动作吸引视线);拍3(2.35-2.4s)跷腿姿态完全一致的跳切:白衬衫+黑透肉丝袜+黑绊带跟瞬现——跷腿几何为不变锚点,切点藏于鞋子飞离瞬间(甩鞋落拍)
+- H3:`sitting on a chair in a black lace cami and flare jeans, spreading both arms wide like wings, lifting the left leg to cross over the right knee while the right ankle rolls and a rhinestone sandal kicks off the toe mid-air, then cutting on the identical crossed-leg pose into a white shirt, sheer black tights and strappy heels`
+- 来源:《猜你喜欢》00.1.9-02.45s
+
+### K228 卡点四连换装锚点链(6拍|卡点四连换装)
+- 入态:白衬衫跷腿拍位 → 出态:银色抹胸裙同锚点收
+- 分解:拍1(2.9-3.1s)白衬衫拍位:跷腿不动,右足尖垂直点地循环 2 次(基座=骨盆+跷腿完全锁定);拍2(3.1-3.3s)跳切:红色吊带裙+红点丝袜现,左腿 swing 重新跷上、足尖继续点;拍3(3.3-3.85s)红裙拍位:足尖点 2 次、指尖搭膝;拍4(3.85-4.0s)跳切:祖母绿缎面抹胸裙+黑丝+绿宝石项链现(配饰同色联动,系列标志);拍5(4.0-4.35s)绿裙拍位足尖点 2 次;拍6(4.35-4.8s)跳切:银色亮面抹胸裙现,足尖点拍收尾——四套服装同一跷腿锚点,每次切点均落在足尖触地拍上(足尖点地=节拍遮蔽跳切)
+- H3:`beat-locked seated outfit cycle on one chair: keeping the crossed-leg pose as the fixed anchor while pointed toes tap the floor on every beat, jump-cutting from white shirt to red slip dress with polka-dot tights, to an emerald satin strapless mini with a chunky green gemstone necklace, to a silver metallic mini, each cut landing exactly on the toe-tap`
+- 来源:《猜你喜欢》00.2.9-04.8s
+
+**片<v67> 《听话 OOTD》(唐安琪·御姐 OOTD 多景快剪·6.0s·竖屏)**
+- 背景人物:室内玄关/衣帽间——黑色木纹墙板+浅灰大理石地面+白色格栅墙,三处坐具(黑墙角、黑皮沙发、黑色单椅)。人物:唐安琪@Angel——灰色斜纹抹胸紧身包臀短裙、黑色后缝线大腿袜(背部缝线清晰)、黑色网纱 T 字带踝绑高跟凉鞋、红甲;黑长直中分,耳骨夹。实拍+重度美颜(手指关节与指甲形态真实;磨皮+腿部修长滤镜)。
+- 节拍:约 120 BPM(推测,切点 1.87/2.9/3.95/5.3 卡点)。
+- 镜头形态:C 快剪(5 镜全硬切,切镜后 0.2s 曝光爬升)。
+
+### K229 踩点入画踝特写链(3拍|低机位特写·节奏踩点)
+- 入态:黑墙大理石地空镜,腿出画 → 出态:双脚第四位交叉立定于画面纵轴
+- 分解:拍1 甩腿入画:右腿自画左上摆入,足背绷直,摆速快带一帧运动模糊;拍2 落定:前掌先触地再压跟,小腿绷直使袜背缝线拉成直线,左腿跟进并拢,双脚交叠成第四位;拍3 微活性:踝骨沿跟腱线内外小幅摆两次踩点,红甲在鞋头开口处闪现(固定低机位,腿占满纵轴)
+- H3:`low-angle close-up of bare legs stepping into frame through a swinging arc in black back-seam stockings and mesh T-strap heels, landing toe-first then stacking the feet into a crossed fourth position, ankles ticking side to side twice on the beat against a black door and marble floor`
+- 来源:《听话 OOTD》00.0-01.8s
+
+### K230 黑墙蹲踞抱膝凝视链(3拍|定格构图·微活性)
+- 入态:黑墙角落深蹲坐 → 出态:指节抵唇凝视镜头
+- 分解:拍1 定格锁死:深蹲坐于脚跟,双膝高叠交剪,裙摆绷于大腿面,双臂环叠膝头,下颌收向膝,入点 0.2s 欠曝(曝光爬升);拍2 技术峰值=抬头:下颌沿斜上 45° 线抬起至镜头,锁骨露出,发梢滑落肩前;拍3 微活性:叠膝手指逐根收拢再摊开一次,膝头内扣 1cm 回弹;复现镜头(5.3-6.0s)同一蹲姿加指节抵唇
+- H3:`squatting low on her heels against a black wall with knees stacked sideways and arms folded over them, lifting the chin along a diagonal until the eyes lock on camera, fingers assembling and spreading once over the kneecap while a reprise shot adds knuckles pressed to her lips`
+- 来源:《听话 OOTD》02.0-02.8s、05.3-06.0s
+
+### K231 沙发后仰抚腿·拨发召手链(3拍|换景复合·POV 召引)
+- 入态:黑皮沙发坐定腿高叠 → 出态:单椅上前伸手掌召引
+- 分解:拍1 进入:膝上叠膝小腿前伸,身体沿沙发背向后滑,肩胛触背时胸口上挺;拍2 逐拍:掌沿大腿外侧向下滑半掌幅,头后仰发后坠,视线全程回镜头;拍3(切椅景)技术峰值=手召引:肘先抬、小臂鞭打前伸、腕最后抖平,五指张开朝镜头,发随手拨过肩
+- H3:`leaning back along a black leather couch with one knee stacked high, palm gliding half a hand-width down the outer thigh as the head tips back and the eyes stay on camera, then flicking the hair off one shoulder and reaching an open palm toward the lens from a chair in a whip of forearm snap`
+- 来源:《听话 OOTD》03.0-04.0s、04.0-04.8s
+
+**片<v68> 《薄荷绿车拍》(唐安琪·车内夜拍氛围·6.7s·竖屏)**
+- 背景人物:夜间轿车副驾位,车门开启,门外地库黄色氛围灯带,黑真皮座椅。人物:唐安琪@Angel——黑色抹胸紧身短裙、薄荷绿过膝袜(无鞋,足部裸袜)、黑长发。实拍(车内饰缝线/安全带扣/门框反光物理一致;薄荷袜膝弯压力褶自然堆积)。
+- 节拍:约 90 BPM(推测,慢句铺陈,切点 2.1/4.45/5.25)。
+- 镜头形态:C 快剪(4 镜:拢膝近景→低机位抚胫→后仰握头枕→膝上俯身近景)。
+
+### K232 车座拢膝托腮链(3拍|车内框中框·微活性)
+- 入态:上身前倾贴近镜头 → 出态:手收至下颌,膝并拢回正
+- 分解:拍1 进入:上身自镜头近处拉回(开机位),膝并拢侧坐,薄荷袜口绷在大腿;拍2 逐拍:指尖自锁骨下滑至下颌,头随行侧倾,门外黄色灯带在腿上扫出一条亮边;拍3 微活性:并拢膝头向镜头方向顶半寸回落,睫毛半掩(门框构成画左黑边=车内框中框)
+- H3:`seated sideways in the passenger seat with knees pressed together in mint thigh-highs, pulling back from the lens to let fingertips travel from collarbone to chin as the head tilts, yellow ambient strip light running an edge along the thighs, kneecaps nudging half an inch toward camera once`
+- 来源:《薄荷绿车拍》00.0-02.1s
+
+### K233 低机位抚胫·后仰握枕链(3拍|低机位+后仰·POV)
+- 入态:低机位侧拍,腿折叠于座椅 → 出态:头枕上仰闭目
+- 分解:拍1 进入(切镜入点):硬切至座椅侧低机位,掌已贴胫骨前侧;拍2 技术峰值=抚胫慢滑:掌根发力沿胫骨自膝下向踝推,足背随之绷直,趾节逐根蜷缩再展开;拍3 回收(切后仰景):手越过头顶反握头枕,胸骨上顶,头后仰落枕,眼睑徐徐闭合,下颌线侧向镜头
+- H3:`filmed from a low side angle inside the car, palm pushing slowly down the shin from under the knee toward the ankle as the foot points and toes curl then fan, then leaning back to grip the headrest overhead, chest lifting and eyelids sinking shut with the jaw offered sideways to the lens`
+- 来源:《薄荷绿车拍》02.1-04.45s、04.45-05.2s
+
+**片<v69> 《薄荷绿不烧心》(展示快剪·6.5s·竖屏)**
+- 背景人物:客厅两景——黑色木门+灰地站立位;黑皮沙发+白色格栅墙+黑白格"H"字靠枕。人物:唐安琪@Angel——黑色抹胸连体短裤、薄荷绿过膝袜、黑色漆皮细高跟(红底)、黑色蕾丝颈圈,深棕长卷发。实拍(2.28-2.4s 转场为真实运动模糊,人+机同动;沙发皮面褶皱连续)。
+- 节拍:约 125 BPM(推测,快切,切点 1.25/2.28/3.3/4.0)。
+- 镜头形态:C 快剪(含 1 处两帧甩移模糊转场,6+ 镜)。
+
+### K234 站姿拧胯绕膝链(3拍|全身站姿·卡点)
+- 入态:黑墙前双手叉腰直立 → 出态:膝内绕交叠后重心回正
+- 分解:拍1 锁定:双手虎口卡腰侧,肘外撑,重量沉单腿,肩线水平;拍2 逐拍动力:右膝先内拧(膝内扣),胯随之向左推送,双腿绕成剪状交叠,袜口随大腿挤压上顶;拍3 技术峰值+回收:绕膝交叠到位后重心回灌,胯部画小横八字回正踩点,发尾随躯干惯性轻摆
+- H3:`standing full-body against a black wall with hands hooked on the hips, screwing one knee inward to push the hip across and scissor the legs over each other in mint thigh-highs, then letting the weight pour back as the hips trace a small flat eight and the hair tips sway with the recoil`
+- 来源:《薄荷绿不烧心》00.0-01.25s
+
+### K235 红底抬腿·甩移近景链(3拍|快剪+甩镜·物理峰值)
+- 入态:切镜即见沙发一腿高举 → 出态:近景抚膝定格
+- 分解:拍1 进入(切镜即动):切至沙发即见小腿垂直上举、鞋红色大底正对镜头(技术峰值),足尖挂高跟,手扶膝;拍2 转场:躯干前扑带动机位横向甩移,两帧全画面运动模糊(人机同动)完成宽景→近景跨景;拍3 落定:近景白墙背景,掌心罩上膝头反复摩挲,袜口上沿露出一截大腿,视线回镜头
+- H3:`cutting in mid-motion with one calf raised vertical and the red sole of the stiletto facing the lens on a black couch, then lunging forward into a two-frame whip blur that carries the camera across the room to a close-up where the palm cups and strokes the stocking-top knee while the eyes return to the lens`
+- 来源:《薄荷绿不烧心》01.25-01.9s、02.28-02.78s
+
+**片<v70> 《5 秒错过我》(反差变装·5.3s·竖屏)**
+- 背景人物:亮色轻奢室内——白色灯带台阶+白色格栅墙+银色镜面 Bearbrick 积木熊摆件+大理石纹地面。人物:王羽杉——白色 oversized 短袖 T、黑色短裤、白色厚底松糕鞋;发型三变:丸子手举发(镜 1)→大波浪散发(镜 2、3);红唇。实拍(黑场为真实压黑转场,银熊镜面反射随人形连续变化,发丝无生成漂移)。
+- 节拍:约 100 BPM(推测,卡点落在 1.85 变装切与 4.4 黑场)。
+- 镜头形态:C 快剪(3 镜:地板盘坐→台沿散发→台沿并膝,含 1 处黑场转场)。
+
+### K236 地板盘坐举发链(2拍|纯真系·微活性)
+- 入态:大理石地板盘坐,右手握发上举 → 出态:发束仍举,整体轻弹
+- 分解:拍1 定格:盘坐交叉腿,白色厚底鞋交叠,右拳攥头顶发束高举,腕挂黑发圈,下颌微收盯镜头;拍2 微活性:以腰椎为轴整体前后小弹两次(核心与臀部均摊),发束随弹动上抛半寸,腮边碎发飘起
+- H3:`sitting cross-legged on marble tile in an oversized white tee and chunky white sneakers, one fist hoisting the topknot high with a black hair tie around the wrist, bouncing twice from the lumbar spine so the captured hair tosses half an inch and the baby hairs lift off the cheek`
+- 来源:《5 秒错过我》00.0-01.85s
+
+### K237 台沿散发斜倚链(3拍|变装后·慵懒斜倚)
+- 入态:散发落肩,坐白色台沿 → 出态:手滑至小腿,回眸锁镜
+- 分解:拍1 进入(变装切点):大波浪散发已垂至腰,坐台沿腿前伸交叠,身体前倾手搭膝;拍2 逐拍:掌沿小腿正面缓慢拖行,头随掌行方向斜倒,发帘盖过右眼;拍3 技术峰值=回眸:掌行至踝时头沿对角线抬起回正对镜,锁骨窝加深,银熊镜面反射随人形扭动
+- H3:`hair released into long waves over a white ledge with legs crossed and extended, palm dragging slowly down the front of the shin while the head tips sideways and bangs cover one eye, then lifting the head back along a diagonal to re-lock on camera as the silver mirror bearbrick bends the reflections`
+- 来源:《5 秒错过我》01.85-04.3s
+
+### K238 黑场复活·并膝撩鬓链(3拍|黑场转场·定格)
+- 入态:画面压黑 → 出态:并膝坐定,手插鬓发
+- 分解:拍1 转场:两至三帧黑场(压黑卡点,无叠化残像);拍2 复活入态:亮起即并膝坐定,左手垂于膝间攥发圈,右手已抬至鬓角;拍3 微活性:指尖在鬓发里梳进半寸停住,身体沿台沿小幅度前顶一次,复亮后红唇饱和度瞬间拉满(调色峰值)
+- H3:`dipping through two frames of black into a knee-together seated pose with the left hand holding the hair tie between the thighs and the right hand already buried half an inch into the temple hair, easing the torso forward once on the ledge as the color grade snaps the red lips to full saturation`
+- 来源:《5 秒错过我》04.3-05.3s
+
+**片<v71> 《隔屏就撩·海员帽》(直播近景 POV 互动·30.1s·竖屏)**
+- 背景人物:直播间胸口以上近景,蓝绿渐变虚化背景。人物:王羽杉——深蓝海军平顶帽(蓝色缎带蝴蝶结)、深蓝抹胸、宽蓝颈圈、白色缎面及肘手套、银十字+珍珠双层项链、蓝色耳返;棕色长直发空气刘海。道具:白色有线耳机线(全程逗弄核心道具)。特效:漂浮光尘粒子。AIGC:直播实时美颜接近"AI 感",但耳机线悬链线弧度与手套细褶符合物理→直播实时滤镜,非生成视频。
+- 节拍:约 72 BPM 慢律动(推测,直播无硬卡点)。
+- 镜头形态:A 一镜到底(机位固定近景)。
+
+### K239 掌心贴胸慢滑链(3拍|直播近景·POV 互动)
+- 入态:白手套掌心摊开贴锁骨下 → 出态:掌滑至胸口中央,头左倾
+- 分解:拍1 进入:五指全张压平于锁骨下方,腕骨内旋令掌纹全贴皮肤;拍2 逐拍动力:以指节为引导沿胸口缓慢下滑约一掌幅,头部同步左倾,眼睑半落,唇随唱词开合;拍3 微活性+回收:指尖在终点屈伸一次,肩线上提半寸再沉,白线在掌外侧保持垂直张力,缎面手套随腕旋起细褶
+- H3:`pressing a white satin glove flat under the collarbone with fingers spread, sliding one hand-width down the chest as the head tilts left and the lids droop, flexing the fingertips once at the end while the earphone cord keeps a vertical tension beside the wrist against a blue gradient backdrop`
+- 来源:《隔屏就撩·海员帽》02.8-04.7s
+
+### K240 耳机线逗唇链(3拍|道具互动·POV)
+- 入态:白线垂于胸前 → 出态:线沿下颌收拢,双手合掌托腮收尾
+- 分解:拍1 拾线:双手指尖捏线自颈前提起,线呈真实悬链线弧度;拍2 技术峰值=线过唇:线身横搭唇峰,唇肌轻微收缩含住线弧再放开,眼睛先于唇锁向镜头;拍3 惯性+回收:线自唇滑向下颌沿脸缘收拢,头随线端方向缓缓歪斜;末段(27.2-30.0s)线拉成斜对角绷紧,双手合掌托腮,指尖在线上轻弹两次收尾
+- H3:`pinching the white earphone cord between both gloved fingertips and lifting it into a hanging catenary across the lips, letting the lip muscles catch and release the curve while the eyes lock first, then trailing the cord down along the jaw as the head follows it sideways, ending with palms pressed together under the chin flicking the line twice`
+- 来源:《隔屏就撩·海员帽》09.6-11.3s、22.0-23.9s、27.2-30.0s
+
+**片<v72> 《隔屏就撩·你来啦》(直播全景 POV 互动·18.4s·竖屏)**
+- 背景人物:直播间全景——深紫蓝幕布+地面紫色 LED 灯带+白色人体工学直播椅+灰粉靠枕。人物:王羽杉——深蓝丝绒抹胸前拉链紧身短裙、黑色细高跟凉鞋、大圈耳环、白色有线耳机。道具三连:白色瓶装饮品杯、黑色团扇、白色粉盒。实拍(灯带光斑稳定,椅脚反光连续)。
+- 节拍:约 65 BPM 慢律动(推测,动作事件间隔 4-5s)。
+- 镜头形态:A 一镜到底(固定全景机位)。
+
+### K241 转身撩发踢腿链(3拍|直播全景·惯性峰值)
+- 入态:椅子前坐膝并拢 → 出态:腿回叠坐正
+- 分解:拍1 转体:肩线先向右拧,头甩向背后(发旋即鞭梢,惯性延至发尾),同时右大腿开始上抬;拍2 技术峰值=踢展:右腿沿水平线向画左踢出伸直锁定,拉链裙被大腿抬升拉紧上滑;拍3 回收:腿以弧线下落,躯干回转对镜,双腿落成交叠位
+- H3:`twisting the shoulders right until the head whips behind the back with the hair lagging as a whip tail, extending the right leg into a locked horizontal kick toward frame left as the zip-front dress cinches upward over the thigh, then lowering the leg through an arc and re-crossing it while the torso rotates back to the lens`
+- 来源:《隔屏就撩·你来啦》02.0-03.4s
+
+### K242 拾杯托颊·粉盒沉降递送链(3拍|道具链·POV)
+- 入态:手垂椅侧 → 出态:粉盒沉落膝前,团扇换手
+- 分解:拍1 探取:躯干右前倾,臂探向地面,五指兜住白杯上提(髋屈+背伸链);拍2 托颊展示:杯沿弧线扫至颊侧,肘架起,腕内旋把杯口转向镜头,头侧贴向杯作嗅闻位;拍3 沉降递送(粉盒段):白色粉盒平托掌心自肩高沿体前中线下沉,腕部保持盒面朝镜头(POV 递送语义),至膝前交左手,右手随即拾起团扇
+- H3:`reaching down past the chair arm to scoop up a white cup then sweeping it up to the cheek with the wrist rotating the rim toward the lens as the head leans in to sniff, later lowering a white compact flat on the palm down the body midline toward the knees before trading it for the black paddle fan`
+- 来源:《隔屏就撩·你来啦》07.2-08.7s、15.8-17.5s
+
+**片<v73> 《美背杀》(书房实景美背展示·6.4s·竖屏)**
+- 背景人物:复古书房实景棚——满墙彩色书脊书架、黄铜烛台吊灯(烛焰点亮)、水晶冰柱挂饰、木质格架台。人物:王羽杉——黑色单肩露背紧身衣(深开背至腰骶)、棕色大波浪长发及腰、金属大耳环。实拍(书脊排列磨损随机,烛焰/水晶/抓发物理一致;8fps 密帧发丝无漂移,手指抓握逐帧连续→实拍+重度调色磨皮)。
+- 节拍:约 75 BPM(推测,乐句约 3.2s 一循环)。
+- 镜头形态:A 一镜到底(固定背面直视机位,微仰角)。
+
+### K243 背面跪坐拢发链(2拍|全背面·进入路径)
+- 入态:跪坐书架台,双手扶台,发瀑披背 → 出态:右臂高举攥发束
+- 分解:拍1 锁定:直背跪坐,双手掌面平压身侧木台,发瀑盖住整个开背,肩胛藏于发下;拍2 逐抬:右手离台沿体侧外弧上举(肘先行、腕再卷),五指插入后脑发根攥成一束上提,左侧发帘被牵拉滑落露出左肩胛全貌,头随提拉方向微仰
+- H3:`filmed straight on from the back, kneeling upright on the wooden shelf ledge with both palms flat on the wood while hair curtains the open back, then sweeping the right arm up along an outer arc to bunch the hair at the crown, pulling it upward until the left shoulder blade fully emerges`
+- 来源:《美背杀》00.2-02.6s
+
+### K244 美背撩发倾泻链(3拍|技术峰值·慢惯性质感)
+- 入态:双手举发束过头 → 出态:发瀑泻向左肩,手顺发滑落
+- 分解:拍1 举定:双臂皆举,发束攥在头顶上方,裸背全露,腰椎前顶形成背沟深影;拍2 技术峰值=释放:五指松开,发团先整体上弹再向左肩泻落,发丝呈三段落差分批落下(上部快、发尾拖),肩胛随释放放松下沉;拍3 回收:右手沿下坠的发外缘向下捋,手到腰际时发尾刚好齐腰落定,左手回扶台面
+- H3:`holding the gathered hair overhead with both arms raised and the bare back fully exposed, releasing the grip so the hair bounces once then pours over the left shoulder in three staggered layers, tracing the falling mass down with the right hand until the ends settle at the waist in front of a bookshelf wall and brass chandelier`
+- 来源:《美背杀》02.6-04.0s
+
+**片<v74> 《书架露背》(复古书房写真·9.0s·竖屏·AI 写真幻灯)**
+- 背景人物:深色木书架复古书房棚(铜烛台吊灯、暖黄壁灯、虎皮纹丝绒扶手椅、鎏金雕花椭圆立镜)。人物:王羽杉——黑色单肩露背连衣裙(大 U 挖空至腰骶),水滴金耳环,栗棕大波浪,钻链脚链+黑细带高跟;中段配貂皮披肩;红唇。AIGC:疑似(高)——2.525s/7.375s 两处单帧重影 morph 转场(图生视频插值特征)、皮肤零噪点、镜面反射文字糊化。
+- 节拍:约 76 BPM(推测·慢板)。
+- 镜头形态:B 快照幻灯(6 机位经 AI morph 串联,无硬切)。
+
+### K245 书架坐姿双镜位链(4拍|坐姿·背线语义·微活性)
+- 入态:壁龛内正面坐定、右腿跨压左腿占对角线 → 出态:背面撑台坐定、头回正、背线全展后二次前倾
+- 分解:拍1 0.0-1.1s 正面机位(胸高平拍):右腿跨压左腿向画面右下伸展,左手自胫骨向脚踝分段滑抹,头水平锁定镜头,背后镜面反射棚内人影;拍2 1.15-1.9s 背面机位(肩胛高度,同景切镜):双手宽距撑住书架台沿把髋坐满,露背挖空线自 C7 直通腰骶全展(背线语义:发帘盖背左 1/3,转头即成 reveal 机关),头从左 profile 经正中慢滚,发梢甩扫过背线;拍3 1.9-2.4s 回收=头→肩→髋:头回中、肩胛后收、右手沿台沿内滑半掌;拍4 3.67-5.0s 正面二回(机位更低更近):前倾加深、头右倾 15° 目线压镜头;音乐触发:整链≈4 拍
+- H3:`seated inside the dark wood bookshelf alcove with one leg crossed over the other driving toward the lens while a hand glides down the shin, then from behind with palms planted wide on the shelf edge slowly rolling the head from left profile through center so the long waves swing across the fully open back, settling shoulder blades and leaning deeper over the knee on the return`
+- 来源:《书架露背》00.0-01.1s、01.15-02.4s、03.67-05.0s
+
+### K246 椭圆镜披肩滑臂回头链(3拍|服装物理·镜像几何·回眸)
+- 入态:镜前站立、披肩挂上臂 → 出态:实空间近景、双手抓披肩绕至胸前、下颌微收
+- 分解:拍1 5.375-6.0s 镜像内景(机位正对鎏金椭圆镜,实体背影占左下前景双层深度):貂皮披肩自上臂向肘窝滑落(肩主动下沉+重力),顺势滚肩;拍2 技术峰值=6.125-6.75s 回头压镜:头经右肩上方回旋、目光在镜像中直取镜头,披肩恰悬肘弯;拍3 6.875-7.25s 硬切实空间近景:双手自肩后抓披肩两端绕至胸前收拢(机位前推+景别收紧)
+- H3:`standing at the gilt oval mirror seen through the glass, sliding the tan fur stole down from upper arm to elbow crook while rolling the shoulder, turning her head back over it to hold the lens inside the reflection, then pulling the stole around to her chest with both hands in a closer cut`
+- 来源:《书架露背》05.375-06.75s、06.875-07.25s
+
+**片<v75> 《香槟纱》(礼服写真·17.4s·竖屏)**
+- 背景人物:灰色硬包拼接墙角+黑色皮凳,顶光均匀。人物:王羽杉——香槟米色抹胸礼服(上身罗纹收褶、超大朵廓形欧根纱袖、多层纱裙),银色星形吊坠项链,栗棕大波浪+刘海,粉色手机。AIGC:疑似(低),判真拍重磨皮——动作轨迹连续、手机道具跨 13s 形制稳定、无 morph 鬼影;肤质过度磨皮保留低概率。
+- 节拍:约 75 BPM(推测·慢板)。
+- 镜头形态:A 疑似一镜到底(0-16.7s 同机位)。
+
+### K247 电梯角慢转头扫镜链(2拍|微活性·眼神节奏)
+- 入态:左侧脸坐定、手机举于头侧 → 出态:头回正后右倾低垂、目线下沉
+- 分解:拍1 2.6-3.4s 灰色硬包墙角坐定,粉色手机自头侧撤出画外,左肩微沉,目线垂向左下;拍2 技术峰值=3.4-4.2s 两拍完成慢转头:头沿水平轴从左侧脸滚向正前(胸锁乳突肌离心控制),目线中途两次触镜(3.475s/3.9s),随后头右倾 15° 目线落回下方(大波浪发尾延迟约 0.3s 摆正);欧根纱袖随呼吸起伏;固定机位无剪切
+- H3:`seated against the grey panel corner in the champagne tulle gown, lowering the phone out of frame, drifting from left profile into a slow two-beat head turn that lands her eyes on the lens twice before tipping away down again, tulle sleeve bobbing with each breath`
+- 来源:《香槟纱》02.6-05.0s
+
+### K248 捻发下滑别发链(2拍|手部细节·发丝物理)
+- 入态:右侧脸坐定、右手抬至锁骨 → 出态:发别回耳后、目线回镜头
+- 分解:拍1 8.2-9.6s 指尖捏住胸前发梢(指屈肌捏合),顺发丝全长向下滑抹把卷发拉直,发丝在手下方延展后弹回波浪,垂眸盯手;拍2 技术峰值=9.95-10.575s 别发:腕内旋把整束发拢向耳后,掌根贴颊推压一次,目线在掌根离颊瞬间抬回镜头(眼神节奏=手落眼起)
+- H3:`pinching a front strand of hair at chest height in right profile, sliding the fingers down its full length so the wave straightens and springs back, then re-raising the hand to sweep the hair behind her ear with the gaze dropping to the fingers and flicking up to the lens as the palm leaves her cheek`
+- 来源:《香槟纱》08.2-10.6s
+
+### K249 捏纱垂眸举机链(2拍|服装物理·道具互动)
+- 入态:左侧脸低头、左手持粉色手机垂在裙上 → 出态:手机举至脸高、目线入屏
+- 分解:拍1 13.2-15.2s 右手拇指食指捏住胸前欧根纱袖边缘细捻(遮挡物=抬起小臂+纱袖),捻出褶峰再抚平,垂眸盯手;拍2 15.2-15.575s 左手把手机自裙面提至脸高(纱先抚平→手机后举),目线投入屏幕(固定机位,手机占画幅 1/4)
+- H3:`bowed in left profile, pinching and worrying the tulle sleeve edge at her chest between thumb and forefinger until the gauze peaks and smooths flat, then lifting the pink phone from her lap up to face level as her eyes drop into the screen`
+- 来源:《香槟纱》13.2-15.6s
+
+**片<v76> 《夜桥黑缎》(夜景街拍·9.7s·竖屏)**
+- 背景人物:夜景天台/桥(金属栏杆+木地板),螺旋楼体、蓝紫 LED 高楼群、圣诞树、白色弧形沙发床。人物:王羽杉——黑色缎面吊带长裙(胸口银色水钻横带)、银色流苏臂环、栗棕大波浪;中段配奶油色长毛皮草。AIGC:否(真拍·重度美颜)——硬切干净无重影;夜景 LED 为真实光源;4.4-6.2s 抛发发丝级运动模糊自然;臂环跨镜佩戴左右不一致(多套实拍连续性瑕疵,反证非 AI 单源)。
+- 节拍:约 96 BPM(推测·中速)。
+- 镜头形态:C 快剪(≥7 机位硬切,3.0s 黑帧过渡)。
+
+### K250 夜桥顺发下滑双回链(2拍|手部细节·发丝物理)
+- 入态:手埋脑后肘上扬 → 出态:双手落定、重心换后腿、微入半步
+- 分解:拍1 0.0-1.4s 夜桥眼高平拍全身:右手自脑后埋入发根,顺头侧滑出经下颌滑到锁骨(肩胛上提→逐节下放),头左倾 20°,髋右送;拍2 1.5-2.6s 硬切 LED 背景:左手自太阳穴梳前发帘向下滑,整束前发甩向对侧肩(惯性甩发),右臂横摆后收,重心换右腿微入半步;两次顺发均收在拍尾
+- H3:`standing at the night railing with one hand buried behind her head, letting it slide out and down through the hair past the jaw while the head tilts into it, then after the cut raking the front hair down from the temple and tossing the whole sweep across to the other shoulder with a small step in`
+- 来源:《夜桥黑缎》00.0-01.4s、01.5-02.6s
+
+### K251 背影抓发抛落链(3拍|背线语义·发丝物理·背影机位)
+- 入态:背面站定、手在体侧 → 出态:手回体侧、发幕贴脊、肩微抖收势
+- 分解:拍1 4.4-5.15s 背面全身机位:双臂同时上举插入发根,肘向两侧扬至最高(斜方肌上束+肩胛上回旋),头随之下低;拍2 技术峰值=5.275-5.775s 抓拢释放:十指贴头皮向后脑抓拢整幅发幕,向上提离肩背一掌高后完全松手,发幕整体抛起成波浪再塌落回脊背(全组最重发丝物理点),肘沿两侧弧线坠落;拍3 5.9-6.2s 手落回体侧,双肩快速轻抖一次
+- H3:`filmed from behind at the night railing, driving both hands up into the hair at the nape with elbows flared wide, raking the whole curtain up off the shoulders and releasing it so it lifts and crashes back down along the spine in a wave while the hands land at her sides and a quick shoulder shake settles the strands`
+- 来源:《夜桥黑缎》04.4-06.2s
+
+### K252 皮草搭臂提裙回眸链(3拍|服装物理·坐姿·回眸)
+- 入态:白沙发前俯身、皮草覆双前臂 → 出态:栏杆侧影、裙摆攥在手中、头回旋压镜头
+- 分解:拍1 3.9-4.3s 白色弧形沙发机位:奶油皮草整幅搭双前臂,左前臂搁沙发沿,指尖轻敲两下,下颌上抬 10°;拍2 6.3-7.3s 软垫坐姿:右腿跨压左腿,皮草挂双肩,右手把缎面裙边向膝外拨平,裙衩随拨开合一次;拍3 技术峰值=8.0-9.7s 栏杆侧影:右手攥住裙摆向大腿提起一攥(缎面在拳中堆褶),头经肩上回旋直取镜头(回眸)
+- H3:`draping the cream fur coat over both forearms on the white curved sofa with fingertips drumming the edge once, then seated cross-legged smoothing the satin hem out over the knee, and at the railing bunching the dress hem up in her fist before spinning her head back over the shoulder to pin the lens`
+- 来源:《夜桥黑缎》03.9-04.3s、06.3-07.3s、08.0-09.7s
+
+**片<v77> 《生日粉纱》(少女写真生日房·8.0s·竖屏·AI 高置信)**
+- 背景人物:写真馆生日房(白护墙板、黑金"HBD/BIRTHDAY"三角旗串、黑皮沙发、圆镜、花墙布景、金螺旋蜡烛)。人物:粉色抹胸蓬蓬纱公主裙(超大 tulle 裙撑),粉色蝴蝶结头纱,水钻 choker,白色纱袖长手套,粉色手机。道具:奶油三层蛋糕→黑莓果小圆蛋糕(形制突变)。AIGC:是(高置信)——1.0s 人脸+蛋糕双影 morph;4.85s 泛光转场鬼影;5.6s 花瓣粒子凭空生成且前后景深穿插(合成层穿模);6.7s 烛台凭空入画。
+- 节拍:约 85 BPM(推测·梦幻慢板)。
+- 镜头形态:B 快照幻灯(泛光 morph+粒子特效串联 5 机位)。
+
+### K253 拳掌抛送花瓣生链(3拍|手势·特效触发·道具互动)
+- 入态:黑皮沙发坐定、右拳举于颌侧 → 出态:手收回托腮、花瓣环绕持续
+- 分解:拍1 4.975-5.475s 黑皮沙发机位:右拳松握举在颌侧,腕放松随节拍轻晃,嘴张开作讶异态;拍2 技术峰值=5.475-5.725s 拳变掌:五指自拳心依次展开成掌心向上的抛送手势推向镜头,5.6s 粉色辉光迸发、花瓣粒子自掌位生成螺旋环绕全身(特效触发点);拍3 5.85-7.4s 手收回,纱手套托腮,头随花瓣微倾三次
+- H3:`raising a loose fist beside her chin with a wide-eyed look at the lens, unfurling it into an upward palm-offer toward the camera as pink glow bursts and petal particles ignite and spiral around her, then sinking the hand back to rest her cheek on the sheer glove while the petals keep drifting`
+- 来源:《生日粉纱》04.975-05.725s、05.85-07.4s
+
+### K254 镜前比心托腮链(2拍|自拍手势·特效环绕)
+- 入态:圆镜前举手机 → 出态:托腮定格、花瓣前后景穿插
+- 分解:拍1 2.333-3.475s 圆镜自拍机位(粉手机举于镜前):食指中指比 V 抵下颌侧,头左倾 10°,噘唇作飞吻预备;拍2 5.85-7.4s 黑皮沙发托腮(承接 K253 拍 3 持续态):花瓣粒子在人物前后景深交替穿插(前后遮挡=AI 合成层),目线锁镜头
+- H3:`holding the pink phone up to the round mirror for a selfie with a V-finger pressed at her chin and a blown-kiss pout, then resting her cheek into the sheer glove with elbow planted while petal particles pass in front of and behind her and the gaze stays pinned on the lens`
+- 来源:《生日粉纱》02.333-03.475s、05.85-07.4s
+
+**片<v78> 《豹纹变装》(室内变装·7.8s·竖屏)**
+- 背景人物:极简室内(棕墙+米地板、圆形光池)。Look1:白色短款羽绒服+白微喇裤+白毛毛厚底靴,双手各拎豹纹细带高跟鞋;Look2:黑高领中袖上衣+豹纹缎面包臀迷你裙+同款豹纹高跟鞋。AIGC:否(真拍跳剪变装·疑似 AI 美体拉腿)——3.4s 变装干净硬切、抬腿姿态跨切精确匹配、无 morph;双腿比例超长、膝部过度平滑。
+- 节拍:约 128 BPM(推测·变装 drop 卡点)。
+- 镜头形态:B 双镜跳剪变装(切点 3.4s;7.5s 渐暗淡出)。
+
+### K255 白套抬腿变装跳剪链(3拍|变装跳剪·道具转移·卡点)
+- 入态:白羽绒服套装双手持鞋、单腿横摆 → 出态:豹纹裙踩上同款高跟、猫步第一步启动
+- 分解:拍1 2.9-3.4s 体重压右腿,左腿直膝上摆横跨,白毛毛靴绷脚,双手各拎豹纹细带高跟鞋向两侧平展如翼(道具双持);拍2 变装跳剪=3.4s(推测 drop 卡点,硬切无 morph):同一抬腿姿态穿豹纹细带高跟重新入画,脚尖先行点地落下,双臂空手沿原摆动弧线走完——手中鞋"转移"到脚上,变装核心魔术;拍3 3.525-4.15s 落地收势,猫步启动
+- H3:`swinging one straight leg up in a crossed lift with the white fuzzy boot pointed and both hands holding the leopard strappy heels out to the sides like wings, cutting on the drop so the same lifted leg re-enters wearing those heels and lowers toe-first while the empty arms finish the swing arc, then gathering weight into the first catwalk stride`
+- 来源:《豹纹变装》02.9-04.15s
+
+### K256 豹纹直线猫步抓发链(3拍|台步·抓发·直线借位)
+- 入态:猫步第一步启动 → 出态:抓发不放、步频不减、渐暗淡出
+- 分解:拍1 4.15-5.6s 直线借位猫步(机位胸高固定):每步膝部几乎互擦(直线借位),高跟先掌后跟落地,髋随重心左右滚动;拍2 5.6-5.975s 右手抓握右肩前发束一整把拉离颈部;拍3 6.0-7.45s 抓发持续走:步频摆髋不减,手把发束向外拉紧再放松两次(6.85s/7.35s);7.475s 渐暗
+- H3:`catwalking dead straight toward the lens with each knee brushing past the other thigh and the hips rolling over the heels, gripping a full bunch of hair at the right shoulder and tugging it taut twice through the stride while the left arm counters wide, until the fade`
+- 来源:《豹纹变装》04.15-07.45s
+
+**片<v79> 《贴地捡玩具》(居家厨房贴地机位·7.2s·竖屏)**
+- 背景人物:家居厨房/餐边(浅木地板、白柜体),镜头贴地约 20cm 仰角固定;道具红黑迷你玩具车前景。人物:王羽杉——黑色金扣西装大衣+黑色短裙内搭,灰透光泽丝袜,黑漆皮尖头细高跟(红底),金大耳环,栗棕大波浪。实拍(1.6-1.75s 坍坐真实运动模糊、漆皮鞋反光实时变化;腿部拉长磨皮)。
+- 节拍:约 88 BPM(推测·中慢板)。
+- 镜头形态:A 一镜到底(贴地固定机位;6.6s 渐暗)。
+
+### K257 并膝下蹲坍坐悬指链(4拍|蹲姿纪律·贴地机位·眼神反差)
+- 入态:画外入走向玩具 → 出态:贴地坐定、指尖悬停玩具上方、目线压镜头
+- 分解:拍1 0.6-1.2s 贴地机位:灰丝袜小腿+黑漆皮细跟自画左走入,步幅收小停在玩具上方;拍2 技术峰值=1.2-1.5s 并膝优雅下蹲:双膝全程并拢("拍照从不批腿"纪律)屈膝下沉,一手顺势下抚裙摆压住走光点,另一臂前伸;拍3 1.6-1.75s 快速坍坐(全片最快动作、强运动模糊):蹲位直接落坐地面,一手撑地缓冲;拍4 1.85-3.0s 悬指挑逗:右手五指张开悬停玩具上方 3-5cm 小幅摆动始终不触,目线全程压镜头而非看玩具(眼神反差)
+- H3:`walking in over the floor-level lens toward the fallen toy, folding down into a knees-pressed-together squat with one hand skimming the skirt hem down the thigh to hold it, collapsing in one motion-blurred beat to the floor with a palm catching behind her, then hovering splayed fingertips above the toy without touching while the eyes stay locked on the lens`
+- 来源:《贴地捡玩具》00.6-03.0s
+
+### K258 贴地伸腿红底弹踢链(3拍|腿部细节·鞋底语义·贴地机位)
+- 入态:贴地侧坐、左腿长伸 → 出态:回落后再伸、趾尖缓屈、定格至淡出
+- 分解:拍1 4.3-4.55s 贴地侧坐定格:左腿沿地板向画面右下长伸占对角线,大衣下摆铺地成扇面,头倒向镜头;拍2 技术峰值=4.675-4.925s 红底弹踢:左足连小腿快速上撩踢向玩具方向,4.8s 红色鞋底正对镜头闪现一次(鞋底语义=瞬间亮牌);拍3 5.05-6.7s 回落重置:膝弯把腿收回叠好,再重新长伸至镜头前,趾尖约 2 秒一次缓屈缓伸,目线锁镜头;6.6s 渐暗
+- H3:`holding the floor sprawl with one stocking leg laid long toward the lens, flicking that foot up fast so the red sole flashes at the camera, retracting it under her in one bend, then re-extending the long leg with slow two-second toe flexes while the gaze stays pinned on the lens until the fade`
+- 来源:《贴地捡玩具》04.3-06.7s
+
+**片<v80> 《车库百褶》(地下车库 OOTD·11.7s·竖屏)**
+- 背景人物:地下停车场(灰环氧地坪、黄车位线、顶灯管、玻璃隔间、发光出口牌)。人物:王羽杉——黑色修身小高领中袖上衣,灰色百褶迷你裙+黑色双带扣腰带,黑色过膝袜(绝对领域),黑厚底圆头玛丽珍;栗棕大波浪。实拍(车库实景管线/指示牌清晰、硬切无 morph;腿部与袜面 AI 美肤)。
+- 节拍:约 100 BPM(推测·中速)。
+- 镜头形态:C 快剪(4-5 机位:眼高全身→膝高纯腿→上身近景→纯腿)。
+
+### K259 车库交叉步停格链(3拍|台步·入画对焦·停格站姿)
+- 入态:失焦走近 → 出态:X 腿站姿定格、手归位发侧
+- 分解:拍1 0.0-0.375s 失焦入画走向镜头,0.25-0.375s 对焦拉实(焦点先于姿态到位);拍2 0.375-1.75s 走近(眼高固定,车库透视线汇聚):左手插鬓角发内,右臂横抱胸下,厚底玛丽珍步频稳,1.25-1.75s 每步落点越过身体中线成交叉步;拍3 技术峰值=1.875-2.375s 停格:重心坐进后腿,前膝内扣成 X 腿,右手鬓边捻发归位,下颌内收目线抬压镜头;2.375s 硬切大腿机位
+- H3:`walking toward the garage lens out of focus until the pull sharpens, one hand tucked at the temple and the other arm folded under her chest, crossing each step over her center line before dropping the weight into the back leg and knocking the front knee inward for the held X-leg pose with a chin dip`
+- 来源:《车库百褶》00.0-02.375s
+
+### K260 踮脚转踝换向交叉链(3拍|腿部细节·袜品物理·纯腿机位)
+- 入态:腿部特写、小腿交叉站 → 出态:反向再交叉、趾尖剪刀步、微弹收
+- 分解:拍1 9.45-10.2s 纯腿机位(膝高平拍,百褶裙下缘+过膝袜口+厚底鞋三段构图):双腿小腿位交叉,前脚趾尖点地踮起、足跟离地轻颤两下(小腿三头肌提踵),袜口在大腿压出微褶、袜筒跟部随提踵起皱;拍2 技术峰值=10.325-10.95s 转踝画圈:前足足跟落地为轴,踝内旋让脚尖在地面画小弧,膝随之下探加深;拍3 11.075-11.575s 换向交叉:双腿解开向反方向再交叉,前足搭后足脚背上方成剪刀步,膝部小弹收住
+- H3:`in the legs-only cut crossing the shins and rising onto the front toe with the heel lifting to tremble twice, pivoting that heel down to rotate the ankle through a small arc as the knee dips deeper, then uncrossing and re-crossing the other way with the front toe scissored over the instep and one small bounce to settle`
+- 来源:《车库百褶》09.45-11.575s
+
+**片<v81> 《恶劣御姐变装》(御姐摆拍变装·8.2s·竖屏)**
+- 背景人物:室内单机位,米灰竖条纹吸音墙+暖光顶灯带。人物:王羽杉——棕卷发,白框眼镜,黑高领毛衫裙(白方腰扣)+黑红格纹百褶短裙+黑尖头高跟;腿部装束两次变化(裸腿→黑过膝袜双吊带夹→灰透丝袜),结尾手持摘下的眼镜。AIGC:疑似 AI 修形增强(腿异常细长、膝部蜡质);变装本体为真硬切(3.08→3.20s、5.50→5.62s 相邻帧切换,无过渡形变帧)。
+- 节拍:约 95 BPM(推测,慢速 trap/r&b)。
+- 镜头形态:C 快剪(同机位两处跳切,手部掩剪)。
+
+### K261 静位跳切袜变装链(3拍|变装跳剪·同机位·手位掩剪·卡点)
+- 入态:裸腿交叉腿静位摆拍 → 出态:黑过膝袜同姿态静位
+- 分解:拍1 0.0-3.08s 双腿交叉站立(右腿前叠),重心锁死右腿,右手指尖抵下巴、左手背于腰后——纯静位蓄拍;拍2 3.08→3.20s 硬切(8fps 密帧证实相邻帧切换、无过渡形变帧):同机位同景别,裸腿瞬间变黑不透明过膝袜+双吊带夹,手位由下巴滑至鬓角掩剪,交叉腿姿态逐像素复刻;拍3 3.20-5.38s 袜态微摆:肩部呼吸起伏、指尖回落锁骨
+- H3:`holding a static crossed-leg pose with a fingertip at the chin then jump-cutting on a small hand-to-hair move so bare legs instantly reappear in opaque black thigh-highs with garter straps while the identical crossed-leg stance repeats`
+- 来源:《恶劣御姐》03.08-03.20s(蓄拍 0.0-3.08,延展至 05.38)
+
+### K262 二段换袜摘镜收势链(3拍|变装跳剪·道具上手·连续收势)
+- 入态:黑过膝袜抬手位 → 出态:灰透丝袜+手持眼镜收势
+- 分解:拍1 5.38-5.50s 黑袜态右手抬至肩高指尖向上、髋左微顶(蓄切姿势);拍2 5.50→5.62s 第二次硬切:黑袜→灰透丝袜(吊带夹消失),抬手轨迹无缝延续至鬓角——切点藏于指尖到达发丝瞬间;拍3 5.75-6.12s 镜内连续摘镜:右手上行捏住白框眼镜沿颧骨向外平抽,离面后挂指间轻荡,头前倾回正——全片唯一镜内连续动作
+- H3:`jump-cutting mid hand-raise so opaque thigh-highs become sheer grey tights with the raised hand uninterrupted, then continuously sliding the white glasses off the face and letting them dangle from the fingers as the closing beat`
+- 来源:《恶劣御姐》05.50-06.12s
+
+**片<v82> 《高尔夫四宫格》(分屏变装舞蹈·9.3s·竖屏·疑似 AIGC)**
+- 背景人物:同一现代室内(木饰面板墙+黑吊灯),画面 2x2 四分屏,四轨=同一动作时间线四条并行素材。初始四轨同装黑色长袖连体短裤;错拍变装后:浅蓝露肩宽松上衣/灰吊带背心+黑短裤/黑连体+棕腰带(基准轨)/黑吊带交叉背带裙,结尾 BR 轨压轴变酒红高领+灰短裙+黑丝+工牌。AIGC:疑似 AIGC 图生视频四分屏(手部挥动粉色涂抹虚影、面部过度平滑、四轨帧级微不同步);变装为分轨真硬切(2.00→2.12s 相邻帧瞬间换装)。
+- 节拍:约 120 BPM(推测,四轨变装点互差错拍)。
+- 镜头形态:C 快剪(嵌套结构:整片一轨,轨内各自跳切)。
+
+### K263 四宫格错拍跳切变装链(4拍|分屏变装·分轨跳切·错拍卡点)
+- 入态:四轨同装黑连体同步起手 → 出态:四轨四装同框定格(职场装压轴)
+- 分解:拍1 0.0-2.00s 2x2 四轨同装同步:掩口手→双臂向侧下横扫(1.5-1.9s 高速挥臂成粉色涂抹虚影),躯干启动右转;拍2 2.00→2.12s TL 轨硬切:浅蓝露肩宽松长上衣瞬间替换黑连体,转身相位无位移——第一拍变装;拍3 2.12-7.05s 错拍连环:TR 轨先切黑吊带裙再切灰吊带+黑短裤,BR 轨切黑吊带交叉背带裙,BL 轨保持黑连体+棕腰带作基准轨;拍4 7.33-7.67s BR 轨压轴切酒红高领+灰短裙+黑丝+工牌挂绳,四装同框收尾
+- H3:`running four synchronized copies of the same side-turn choreography in a 2x2 grid and jump-cutting each panel into a different outfit on staggered beats — light-blue off-shoulder first, black slip then grey cami with shorts, closing on a burgundy turtleneck office look with a work lanyard`
+- 来源:《高尔夫四宫格》02.00-02.12s(机制主证)、02.12-07.67s(错拍延展)
+
+### K264 挥杆扫臂转身背影杀链(3拍|舞蹈·背影·分屏同步·惯性延续)
+- 入态:掩口手站姿 → 出态:全背面双手后交定格
+- 分解:拍1 1.50-1.90s 掩口手落,双臂合力向右下横扫(高尔夫挥杆式发力:肩胛先行、手腕末端甩出),重心右移;拍2 1.90-4.20s 惯性转身:躯干右转约 90° 经侧对位,胯前顶,四轨同步走完同一弧线;拍3 4.20-7.05s 全背面:双手交叠于体后低处、肩胛收拢,浅蓝轨背部系带在转身惯性中甩出摆动
+- H3:`sweeping both arms down and across like a golf swing so the fast hands blur pink, then carrying the momentum through a side profile into a full back view with hands clasped low behind the body as hair and tie-straps settle from the turn`
+- 来源:《高尔夫四宫格》01.50-04.20s(背影延展至 07.05)
+
+**片<v83> 《杀杀杀》(评论回复变装舞蹈·20.3s·竖屏)**
+- 背景人物:与 w29 同款竖条纹墙板+木地板场景。人物:王羽杉——前期湖蓝色宽松睡衣套装+鲨鱼夹半扎发+十字项链,画面叠后期评论气泡("敢发弄死你"→"给我看看你的手段");变装后黑色蕾丝拼丝绒束身衣+黑色毛呢短裤+白色钻扣腰带、CHANEL 颈链、大圈耳环、金表。AIGC:疑似 AI 增强(皮肤蜡质、腰臀比夸张);变装转场为"撞镜模糊缝合"(5.38-5.62s 全模糊区间换装,判镜内拼接/剪辑缝藏于模糊)。
+- 节拍:约 105 BPM(推测,"杀杀杀"挥砍逐拍对位)。
+- 镜头形态:C 快剪(一处缝合转场,其余单镜舞蹈+摆姿)。
+
+### K265 交叉挥砍杀杀杀舞蹈链(3拍|舞蹈·发力对位·服装物理)
+- 入态:睡衣手扶胯站姿 → 出态:摊手收拍
+- 分解:拍1 3.95-4.20s 右手由腰侧提起,双腕交叠于胸前高位成 X,掌心向外——"杀杀杀"起手;拍2 4.20-4.45s 双肘外展,前臂沿对角线下劈至体侧,发力=肩带+背阔,宽松睡衣袖随劈砍滞后鼓起;拍3 4.45-4.83s 双掌翻为掌心向上于腰前摊开,躯干随节拍小幅左右摆(绿色评论气泡以模糊横条滑入,后期 UI)
+- H3:`crossing both wrists high in front of the chest then slashing the forearms down along diagonals so the loose pajama sleeves billow behind each cut, and flipping palms up to present open hands at the waist while the torso sways on the beat`
+- 来源:《杀杀杀》03.95-04.83s
+
+### K266 撞镜模糊缝合变装链(3拍|变装·撞镜缝合·焦点回落)
+- 入态:睡衣双臂落定中景 → 出态:黑束身衣拉出续舞
+- 分解:拍1 5.00-5.25s 睡衣双臂落至体侧静止(中景全身);拍2 5.25-5.50s 镜头急推撞向胸口:5.38s 全身涂抹模糊→5.50s 深色发块占满画面,运动模糊掩埋剪辑缝;拍3 5.62-6.38s 拉出即换装:黑蕾丝束身衣+短裤+CHANEL 颈链+金饰已穿好,焦点 0.2s 内回位,双手胸前小跳拍打续接——推拉距离物理上不可能镜内完成,判"模糊缝合"
+- H3:`rushing the camera into an extreme close-up of hair and chest so heavy motion blur fills the frame, then pulling straight back to reveal the black lace corset outfit already worn as focus snaps back within a fifth of a second`
+- 来源:《杀杀杀》05.25-05.62s(缝合主证)、05.62-06.38s(续舞)
+
+### K267 拇指下滑抚腿摆姿链(3拍|摆姿·视线引导·腿部线条)
+- 入态:束身衣竖拇指 → 出态:双手膝上并膝站定
+- 分解:拍1 15.40-15.65s 右手竖大拇指于右胸前,肘部架住束身衣上缘;拍2 15.65-15.90s 拇指沿胸口中线向下滑至腰际,四指松开(滑动摩擦引导视线下行);拍3 16.02-16.67s 双手掌心顺大腿前侧下滑停于膝上,双膝并拢微叠,胯向左顶
+- H3:`sliding a thumbs-up gesture down the sternum to the waist then gliding both palms down the fronts of the thighs to rest above the knees as the hips cock left with the weight locked on the right leg`
+- 来源:《杀杀杀》15.40-16.67s
+
+**片<v84> 《从不批腿》(脚部创意转场+并膝摆姿·6.5s·竖屏·混合)**
+- 背景人物:两段。前段:木地板俯拍特写,白罗纹毛线袖套套住小腿足背,红趾甲,绿数据线收纳盒;后段:办公室灰白滚轮椅+条纹墙板,黑蜘蛛印花无袖皮感上衣+黑短裤+过肘皮手套+灰透过膝袜(白袜口)+黑细高跟。AIGC:前段实拍;后段疑似 AI 插帧/增强(5.33s、6.0s 糊化闪烁、袜口与皮肤交界熔化)——全片判混合。
+- 节拍:约 90 BPM(推测)。
+- 镜头形态:C 快剪(线牵引甩镜缝合两段)。
+
+### K268 脚趾按压拉线开篇链(3拍|足部特写·道具操作·蓄力留白)
+- 入态:线盒着地线松弛 → 出态:拉线横贯满绷
+- 分解:拍1 0.00-0.67s 木地板俯拍特写:白色罗纹毛线袖套套住小腿足背,红趾甲的趾腹压住浅绿数据线收纳盒,金属拉线松弛弧线拖地;拍2 0.67-1.67s 趾缝发力:拇趾与二趾夹紧盒盖,足弓下压固定,脚尖沿线滑动拨线——线由松弛转为绷直;拍3 1.67-2.20s 足部出画,只剩绷直银线横贯画面(留白蓄转场)
+- H3:`pressing a mint cable reel flat against the wood floor with painted toes wrapped in a fuzzy knit legwarmer, gripping the lid between the first two toes as the retractable cable pulls taut across the empty frame`
+- 来源:《从不批腿》00.00-02.20s
+
+### K269 线牵引甩镜缝合转场链(3拍|转场·道具牵引·甩镜模糊)
+- 入态:绷直的线 → 出态:线系踝+过膝袜坐姿显影
+- 分解:拍1 2.20-2.45s 绷直线横贯画面,镜头沿线走向横向甩动(线=甩镜轨迹);拍2 2.45-2.83s 甩镜模糊:地面、椅腿、黑丝小腿 0.3s 内拉成斜向涂抹(真实手持甩镜);拍3 2.83-3.00s 显影收点:灰白办公椅上坐定,灰透过膝袜+黑高跟已穿好,线之彼端以粉白绳结"系"在右脚踝——拉线→系踝的道具逻辑闭合
+- H3:`whip-panning along the taut cable so the frame smears across the floor, then settling on her seated on the office chair in grey thigh-highs and black heels as the other end of the cord is now tied around her extended ankle`
+- 来源:《从不批腿》02.20-03.00s
+
+### K270 并膝交腿手套抵唇摆姿链(3拍|摆姿·并膝纪律·微摆)
+- 入态:椅上半躺举腿 → 出态:交腿定格歪头
+- 分解:拍1 3.00-4.80s 半躺椅面,双膝全程并拢抬起,右小腿叠压左小腿(踝交叠而双膝不分开——"拍照从不批腿"纪律语义),黑皮长手套抵下巴;拍2 4.80-5.42s 微摆:胯部随节拍小幅起伏、膝位锁死,仅脚踝沿轴心小旋转;拍3 5.42-6.33s 两次糊化闪烁(疑似 AI 插帧)后定格:交腿不变,头歪向左肩,手套指尖勾住袜口
+- H3:`reclining on the office chair with both knees clamped together and only the ankles crossed, keeping the knee gap closed while the hips pulse on the beat and a long black opera glove rests against the chin until the fingers hook the stocking top`
+- 来源:《从不批腿》03.00-06.33s
+
+**片<v85> 《杭州入夏腿》(POV 拖箱+影子秀·14.5s·竖屏·约 22fps)**
+- 背景人物:户外白天广场/街道,灰砖+黄盲道+回字纹铺装+黄路障,强投影。人物(全程未露脸):红趾甲、裸色绑带平底凉鞋、白花边裙摆+黄花短裙、右手拖黄色 24 寸行李箱、长发(由影子证实)。实拍(真实阴影、行李箱拖动物理、手持抖动,无磨皮与形变)。
+- 节拍:约 110 BPM(推测,轻快 vlog BGM,步频松对位)。
+- 镜头形态:A 一镜到底(手持 POV 连续,中段仅上摇)。
+
+### K271 拖箱 POV 步态链(3拍|POV 行走·道具物理·空间推进)
+- 入态:低头 POV 起步 → 出态:回字纹铺装区连续行走
+- 分解:拍1 0.00-1.02s 低头 POV:左脚先落(红趾甲+裸色绑带凉鞋),右臂垂直拖黄色行李箱,箱体每步磕碰一次地砖(声点物理),白花边裙摆+黄花裙沿画框下缘晃动;拍2 1.02-2.33s 步态周期:右腿蹬地→左腿前摆交替,步幅约 0.7 身位,裙摆随髋滞后半拍扬起;拍3 2.33-5.50s 连续行走:灰砖→黄盲道→回字纹,镜头随步频自然点头
+- H3:`walking forward in a first-person downward view as bare legs in strappy sandals alternate strides, one hand dragging a yellow suitcase that knocks the pavement each step while the ruffled skirt hem sways half a beat behind the hips`
+- 来源:《杭州入夏》00.00-02.33s(周期主证),延展至 05.50
+
+### K272 抬镜影子秀转场链(3拍|转场·无切上摇·剪影构图)
+- 入态:看脚 POV → 出态:影子全身同步行走
+- 分解:拍1 5.50-5.88s 行走中镜头上摇,视线由脚尖转向前方地面,中段迈步无切;拍2 5.88-6.62s 影子渐入:阳光把全身影投上回字纹地砖,镜头上摇至影子全身入画(长发、收腰、拖箱臂剪影);拍3 6.62-14.33s 影子行走展示:影子与真实脚步逐帧同步,行至黄路障小幅绕行,结尾影子站定双手扶箱拉杆
+- H3:`tilting the camera up from the feet to reveal her own full-body shadow stretching across the patterned pavement, then walking so the long-haired suitcase-pulling silhouette strides in sync with the real steps`
+- 来源:《杭州入夏》05.50-06.62s(转场主证)、06.62-14.33s(延展)
+
+**片<v86> 《腿精》(蓝椅变装腿部展示·9.6s·竖屏·疑似 AIGC)**
+- 背景人物:现代客厅,米灰条纹墙板+壁挂 TV+蓝色潘顿式 S 椅(全片唯一道具)。人物:王羽杉——棕长直发+刘海,米白高领紧身上衣不变;下装两次变化:奶白工装阔腿裤+白厚底鞋→金色缎面短裙+裸腿+裸色铆钉缠绕细高跟;开场右手拎黑色 YSL 高跟鞋。AIGC:疑似 AIGC 图生视频——4.50s/7.22s 双重人像叠影、椅影漂移、腿比拉长;变装本体为踢腿掩剪真硬切(2.65→2.77s)。
+- 节拍:约 90 BPM(推测,慢摇)。
+- 镜头形态:C 快剪(三段机位,段间 AI 变形缝合)。
+
+### K273 起身踢腿掩剪变装跳剪链(4拍|变装跳剪·道具转移·踢腿掩剪)
+- 入态:蹲椅持鞋工装裤 → 出态:金裙+铆钉高跟落腿收势
+- 分解:拍1 0.00-2.15s 蹲踞蓝 S 椅座面:米白高领+奶白工装裤+白厚底鞋,右手拎黑 YSL 高跟,左手撩发蓄势;拍2 2.15-2.65s 臀部滑下坐定,双腿向前踢出(鞋底朝镜),手中鞋随下沉荡至膝侧;拍3 2.65→2.77s 硬切(切于踢腿最高帧):工装裤+运动鞋→金缎短裙+裸腿,手中 YSL 鞋"转移"为脚上裸色铆钉高跟,双腿沿同一前伸轨迹落下;拍4 2.77-3.30s 落腿收势:双腿并拢直伸搁椅沿、绷脚尖,鞋跟悬空轻晃
+- H3:`kicking both legs out from the chair seat in white sneakers and jump-cutting at the top of the kick so the cargo pants become a gold satin mini skirt with the held pumps now strapped onto her feet as the legs descend along the same arc`
+- 来源:《腿精》02.15-02.77s(切点主证)、02.77-03.30s(收势)
+
+### K274 举腿 V 位-交腿落姿链(4拍|腿部线条·AI 变形过渡判别)
+- 入态:后仰举腿 V 位 → 出态:正面交腿"腿精"构图
+- 分解:拍1 3.00-4.38s 后仰靠椅,双腿并拢伸直举成 V 位(足跟高于椅背)、绷脚背(侧低机位+椅面高度拉出全腿线,技术峰值);拍2 4.38-4.62s AI 变形过渡帧:4.50s 双重人像叠影、椅沿复制——非真实运动模糊,判 AI 图生视频过渡(与真跳切判别依据);拍3 4.62-5.67s 落姿:双腿沿体前下落成交叠位,上身回正、左手滑至颈侧;拍4 6.85-7.35s 第二次 AI 变形(7.22s 肢体复制鬼影)后切正面全景
+- H3:`reclining to raise both straight legs into a V above the chair back with pointed toes, then lowering through an AI-morphed ghost frame into a knee-over-knee cross with one hand sliding to the neck and the long leg line facing camera`
+- 来源:《腿精》03.00-04.62s(V 位主证)、04.62-05.67s、06.85-07.35s(落姿与二次过渡)
+
+**片<v87> 《纯欲手搓变装》(单镜搓脱变装·6.4s·竖屏)**
+- 背景人物:与 w29/w31 同场景系列(竖条纹墙板+木地板)。人物:王羽杉——棕长发中分,钻链 choker,初始 oversized 白 T(下衣失踪+裸腿);变装后金色香槟亮片网面紧身吊带短裙(预穿在 T 内),左手腕表。AIGC:单镜连续实拍布料操作+重度 AI 美颜;3.40-3.52s 全屏白糊为布料扫过镜头的运动模糊而非 AI morph——密帧证实布料位置逐帧连续。
+- 节拍:约 120 BPM(推测,"搓脱完成"对重拍)。
+- 镜头形态:A 一镜到底(变装在镜内以真实布料操作完成)。
+
+### K275 白 T 搓脱单镜变装链(4拍|单镜变装·布料物理·预穿揭幕)
+- 入态:白 T 下衣失踪站定 → 出态:金亮片裙全裸露+白布罩头
+- 分解:拍1 1.90-2.40s 双手捏住宽松白 T 两侧衣摆向上向外拉——金色亮片紧身裙自 T 内露出上沿(预穿揭幕);拍2 2.40-3.02s 连续上搓:双臂沿躯干卷推衣身,T 恤罩过面部(2.90s 全遮脸),金裙完全裸露,肘外张;拍3 3.15-3.52s 甩头脱出:T 恤自头顶翻脱,白布扫过镜头形成全屏运动模糊(布半透可见身形)——单镜无切,密帧逐帧连续证实布料位置;拍4 3.65-4.15s 白布圈套过头顶落至双肩成披肩,双臂高举过顶 V 形拉伸
+- H3:`gripping the oversized white tee hem and rolling it up the torso over the face to reveal a gold sequin mini dress worn underneath, throwing the shirt off the head in one continuous take so the flying fabric blurs across the lens and lands draped over both shoulders`
+- 来源:《手搓变装》01.90-04.15s
+
+### K276 甩布收势胯摆链(3拍|收势·服装物理·卡点定格)
+- 入态:白布披肩双臂高举 → 出态:右手提布胯摆定格
+- 分解:拍1 4.15-4.65s 白披肩自双肩向右臂滑脱,右肘下沉接布、左手落至腰侧;拍2 4.65-4.90s 右手收布成团垂于体侧,肩线回正;拍3 4.90-6.00s 定格收势:金裙胯部随节拍左右小摆两次,右手提布轻晃,choker 与裙面钻光收尾
+- H3:`sliding the white shirt off both shoulders down the right arm to gather it in one hand at the side, then swaying the hips twice in the gold sequin dress as the closing pose`
+- 来源:《手搓变装》04.15-06.00s
+
+**片<v88> 《黑丝纯欲》(御姐摆拍·7.97s·竖屏)**
+- 背景人物:现代开放厨房/吧台区——深色大理石岛台、暖黄灯带、微波炉+奶油色水壶、深灰双开门冰箱、绿帘。人物:王羽杉——红棕大波浪+空气刘海;黑色紧身无袖高领上衣+黑色双排扣腰带短裙+灰紫油光裤袜+黑漆皮红底细高跟;金手镯金表水滴耳环;墨镜与透明框眼镜轮换。AIGC:真人实拍+重度美颜美体,非全 AIGC(手部五指正常、厨房道具几何与镜面反射稳定;腿长/腰臀比切点前后突变=拉腿液化);8fps 密帧证实全部姿态切换为硬跳切、无 AI 渐变形帧。
+- 节拍:~75-90 BPM 慢速律动(推测,切点 1.1/2.2/3.1/4.5/6.5s 落拍不规则)。
+- 镜头形态:C 快剪(同景 5 段固定机位跳切)。
+
+### K277 吧台坐姿交叉腿甩发链(3拍|御姐摆拍·定妆开场·发浪惯性)
+- 入态:端坐吧台沿、右腿叠左腿、头左倾蓄力 → 出态:发落披肩、双臂侧下延展定妆
+- 分解:拍1 0.00-0.33s 颈部发力向左甩头,发浪自右肩抛出,右手抬至发根借力——先转头带发;拍2 0.33-0.67s 发浪惯性越过左肩继续左前弧线(技术峰值:发梢扬至肩上 30cm),右臂向体侧下打开,叠腿与坐骨锚点纹丝不动——发力只在上半身;拍3 0.67-1.05s 发丝回落披散,双臂落至台面高度指尖向外延展,下颌回正对镜,墨镜反光定格;回收顺序"先臂后头再视线"
+- H3:`sitting on a marble kitchen island with legs crossed, whipping long auburn hair from right to left in a slow arc while both arms extend down to the countertop and settle into a glam pose`
+- 来源:《黑丝纯欲》00.00-01.05s
+
+### K278 跳切换姿五连机制链(6拍|御姐摆拍·同装跳切·眼镜轮换)
+- 入态:坐姿定妆 → 出态:抱膝坐定妆(第五站)
+- 分解:拍1 1.05→1.18s 硬切 A(8fps 主证):坐姿→台面青蛙跪,墨镜→透明框眼镜同步换款,切点前后无过渡帧;拍2 1.18-2.20s 跪姿单手扶红底鞋跟、回眸看镜;拍3 2.20→2.33s 硬切 B:跪→侧卧台面,双腿向镜头纵深伸展;拍4 3.10→3.33s 硬切 C:侧卧→背身站立抬手拢发;拍5 4.50→4.67s 硬切 D:站→台面深蹲;拍6 6.40→6.67s 硬切 E:深蹲→抱膝坐收尾——五段同装同景,仅姿态/景别/眼镜款轮换,变装机制=纯后期跳切;音乐触发:各切点落慢鼓拍(推测)
+- H3:`jump-cutting through five static glam poses on one kitchen counter — seated, kneeling, side-lying, standing and deep squatting — swapping tinted sunglasses for clear frames on every hard cut while the black outfit stays identical`
+- 来源:《黑丝纯欲》01.05-01.18s(机制主证)/02.20-02.33s/03.10-03.33s/04.50-04.67s/06.40-06.67s
+
+### K279 深蹲拢发放落链(4拍|御姐摆拍·发型打开·俯仰角切换)
+- 入态:台面深蹲双膝外展、双手举顶 → 出态:单手扶膝、俯视镜头定妆
+- 分解:拍1 4.67-5.00s 双手举过头顶十指插发向后拢(肱三头肌上举),重心沉进红底鞋跟;拍2 5.00-5.33s 指根松开发团凭重力垂落,头主动左偏让发从右侧泻下——技术峰值:发瀑展开瞬间;拍3 5.33-6.00s 右手捋发到胸前把玩,左手下滑扶膝,躯干前倾;拍4 6.00-6.40s 手落膝侧,视线由俯视转直视镜头定格
+- H3:`squatting on the countertop in stiletto heels, gathering her hair overhead with both hands then releasing it to cascade down while one hand slides to the knee and the torso leans into the camera`
+- 来源:《黑丝纯欲》04.67-06.40s
+
+**片<v89> 《我的发》(御姐遮手变装·5.2s·竖屏)**
+- 背景人物:素色木纹墙单景。人物:王羽杉——红棕长卷发;段一碎花黑底睡衣套装+CHANEL 字母颈链;段二黑色蕾丝束胸衣+钻扣大腰带黑短裤+裸腿;颈链贯穿两段。烟雾贴图自胸口升起。AIGC:真人实拍+美颜+后期贴图(烟雾/暗角/模糊脉冲),非全 AIGC(睡衣花纹帧间稳定;烟雾层边缘发硬且不遮挡颈链=贴图证据;变装 1.425s 仍睡衣、1.55s 已束衣,无混合帧)。
+- 节拍:~100-110 BPM(推测,切点 1.5s、脉冲 3.7s)。
+- 镜头形态:C 快剪(2 镜+贴图特效)。
+
+### K280 拢发遮手跳切变装链(4拍|遮手变装·明暗掩护·衣料物性突变)
+- 入态:碎花睡衣松身正面站 → 出态:黑蕾丝束胸衣+钻扣短裤,手已举过头顶
+- 分解:拍1 0.00-0.67s 睡衣垂坠态双臂自体侧抬至肩高、掌心朝前,袖口花边随腕抖动;拍2 0.67-1.00s 右手横扫过面前(遮脸手位=遮挡物就位),左手向左下甩出,袖口拖出残影;拍3 1.00-1.425s 右手停在发际撩发、左手落胯侧,肩线随呼吸起伏——遮挡窗口开启;拍4 1.425→1.55s 硬切变装(8fps 主证):碎花睡衣→黑蕾丝束胸衣+短裤,背景亮度突降+暗角压边+烟雾贴图升启,手位"撩发→举过头顶"无缝衔接,衣料物性瞬间由松坠变紧贴——机制:手部遮挡+明度差掩护的真跳切
+- H3:`sweeping one hand across the face in an oversized floral pajama set and jump-cutting mid-gesture into a black lace corset with rhinestone-buckled shorts as the background darkens and smoke drifts in`
+- 来源:《我的发》01.425-01.55s(机制主证)/00.00-01.425s(进入路径)
+
+### K281 手扶头烟雾定妆+模糊脉冲链(3拍|御姐摆拍·烟雾贴图·节拍失焦)
+- 入态:变装落地、手举头顶 → 出态:同位定妆收尾
+- 分解:拍1 1.55-2.67s 左肘架起手背贴发顶(遮阳定妆位),右臂垂持细带,烟雾贴图沿胸前上升扩散,腰胯 0.3s 周期小幅左右摆——以静制动;拍2 3.55-3.85s 全画失焦脉冲:0.3s 内模糊峰值后回焦,姿态保持连续(拼条验证:模糊无位移跳变)——脉冲为后期特效非切点;拍3 3.85-4.87s 烟雾渐散,发量视觉增厚(液化),骶骨微顶定格;音乐触发:模糊脉冲对齐副歌重拍(推测)
+- H3:`holding one hand over the head like a salute while smoke drifts across the chest and the hips sway subtly, the whole frame briefly pulsing out of focus on the beat before sharpening back into the pose`
+- 来源:《我的发》03.55-03.85s(脉冲主证)/01.55-04.87s
+
+**片<v90> 《桌子底下有什么》(反差梗合成·4.87s·竖屏)**
+- 背景人物:木格栅墙+暖光带房间,白色雕塑椅,低机位仰拍。人物(同一人两 shot 合成):前景=灰紫油光裤袜+黑漆皮红底高跟双腿;背景/正面=白色泡泡袖短外套+黑抹胸包臀裙+黑透丝+黑高跟+无框眼镜+黑皮文件夹+签字笔。AIGC:真人双机位合成(抠像拼接)+美颜拉腿,疑似 AI 抠像辅助,非全 AIGC——1.45s 背景空椅→1.575s 失焦层中人物淡入(125ms 内不可能真人走入)、前景腿在地板上无接触阴影、巨腿与背景人物比例违反透视(梗设计)。
+- 节拍:~100 BPM(推测,揭秘 1.5s、切正面 2.7s)。
+- 镜头形态:C 快剪(2 真实镜头+合成层)。
+
+### K282 低机位入场走腿链(4拍|腿精入场·超低仰角·红底闪现)
+- 入态:低机位空景(白椅+暖光带) → 出态:双腿跨立满框
+- 分解:拍1 0.00-0.33s 地面仰拍空景定场:白色雕塑椅居中,画面顶端只露红底鞋尖(画外入画);拍2 0.33-0.67s 左腿入画一步跨过机位上方,鞋底红底正对镜头闪现(技术峰值:红底占屏瞬间);拍3 0.67-1.00s 右腿落地并步,小腿拉长比例占满画幅 2/3,鞋跟触地落点即拍点;拍4 1.00-1.45s 双腿左右分开站定,裤袜高光随腿转动呈竖条流动
+- H3:`filming from floor level as glossy grey-stockinged legs in red-soled stiletto heels stride into the empty room and settle into a wide stance filling the frame`
+- 来源:《桌子底下》00.00-01.45s
+
+### K283 巨腿框景揭秘接面试官坐姿链(5拍|框景合成·焦点牵引·反差揭秘)
+- 入态:双腿跨立框住空椅 → 出态:正面坐姿持笔抵唇定妆
+- 分解:拍1 1.45-1.575s 前景双腿纹丝不动,背景空椅清晰;拍2 1.575-1.825s 焦点自前景腿拉向纵深,失焦中"坐姿人物层"淡入(白外套+黑包裙+黑透丝),前景腿退为虚化边框——合成层借失焦掩护淡入,125ms 内完成(合成主证),地板上前景腿无接触阴影;拍3 1.825-2.35s 背景人物跷二郎腿、右手抬笔、左手持黑皮文件夹,巨腿框景构图成立(比例违反透视=梗本体,技术峰值);拍4 2.35→2.8s 硬切正面:同一人坐白色雕塑椅、腿交叠、笔尖抵唇;拍5 2.8-4.87s 笔从唇边移开、向外摊手示意,头微歪定格;音乐触发:揭秘与切点均落重拍(推测)
+- H3:`keeping two giant stockinged legs as a foreground frame while focus racks to reveal the same girl sitting far behind on a white chair, then cutting frontal to her seated interview pose tapping a pen against her lips`
+- 来源:《桌子底下》01.575-01.825s(合成淡入主证)/02.35-02.8s(硬切)/02.8-04.87s
+
+**片<v91> 《后裔摇》(旗袍摇·10.63s·竖屏)**
+- 背景人物:红墙红地纯色房间(唯一背景),固定平视机位。人物:王羽杉——黑长发及腰;无袖黑蕾丝提花短旗袍裙(挂脖钥匙孔领、裙摆不规则)+黑丝袜+高跟;垂坠耳环。AIGC:真人实拍+重度美颜美体(体型液化),非全 AIGC——红墙/地角线几何稳定、转身连贯真动;蕾丝花纹贴附局部游移(液化贴图不稳)、腰臀比帧间突变;0s 与 2.67s 全画模糊为后期脉冲特效(模糊内含连续动作轨迹,非切点)。
+- 节拍:~120 BPM(推测,顶胯约 0.25-0.3s/次=半拍律动)。
+- 镜头形态:A 一镜到底(带后期模糊脉冲)。
+
+### K284 背影顶胯转身甩发链(5拍|旗袍摇·背影开场·180 度转体)
+- 入态:背身站立双手垂 → 出态:正面站定双臂垂
+- 分解:拍1 0.33-1.00s 背影:双手裙后捏住蕾丝裙摆向外轻拉,骨盆左右顶胯各一次(0.3s/次)——先摆胯后转体;拍2 1.00-1.30s 左手松裙抬至腰侧,头部先行左转带动发梢(转身顺序:头→肩→髋);拍3 1.30-1.675s 原地左后转体,右脚跟为轴,长发甩出弧面盖住侧脸(技术峰值:发浪遮脸瞬间);拍4 1.675-2.05s 转完面朝镜头,发浪惯性继续左前飘再回落,挂脖钥匙孔领露出;拍5 2.05-2.2s 双臂垂落体侧站定;服装物理:蕾丝层随顶胯局部纹理游移(液化痕迹);音乐触发:转体起点对齐小节首拍(推测)
+- H3:`starting with a back-view hip pop while gripping the hem of a sheer black lace qipao dress, then pivoting 180 degrees on one heel with long hair whipping around to face the camera`
+- 来源:《后裔摇》00.33-02.2s(8fps 01.30-02.30s 逐拍验证)
+
+### K285 遮眼摇胯后裔摇标准件(3拍|后裔摇·锚定上肢·骨盆半拍律动)
+- 入态:正面站定 → 出态:手落肩高转体衔接
+- 分解:拍1 2.2-3.0s 右臂屈肘上举、手掌横遮眉弓(招牌遮眼位),肘尖斜上——上肢锚定即入位;拍2 3.0-6.33s 核心循环 8-10 拍:双膝内扣微屈充当弹簧,骨盆左右交替顶出(每拍约 0.25-0.3s),顶左时左腿承重右膝松、顶右反向,上半身与遮眼手完全锁定,仅髋部横移约±15°——技术峰值在第 4-5 拍胯幅最大;拍3 2.67s 与 5.9s 前后两次全画失焦脉冲(0.2-0.3s),模糊中胯部摆动轨迹连续可见——脉冲为特效非切点;镜头几何:固定平视、膝上裁构放大髋部位移;音乐触发:每顶胯踩半拍(推测 120BPM)
+- H3:`performing the signature hand-over-brow hip sway dance, popping the pelvis alternately left and right on each beat while bent knees act as springs and the upper body stays locked in the salute pose`
+- 来源:《后裔摇》03.00-06.33s(循环主证)/8fps 04.30-05.30s 逐拍验证
+
+### K286 点胸拳平指摆臂收尾链(6拍|后裔摇·手臂组合·定格收尾)
+- 入态:遮眼位 → 出态:单手扶顶、胯右送定妆
+- 分解:拍1 6.33-6.67s 右手自眉弓下落至肩高——回收遮眼位;拍2 6.67-7.33s 双臂体侧钟摆式大幅摆荡(先左后右),躯干反向微倾对冲;拍3 7.33-8.00s 右臂屈肘拳心朝内轻点胸口锁骨下两次,头随点动微颔;拍4 8.00-8.67s 右拳变掌向右侧平摊推出再收回,胯同步右送;拍5 8.67-9.0s 双手收至胸前指尖朝上猫爪抖动,9.0s 一次全画模糊脉冲(特效);拍6 9.0-10.33s 左手举顶扶发、右臂垂落,重心右移胯顶住,头低垂看斜下方定格收尾;音乐触发:点胸双下对齐鼓点双跳(推测)
+- H3:`dropping the salute hand into a pendulum arm swing, tapping the collarbone twice with a loose fist, flashing one flat palm sideways, wobbling cat-paw hands at the chest and finishing with one hand on top of the head and hips pushed right`
+- 来源:《后裔摇》06.33-10.33s
+
+**片<v92> 《强者出片》(洗手间摆拍快剪·10.37s·竖屏)**
+- 背景人物:公共洗手间——白瓷砖墙地、镜墙、洗手台、格间门。人物:王羽杉——黑高领紧身短袖上衣+黑牛仔超短裙+灰黑透丝+黑漆皮红底高跟;白色挂绳工牌(卡片无清晰文字=道具)。AIGC:真人实拍+重度美颜拉腿+后期转场贴片,非全 AIGC(镜面反射几何正确、地板砖缝透视一致;工牌文字糊化、1.35-1.475s 方向性模糊内背景砖缝拖影=后期贴片证据)。
+- 节拍:~85-95 BPM(推测,甩镜 1.35s、黑场 8.4s 落重拍)。
+- 镜头形态:C 快剪(7 站点硬切)。
+
+### K287 甩镜模糊快剪摆拍机制链(7拍|环境摆拍·双掩护转场·七站点)
+- 入态:走廊甩发侧身定位 → 出态:镜前地板跪坐收尾
+- 分解:拍1 0.00-1.22s 白砖走廊侧身甩发定位;拍2 1.22→1.60s 甩镜转场 A(8fps 主证):1.35-1.475s 两帧强方向运动模糊覆盖硬切,从走廊位跳至镜墙拐角位——背景砖缝拖影而人物姿态直接换位,证实模糊为后期贴片掩护真跳切;拍3 1.60-3.00s 拐角站姿:右腿屈膝抬起、手举额侧;拍4 3.00→4.33s 硬切:台前深蹲→台面坐跷腿;拍5 5.33-6.33s 硬切:地板背镜坐,双腿向斜下伸展、镜中倒影成双影;拍6 6.33-8.33s 站回镜前背镜半转身,双手捏高领拉链下拉(唯一连续动作段);拍7 8.33→8.67s 压暗过渡 B:0.25s 后切至墙角跪坐,镜面反射完整,定格收尾——机制:七站点全硬切,两种掩护=方向模糊贴片+压暗,转场落点均在重拍(推测)
+- H3:`jump-cutting through seven restroom photo stations — hair-flip entrance, wall lean, deep squat, counter sit, floor sit against the mirror, back-to-mirror zipper pull and final floor crouch — with whip-blur overlays and quick dips to black masking each hard cut`
+- 来源:《强者出片》01.22-01.60s(甩镜主证)/08.33-08.67s(黑场主证)/03.00-08.33s(站点多时间码)
+
+### K288 背镜拉衣跷腿摆链(4拍|镜面双影·拉领细节·重心锚定)
+- 入态:背对镜子半转身 → 出态:拉链下拉定妆
+- 分解:拍1 6.33-6.67s 背对镜站立,躯干右转 3/4 朝镜,双腿膝下交叉;拍2 6.67-7.33s 右手捏住高领中缝向下拉拽约一掌宽,领口撑开锁骨露出,头后仰配合——技术峰值:拉拽最低点;拍3 7.33-8.00s 松领,手沿身侧下滑至胯侧,胯左顶,膝部交叉角度加深;拍4 8.00-8.33s 保持交叉腿微调重心,镜中倒影全程镜像同步;服装物理:高领弹力布随下拉产生横向褶皱、松手回弹
+- H3:`standing back to the mirror with legs crossed at the shins, tugging the mock-neck zipper down a hand width while tilting the head back, then releasing it and cocking the hip toward the mirrored double reflection`
+- 来源:《强者出片》06.33-08.33s
+
+**片<v93> 《哇咔哇咔杀回来了》(元气啦啦队·9.97s·竖屏)**
+- 背景人物:素色木纹墙+浅木地板练习室,固定机位。人物:王羽杉——黑棕长发半扎;白蓝阿根廷球衣裁短款(胸前 Footba…/背后 10 号)+墨绿白竖条百褶超短裙+白色三道黑杠长筒袜+白运动鞋;金色手镯+黑手绳。AIGC:真人实拍+重度美颜,非全 AIGC(背景墙地纹理稳定、转身/拍手连贯自然;裙褶数量帧间不守恒=布料贴图游移、腿比超模化)。
+- 节拍:~120-127 BPM 热舞曲(推测,拍手即拍点)。
+- 镜头形态:A 一镜到底(首尾淡入淡出)。
+
+### K289 背身入场原地回旋链(4拍|元气风·裙摆离心·素景回旋)
+- 入态:背身站立(虚焦淡入) → 出态:正面开手站定
+- 分解:拍1 0.00-0.33s 全画虚焦淡入清晰:背身站,裁短球衣背后 10 号可见;拍2 0.33-0.67s 以左脚为轴原地左后回旋,长发随转向左前方甩出弧面;拍3 0.67-1.00s 转体过 3/4 相位,百褶裙摆随旋转离心展开一瞬(技术峰值:裙摆最大张角),右手向体侧微张;拍4 1.00-1.30s 正面朝镜,双臂自体侧张开半掌宽,发落肩,微笑定妆;音乐触发:回旋起点对齐前奏鼓入(推测)
+- H3:`fading in from blur standing back to the camera in a cropped Argentina jersey and pleated mini skirt, then spinning 180 degrees in place with the hair swinging and arms half-opening into a front-facing cheer pose`
+- 来源:《哇咔哇咔》00.00-01.30s(8fps 0.50-1.30s 逐拍验证)
+
+### K290 拍手斜举哇咔摇摆链(7拍|元气热舞·拍手即拍·一镜到底)
+- 入态:正面开手站定 → 出态:双手胸前合十收尾(渐黑)
+- 分解:拍1 1.30-2.00s 双臂体侧摆荡两下,膝部屈-伸-屈弹动;拍2 2.00-2.50s 双手向内交叉相拍合于左肩上方(拍手 1),躯干左倾,合掌沿对角线滑向右肩(拍手 2)——技术峰值:斜举合掌;拍3 2.50-3.33s 合掌胸前小幅上下搓摩三次,肘部架平;拍4 3.33-6.33s 循环组"开掌-交叉拍-斜举滑掌"×2-3 轮,百褶裙摆随胯摆出波浪,白袜黑杠随膝弹;拍5 6.33-7.67s 双掌摊开体侧耸肩摆,掌心朝上挑腕两次;拍6 7.67-9.0s 双手举至脸侧猫爪抖动,再变 OK 手势左右各一次;拍7 9.0-9.33s 双手合十收于胸前,渐黑淡出;音乐触发:拍手即拍点(推测 120-127BPM)
+- H3:`dancing the waka-waka cheer combo in one continuous take — clapping palms diagonally over each shoulder, rubbing clasped hands at the chest, shrug-swaying with open palms, wiggling cat paws and OK-signs beside the face before closing with hands together`
+- 来源:《哇咔哇咔》02.00-03.33s(拍手主证)/06.33-09.33s(手势组)
+
+**片<v94> 《红色高跟鞋》(卡点变装·6.23s·竖屏)**
+- 背景人物:深灰木格栅墙+条形暖光灯+木地板。人物:王羽杉——红棕长卷发;段一米白罗纹高弹连体衣裸足(红甲油);段二黑底奶油斜纹抹胸包臀超短裙+灰透丝裤袜/黑过膝长筒袜交替+黑高跟;大圈耳环+项链。AIGC:真人实拍+美颜+硬切卡点剪辑,非全 AIGC(裸足持鞋手部/足部互动物理合理、鞋底红底连续;袜类切换全部为硬切;腿比夸张系液化)。
+- 节拍:~100 BPM(推测,变装 2.05s、袜切 2.65/3.7/5.2s 踩军鼓)。
+- 镜头形态:C 快剪(3 镜+袜类交替跳切)。
+
+### K291 裸足持鞋逗鞋链(5拍|道具互动·裸足开场·鞋即主角)
+- 入态:背身裸足单手持鞋 → 出态:鞋贴脸颊、指尖敲鞋头
+- 分解:拍1 0.00-0.33s 背身站,米白罗纹连体衣裸足,右手拎黑红底高跟鞋于胯侧——道具先于动作入画;拍2 0.33-0.67s 左后转体带发浪,双手各持一鞋向两侧摊开示物;拍3 0.67-1.00s 右鞋提至右颊旁、鞋尖朝上红底正对镜头,头向左让位(技术峰值:鞋贴脸构图);拍4 1.00-1.33s 鞋跟轻点锁骨窝,视线顺鞋身下移再抬眼看镜;拍5 1.33-1.6s 双鞋并至左手,右手食指中指并拢在鞋头轻敲两下;音乐触发:敲鞋对齐打击乐(推测);鞋的红底为全片唯一高饱和色块
+- H3:`turning around barefoot in a cream ribbed catsuit holding a pair of red-soled pumps, kissing one shoe against the cheek and tapping its toe with two fingers like a playful prop tease`
+- 来源:《红色高跟鞋》00.00-01.6s
+
+### K292 抬腿甩鞋遮切变装+袜类交替卡点链(8拍|动作遮掩变装·袜类卡点·同装异袜)
+- 入态:双手双鞋并举 → 出态:抱臂交叉腿定妆
+- 分解:拍1 1.60-2.00s 右腿裸足屈膝上提(火烈鸟位),双鞋向两侧甩开带残影——遮挡窗口开启;拍2 2.00→2.125s 硬切变装(8fps 主证):连体衣裸足→黑条纹抹胸包臀裙+灰透丝+高跟已穿,抬腿相位衔接为交叉腿站姿、手位延续——动作遮掩真跳切;拍3 2.125-2.65s 交叉腿左右重心各移一次;拍4 2.65s 硬切换袜:灰连裤袜→黑过膝长筒袜(袜口大腿中段露腿根);拍5 3.0-3.7s 长筒袜版抱臂交叉腿定格两拍;拍6 3.7s 硬切回灰连裤袜版同姿;拍7 5.2s 再切长筒袜版提腿一拍;拍8 5.2-6.2s 切回连裤袜版,双臂抱胸、胯左顶、头右歪定格收尾——机制:同裙装+两类丝袜交替即"卡点换装"(2.65/3.7/5.2s 三切点),全部硬切;音乐触发:每次切袜踩军鼓重拍(推测)
+- H3:`lift-kicking one bare leg while swinging both shoes wide and jump-cutting into a striped bandeau mini dress with heels on, then hard-cutting on every snare between sheer grey pantyhose and black thigh-high stockings while the pose carries over`
+- 来源:《红色高跟鞋》02.00-02.125s(变装主证)/02.65s、03.7s、05.2s(袜类交替多时间码)
+
+**片<v95> 《请选择你的主队》(世界杯啦啦队 AI 变装·9.4s·竖屏)**
+- 背景人物:会议室式白墙+灰地毯,墙挂大电视循环播放足球比赛回放(屏显"央视频/小红书/回放"角标、记分牌、场边 McDonald's 广告牌)。人物:AI 御姐模特,红棕长卷发挑染,5 套球衣啦啦队装(①蓝白条纹 10 号抹胸+白百褶裙+蓝条纹白过膝袜 ②黄绿条纹短袖+黄裙绿腰封 ③白短袖+蓝白百褶裙 ④红蓝 Football 印花短袖+红蓝百褶裙 ⑤蓝一字肩+黑短裙),全程白色三条纹板鞋;道具:足球随变装换色。AIGC:疑似 AI(高)——球衣号码/广告牌/记分牌文字乱码、球面 logo 跨帧熔变、皮肤蜡质、腿比拉长。
+- 节拍:≈128 BPM(推测;4 次变装点 2.0/3.8/5.6/7.7s,间隔≈1.85-1.9s)。
+- 镜头形态:A 一镜到底(换装全部由生成端形变完成,无真切口)。
+
+### K293 肩球换手展示摇(4拍|啦啦队·道具锚定·骨盆横移)
+- 入态:侧身站定、球压左肩 → 出态:右手托球前伸展示、重心回正
+- 分解:拍1 0.0-0.7s 双脚并拢锚定,左臂屈肘把黑白足球压在左肩峰,髋部小幅左右摆预热;拍2 0.7-1.4s 重心左→右转移,左臂伸直让球沿体侧滚落至左手托住,髋随重心横移约±10°,百褶裙随摆扬起滞后半拍回落;拍3 1.4-2.0s 左手把球平举胸前贴手递向右侧,右手接球水平右伸至肩宽外、掌心托球面朝镜头,头右转追球——技术峰值为贴手滚递水平线;拍4 右臂屈肘收球至肩,身体回正,髋部两次递减摆吸收惯性;复现:03.90-05.50s、06.00-07.60s 同链异装
+- H3:`standing with a soccer ball resting on the shoulder, rolling it down the arm and passing it across the body to the other hand while swaying the hips on each beat, then presenting the ball toward the camera as the head follows it`
+- 来源:《请选择你的主队》00.00-02.00s / 03.90-05.50s / 06.00-07.60s
+
+### K294 抛球落手摆胯(3拍|啦啦队·抛接停顿·屈膝缓冲)
+- 入态:双手托球胸前 → 出态:球合抱落回腰前、屈膝弹回中
+- 分解:拍1 2.8-3.0s 双手把黄蓝足球向上轻抛离手约 0.3m,双臂上送、提踵;拍2 3.0-3.3s 球悬最高点(半拍停顿),双臂上举迎球,视线锁球,髋同步向左顶出;拍3 3.3-3.7s 球落入胸前双手合抱缓冲,膝盖微屈弹一次、骨盆回中
+- H3:`tossing a soccer ball overhead with both hands and catching it at the chest on the next beat while popping the hip to one side, knees bouncing softly to absorb the catch`
+- 来源:《请选择你的主队》02.80-03.70s
+
+### K295 旋糊/瞬换/白光三式变装机制链(5拍|AI 变装机制·同机位换装)
+- 入态:上一套服装结束姿势 → 出态:下一套服装同机位新姿势
+- 分解:拍1 1.95-2.10s 变装①旋身糊:左脚为轴原地快速旋身 180-360°,手臂收拢减小转动惯量,整帧被定向涂抹模糊覆盖,服装与球在糊内同步换色,背景屏幕内容随糊切换——模糊为生成涂抹而非真实快门拖影;拍2 2.10-2.20s 糊散出态,跨糊姿态跳变,无任何布料过渡帧;拍3 3.75-3.90s 变装②瞬换:相邻两帧服装+球+屏幕内容直接替换,身体姿态近乎连续,判定生成端硬切;拍4 5.55-5.95s 变装③二次旋糊,方向与①相反;拍5 7.60-7.80s 变装④白光竖条纹涂抹:全身被过曝白色纵向拉丝吞没再显影为蓝一字肩+黑裙抱球——技术峰值:四式机制统一实现"同机位零切口连续换装"
+- H3:`snapping into a new outfit through a single-frame motion-blur whip spin, an instant silent swap, and a white-out vertical smear while the camera stays frozen and the pose jumps across the blur`
+- 来源:《请选择你的主队》01.95-02.20s / 03.75-03.90s / 05.55-05.95s / 07.60-07.80s
+
+**片<v96> 《辣妹球衣》(天台球衣摆拍·10.0s·竖屏·AI 中高)**
+- 背景人物:城市高楼天台,玻璃栏板+灰石地+藤边日床,远景城市天际线。人物:棕褐长卷发,蓝色 oversize 球衣(QATAR AIRWAYS 胸印+背面 10 号),牛仔短裤、白色三条纹板鞋,卧姿段赤足。AIGC:疑似 AI(中高)——背面 10 号印刷上缘粘连变形、发丝与衣料/手指蜡质融合、腿身比极端、靠垫边缘跨帧微漂移;正面字母清晰,不能完全排除真人重度美颜。
+- 节拍:≈100 BPM(推测;切点间隔 2.2-4.5s,弱拍感摆拍)。
+- 镜头形态:C 快剪(低角仰拍卧姿→侧坐→正面中景→远景背影→站立→床沿坐,真跳切约 1.25/2.15/5.85/8.45s)。
+
+### K296 卧起撩发锁骨点摆拍链(3拍|天台摆拍·核心侧屈·发丝惯性)
+- 入态:低角仰躺日床手扶发 → 出态:侧坐指尖点锁骨目视镜头
+- 分解:拍1 0.0-1.2s 仰躺日床,双腿向画面左下伸直叠放,左手插发根托头、右手搭腹,下颌微收看镜(核心侧屈+头部自重);拍2 1.3-2.2s 腹肌发力缓慢撑起过渡侧坐,右手滑出发间经颈侧停在锁骨、指尖随拍轻点两下,发丝因起身惯性甩过肩落胸前;拍3 2.2-5.8s 坐姿循环:右手过顶绕后脑撩发→下移遮眉弓→五指插回发根侧拉一缕松手回弹,同步骨盆小幅摆;oversize 球衣下摆随起身从大腿滑至臀线
+- H3:`lying back on a daybed with one hand buried in the hair, slowly sitting up to a side perch tapping the collarbone on the beat, then looping overhead hair lifts and side hair pulls with gentle pelvic sway`
+- 来源:《辣妹球衣》00.00-05.80s
+
+### K297 背影甩发转身埋发链(3拍|天台摆拍·W 框肘架·半拍骨盆)
+- 入态:全背影球衣 10 号对镜 → 出态:正面双手埋发定格、床沿坐姿收尾
+- 分解:拍1 5.90-6.30s 全背影站玻璃栏前,长发全披,髋左右小幅摆让衣摆轻晃;拍2 6.30-6.60s 切正面半侧身,双手插进两侧发根向外翻开花,下颌右偏看镜(肩带外展+腕翻转);拍3 6.60-8.40s 双手留发中,指尖沿发缕下滑至肩再回耳后循环 2-3 次,膝内扣微屈当弹簧、骨盆每拍交替顶出(±10°)——技术峰值:肘尖外撑的 W 形框发构图;尾镜 8.47-10.00s 真跳切床沿并膝坐,手叠膝静态微晃收场
+- H3:`standing back to the camera in an oversized jersey, flipping to face forward with both hands buried in the hair, fingertips sliding down the strands and back while the pelvis pops side to side, closing on a kneed perch with hands folded`
+- 来源:《辣妹球衣》05.90-08.40s / 08.47-10.00s
+
+**片<v97> 《蓝裙氛围感》(蓝蕾丝户外氛围摆拍·9.1s·竖屏·AI 高)**
+- 背景人物:户外园区,蕨类灌木+灰步道+景观岩石+苔藓绿墙+紫花境,远景玻璃幕墙办公楼。人物:深棕长卷发,宝蓝蕾丝透视抹胸长裙(腰际挖空、细金链交叉背带、裙身堆叠大腿),金链颈饰、绿松石耳坠、裸色高跟。AIGC:AI(高)——腰臀腿比例超人体极限、蕾丝与皮肤纹理互融、裙堆无重力垂坠、0.55-0.95s 白糊涂抹形变跨姿态跳变。
+- 节拍:≈110 BPM(推测)。
+- 镜头形态:C 快剪(背身跪→旋转 90°躺石→正面站→旋转跪弓→岩面侧坐→跪蹲,6 机位硬切,含 1 处涂抹形变)。
+
+### K298 背身跪姿顶胯撩发链(4拍|蓝裙氛围·背身 S 曲线·涂抹形变)
+- 入态:白糊中显形背身跪 → 出态:单臂侧伸、臀后翘定格
+- 分解:拍1 0.00-0.30s 涂抹模糊中显形:背对镜头跪坐步道边,臀后翘对镜,蓝蕾丝抹胸+同料裙堆胯上,细金链交叉勒出裸背——入态即最大 S 曲线;拍2 0.30-0.55s 左臂屈肘上举插发撩起整片头发再松手,发丝回落扫背,髋向后上顶一次(顶胯峰值)、肩胛内收;拍3 0.55-0.95s 全身再次被白糊涂抹覆盖约 3-4 帧,姿态跨糊从左臂上举跳变为右手屈肘胸前——AI 形变接缝;拍4 1.00-1.67s 右臂体侧平伸展示、头低垂,骨盆保持后翘微摆;服装物理:蕾丝裙堆臀下不滑落、高跟鞋尖点地(违反垂坠,AI 特征)
+- H3:`kneeling with the bare back and hips toward the camera in a sheer blue lace dress, lifting and releasing the hair with one arm while popping the hips back, morphing through a white smear into an arm-extended display pose`
+- 来源:《蓝裙氛围感》00.00-01.67s
+
+### K299 旋转躺石伸展链(3拍|蓝裙氛围·旋转构图·指扇慢展)
+- 入态:90° 旋转构图侧卧岩面 → 出态:岩沿交叠腿侧坐手抚膝
+- 分解:拍1 2.00-3.33s 整幅画面逆时针旋转 90°(人物与岩面横置),身体沿岩面斜线躺伸:双腿顺岩面向上交叠伸展、单手支地、另一手自脸颊向外展开发散五指——技术峰值为手指扇形慢展;拍2 3.40-4.60s 真跳切回正向构图:正面站姿抚颌、指尖点唇,随后切入第二个旋转构图:跪地后弯弓身(桥式变体)手插发;拍3 5.30-6.00s 弓身过渡到岩沿侧坐,双腿交叠斜伸、骨盆每拍小幅倾;服装物理:蕾丝裙侧躺贴体不坠、褶皱跨帧漂移(AI);镜头几何:正向/旋转双机位硬切
+- H3:`stretching along a rock in a rotated frame with legs extended up the stone and fingers fanning open in slow motion, then arching into a kneeling bridge and settling into a crossed-leg rock-edge sit with subtle pelvic tilts`
+- 来源:《蓝裙氛围感》02.00-03.33s / 03.53-04.60s / 04.65-06.00s
+
+**片<v98> 《嘉桐摇》(黑衣慢摇指舞·9.3s·竖屏·AI 高)**
+- 背景人物:室内纯色浅棕木纹墙,无家具、无踢脚线、人物无接地投影;画框止于膝下。人物:深棕超长卷发,黑色 U 领紧身长袖(左胸红蝴蝶结胸针),黑色紧身短裤,细银项链。AIGC:AI(高)——背景无投影、指节粘连指长异常、脊柱反弓 S 曲线超限、双脚全程锚定仅骨盆平移(AI 摇特征)。
+- 节拍:≈120 BPM(推测;摆胯周期 0.45-0.5s)。
+- 镜头形态:A 一镜到底(固定机位慢摇)。
+
+### K300 指地画圈飞吻摇胯链(4拍|嘉桐摇·食指画圈·双脚锚定胯平移)
+- 入态:正面站立右手抬胸 → 出态:指手收胸、飞吻定格
+- 分解:拍1 0.90-1.10s 右手五指微张抬至胸前,腕翻掌心朝下、食指伸向镜头前下方(指地位),肘先抬、腕后翻、指最后点;拍2 1.10-2.40s 核心循环:食指指尖对镜头画小圈(直径≈10cm,1 圈/拍≈0.45s),同步骨盆左右平移(±8°,双脚全程钉地仅胯平移——AI 摇特征),肩线锁定;拍3 2.40-2.65s 技术峰值:指尖画完收向唇前,双唇拢起对镜飞吻一次,眼波右抛;拍4 2.65-2.80s 手指松开回落握拳于胸前,骨盆两下递减摆回中;紧身长袖随骨盆平移在腰侧出横向拉褶
+- H3:`pointing one index finger down toward the camera and drawing small circles on every beat while the pelvis slides side to side on planted feet, then pulling the finger to the lips to blow a kiss`
+- 来源:《嘉桐摇》00.90-02.80s
+
+### K301 腰际手波侧展掌链(4拍|嘉桐摇·托盘掌·手指波)
+- 入态:指拳收胸 → 出态:双手腹前指花收势定格
+- 分解:拍1 4.80-5.30s 甩头换边:右手落体侧、头右甩发浪,身体右转 3/4;拍2 5.30-5.80s 左臂体侧平伸、掌心翻上成托盘位,头顺手向看出,右髋同向顶出(背阔带动大臂外展);拍3 5.80-6.70s 左掌回收划经腰际,五指在腹前依次波浪(2 波/拍),骨盆改前后微送;拍4 6.70-8.67s 左臂再展再收(幅度递减 30%)、双肩交替耸落,双手腹前指尖相对做小花开合收势
+- H3:`extending one arm sideways with the palm up like presenting a tray, pulling it back to roll a finger wave across the belly while the hips pulse forward and back, then repeating smaller and closing with fluttering fingertips at the waist`
+- 来源:《嘉桐摇》05.30-08.67s
+
+**片<v99> 《莫多莫多》(四格同步变装卡点·9.3s·竖屏·AI 确证级)**
+- 背景人物:整帧为 2×2 四格拼贴(每格 540×960),格内同一酒店走廊式场景;四格为同一 AI 人物模板的不同生成样本:深棕超长卷发,服装各格独立切换——白裙/酒红无袖高领+灰铅笔裙+工牌/金米色蕾丝束腰+黑缎短裙/黑一字长袖+黑短裤/金抹胸+金金属包臀裙+大耳环。AIGC:AI(确证级)——四格同房间同人体模板、动作同步而服装阶段错位(真人拍摄不可实现)、工牌挂绳无物理垂坠、花纹跨帧漂移、换装均为单帧瞬换无布料过渡。
+- 节拍:≈120 BPM(推测;换装卡点 2.4/5.9/6.3/7.3s 落重拍)。
+- 镜头形态:特殊:格内各自 A 一镜到底,四格级联换装卡点(格间动作模板一致、逐帧细节有生成样本漂移)。
+
+### K302 开场挥手拳胸摇(3拍|莫多莫多·四格同步·高位挥摆)
+- 入态:双手上举掌心向外 → 出态:双拳收胸前、手落腰际
+- 分解:拍1 0.00-1.50s 双臂抬至头侧、前臂竖立掌心朝镜头,手腕带动双手左右同步挥摆(1 摆/拍≈0.5s),肘高位锁定,骨盆随摆微送;拍2 1.50-2.20s 双手握拳回落胸前、拳面相对小幅上下捶两次,膝盖屈伸弹性缓冲;拍3 2.20-2.70s 双手滑落腰际指尖相对,身体微右转预备展臂;本链在 2×2 四格内同步执行
+- H3:`waving both raised palms side to side toward the camera on each beat, then dropping into loose fists to pump them twice at the chest with a soft knee bounce before sliding the hands to the waist`
+- 来源:《莫多莫多》00.00-02.70s(四格同步)
+
+### K303 四格级联换装卡点机制链(4拍|AI 变装机制·四格拼贴·重拍连击)
+- 入态:四格同穿白裙同步起舞 → 出态:四格四装抱胸收势
+- 分解:拍1 2.40-2.50s 左上格率先单帧瞬换装(白裙→酒红高领+灰铅笔裙+挂绳工牌),其余三格保持白裙,无布料过渡;拍2 4.00-6.00s 四格同步展臂顶胯:单臂体侧摊开掌心向上、髋向展臂侧顶出,接转身背对 3/4 摆胯回正——同一动作模板四格并行渲染、逐帧细节各有样本漂移;拍3 5.90-7.50s 级联连击:左下格瞬换黑一字长袖+黑短裤(≈5.9s),右上格瞬换金米色蕾丝束腰+黑缎短裙(≈6.3s),右下格最后瞬换金抹胸+金色金属包裙(≈7.3s),每次换装落一个重拍;拍4 7.50-9.30s 四格(四装)同步双手交叠按胸→落腹前小幅弹跳收势——技术峰值:级联完成瞬间四格色彩四分对撞
+- H3:`four identical synchronized dance panels in one 2x2 grid where each quadrant snaps to a different outfit one card-point apart in a cascading swap while all four keep sweeping one arm out and popping the hip in unison`
+- 来源:《莫多莫多》02.40-02.50s / 05.90-06.00s / 06.30-06.50s / 07.20-07.50s / 07.50-09.30s
+
+**片<v100> 《jumpstyle》(白衫跳步变装黑袜·6.0s·竖屏·AI 高)**
+- 背景人物:极简展廊,灰木纹格栅墙+暖光带+浅灰地坪(人物镜像倒影)。两套装:①白荷叶边无袖上衣+浅蓝阔腿牛仔裤+白球鞋 ②黑无袖高领连体短裤+黑丝袜+棕细腰带+黑细高跟;深棕长卷发。AIGC:AI(高)——丝袜灰白横带伪影跨帧漂移、腿比极端、0s 白糊入场、3.0-3.15s 单帧瞬换装、跟部反光与地面倒影不一致。
+- 节拍:≈128 BPM(推测;跳步 1 跳/拍、交叉点地 2/拍)。
+- 镜头形态:A 一镜到底(白糊入场+单帧换装,无真切口,末段压暗收场)。
+
+### K304 开手举臂入场链(4拍|jumpstyle·开肩→W 举臂)
+- 入态:白糊显形正面站立 → 出态:单臂高举、重心左移预备跳
+- 分解:拍1 0.00-0.30s 白糊中显形,双臂向体后下张开、掌心朝后开肩;拍2 0.30-0.60s 双手沿体侧前摆至髋、指尖触腰骨、肘外撑;拍3 0.60-1.00s 双肘上提,前臂面前交叉成护栏位随即打开,双臂沿头侧上举过头、手腕放松下垂轻晃——技术峰值:过头 W 框架;拍4 1.00-1.40s 右臂保持高举、左臂屈肘回收,重心左移,右腿提膝预备跳步
+- H3:`emerging from a white smear into a shoulder-opening stance, sliding the hands up to the hip bones and raising both arms overhead with loose wrists before holding one arm high to load a hop`
+- 来源:《jumpstyle》00.00-01.40s
+
+### K305 jumpstyle 双脚跳交叉踢步链(4拍|jumpstyle·腾空弹跳·剪刀摆臂)
+- 入态:单臂高举预备 → 出态:并脚屈膝弹动收势
+- 分解:拍1 1.40-1.90s 双脚同时蹬地小跳(jumpstyle 基础弹跳,1 跳/拍),屈膝收腿腾空约一脚高,双臂自上向外下张开压拍,前脚掌落地屈膝缓冲;拍2 1.90-2.40s 落地即起:左右腿身前快速交替交叉点地(2 点/拍),手臂低位随步伐自然对摆;拍3(技术峰值)2.40-2.90s 交叉步中插正踢:右腿向前上方踢出、绷脚离地约膝高,同侧臂前摆、对侧臂后摆成剪刀摆,落地接左腿反向踢——踢腿节奏 1 腿/拍卡重拍;拍4 2.90-2.95s 末次落地双脚并拢微屈膝弹两下回正;服装物理:阔腿牛仔裤随跳跃甩出宽裤口波浪;镜头几何:固定全身正面无跟摇,地面倒影强化腾空判读
+- H3:`performing jumpstyle hops with both feet leaving the floor on every beat, crossing the legs in quick alternating taps, and snapping straight front kicks with scissor-swinging arms before landing back into a bounce`
+- 来源:《jumpstyle》01.40-02.95s
+
+### K306 卡点瞬换装高跟鞋摆胯收势链(4拍|AI 变装机制·跳切换装·幅度衰减)
+- 入态:白装并脚站定 → 出态:黑袜高跟摆胯归静、画面压暗
+- 分解:拍1 2.95-3.15s 单帧瞬换装:相邻两帧间整套装替换(白上衣+牛仔裤+球鞋→黑无袖高领连体短裤+黑丝袜+棕细腰带+黑细高跟),发型由侧披变全披,姿态近乎连续、≤1 帧过渡残影——生成端卡点硬切;拍2 3.15-4.50s 换装即接慢摆:双脚钉地,骨盆左右交替顶出(±10°,1 顶/拍),膝微屈当弹簧;拍3 4.50-5.40s 摆幅衰减,改为重心脚交替踮跟起伏,单手指尖沿裤腰滑行;拍4 5.40-6.00s 摆幅递减至静止站立,画面亮度线性压暗至近黑收场;服装物理:丝袜高光 AI 灰白横带跨帧漂移、跟部反光与倒影不一致;镜头几何:换装前后构图零位移
+- H3:`snapping from the jeans outfit into a black bodysuit with sheer stockings and stiletto heels between two frames on the beat, then rocking the pelvis side to side on planted feet with fading amplitude until the lights dim to black`
+- 来源:《jumpstyle》02.95-06.00s
+
+**片<v101> 《紧身连衣裙》(金钻裙慢摇手势·9.1s·竖屏·AI 高)**
+- 背景人物:酒店走廊式室内,灰木纹墙板+顶部暖黄光槽+浅木地板,顶棚垂两根无源细线缆(AI 伪影);画框止于膝下。人物:深棕长卷发,金色香槟水钻抹胸紧身迷你裙,钻颈链。AIGC:AI(高)——无源线缆、墙板线条贴人物边缘弯曲、水钻纹理整片喷涂跨帧漂移、0-0.3s 与 4.95-5.15s 白糊涂抹形变、指节畸形。
+- 节拍:≈120 BPM(推测)。
+- 镜头形态:A 一镜到底(含 2 处 AI 涂抹形变作隐形接缝,无真切口)。
+
+### K307 下颌收手捏指摆胯链(4拍|金钻裙慢摇·护脸拳位·指尖捏点)
+- 入态:白糊显形侧身 S 态 → 出态:正面捏指招手定格
+- 分解:拍1 0.30-1.00s 金钻抹胸紧身裙侧身站定,双手空拳收至下颌两侧(护脸位),髋向左后顶出、身体 C 形曲线、膝右内扣——入态即锁定上肢、只留胯自由度;拍2 1.00-2.30s 双手沿体前中线交叉下落再开至腰侧,五指捏合状在腰际上下两点(1 点/拍),骨盆每拍左右交替顶(±10°),上肢锁位仅腕指动;拍3(技术峰值)2.30-3.67s 右手上提胸前做指尖捏合+慢腕转(展示位),左手插回胯侧;拍4 3.67-4.80s 双手胸前交替招手两次,膝弹性屈伸;服装物理:水钻裙无褶皱位移、钻面反光跨帧漂移(AI);镜头几何:固定全身正面微仰,顶棚两根无源线缆入画(AI 伪影)
+- H3:`holding both curled fists by the chin in a skin-tight rhinestone dress with the hip pushed out, then pinching the fingertips at the waist on each beat and lifting one hand for a slow show-off wrist turn while the pelvis pops side to side`
+- 来源:《紧身连衣裙》00.30-04.80s
+
+### K308 白糊形变接缝扭胯展臂收势链(4拍|AI 变装机制·对角拉弓·摊手定格)
+- 入态:正面招手中段 → 出态:双臂摊开掌心向上定格
+- 分解:拍1 4.80-5.15s 全身被白色纵向涂抹模糊吞没约 0.3s,姿态跨糊从正面招手跳变为左侧身,墙缝与线缆连续无切——AI 形变接缝(同装同景的隐形段间拼接);拍2(技术峰值)5.15-6.60s 出糊即接侧身扭胯:右臂向斜下伸直展开,髋向左顶出成对角拉弓曲线,头看镜头,上肢与骨盆对角张力最大化;拍3 6.60-8.00s 身体逐帧回正,双臂收经胸前向脸颊两侧打开、五指张成爪形轻晃两次、肩耸落;拍4 8.00-9.10s 双臂体侧平摊、掌心向上定格,骨盆两下递减摆,视频结束;服装物理:裙体贴身如喷涂,扭胯时腰侧出现油漆式拉长变形;音乐触发:形变落重拍、摊手定格对乐句尾
+- H3:`morphing through a white vertical smear into a side stance with one arm extended low and the hip counter-popped, unwinding to claw hands beside the cheeks and closing with both palms shrugging upward`
+- 来源:《紧身连衣裙》04.80-09.10s
+
+**片<v102> 《黑色系御姐》(慢律动坐姿摆拍·8.0s·竖屏)**
+- 背景人物:现代风客厅,深灰布艺沙发+浅灰木地板,竖条纹吸音板墙+暖光灯槽。人物:王羽杉——棕黑长卷发中分,黑色紧身半高领短袖连衣裙(包臀),灰黑高光透肉丝袜,黑色尖头细高跟(红底大底),细手链。道具:智能手机(锁屏壁纸为同女白色系精修照)+单只红底高跟鞋,由前景之手持入。AIGC:真拍+重度滤镜精修(前景手机光学畸变、手指关节、甩镜整帧模糊真实;皮肤"玻璃肌"重度美颜,锁屏内人像本身即 AI 风精修)。
+- 节拍:约 75 BPM(推测,动作循环周期约 1.3s)。
+- 镜头形态:C 快剪(前景特写→揭示→甩镜遮切共 3 段,焦点牵引)。
+
+### K309 手机锁屏+红底鞋前景引导揭示链(4拍|道具引导·焦点揭示)
+- 入态:全帧虚焦,前景手机屏(锁屏人像)+红底高跟占据画面中心,背景人物虚坐 → 出态:前景道具完全出画左缘,焦点落在沙发前人物全身,姿态锁定交腿坐
+- 分解:拍1 0.00-0.65s 前景手托手机屏居中,红底鞋斜倚其右,背景虚焦人物已就位(静态锚点)——构图层级:道具屏>鞋>人;拍2 0.65-0.90s 手持双道具整体向左平移,鞋身翻转露出红底大底(道具展示峰值),焦点开始后拉;拍3 0.90-1.10s 道具滑出左缘,焦点牵引完成,人物由虚转实,灰丝反光先于面部清晰(视线引导到腿);拍4 1.10-1.40s 人物微调坐姿入态,双手落膝,交腿相位与屏中人像形成"同人对镜"暗示
+- H3:`holding a phone lockscreen photo and a red-soled pump in the blurred foreground, then sliding both props out of frame left while racking focus onto the woman seated behind in a black dress and glossy grey pantyhose`
+- 来源:《黑色系御姐》00.00-01.40s
+
+### K310 地板倚沙发交腿延伸摆拍链(6拍|坐姿摆拍·脚尖循环)
+- 入态:背靠沙发前缘坐于地板,双腿向镜头交叠延伸,手搭膝 → 出态:单手插入发内、头倾肩,腿型维持交叉延伸
+- 分解:拍1 1.40-2.00s 交腿延伸态,上腿脚尖做"绷—勾—绷"循环(丝袜高光随绷脚沿胫骨滑动),发力来源为踝背屈肌群,髋不动;拍2 2.00-2.67s 双手下滑撑地,髋微后坐加深腿的镜头延伸感(透视拉腿);拍3 2.67-3.33s 上腿小幅上下点动两次,膝角变化±10°,惯性延续到小腿末端颤动;拍4 3.33-4.30s 双手交叠压膝,肩线向镜头微转,下颌内收(技术峰值:全身线条在镜头轴上最直);拍5 4.30-4.60s 预备动势——肩向后带、重心上提;拍6 4.60-4.65s 动势切断进入甩镜(移交 K311)
+- H3:`sitting on the floor against the sofa with crossed legs extended toward camera, cycling toe point-and-flex so the glossy grey pantyhose sheen slides along the shin, then pressing hands over the knee and lifting the chest right before the whip transition`
+- 来源:《黑色系御姐》01.40-04.65s
+
+### K311 甩镜遮切转场链(3拍|转场机制·动态模糊遮切)
+- 入态:地板倚坐宽机位构图 → 出态:沙发坐面中近机位新构图,交腿高抬,手入发
+- 分解:拍1 4.65-4.73s 镜头/身体快速动势启动,帧内出现方向性拖影(整帧模糊开启遮挡窗口);拍2 4.73-4.85s 模糊峰值帧——主体不可辨,机位在此窗口内完成"地板低位→沙发坐面中近位"的构图替换(真切点藏在模糊内,非连续运镜);拍3 4.85-5.10s 模糊收敛,新场景浮现:她已坐上沙发坐面,双腿交叉高位向镜头,第一清晰帧即锁定交腿相位(甩镜遮切成立判据);惯性延续:5.10-5.60s 手顺势插入发内、头倾,回收顺序为手→头→肩
+- H3:`whipping the camera into a full-frame motion blur that hides the cut from the wide floor-lean setup to a closer sofa-seat framing, resolving the blur already locked on crossed legs high toward camera before trailing one hand up into the hair`
+- 来源:《黑色系御姐》04.65-05.60s
+
+**片<v103> 《拿下你》(学妹反差双变装·7.5s·竖屏·AI 渐变实锤)**
+- 背景人物:室内木饰面素墙,正面固定机位。人物:王羽杉——棕发长卷发+黑色蝴蝶结发箍。三套造型:①黑色背带连衣裙罩白泡泡袖衬衫+条纹领带;②白色翻领针织短袖+白色百褶迷你裙+黑色 choker;③黑色蕾丝吊带+酒红短裙披膝+黑底碎花蕾丝过膝袜+黑红底细高跟+choker,坐白色雕塑感异形椅,手持黑色多股皮鞭道具。AIGC:AI 渐变实锤——变装 1 3.63-3.88s 半透明双态叠影且右侧多出一只"鬼影指向手臂"(五指结构畸形);变装 2 4.95-5.65s 白/黑两整态反复闪变振荡、叠影帧肢体错位;编辑器交叉溶解必单调推进,不可能回摆,判:AI 生成转场(AI 视频或 AI 重绘后期)。
+- 节拍:约 88 BPM(推测)。
+- 镜头形态:C 快剪(AI 渐变衔接,三段同构图对齐)。
+
+### K312 学妹装理带展臂链(4拍|入场摆拍·反差铺垫)
+- 入态:正面直立,右手捏领带贴胸 → 出态:双臂向侧下展开后回收扶带,恢复端立
+- 分解:拍1 0.00-0.66s 捏带贴胸静态,头微歪(乖巧态标定);拍2 0.66-1.33s 右手顺带面向下滑半程,肩随手上提;拍3 1.33-2.33s 双臂向侧后方展开至裙摆高度再划回,发力来源为背阔肌内收;拍4 2.33-3.30s 双手扶带整理,肘抬至肩高再落,末帧与变装 1 入态对齐(3.30-3.55s 保持静止利于渐变对齐)
+- H3:`standing square to camera in a schoolgirl pinafore and striped tie, sliding a hand down the tie, flaring both arms out and back in, then adjusting the tie with elbows high before holding still for the transition`
+- 来源:《拿下你》00.00-03.55s
+
+### K313 AI 渐变双段变装链(6拍|AI 变装机制·渐变+振荡)
+- 入态:学妹黑装端立 → 出态:白色系站姿 OK 手势态(第一段)/黑蕾丝椅坐态(第二段)
+- 分解:拍1 3.55-3.63s 黑装末态静止,渐变窗口开启;拍2 3.63-3.88s 单调溶解中态:黑裙透明度下降、白裙同位浮现,右侧生成鬼影指向臂(畸形五指)——AI 重绘痕迹帧;拍3 3.88-4.90s 白装整态稳定:双手轮流在脸侧比 OK 圈,choker 跨装延续(身份锚点),每圈约 0.5s 踩点;拍4 4.90-5.05s 渐变窗口二次开启,白装边缘开始透明;拍5 5.05-5.65s 振荡闪变:白站态↔黑椅坐态整帧反复交替(5.12/5.51 黑、5.25/5.32 白回摆),叠影帧出现多腿与鞭带错位——生成插值时序不稳,峰值帧 5.05s(双态各半透明);拍6 5.65s 后黑蕾丝椅坐态锁定,手位与白装 OK 手势同相位衔接
+- H3:`cross-dissolving AI-style from the schoolgirl outfit into the white polo set with ghost-arm artifacts, flashing OK-signs at the face, then flickering back and forth between the white standing and the black lace seated versions with double-exposed limbs before settling seated`
+- 来源:《拿下你》03.55-05.65s(变装 1 主证 03.63-03.88s/变装 2 主证 04.95-05.65s)
+
+### K314 椅坐蕾丝袜甩鞭链(4拍|坐姿御姐·红底鞋展示)
+- 入态:白雕塑椅端坐,黑蕾丝过膝袜交腿,手持鞭带 → 出态:腿前伸点地亮红底,鞭带垂落身侧
+- 分解:拍1 5.65-6.10s 椅坐定态:酒红裙披膝抚平,鞭带在右手划小圈(道具动能保持);拍2 6.10-6.60s 上腿向前下方蹬伸至半直,脚背绷直,红底鞋底朝镜头闪现(技术峰值:鞋底红面全露约 0.3s),蕾丝袜筒随小腿拉伸下滑半寸(袜口物理);拍3 6.60-7.10s 腿回收交叠,鞭带绕腕收短;拍4 7.10-7.50s 双腿交叠静置,鞭梢垂落裙侧摆动两次后静止,下颌抬,御姐终态
+- H3:`sitting on the sculptural white chair in floral lace thigh-highs, circling the black strap whip in hand, kicking the top leg into a pointed extend that flashes the red sole at camera, then re-crossing the legs and letting the whip tails settle`
+- 来源:《拿下你》05.65-07.50s
+
+**片<v104> 《梦的翅膀》(出画换装+流苏浅跳·18.6s·竖屏)**
+- 背景人物:走廊式室内,浅米墙+深色竖条吸音板+顶部黄色灯带,木地板+灰色地垫,固定三脚架宽机位。人物:棕黑长卷发。三套造型:①白色缎面衬衫(胸前垂系带)+白色阔腿裤;②黑色斜肩挂颈上衣(领口银钻链)+黑高腰短裤+灰黑透肉丝袜+黑高筒靴+大圈银耳环;③白色钩织流苏挂脖迷你裙。AIGC:非全 AI——两处变装均为"人物走出画→干净空镜→新装回入画"(空镜帧无叠影),实拍剪辑逻辑;判:真拍+重度滤镜。
+- 节拍:约 120 BPM(推测,手势动作成对踩拍,段界≈2 小节)。
+- 镜头形态:C 快剪(固定机位,出画/入画隐藏切点)。
+
+### K315 出画换装双轮回入画链(8拍|走位变装机制·空镜交接)
+- 入态:白缎套装立于画面中央 → 出态:流苏裙入画至中央,手势相位延续
+- 分解:拍1 1.73-2.35s 白装食指竖唇"shhh"态,小步左移启动;拍2 2.35-2.73s 左行出画,末帧仅剩衣角(出画完成判据 2.73s 全空);拍3 2.73-3.10s 干净空镜 0.4s(换装时间被剪除的交接窗,切点藏于空镜内);拍4 3.23s 黑装自画左回入画,首帧即举臂过头——臂位与出画前抬手动势同相位(跨空镜姿态延续);拍5 3.60-5.60s 黑装抚额敬礼式→手落扶髋→顶髋摆动,右转身;拍6 5.73-6.23s 右行出画,6.23-7.10s 空镜 0.9s;拍7 7.15-7.60s 流苏裙自画右回入画,首帧手势为指捏式,与黑装出画前手位相位对齐;拍8 7.60-8.00s 行至中央手势起舞(移交 K316)。机制总结:两轮均为"同侧出、同侧入",出入方向左/右交替
+- H3:`walking out of frame left in the white satin set, holding a clean empty-room beat, re-entering left in the black halter outfit with the raised arm already in phase, then exiting right and re-entering right in the fringe dress with finger gestures carrying over`
+- 来源:《梦的翅膀》01.73-08.00s(轮 1 02.35-03.23s/轮 2 05.73-07.15s)
+
+### K316 流苏裙手势浅跳链(8拍|手势浅跳·流苏物理)
+- 入态:中央站定窄距,双手胸前起势 → 出态:双臂交替冲拳高位,弹动律动建立
+- 分解:拍1 8.03-9.03s 胸前指尖交替捏放(每拍一指),重心随指左右微移;拍2 9.28-10.03s 单臂侧伸摊掌"展示位"→收回划腰际波浪(流苏层随臂摆向外荡开 30°);拍3 10.53-11.28s 肘折叠横扫+胸前立圈绕腕(滚拳),发力来源前臂旋前肌群;拍4 11.28-12.28s 双拳交替上泵两次,每次泵送膝弹一次(拍点密度峰值);拍5 12.53-13.53s 左右交替上冲拳,拳峰过耳,髋反向顶(交叉发力);拍6 13.78-14.53s 臂斜下甩腕(马蹄腕花),流苏甩出残影;拍7 14.78-15.53s 双手胸前剪刀开合两轮,步距不动(脚下零位移,纯上半身浅跳);拍8 15.78-16.00s 双臂向上预提,进入收尾(移交 K317);惯性延续:每拍手势末梢余摆 0.1-0.15s 与下拍首帧叠接
+- H3:`doing an upper-body-only gesture dance in the tiered fringe dress — alternating finger pinches, palm-up presenting sweeps, forearm rolls, double fist pumps with knee bounces, crisscross punches and wrist flops — while the fringe swings outward on every arm stroke and the feet never leave the narrow stance`
+- 来源:《梦的翅膀》08.03-16.00s(拳泵主证 11.28-12.28s)
+
+### K317 交叉腕上举 V 收尾链(3拍|ending 定格·慢旋腕)
+- 入态:双臂提至肩上 → 出态:双臂上举交叉腕 V 形定格,头侧倾笑
+- 分解:拍1 16.00-16.67s 双臂沿体前上行过头顶,前臂交叉、双手互握腕;拍2 16.67-17.40s V 形撑满,腕互绕慢旋两周(技术峰值:上举最高点+旋腕),流苏裙摆随身体小幅螺旋回转;拍3 17.40-18.60s 保持 V 形微旋,头右侧倾至肩,目视镜头定妆,末帧静止至片尾
+- H3:`raising both arms overhead into a crossed-wrist V, slowly winding the wrists around each other at the top while the fringe skirt coils, then tilting the head onto the shoulder and holding the pose to the end frame`
+- 来源:《梦的翅膀》16.00-18.60s
+
+**片<v105> 《风格多变》(办公椅四连跳切换装·5.0s·竖屏)**
+- 背景人物:会议室风,浅木地板+深色竖条纹墙板+黄色氛围灯带,白灰网布滚轮办公椅。人物:王羽杉(前段脸部贴"？"白色圆形遮挡贴,Cut1 后揭面)。五套造型:①黑色短外套+卡其工装阔腿裤+白色厚底解构 sneakers;②蓝色缎面抹胸+金胸饰+浅蓝亮面丝袜(菱纹微光)+蓝色漆皮尖头细高跟;③棕褐后缝线透肉丝袜+棕色绑带高跟+橄榄色缎面吊带;④紫红碎花蕾丝连裤袜+黑色连体短裤;⑤裸腿+黑色细带高跟+豹纹西装外套。AIGC:非全 AI——四个切点两侧均为单一清晰态、零叠影,抱臂与交腿相位跨切精确衔接(剪辑台同姿跳切);判:真拍+重度滤镜(疑似腿部比例后期拉长)。
+- 节拍:约 90 BPM(推测,切点间隔 0.63/0.75/0.62s)。
+- 镜头形态:C 快剪(固定机位微仰角,五段同构图跳切)。
+
+### K318 办公椅搓手亮底鞋链(5拍|变装前段·道具铺垫)
+- 入态:端坐椅中,双手交握于膝 → 出态:抱臂+单腿高举亮鞋底,sneaker 悬荡
+- 分解:拍1 0.53-1.10s 双手在膝上互相搓捻(指尖交叠小循环),坐姿下沉;拍2 1.10-1.90s 双臂交叉抱胸,肩耸起,"？"贴纸遮面;拍3 1.90-2.20s 右腿屈膝上提至胸口高度,脚掌翻转令厚底 sneakers 鞋底正对镜头(亮底峰值);拍4 2.20-2.45s 提腿落成交叠,鞋跟脱离脚跟悬荡两次(鞋类"半脱"态展示);拍5 2.45-2.52s 抱臂交腿静止,与下段蓝装入态完全同相位(跳切对齐帧)
+- H3:`sitting in the office chair rubbing the hands together, crossing the arms, then hoisting one leg up to flash the chunky sneaker sole at camera and letting the heel dangle off the toe before locking the crossed pose for the jump cut`
+- 来源:《风格多变》00.53-02.52s
+
+### K319 同姿四连跳切换装链(8拍|袜鞋交替卡点·抱臂锚定)
+- 入态:抱臂交腿(工装裤+sneakers) → 出态:豹纹装裸腿交腿笑定
+- 分解:拍1 2.52s 硬切①→②:卡其裤→浅蓝亮面丝袜+蓝漆皮尖头跟,缎面抹胸+金胸饰,抱臂角度与交腿相位帧级衔接(真跳切,无叠影);拍2 2.585-3.085s 蓝装段:交腿脚尖慢绷两次,鞋跟脱离悬荡一次,"？"贴纸消失露脸;拍3 3.15s 硬切②→③:棕褐后缝线袜+棕绑带跟,腿型换为"交叠+前伸"延长位;拍4 3.335-3.835s 棕褐段:前伸腿脚尖四拍小循环(绷—勾—绷—绷),单手抬至锁骨再落;拍5 3.90s 硬切③→④:紫红碎花蕾丝连裤袜+黑连体短裤,回到屈膝交叠位;拍6 3.96-4.46s 紫段:握拳抵膝捶按两次+脚掌上下点动(蕾丝花纹随点动变形回弹);拍7 4.52s 硬切④→⑤:裸腿+黑细带高跟+豹纹外套,腿前伸交叠;拍8 4.585-5.03s 豹纹段:双手叠膝,脚尖慢绷定格,末帧微笑定妆——五态共用"抱臂/交腿"骨架,仅换袜鞋与上衣(变装机制:同姿跳切+袜鞋轮替)
+- H3:`holding crossed arms and crossed legs while hard jump-cutting through four looks on the same office chair — glossy light-blue patterned tights with blue patent pumps, back-seam tan stockings with brown strappy heels, purple floral lace tights with a black romper, then bare legs with black strappy heels and a leopard blazer — cycling toe points and heel danglers on every look`
+- 来源:《风格多变》02.52-05.03s(切点 02.52/03.15/03.90/04.52s)
+
+**片<v106> 《热舞计划》(背身入画+逐件上装+船长制服浅跳·6.9s·竖屏)**
+- 背景人物:极简灰墙+木地板,无陈设,正面固定机位全身景。人物:王羽杉。四段造型:①白色宽松一字肩罩衫+黑白格纹灯笼裤,赤足(背身);②白色短上衣+藏青迷你裙+灰黑透肉丝袜+黑高跟;③同上+腰间黑色织带束具(工具腰带);④船长制服终态:白色船长帽(金边徽章)+藏青水手领巾+白色收腰短上衣(中腹镂空)+黑色腰束具垂带+藏青高腰热裤(侧挂条纹小领带)+灰黑透肉丝袜+黑高跟。AIGC:非全 AI——三处切点均为硬切无叠影,背身行走/转身发丝甩动自然;重度美颜+疑似液化身形。判:真拍+重度滤镜液化。
+- 节拍:约 128 BPM(推测,手势 0.33-0.5s 一动)。
+- 镜头形态:C 快剪(固定机位,四段跳切)。
+
+### K320 背身行走转身回眸链(4拍|开场走位·发丝惯性)
+- 入态:背对镜头远端行走 → 出态:正面站定,手抬至胸前,发丝落定
+- 分解:拍1 0.03-0.53s 背身向画内远端走,灯笼裤随步幅左右荡(低位鼓荡),赤足点地;拍2 0.53-0.78s 右后转身 180°,长发随转体甩出弧形残影(发丝惯性峰值),罩衫下摆随转拖带;拍3 0.78-1.03s 面向镜头小退半步站定,手自体侧抬至胸前;拍4 1.03-1.09s 抬手至脸侧定相位,与变装后挥手位对齐(跳切衔接帧)
+- H3:`walking away from camera in a white slouchy tee and gingham balloon pants, pivoting 180 degrees with the long hair whiplashing around, stepping back to a stand and raising one hand to the face as the pose locks for the cut`
+- 来源:《热舞计划》00.03-01.09s
+
+### K321 逐件上装三连跳切链(6拍|渐进变装机制·单件增量)
+- 入态:白衫+藏青裙+灰袜+高跟(挥手位) → 出态:船长帽+领巾+热裤+束具全套,单腿屈膝亮相
+- 分解:拍1 1.09s 硬切①→②:格纹灯笼裤→藏青迷你裙+灰黑丝袜+黑高跟,手掌外翻挥动位跨切延续;拍2 1.155-1.655s 裙装段:掌心向镜头摆两拍,髋随摆左右递;拍3 1.72s 硬切②→③(单件增量:仅加腰间黑色织带束具),手位仍为胸前位——逐件上装节奏点;拍4 1.78-1.905s 束具段:手向右侧平展引视线至腰(束具垂带摆动);拍5 1.94s 硬切③→④(单件增量×3:船长帽+水手领巾+裙换热裤一次性落齐);拍6 2.03-2.15s 终态亮相:单腿屈膝提踵、脚尖点于支撑腿后,手指捏合于颊侧——制服全态首帧即舞蹈起手位(移交 K322);机制总结:0.85s 内三切逐件上装,手位相位全程连续
+- H3:`hard jump-cutting the costume on piece by piece while the waving hand never breaks phase — pants swap to a navy mini skirt with sheer tights and heels, then a black utility belt snaps on, then captain hat with neck scarf and hot pants land all at once before the leg-lift reveal`
+- 来源:《热舞计划》01.09-02.15s(切点 01.09/01.72/01.94s)
+
+### K322 交叉腿站姿手势波链(7拍|站姿浅跳·腕指序列)
+- 入态:交叉腿提踵站架,指尖捏合 → 出态:双臂落回体侧,正身定妆
+- 分解:拍1 2.15-2.53s 交叉腿站架(前膝叠于后膝前、前脚掌点地)固定,右手食指指天→指侧→指前(三连指,每指 0.13s);拍2 2.70-3.20s 掌心外翻高位摆→腕花下落,站架重心小幅左右递;拍3 3.36-3.87s 前臂立滚(拳轮绕腕两周)→掌心向上腰前"托盘"展示位;拍4 4.03-4.53s 耳侧快摆掌两轮→单臂斜下 45° 甩出(发梢随肩带出余摆);拍5 4.70-5.20s 双臂体侧半展、手腕同步甩摆(鸟翼腕,左右各两拍);拍6 5.36-5.87s 双臂回收落体侧(回收顺序:肘→腕→指);拍7 5.90-6.87s 正身站定,肩线回平,下颌微收定妆至片尾——全链脚下零位移,纯上肢+骨盆浅跳(时间窗完整:每手势在一个 0.33-0.5s 拍窗内起收闭合,无烂尾动作)
+- H3:`holding a crossed-leg lifted-heel stance while waving through a finger-point triple, palm flicks, forearm rolls, a tray-presenting pose, ear-level flicks, diagonal arm throws and synchronized wrist flops, then folding the arms back to the sides and settling square to camera`
+- 来源:《热舞计划》02.15-06.87s
 
 ---
 
