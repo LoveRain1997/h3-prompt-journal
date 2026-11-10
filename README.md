@@ -6,7 +6,7 @@
 
 **MiniMax H3 视频/舞蹈提示词案例日记 —— 26 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
 
-[![Cases](https://img.shields.io/badge/case_studies-26-blue)](./case-studies)
+[![Cases](https://img.shields.io/badge/case_studies-27-blue)](./case-studies)
 [![Platform](https://img.shields.io/badge/model-MiniMax_H3-red)](https://github.com/MiniMax-AI/MiniMax-H3)
 [![Results](https://img.shields.io/badge/🎬_成片演示-X_文章页-1DA1F2)](https://x.com/LoveUolanda/articles)
 
@@ -91,6 +91,7 @@ case-studies/YYYY-MM-short-name/
 | 预览 | 案例 | 简介 |
 |:---:|---|---|
 | — | [026 · Index Morning Trouble Commercial MV (Eighteen Segments)](./case-studies/2026-11-index-morning-trouble-commercial-mv-18-segment/) | 十八段真人商业 Idol MV（224.888s · 178 BPM · 16:9）：四张参考图分权（人物／运镜 A／运镜 B 路径／居住环境）；多来源合并 18 段（Rev.8.2–8.6 + 独立重写稿）；SEG06 从早餐桌静物重构为 178 BPM 舞蹈优先段落并加裙内同色系打底层；魔法书脑内化（删除现实实体书）；Spoken 结构化 `<Subject 1>` + `<d>[Japanese]</d>`；17 处转场动作匹配。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
+| — | [027 · One Image + One Song Duet Lip-Sync MV (Seventeen Segments)](./case-studies/2026-11-one-image-one-song-duet-lipsync-mv/) | 十七段真人古装奇幻爱情 folk 对唱 MV（215.420s · 147.5 BPM · 4:3）：一张双人定妆图（只锁人物身份与服装）+ 整首歌，歌词感知切成 17 段、零切词；Full-Reference Mode 六字段；严格按 JSON `vocal` 标签绑定 S1/S2，68 句（F43/M24/D1）只选 24 个对口型窗口，单人唱口单人可见、唯一 Duet 双人同框；唱口镜头稳定、空手表演；第 03/07/11/16 段无可见唱口、Seg16 纯器乐。 |
 
 ### 摄影机语言工具箱 · 双系统标准
 
