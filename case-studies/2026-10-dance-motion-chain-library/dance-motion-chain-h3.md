@@ -4715,6 +4715,23 @@ non_diegetic_music: N/A
 - H3:`holding a crossed-leg lifted-heel stance while waving through a finger-point triple, palm flicks, forearm rolls, a tray-presenting pose, ear-level flicks, diagonal arm throws and synchronized wrist flops, then folding the arms back to the sides and settling square to camera`
 - 来源:《热舞计划》02.15-06.87s
 
+**片<v107> 《恐惧吧，这是鸣潮最可怕的变装》(实拍变装·9.1s·竖屏·全档见 reports/D001)**
+- 背景人物:室内走廊粉光→红光(整帧调色),白墙门框。人物:黑双马尾红蝴蝶结,水手服→黑金纹抹胸 cos 裙+过肘手套→金面具+浅金假发完全体;UP 主"时芒芒"。实拍(两次单帧瞬换+动作连续掩剪,贴纸为后期贴图)。
+- 节拍:onset 实测≈136 BPM(beat 0.441s)。
+- 镜头形态:A 一镜到底(固定机位,变装全部镜内完成)。
+
+### K323 双拳提胯卡点跳跃链(2拍循环|萌系卡点·变装载体)
+- 入态:开立直立双臂垂 → 出态:双拳回胸、膝弹待下一循环
+- 分解:拍1 双拳收至胸前(拳心向内)、双膝外开微屈下沉半拍;拍2 胯左右交替顶出+踮脚小跳、双拳随跳上下小幅捶动,发梢滞后半拍——全片唯一动作,前后两套服装下完全同构(变装不中断动作)
+- H3:`bouncing in place with both fists pulled to the chest, popping the hips side to side on every beat with tiny heel hops, the same move repeating unchanged through two outfit changes`
+- 来源:《鸣潮变装》00:01.3-02.7s、03.1-05.0s、05.1-06.5s、07.2-08.7s(四段同构)
+
+### K324 展臂踮脚变装蓄势链(1拍|变装转场·遮挡起手)
+- 入态:跳跃落定直立 → 出态:双臂体侧平展、踮脚绷直——变装窗口开启
+- 分解:拍1 双臂自体侧向两侧平展、掌心朝前,同时踮脚立起半拍(遮挡物=展臂+踮脚重心上提吸引视线);变装瞬换藏于展臂完成帧
+- H3:`spreading both arms wide and rising onto tiptoes for one beat as the outfit snaps to the next look inside the gesture`
+- 来源:《鸣潮变装》00:02.7-03.083s、06.5-07.2s(两次变装同构)
+
 ---
 
 ## L. 成品 T2VA 范本与续写提示词收录(外部项目全文并入 · 2026-11-09)
@@ -5450,6 +5467,7 @@ non_diegetic_music: fully_copy <Audio 1>; the palette is a guide, not permission
 |---|---|---|
 | `_REPORT_TEMPLATE_v2.md` | — | 报告库模板 v2（11 章槽位） |
 | `D001_鸣潮变装.md` | v107 | 鸣潮变装 9.1s：两段式单帧变装机制实锤+环境光调色+T2VA 复刻词；链 K323-324（待入 K 章） |
+| `EXTRA_11月1日_单人MV_18段设计.md` | — | 《11月1日》单人 MV 18 段全能参考设计全文（BPM178/18 段/音频切片配套） |
 | `SUPPLEMENT_chat_recovery_v1.md` | — | **会话信息回收补遗**：rA/rB 完整复刻范本对（单动作循环解剖+六段编舞）、《至情至圣》MV 七幕时间线+21 帧量化色值表、batch2 18 片 onset 实测数据表、流程经验教训 7 条、遗留登记 |
 
 ---
