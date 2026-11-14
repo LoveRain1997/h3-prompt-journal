@@ -4,9 +4,9 @@
 
 # 🎬 H3 Prompt Journal
 
-**MiniMax H3 视频/舞蹈提示词案例日记 —— 26 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
+**MiniMax H3 视频/舞蹈提示词案例日记 —— 28 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
 
-[![Cases](https://img.shields.io/badge/case_studies-27-blue)](./case-studies)
+[![Cases](https://img.shields.io/badge/case_studies-28-blue)](./case-studies)
 [![Platform](https://img.shields.io/badge/model-MiniMax_H3-red)](https://github.com/MiniMax-AI/MiniMax-H3)
 [![Results](https://img.shields.io/badge/🎬_成片演示-X_文章页-1DA1F2)](https://x.com/LoveUolanda/articles)
 
@@ -92,6 +92,7 @@ case-studies/YYYY-MM-short-name/
 |:---:|---|---|
 | — | [026 · Index Morning Trouble Commercial MV (Eighteen Segments)](./case-studies/2026-11-index-morning-trouble-commercial-mv-18-segment/) | 十八段真人商业 Idol MV（224.888s · 178 BPM · 16:9）：四张参考图分权（人物／运镜 A／运镜 B 路径／居住环境）；多来源合并 18 段（Rev.8.2–8.6 + 独立重写稿）；SEG06 从早餐桌静物重构为 178 BPM 舞蹈优先段落并加裙内同色系打底层；魔法书脑内化（删除现实实体书）；Spoken 结构化 `<Subject 1>` + `<d>[Japanese]</d>`；17 处转场动作匹配。🎬 成片见 [X 文章页](https://x.com/LoveUolanda/articles) |
 | — | [027 · One Image + One Song Duet Lip-Sync MV (Seventeen Segments)](./case-studies/2026-11-one-image-one-song-duet-lipsync-mv/) | 十七段真人古装奇幻爱情 folk 对唱 MV（215.420s · 147.5 BPM · 4:3）：一张双人定妆图（只锁人物身份与服装）+ 整首歌，歌词感知切成 17 段、零切词；Full-Reference Mode 六字段；严格按 JSON `vocal` 标签绑定 S1/S2，68 句（F43/M24/D1）只选 24 个对口型窗口，单人唱口单人可见、唯一 Duet 双人同框；唱口镜头稳定、空手表演；第 03/07/11/16 段无可见唱口、Seg16 纯器乐。 |
+| — | [028 · YueYouKui In-Place Guofeng Dance MV (Seventeen Segments)](./case-studies/2026-11-yueyoukui-in-place-guofeng-dance-mv-17-segment/) | 十七段写实古风竖屏舞蹈 MV（207.520s · 133.93 BPM · 9:16）：图 1 绝对锁定（人物+环境+光线零重写，全片空手）；**原地舞蹈硬约束**——不走动、不横穿场景、不逼近镜头，脚步只允许点步/盖步/并步/轴心转身；直接从《舞蹈动链 H3 库》调用 C1/C2/C3/C5/C7/C12/C16 古风身韵链并改造为无道具原地版；三 Hero 分落 SEG07 点步翻身探海线 / SEG13 掖腿转 / SEG16 高位延展（全片旋转合计 2 次）；歌词只做情绪不做插画、不对口型；每段 Shot 块动作与机位同段同时码，段尾出态即下段入口。 |
 
 ### 摄影机语言工具箱 · 双系统标准
 
@@ -100,7 +101,7 @@ case-studies/YYYY-MM-short-name/
 | <img src="case-studies/2026-10-physical-camera-position-library/cover.png" width="160"> | [System A · Physical Camera Position Library](./case-studies/2026-10-physical-camera-position-library/) | **机位视角系统（摄影机在哪里）**：25 类视角物理定义块全文（贴地仰视/虫眼/正上方90°/荷兰角/贴身广角/防简化锁/8要素结构）。核心原则：不要命名效果（`low angle`），要定义产生效果的现实条件——机位一旦是"场景里的一件实物"，就无法被 H3 平均掉。 |
 | <img src="case-studies/2026-10-camera-movement-discipline-library/cover.png" width="160"> | [System B · Camera Movement Discipline Library](./case-studies/2026-10-camera-movement-discipline-library/) | **动态运镜系统（摄影机怎么动、为什么动）**：E 章十条实测运镜纪律 + 物理运镜十法则（POSITION/NO DEGREE/SUBJECT-TRIGGER…）+ 十三词物理词库 + 运镜块五件套 + 反目录。核心纪律："动作负责舞蹈，摄影机负责观看"——每段一个主运镜行为，镜头只为重大空间变化而动。 |
 | <img src="case-studies/2026-10-advanced-camera-combinations/cover.png" width="160"> | [Advanced Camera Movement Combinations](./case-studies/2026-10-advanced-camera-combinations/) | **物理运镜组合库（NO DEGREE VERSION）**：14 条 SEGMENT RULES + 13 词词库 + 10 组即用运镜组合（前随→侧移→越肩→回正 / 推进→遮镜→暗侧移→揭示 / 贴地滑移→起身 / Hero Lock→微推→触发响应…）。彻底取消度数语言：`ARC 40°` 淘汰，改为 START POSITION → PHYSICAL PATH → SUBJECT TRIGGER → END POSITION → FINAL FRAMING。 |
-| <img src="case-studies/2026-10-dance-motion-chain-library/cover.png" width="160"> | [Dance Motion Chain Library · 舞蹈动链 H3 库](./case-studies/2026-10-dance-motion-chain-library/) | **动作链标准件总库（Rev.1.0 全文镜像）**：A 宅舞 23 链 / B 抖舞 / C 古风 49 链 / D 多人 12 纪律 / E 运镜纪律 / G Hero 库 / H 13 支成品范本 / I 视角库 / J 写真 9 范本 / 拼舞模板——每条链带入态/出态与十要素描述，积木式拼舞；本仓库只读副本，正本在本地 git。 |
+| <img src="case-studies/2026-10-dance-motion-chain-library/cover.png" width="160"> | [Dance Motion Chain Library · 舞蹈动链 H3 库](./case-studies/2026-10-dance-motion-chain-library/) | **动作链标准件总库（Rev.1.11 全文镜像，K1-K518）**：0 使用规则（三层结构/动作×运镜 1:1 同步六原则/生成前自检十条/时间窗动作链完整性规范）/ A 宅舞 23 链 / B 抖舞 / C 古风 49 链 / D 多人纪律 / E 运镜纪律 / F 同曲异构 / G Hero 库 / H 13 支成品范本 / I 25 类视角库 / J 写真 9 范本 / **K 批量反推扩展库（121 支片+2 图、518 条链：BPM 全部 onset 实测+置信分层、AIGC 判定全帧证据化、变装机制五型归纳、器乐/新疆舞/京剧武戏等语汇首录）** / **L 成品 T2VA 范本（Miniskirt 12 Jobs 两版 + 8s 卡点续写）** / **报告库（双 skill 全量档案模板 v2 + D001–D015 逐片档案 + 聊天信息回收 SUPPLEMENT）** / 拼舞模板——每条链带入态/出态与十要素描述，积木式拼舞；案例 025/028 即用本库直编。本仓库只读副本，正本在本地 git。 |
 | <img src="docs/images/020-motion-transfer.jpg" width="160"> | [020 · H3 Motion Transfer — Subject-First Reconstruction](./case-studies/2026-10-h3-motion-transfer/) | **动作迁移（图1人物×目标视频动作×音频时序）**：三参考严格分权（图1=人+世界，视频1首帧=镜头几何，视频1正文=动作机制，音频1=时序权威），SUBJECT-FIRST 不可逆初始化顺序 + 八项 FINAL VALIDATION 自检。⚠️ 硬约束：**单次迁移最长 8–9 秒**，长舞按乐句拆段。附案例成片与 ComfyUI 工作流要点。🎬 [成片](./case-studies/2026-10-h3-motion-transfer/result-video.mp4) |
 | <img src="docs/images/021-formation-lock.jpg" width="160"> | [021 · Four-Subject Formation Choreography (Fourteen Segments)](./case-studies/2026-10-four-subject-formation-choreography/) | 十四段四人群舞：逐字锚定块（Universal Visual Anchor）×14 次粘贴 + 动作态接力（OUTGOING HOOK→INCOMING STATE）+ 舞蹈化队形转换（脚先转/限象限/切镜代替拉远）。第 10 段完整英文提示词 + 14 段终版整合表。🎬 [SEG 10 成片](./case-studies/2026-10-four-subject-formation-choreography/assets/demo_segment10.mp4) |
 | — | [Dance MV Production Skill Rev.1.0](./case-studies/2026-11-dance-mv-production-skill/) | **舞蹈 MV 通用制作方法论**：制作总公式（音乐结构→MV 概念→视觉母题→舞种语法→动作链→摄影机→Shot 切分→段间钩子→提示词→检查修订）+ 十条最高优先级 + 动作描述三档密度；覆盖参考图锁定、12 类舞种语法、动作链十要素、物理机位、剪辑连续性、提示词工程与交付标准，16 章可反复执行的商业工作流。 |
