@@ -4,9 +4,9 @@
 
 # 🎬 H3 Prompt Journal
 
-**MiniMax H3 视频/舞蹈提示词案例日记 —— 29 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
+**MiniMax H3 视频/舞蹈提示词案例日记 —— 30 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
 
-[![Cases](https://img.shields.io/badge/case_studies-29-blue)](./case-studies)
+[![Cases](https://img.shields.io/badge/case_studies-30-blue)](./case-studies)
 [![Platform](https://img.shields.io/badge/model-MiniMax_H3-red)](https://github.com/MiniMax-AI/MiniMax-H3)
 [![Results](https://img.shields.io/badge/🎬_成片演示-X_文章页-1DA1F2)](https://x.com/LoveUolanda/articles)
 
@@ -94,6 +94,7 @@ case-studies/YYYY-MM-short-name/
 | — | [027 · One Image + One Song Duet Lip-Sync MV (Seventeen Segments)](./case-studies/2026-11-one-image-one-song-duet-lipsync-mv/) | 十七段真人古装奇幻爱情 folk 对唱 MV（215.420s · 147.5 BPM · 4:3）：一张双人定妆图（只锁人物身份与服装）+ 整首歌，歌词感知切成 17 段、零切词；Full-Reference Mode 六字段；严格按 JSON `vocal` 标签绑定 S1/S2，68 句（F43/M24/D1）只选 24 个对口型窗口，单人唱口单人可见、唯一 Duet 双人同框；唱口镜头稳定、空手表演；第 03/07/11/16 段无可见唱口、Seg16 纯器乐。 |
 | — | [028 · YueYouKui In-Place Guofeng Dance MV (Seventeen Segments)](./case-studies/2026-11-yueyoukui-in-place-guofeng-dance-mv-17-segment/) | 十七段写实古风竖屏舞蹈 MV（207.520s · 133.93 BPM · 9:16）：图 1 绝对锁定（人物+环境+光线零重写，全片空手）；**原地舞蹈硬约束**——不走动、不横穿场景、不逼近镜头，脚步只允许点步/盖步/并步/轴心转身；直接从《舞蹈动链 H3 库》调用 C1/C2/C3/C5/C7/C12/C16 古风身韵链并改造为无道具原地版；三 Hero 分落 SEG07 点步翻身探海线 / SEG13 掖腿转 / SEG16 高位延展（全片旋转合计 2 次）；歌词只做情绪不做插画、不对口型；每段 Shot 块动作与机位同段同时码，段尾出态即下段入口。 |
 | — | [029 · INDEX Music-Dance Theatre Solo Stage Performance (Twenty-One Segments)](./case-studies/2026-11-index-music-dance-theatre-21-segment/) | 二十一段写实单人音乐舞台剧 MV（252.648s · 170.15 BPM · 9:16）：图 1 全程唯一人物母版（零外貌重写）、图 2 取上一段真实导出末帧锚定开场姿态/运动向量；真·单人舞台（无工作人员/伴舞/观众），全程持续悬浮舞蹈、不在地面行走或起跳落地；全片仅 SEG17 一次头朝下垂直下潜、SEG18 专门恢复竖直，完整竖轴旋转合计 2 次（SEG06/13）；动链库 Rev.1.12 直编并为无支撑悬浮改编（删地面承重链、抽上身路径、浮空反向配重）；Rev.8.3 用 20 个「身体局部落点→硬切→同局部近景接住→沿身体路径揭示→回到本段舞蹈」切口做段间接力；情绪非歌词插画，口型仅 SEG07/12/17(Come on!)/19；两段一组生成、SEG21 尾声单独出。附低清样片。 |
+| — | [030 · Basketball Girl Cheer Dance MV (Four Independent Segments)](./case-studies/2026-11-basketball-girl-cheer-dance-mv-4-segment/) | 四段日系 K-pop 篮球应援舞 MV（50.04s · 150.50 BPM · 9:16）：Picture 1 全程全参考（金发短发不变）；歌词感知切 4 段零切词、每段自包含独立生成后期拼接，段间靠**局部特写开场匹配**（手掌/前臂/指尖）不靠模型续接；全程**虚空篮球 mime**——接球弧形空间/单手带动运球/五阶段投篮 follow-through，禁实体球特效球轨迹；全片折腕禁令；醉酒式物理运镜（贴鞋 25–35cm 起机、遮挡揭示、无角度标签）；附 ComfyUI 本地生成工作流（MiniMaxH3ReferenceToVideo + AddGuide 续接组）。🎬 [成片](./case-studies/2026-11-basketball-girl-cheer-dance-mv-4-segment/result-video.mp4) · 工作流上手文见 [docs](./docs/segmented-generation-guide.md) |
 
 ### 摄影机语言工具箱 · 双系统标准
 
