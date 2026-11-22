@@ -4,9 +4,9 @@
 
 # 🎬 H3 Prompt Journal
 
-**MiniMax H3 视频/舞蹈提示词案例日记 —— 30 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
+**MiniMax H3 视频/舞蹈提示词案例日记 —— 31 篇真实反推与实测，每篇附可直接粘贴的完整提示词。**
 
-[![Cases](https://img.shields.io/badge/case_studies-30-blue)](./case-studies)
+[![Cases](https://img.shields.io/badge/case_studies-31-blue)](./case-studies)
 [![Platform](https://img.shields.io/badge/model-MiniMax_H3-red)](https://github.com/MiniMax-AI/MiniMax-H3)
 [![Results](https://img.shields.io/badge/🎬_成片演示-X_文章页-1DA1F2)](https://x.com/LoveUolanda/articles)
 
@@ -95,6 +95,7 @@ case-studies/YYYY-MM-short-name/
 | — | [028 · YueYouKui In-Place Guofeng Dance MV (Seventeen Segments)](./case-studies/2026-11-yueyoukui-in-place-guofeng-dance-mv-17-segment/) | 十七段写实古风竖屏舞蹈 MV（207.520s · 133.93 BPM · 9:16）：图 1 绝对锁定（人物+环境+光线零重写，全片空手）；**原地舞蹈硬约束**——不走动、不横穿场景、不逼近镜头，脚步只允许点步/盖步/并步/轴心转身；直接从《舞蹈动链 H3 库》调用 C1/C2/C3/C5/C7/C12/C16 古风身韵链并改造为无道具原地版；三 Hero 分落 SEG07 点步翻身探海线 / SEG13 掖腿转 / SEG16 高位延展（全片旋转合计 2 次）；歌词只做情绪不做插画、不对口型；每段 Shot 块动作与机位同段同时码，段尾出态即下段入口。 |
 | — | [029 · INDEX Music-Dance Theatre Solo Stage Performance (Twenty-One Segments)](./case-studies/2026-11-index-music-dance-theatre-21-segment/) | 二十一段写实单人音乐舞台剧 MV（252.648s · 170.15 BPM · 9:16）：图 1 全程唯一人物母版（零外貌重写）、图 2 取上一段真实导出末帧锚定开场姿态/运动向量；真·单人舞台（无工作人员/伴舞/观众），全程持续悬浮舞蹈、不在地面行走或起跳落地；全片仅 SEG17 一次头朝下垂直下潜、SEG18 专门恢复竖直，完整竖轴旋转合计 2 次（SEG06/13）；动链库 Rev.1.12 直编并为无支撑悬浮改编（删地面承重链、抽上身路径、浮空反向配重）；Rev.8.3 用 20 个「身体局部落点→硬切→同局部近景接住→沿身体路径揭示→回到本段舞蹈」切口做段间接力；情绪非歌词插画，口型仅 SEG07/12/17(Come on!)/19；两段一组生成、SEG21 尾声单独出。附低清样片。 |
 | — | [030 · Basketball Girl Cheer Dance MV (Four Independent Segments)](./case-studies/2026-11-basketball-girl-cheer-dance-mv-4-segment/) | 四段日系 K-pop 篮球应援舞 MV（50.04s · 150.50 BPM · 9:16）：Picture 1 全程全参考（金发短发不变）；歌词感知切 4 段零切词、每段自包含独立生成后期拼接，段间靠**局部特写开场匹配**（手掌/前臂/指尖）不靠模型续接；全程**虚空篮球 mime**——接球弧形空间/单手带动运球/五阶段投篮 follow-through，禁实体球特效球轨迹；全片折腕禁令；醉酒式物理运镜（贴鞋 25–35cm 起机、遮挡揭示、无角度标签）；附 ComfyUI 本地生成工作流（MiniMaxH3ReferenceToVideo + AddGuide 续接组）。🎬 [成片](./case-studies/2026-11-basketball-girl-cheer-dance-mv-4-segment/result-video.mp4) · 工作流上手文见 [docs](./docs/segmented-generation-guide.md) |
+| — | [031 · Fan Furen Indoor Guofeng Solo Dance (Nine Segments, Hero Director's Cut)](./case-studies/2026-11-fan-furen-indoor-guofeng-solo-dance-9-segment/) | 九段室内古风独舞 MV（86.592s · 105 BPM · 9:16 · 动作链与 Hero 导演版 Rev.1.1）：图 1 **人物与整个室内空间一起锁死**（明令禁止反打空间/墙面背后/画外结构，不重打光不改色温）；道具清零、空手舞蹈、歌词只做情绪不做道具清单、无歌词口型；每条动作按「预载支撑→发起→动力传递→峰值→惯性→制动→入口」七段式写；**四 Hero 技术族互不替代**——SEG03 点步翻身接探海 / SEG05 紫金冠式腾空腿弧 / SEG07 跪姿螺旋扫腿起身 / SEG09 斜向大跳落地终章延展；反旋转填充（禁无意义 360°、禁摄影机绕人代转）；SEG02–09 全部**局部特写开场**——前段末 0.3–0.5s 落一个身体局部、后段首帧该局部近景、0.9–1.25s 真实后退横移升降揭示，只做视觉匹配不做动作续接，Hero 前必恢复全身。🎬 [成片 360p](./case-studies/2026-11-fan-furen-indoor-guofeng-solo-dance-9-segment/result-video.mp4) |
 
 ### 摄影机语言工具箱 · 双系统标准
 
